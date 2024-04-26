@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+/dist
+/mock
+/roadhogrc.mock
 
 
 # misc
