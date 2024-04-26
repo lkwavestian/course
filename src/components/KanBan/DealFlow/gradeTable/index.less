@@ -1,0 +1,289 @@
+.dealFlow {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: white;
+    table {
+        min-width: 1000px;
+        overflow-x: scroll;
+    }
+    .formParent {
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        border-bottom: rgb(243, 242, 245) solid 1px;
+        justify-content: space-between;
+    }
+    .form {
+        margin: 6px 0 6px;
+        margin-right: 10px;
+        :global {
+            .ant-form-item {
+                display: inline-block !important;
+                margin-right: 16px !important;
+                // margin-bottom: 8px !important;
+            }
+            .ant-form-item-control {
+                line-height: normal;
+            }
+            .ant-select-lg .ant-select-selection__rendered {
+                line-height: 36px;
+            }
+            .ant-select-lg .ant-select-selection--single {
+                height: 36px;
+                border-radius: 8px;
+            }
+            .ant-calendar-picker-input.ant-input {
+                line-height: 36px;
+                height: 36px;
+                width: 150px;
+            }
+        }
+    }
+    .export {
+        width: 80px;
+        height: 36px;
+        border-radius: 8px;
+        background: #3b6ff5;
+        margin-top: 6px;
+        // margin-bottom: 12px;
+    }
+    .balanceStatistical {
+        // padding: 24px 0;
+        // border: 1px solid #efefef;
+        // border-radius: 8px;
+        .cardItem {
+            display: inline-block;
+            text-align: left;
+            width: 33%;
+
+            .card {
+                display: inline-block;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                span {
+                    display: block;
+                }
+
+                .label {
+                    font-size: 12px;
+                    color: #999;
+                }
+
+                .number {
+                    font-size: 24px;
+                    color: #333;
+                }
+            }
+        }
+
+        .border {
+            border-right: 1px solid #efefef;
+            border-left: 1px solid #efefef;
+        }
+    }
+    .tableAndPage {
+        overflow: hidden;
+        padding: 5px 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+        .payWayImg {
+            display: block;
+            width: 1.25rem;
+            height: 1.25rem;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        :global {
+            .ant-table-thead > tr > th,
+            .ant-table-tbody > tr > td {
+                padding: 9.5px 14px;
+            }
+            .ant-table {
+                font-size: 12px;
+            }
+        }
+    }
+}
+.titleRight {
+    display: flex;
+}
+.reportSetting {
+    margin-right: 20px;
+    margin-top: 13px;
+}
+.settingP {
+    display: flex;
+    margin-bottom: 50px;
+    .settingSpan {
+        margin-right: 30px;
+        width: 126px;
+    }
+    .settingDiv {
+        display: flex;
+        border-radius: 10px;
+        justify-content: space-around;
+        flex-direction: column;
+        .settingCon {
+            display: flex;
+            margin-bottom: 20px;
+            .settingContent {
+                min-width: 90px;
+                height: 28px;
+                background-color: rgb(239, 240, 241);
+                margin-right: 15px;
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+        .addSub {
+            color: rgb(115, 149, 253);
+            margin-left: 5px;
+        }
+    }
+}
+.topLeft {
+    display: flex;
+}
+.tableAndPageDiv {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    h4 {
+        margin-bottom: 15px;
+    }
+}
+
+.head {
+    td {
+        padding: 9.5px 14px;
+    }
+    span {
+        display: inline-block;
+    }
+}
+.trContent {
+    // border: 1px solid #e8e8e8;
+    // min-height: 38px;
+    border-bottom: 1px solid #e8e8e8;
+    td {
+        border: 1px solid #e8e8e8;
+        text-align: center;
+        // min-width: 140px;
+        // width: 300px;
+        // padding: 9.5px 10px;
+    }
+    .commonStyle1 {
+        width: 110px !important;
+        padding: 5.5px 4px;
+        text-align: center;
+        min-width: 110px;
+        // border: #e8e8e8 solid 1px;
+        display: flex;
+        align-items: center;
+        border-right: 1px solid #e8e8e8;
+        border-left: 1px solid #e8e8e8;
+        justify-content: center;
+    }
+    .commonStyle2 {
+        width: 110px !important;
+        padding: 5.5px 4px;
+        text-align: center;
+        min-width: 110px;
+        // border: #e8e8e8 solid 1px;
+        display: flex;
+        align-items: center;
+        border-right: 1px solid #e8e8e8;
+        justify-content: center;
+    }
+    .commonStyle3 {
+        width: 140px !important;
+        max-height: 134px;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 6;
+        /* autoprefixer: ignore next */
+        -webkit-box-orient: vertical;
+        /*! autoprefixer: on */
+        padding: 5.5px 4px;
+        text-align: center;
+        // min-width: 140px;
+        border-right: 1px solid #e8e8e8;
+    }
+    .commonStyle {
+        // width: 300px;
+        padding: 5.5px 4px;
+        text-align: center;
+        width: 140px;
+        max-height: 145px;
+        overflow: hidden;
+        min-width: 120px;
+        // border: #e8e8e8 solid 1px;
+        // display: flex;
+        // align-items: center;
+        border-right: 1px solid #e8e8e8;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
+.commonStyleHead {
+    align-items: center;
+    .commonStyle1 {
+        width: 110px !important;
+        padding: 9.5px 4px;
+        text-align: center;
+        min-width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: #e8e8e8 solid 1px;
+    }
+    .commonStyle2 {
+        width: 110px !important;
+        padding: 9.5px 4px;
+        text-align: center;
+        min-width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: #e8e8e8 solid 1px;
+    }
+    .commonStyle3 {
+        width: 140px !important;
+        padding: 9.5px 4px;
+        text-align: center;
+        min-width: 140px;
+        // display: flex;
+        align-items: center;
+        // border: #e8e8e8 solid 1px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .commonStyle {
+        // width: 300px;
+        padding: 9.5px 4px;
+        text-align: center;
+        width: 140px;
+        min-width: 140px;
+        // display: flex;
+        align-items: center;
+        // border: #e8e8e8 solid 1px;
+    }
+}
+.menuStyle {
+    width: 250px;
+    height: 300px;
+    overflow-y: scroll;
+    :global(.ant-dropdown-menu-item) {
+        white-space: normal;
+    }
+}

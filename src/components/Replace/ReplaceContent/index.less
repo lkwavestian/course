@@ -1,0 +1,31 @@
+.replaceContentWrapper {
+    background-color: #f5f6fa;
+    margin: 16px 12px;
+    flex-grow: 1;
+    :global {
+        .ant-radio-group {
+            border-radius: 7px;
+        }
+        .ant-radio-button-wrapper {
+            text-align: center;
+            // width: 96px;
+            height: 32px;
+            background-color: #fff;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            line-height: 32px;
+            color: rgba(1, 17, 61, 0.85);
+            &:hover {
+                color: #0445fc;
+            }
+        }
+        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+            line-height: 32px;
+            background-color: rgba(4, 69, 252, 0.1);
+            color: #0445fc;
+        }
+        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+            color: #0445fc;
+        }
+    }
+}

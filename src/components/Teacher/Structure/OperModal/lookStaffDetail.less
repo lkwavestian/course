@@ -1,0 +1,139 @@
+.detailPage {
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 16px 24px 110px;
+
+  .personalInformation {
+    margin-bottom: 20px;
+
+    .infoTitle {
+      font-size: 16px;
+      color: #000;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    .infoUtil {
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      justify-content: center;
+      margin-bottom: 16px;
+
+      em {
+        font-style: normal;
+        color: #666;
+        margin-left: 5px;
+
+        &.resetPwd {
+          color: #4d7fff;
+          font-size: 14px;
+          margin-left: 7px;
+          cursor: pointer;
+        }
+
+      }
+
+      span {
+        display: block;
+        flex: 1;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        color: #000;
+        font-size: 14px;
+
+        em {
+          font-style: normal;
+          color: #666;
+          margin-left: 12px;
+
+          .orgNameStyle {
+            display: block;
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+}
+
+.operationList {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 35px;
+  position: fixed;
+  width: 565px;
+  bottom: 0;
+  height: 100px;
+  background: #fff;
+
+  .editBtn {
+    display: inline-block;
+    padding: 0 14px;
+    background: #3b6ff5;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 36px;
+    line-height: 36px;
+  }
+
+  .cancelBtn {
+    display: inline-block;
+    padding: 0 14px;
+    color: rgba(1, 17, 61, 0.65);
+    background: rgba(1, 17, 61, 0.07);
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+.selectStyle>div {
+  border-radius: 8px !important;
+}
+
+.datePickerStyle>div>input {
+  border-radius: 8px !important;
+}
+
+.inputStyle {
+  border-radius: 8px !important;
+  width: 150px;
+}
+
+.drawerStyle>div>div>div>div:nth-child(2) {
+  padding: 0 !important;
+}
+
+//暂无权限界面
+.haveNoPowerPage {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  height: 80vh;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 140px;
+  }
+
+  span {
+    display: block;
+    color: #666;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+}

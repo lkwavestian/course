@@ -1,0 +1,165 @@
+.cancelModal {
+    :global {
+        .ant-modal{
+            width: 760px !important;
+        }
+        .ant-form-item {
+            margin-bottom: 15px;
+        }
+        .ant-modal-title {
+            text-align: center;
+            font-family: PingFangSC-Medium;
+            color: #01113d;
+            letter-spacing: -0.9;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .ant-modal-footer {
+            .ant-btn {
+                height: 36px;
+                border-radius: 8px;
+                color: rgba(1, 17, 61, 0.65);
+                background: rgba(1, 17, 61, 0.07);
+                border: 0;
+            }
+            .ant-btn-primary {
+                background: #3b6ff5;
+                color: #fff;
+            }
+        }
+    }
+
+    .chargeItem {
+        margin-left: 10px;
+    }
+
+    .refundAmount {
+        :global {
+            .ant-input {
+                width: 30%;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .cancelReason {
+        margin-top: 25px;
+    }
+
+    .noticeTemplate {
+        color: #0445fc;
+        margin-left: 10px;
+    }
+}
+
+.noticeTemplateTooltip {
+    :global {
+        .ant-tooltip-content {
+            .ant-tooltip-inner {
+                background-color: white;
+                font-family: PingFangSC-Medium;
+                color: rgba(0, 0, 0, 0.65);
+            }
+            .template {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+.conStyle {
+    .relationOrder{
+        & > span:nth-child(1){
+            display: inline-block;
+            width: 169px;
+            text-align: right;
+            float: left;
+            margin-top: 3px;
+        }
+        & > span:nth-child(2){
+            display: inline-block;
+            background-color: rgb(242, 244, 245);
+            width: 450px;
+            margin-left: 7px;
+            padding: 5px;
+            border-radius: 5px;
+            .detailStyle{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .orderStyle{
+        margin-top: 10px;
+        & > span:nth-child(1){
+            display: inline-block;
+            width: 169px;
+            text-align: right;
+            float: left;
+            // margin-top: 3px;
+        }
+        & > span:nth-child(2){
+            display: inline-block;
+            width: 450px;
+            margin-left: 7px;
+            
+            .detailCard{
+                background-color: rgb(242, 244, 245);
+                padding: 5px;
+                border-radius: 5px;
+                margin-top: 7px;
+                .detailStyle{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            
+        }
+    }
+    .dealOrder{
+        margin-top: 10px;
+        .refundStyle{
+            & > span:nth-child(1){
+                display: inline-block;
+                width: 169px;
+                text-align: right;
+                float: left;
+                padding-top: 5px;
+            }
+            & > span:nth-child(2){
+                display: inline-block;
+                width: 450px;
+                margin-left: 7px;
+            }
+        }
+        .cancelStyle{
+            margin-top: 10px;
+            & > span:nth-child(1){
+                display: inline-block;
+                width: 169px;
+                text-align: right;
+                float: left;
+            }
+            & > span:nth-child(2){
+                width: 450px;
+                margin-left: 7px;
+            }
+        }
+        .dealStyle{
+            margin-top: 10px;
+            & > span:nth-child(1){
+                display: inline-block;
+                width: 169px;
+                text-align: right;
+                float: left;
+                // margin-top: 3px;
+            }
+            & > span:nth-child(2){
+                display: inline-block;
+                width: 450px;
+                margin-left: 7px;
+            }
+        }
+        
+    }
+}

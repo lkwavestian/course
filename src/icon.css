@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'iconfont';
+    /* Project id 789461 */
+    src: url('//at.alicdn.com/t/font_789461_t6eu6zeaqk.woff2?t=1624007986631') format('woff2'),
+        url('//at.alicdn.com/t/font_789461_t6eu6zeaqk.woff?t=1624007986631') format('woff'),
+        url('//at.alicdn.com/t/font_789461_t6eu6zeaqk.ttf?t=1624007986631') format('truetype');
+}
+.iconfont {
+    font-family: 'iconfont' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+:global .ant-modal-header {
+    border-bottom: 0 none !important;
+}
+:global .ant-modal-title {
+    text-align: center !important;
+    font-size: 20px !important;
+}
+:global .ant-modal-footer {
+    border-top: 0 none !important;
+    padding: 16px !important;
+    text-align: center;
+}
+:global .ant-modal-footer > div > .ant-btn {
+    border-radius: 8px;
+    padding: 0px 23px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #3b6ff5;
+    color: #3b6ff5;
+    text-align: center;
+}
+:global .ant-modal-footer > div > .ant-btn-primary {
+    background: #3b6ff5;
+    color: #fff;
+    text-align: center;
+}

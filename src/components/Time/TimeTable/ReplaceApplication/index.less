@@ -1,0 +1,119 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.wrapper {
+    height: 632px;
+    overflow: auto;
+    background-color: #fff;
+    .applicationWrapper {
+        padding: 13px 18px;
+    }
+    .divider {
+        height: 8px;
+        background: rgba(1, 17, 61, 0.03);
+        margin-top: 12px;
+        width: 480px;
+        margin-left: -25px;
+    }
+}
+
+.applicationItem {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        .leftPart {
+            display: flex;
+            gap: 8px;
+            font-family: PingFangSC-Medium;
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: 0px;
+            color: rgba(1, 17, 61, 0.85);
+            cursor: pointer;
+        }
+        .rightPart {
+            font-family: PingFangSC-Semibold;
+            font-size: 12px;
+            line-height: 14px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            .requireNeed {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+            }
+            .icon {
+                display: block;
+                width: 6px;
+                height: 6px;
+                background-color: #ff4500;
+                border-radius: 6px;
+            }
+            .requireText {
+                font-family: PingFangSC-Medium;
+                font-size: 13px;
+                line-height: 16px;
+                color: rgba(1, 17, 61, 0.85);
+            }
+            .orangeText {
+                color: #fd9004;
+            }
+            .greenText {
+                color: #50dc65;
+            }
+            .redText {
+                color: #e02020;
+            }
+        }
+    }
+    .changeCourseDetail {
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        line-height: 24px;
+        color: rgba(1, 17, 61, 0.75);
+    }
+}
+
+.lessonDetailList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: PingFangSC-Regular;
+    color: rgba(1, 17, 61, 0.85);
+    font-size: 12px;
+    line-height: 20px;
+    .replaceLessonDetailItem {
+        display: flex;
+        gap: 30px;
+    }
+    .exchangeLessonDetailItem {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .leftLessonItem,
+    .rightLessonItem {
+        display: flex;
+        gap: 8px;
+        border-bottom: 1px solid #fff;
+        cursor: pointer;
+        &:hover {
+            border-bottom: 1px solid rgba(4, 69, 252, 1);
+        }
+        &:focus {
+            border-bottom: 1px solid #1890ff;
+        }
+    }
+    .rightTeacherItem {
+        display: flex;
+        gap: 8px;
+        border-bottom: 1px solid #fff;
+    }
+}

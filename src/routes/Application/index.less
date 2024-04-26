@@ -1,0 +1,197 @@
+// body{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.content {
+  width: 1200px;
+  margin: 20px auto;
+
+  .header {
+    font-size: 16px;
+
+    span {
+      color: #0445FC;
+    }
+
+    .settings {
+      color: #fff;
+      background: rgba(4,69,252,0.8);
+      padding: 5px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+
+      i {
+        vertical-align: baseline;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  :global {
+    .ant-form-item-children {
+      display: flex;
+      margin-right: 20px;
+    }
+
+    .ant-form-item {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .moduleContent {
+    // width: 1200px;
+    // margin: 10px auto;
+  }
+
+  .moduleList {
+    display: flex;
+    margin-bottom: 34px;
+    color: rgba(0, 0, 0, 0.85);
+    margin-left: 130px;
+
+    :global {
+      .ant-col {
+        // width: 100%;
+      }
+
+      .ant-row {
+        display: flex;
+      }
+    }
+  }
+
+  Button {
+    margin: 0 auto;
+    margin-left: 550px;
+  }
+}
+
+.radioStyle{
+  line-height: 32px;
+}
+
+.titleStyle{
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  display: inline-block;
+  text-align: right;
+  line-height: 32px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.radioGroupStyle{
+  margin-bottom: 10px;
+}
+
+.customUpload {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+
+  &>form>div {
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .uploadBtn {
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
+    line-height: normal;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+  }
+
+  .button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #eee;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    icon {
+      font-size: 30px;
+    }
+  }
+
+  .logo {
+    object-fit: cover;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+.requiredIcon {
+  display: inline-block;
+  margin-right: 4px;
+  color: #f5222d;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  font-style: normal;
+}
+
+.itemStyle {
+  display: inline-block;
+  width: 60%;
+
+  .labelStyle {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    margin: 0 10px;
+  }
+
+}
+
+.radioLable {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  display: inline-block;
+  width: 185px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.modalStyle {
+  width: 100% !important;
+  top: 0 !important;
+  height: 100vh !important;
+
+  &>div>div {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
+
+.lessonSetting {
+  margin-left: 117px;
+}
+
+.radioText {
+  font-size: 14px;
+  color: rgba(1,17,61,0.85);
+}
+
+.settingRow {
+  display: inline-block;
+}

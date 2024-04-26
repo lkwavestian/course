@@ -1,0 +1,64 @@
+.Timeline {
+    font-size: 8px;
+    position: relative;
+    line-height: normal;
+    .time {
+        height: 12px;
+        line-height: 12px;
+        .start {
+            display: inline-block;
+            width: 64px;
+            text-align: center;
+            color: #969fa9;
+        }
+        .end {
+            display: inline-block;
+            width: 64px;
+            color: #3778ff;
+            text-align: center;
+        }
+    }
+    .xian {
+        position: absolute;
+        top: 12px;
+        left: 32px;
+        .a {
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            background-color: #cccccc;
+        }
+        .b {
+            display: inline-block;
+            width: 58px;
+            height: 1px;
+            border-bottom: 1px dashed #cccccc;
+            position: relative;
+            top: -4px;
+            left: 0;
+        }
+        .c {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid #3778ff;
+            text-align: center;
+            position: relative;
+            i {
+                display: inline-block;
+                box-sizing: border-box;
+                width: 4px;
+                height: 4px;
+                background-color: #3778ff;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -2px;
+                margin-left: -2px;
+            }
+        }
+    }
+}

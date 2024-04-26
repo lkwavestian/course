@@ -1,0 +1,731 @@
+.scheduleBox {
+    min-width: 1950px;
+}
+.scheduleBox .scheduleTitle {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+}
+.scheduleBox .scheduleTitle .currentDateCol {
+    color: #3b6ff5;
+}
+.scheduleBox .scheduleTitle .classBox {
+    width: 50px;
+    text-align: center;
+    color: #3b6ff5;
+    font-size: 14px;
+    padding: 20px 5px;
+    border-right: 1px solid #e8e8e8;
+}
+.scheduleBox .scheduleTitle .classBox i {
+    display: block;
+}
+.scheduleBox .scheduleTitle .weekBox {
+    flex: 10;
+    -webkit-flex: 10;
+    -moz-flex: 10;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass {
+    height: 50%;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass:nth-child(1) {
+    border-bottom: 1px solid #e8e8e8;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass:nth-child(2) > div {
+    padding: 5px 0;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass > div {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    text-align: center;
+    height: 100%;
+    padding: 9px 0 5px;
+    border-right: 1px solid #e8e8e8;
+    color: #666;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass > div:nth-last-child(1) {
+    border-right: 0 none;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .activeDeleteCol {
+    border-left: 2px dashed #3b6ff5;
+    border-right: 2px dashed #3b6ff5;
+    border-top: 2px dashed #3b6ff5;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .noDeleteCol {
+    border-left: 0 none;
+    border-right: 1px dashed #9e9e9e;
+    border-top: 0 none;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .noDeleteCol:hover .copyWeekCol {
+    opacity: 1;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .weekLineActive {
+    color: #3b6ff5;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .weekLineActive:hover .copyWeekCol {
+    opacity: 1;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .selectDelete {
+    color: #3b6ff5;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .cancelSelect {
+    color: #ddd;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .deleteWeekCol {
+    border-left: 2px dashed #3b6ff5;
+    border-right: 2px dashed #3b6ff5;
+    border-bottom: 2px dashed #3b6ff5;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .noDeleteWeekCol {
+    border-left: 0 none;
+    border-right: 1px dashed #9e9e9e;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .timeLine {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .timeLine > div {
+    display: flex;
+    display: -webkit-flex;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .timeLine > div > span {
+    display: inline-block;
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+.scheduleBox .scheduleTitle .weekBox .scheduleClass .copyWeekCol {
+    cursor: pointer;
+    padding-left: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 9px;
+    transition: opacity ease 1s;
+}
+.scheduleBox .scheduleMain {
+    min-height: 20vh;
+    height: 60vh;
+    overflow-y: scroll;
+}
+.scheduleBox .scheduleMain > div {
+    border-bottom: 1px dashed #e8e8e8;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+}
+.scheduleBox .scheduleMain .itemContent {
+    height: 40vh;
+    position: relative;
+}
+.scheduleBox .scheduleMain .itemContent .plus {
+    position: absolute;
+    height: 20px;
+    bottom: -2%;
+    left: 0.8%;
+    display: none;
+    color: #3b6ff5;
+    cursor: pointer;
+    font-size: 20px;
+}
+.scheduleBox .scheduleMain .itemContent .block {
+    display: inline-block;
+}
+.scheduleBox .scheduleMain .classList:hover + .plus {
+    display: inline-block;
+}
+.scheduleBox .scheduleMain .plus:hover {
+    display: inline-block;
+}
+.scheduleBox .scheduleMain .defaultContent {
+    position: relative;
+    height: 10vh;
+}
+.scheduleBox .scheduleMain .defaultContent .classList {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.scheduleBox .scheduleMain .defaultContent .plus {
+    position: absolute;
+    height: 20px;
+    bottom: -8%;
+    left: 0.8%;
+    display: none;
+    color: #3b6ff5;
+    cursor: pointer;
+    font-size: 20px;
+}
+.scheduleBox .scheduleMain .defaultContent .block {
+    display: inline-block;
+}
+.scheduleBox .scheduleMain .classList:hover + .plus {
+    display: inline-block;
+}
+.scheduleBox .scheduleMain .plus:hover {
+    display: inline-block;
+}
+.scheduleBox .scheduleMain .classList {
+    width: 50px;
+    text-align: center;
+    color: #3b6ff5;
+    font-size: 14px;
+    padding: 30px 3px;
+    border-right: 1px solid #e8e8e8;
+    position: relative;
+    overflow: scroll;
+}
+.scheduleBox .scheduleMain .classList em {
+    height: 100%;
+    width: 5px;
+    background: rgba(59, 111, 245, 0.4);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.scheduleBox .scheduleMain .classList .closeCustom {
+    cursor: pointer;
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+.scheduleBox .scheduleMain .classList .closeCustom i {
+    color: #ccc;
+}
+.scheduleBox .scheduleMain .custom {
+    background: rgba(20, 118, 252, 0.1);
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+    padding: 0;
+}
+.scheduleBox .scheduleMain .custom .customContent {
+    width: 100%;
+    height: 100%;
+}
+.scheduleBox .scheduleMain .activeClassList {
+    width: 50px;
+    text-align: center;
+    color: #3b6ff5;
+    font-size: 14px;
+    padding: 30px 3px;
+    border-right: 1px solid #e8e8e8;
+    position: relative;
+    overflow: scroll;
+    background: rgba(59, 111, 245, 0.2);
+    box-shadow: 0px 6px 30px 0px rgba(59, 111, 245, 0.1);
+}
+.scheduleBox .scheduleMain .activeClassList em {
+    height: 100%;
+    width: 5px;
+    background: rgba(59, 111, 245, 0.4);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.scheduleBox .scheduleMain .scheduleList {
+    flex: 10;
+    -webkit-flex: 10;
+    -moz-flex: 10;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail {
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    position: relative;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail > div {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    border-right: 1px solid #e8e8e8;
+    text-align: center;
+    overflow: hidden;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail > div:nth-last-child(1) {
+    border-right: 0 none;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .deleteScheduleCol {
+    border-left: 2px dashed #3b6ff5;
+    border-right: 2px dashed #3b6ff5;
+    border-bottom: 2px dashed #3b6ff5;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .noDeleteScheduleCol {
+    border-left: 0 none;
+    border-right: 1px dashed #9e9e9e;
+    border-bottom: 0 none;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .courseBox {
+    margin: 3px 6px;
+    position: relative;
+    width: 94%;
+    height: 95%;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .courseBox :global .ant-popover {
+    z-index: 99 !important;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .scheduleCardNoClass {
+    position: absolute;
+    border: 1px solid #fff;
+    padding: 3px 0;
+    overflow: hidden;
+    font-size: 12px;
+    cursor: pointer;
+    min-width: 15px;
+    background: rgba(55, 152, 255, 0.1);
+    color: #3798ff;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .scheduleCardNoClass::-webkit-scrollbar {
+    display: none;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .scheduleCardNoClass .isLocked {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 0;
+    height: 0;
+    border-width: 0 7px 7px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: transparent transparent rgba(229, 73, 46, 0.7);
+    transform: rotate(-45deg);
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .scheduleCard {
+    position: relative;
+    position: absolute;
+    border: 1px solid #fff;
+    padding: 3px 0;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    overflow: hidden;
+    font-size: 12px;
+    cursor: pointer;
+    min-width: 15px;
+    background: rgba(55, 152, 255, 0.1);
+    color: #3798ff;
+}
+.scheduleBox
+    .scheduleMain
+    .scheduleList
+    .scheduleDetail
+    .scheduleCard
+    :global
+    .ant-popover-placement-left,
+.scheduleBox
+    .scheduleMain
+    .scheduleList
+    .scheduleDetail
+    .scheduleCard
+    :global
+    .ant-popover-placement-leftTop,
+.scheduleBox
+    .scheduleMain
+    .scheduleList
+    .scheduleDetail
+    .scheduleCard
+    :global
+    .ant-popover-placement-leftBottom {
+    left: 25% !important;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .scheduleCard .content {
+    height: 100%;
+    line-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30px);
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .scheduleCard .content .utilName {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 25px;
+    line-height: 3;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .scheduleCard .content .stuGroupName {
+    overflow: hidden;
+    width: 100%;
+    line-height: 1.5;
+    display: -webkit-box;
+    /* autoprefixer: off*/
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on*/
+    -webkit-line-clamp: 3;
+    overflow-wrap: break-word;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .scheduleCard::-webkit-scrollbar {
+    display: none;
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .scheduleCard .isLocked {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 0;
+    height: 0;
+    border-width: 0 7px 7px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: transparent transparent rgba(229, 73, 46, 0.7);
+    transform: rotate(-45deg);
+}
+.scheduleBox .scheduleMain .scheduleList .scheduleDetail .notRule {
+    background-image: repeating-linear-gradient(315deg, #f05e8f, #fff 10%) !important;
+}
+.scheduleBox .scheduleMain .placeholder {
+    height: 40vh;
+}
+.scheduleBox .fullStyle {
+    height: 80vh;
+}
+.notRuleCard :global {
+    width: 300px;
+    min-height: 80px;
+    padding: 20px 16px;
+}
+.notRuleCard :global .ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow {
+    display: none;
+}
+.detailModal {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 350px;
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.detailModal .detailTitle {
+    padding: 19px 20px;
+    overflow: hidden;
+    height: 100px;
+    background: rgba(55, 152, 255, 0.1);
+}
+.detailModal .detailTitle .detailTitleLeft {
+    float: left;
+}
+.detailModal .detailTitle .detailTitleLeft .detailTitleName {
+    color: #3798ff;
+}
+.detailModal .detailTitle .detailTitleLeft > span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 3px;
+}
+.detailModal .detailTitle .detailTitleLeft > span:nth-child(1) {
+    font-size: 18px;
+    width: 270px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.detailModal .detailTitle .detailTitleRight {
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    margin-right: 5%;
+}
+.detailModal .detailTitle .detailTitleRight > span {
+    font-size: 14px;
+    display: block;
+    color: #333;
+}
+.detailModal .detailTitle .detailTitleRight .lockButtonStyle {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 34px;
+    border: 1px solid #eee;
+    text-align: center;
+    color: #eee;
+    font-size: 15px;
+    cursor: pointer;
+}
+.detailModal .detailTitle .detailTitleRight .unLockButtonStyle {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 34px;
+    border: 1px solid #3b6ff5;
+    text-align: center;
+    color: #3b6ff5;
+    font-size: 15px;
+    cursor: pointer;
+}
+.detailModal .detailTitle .detailTitleRight .changeClassStyle {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 34px;
+    border: 1px solid #eee;
+    text-align: center;
+    color: #3b6ff5;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.detailModal .detailTitle .detailTitleRight .notChangeClassStyle {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 34px;
+    border: 1px solid #eee;
+    text-align: center;
+    color: #eee;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.detailModal .showTeacher {
+    padding: 19px 20px;
+    color: #333;
+    height: 200px;
+    overflow-y: scroll;
+}
+.detailModal .showTeacher > p > i {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.detailModal .showTeacher > p > span em {
+    display: inline-block;
+    padding: 0 5px;
+    margin-right: 5px;
+    font-style: normal;
+    background: #f3f3f3;
+    font-size: 12px;
+}
+.detailModal .operButton {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 25px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+    color: #3b6ff5;
+    font-size: 14px;
+}
+.detailModal .operButton > span {
+    cursor: pointer;
+}
+.detailModal .operButton > i {
+    margin-right: 5px;
+}
+.scheduleMain .noScheduleData {
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    line-height: 100px;
+    display: block !important;
+}
+.lockStyle {
+    margin-right: 5px;
+    color: #ddd;
+    cursor: pointer;
+}
+.lockClassStyle {
+    color: #ddd;
+    display: block;
+    cursor: pointer;
+}
+.unLockClassStyle {
+    color: #3b6ff5;
+    display: block;
+    cursor: pointer;
+}
+.statisticNum {
+    color: #3b6ff5;
+    display: block;
+    cursor: pointer;
+}
+.selectEditContent {
+    margin: 0 40px 30px;
+}
+.operButtonList {
+    text-align: center;
+}
+.operButtonList .modalBtn {
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 23px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+.operButtonList .cancelBtn {
+    color: #3b6ff5;
+    background: #fff;
+    margin-right: 10px;
+}
+.operButtonList .submitBtn {
+    background: #3b6ff5;
+    color: #fff;
+}
+.menuItem {
+    position: relative;
+}
+.menuItem .triangle {
+    display: block;
+    position: absolute;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-left: 6px solid #000;
+    right: -20px;
+    top: 8px;
+}
+.studentInput,
+.teacherInput {
+    min-width: 210px;
+    padding: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 65px;
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.studentInput .confirm,
+.teacherInput .confirm {
+    display: block;
+    background: #1476ff;
+    text-align: center;
+    line-height: 24px;
+    width: 48px;
+    color: #fff;
+    float: right;
+    border-radius: 4px;
+    margin-top: 20px;
+    height: 24px;
+}
+.teacherInput {
+    display: flex;
+}
+.teacherInput .searchPart {
+    width: auto;
+}
+.teacherInput .confirm {
+    margin-top: 4px;
+    margin-left: 5px;
+    padding: 0 12px;
+}
+.searchContent .form {
+    display: flex;
+    padding-top: 8px;
+}
+.searchContent .form :global .ant-select {
+    width: auto !important;
+}
+.searchContent .form :global .ant-select-selection {
+    border: none;
+    font-size: 12px;
+}
+.searchContent .form .search {
+    display: inline-block;
+}
+.searchContent .form .search :global .ant-select-selection {
+    border-bottom: 1px solid #f4f4f4;
+    border-radius: 0;
+    width: 150px;
+}
+.searchContent .form .search :global .ant-input {
+    border: none;
+    border-bottom: 1px solid #f4f4f4;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+}
+.searchContent .btnBox {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.searchContent .btnBox .cancel,
+.searchContent .btnBox .confirm {
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;
+    font-family: AlibabaPuHuiTiR;
+    line-height: 28px;
+    padding: 0 16px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.searchContent .btnBox .cancel {
+    background: #e8e8e8;
+    color: rgba(0, 0, 0, 0.65);
+    margin-right: 8px;
+}
+.searchContent .btnBox .confirm {
+    background: #1476ff;
+    color: #fff;
+}
+.customPopover {
+    cursor: pointer;
+}
+.copyDayModal {
+    color: #7b7f94;
+}
+.copyDayModal .selectPart .label {
+    padding-right: 20px;
+}
+.copyDayModal .describe {
+    font-size: 12px;
+    margin: 12px 0;
+}
+.copyDayModal .btnBox {
+    text-align: right;
+}
+.copyDayModal .btnBox .cancel {
+    margin-right: 12px;
+    color: #7b7f94;
+    background: #edeef2;
+    border-color: #edeef2;
+}
+.ruleMessageStyle {
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

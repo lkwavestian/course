@@ -1,0 +1,37 @@
+@media print{
+    /* #export {
+        display: none;
+    } */
+    .export{
+        display: none; 
+    }
+}
+*{
+    -webkit-print-color-adjust: exact;
+}
+.printContent{
+    width: 794px;
+    margin: 0 auto;
+    position: relative;
+    .export{
+        position: fixed;
+        top: 50px;
+        right: 150px;
+        // padding: 15px;
+        // border-radius: 60%;
+        // border: 1px solid #ccc;
+        // font-weight: 700;
+        text-align: center;
+        line-height: 60px;
+        white-space: wrap;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        outline: none;
+        z-index: 20;
+        border: 1px solid #ccc;
+        background: #fff;
+        cursor: pointer;
+    }
+}
+

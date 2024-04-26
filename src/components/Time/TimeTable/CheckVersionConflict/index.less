@@ -1,0 +1,169 @@
+.checkVersionConflict {
+    width: 480px;
+    position: absolute;
+    top: -150px;
+    right: 100%;
+    z-index: 1031;
+    background: #fff;
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 14px 16px;
+    cursor: default;
+    .header {
+        font-size: 20px;
+        padding: 10px 0 18px;
+        text-align: center;
+        position: relative;
+        border-bottom: 1px solid #e7e8eb;
+        .close {
+            position: absolute;
+            left: 0;
+            cursor: pointer;
+        }
+    }
+    .conflictDetail {
+        height: 80vh;
+        overflow: scroll;
+    }
+
+    .conflictContent {
+        padding: 12px 0;
+        border-bottom: 1px solid #e7e8eb;
+        text-align: left;
+        .title {
+            display: block;
+            color: #01113d;
+            white-space: pre-wrap;
+        }
+        .conflictItem {
+            display: flex;
+            font-size: 12px;
+            margin-top: 12px;
+            .icon {
+                color: #ff4d4f;
+            }
+            .text {
+                margin-left: 5px;
+                .item {
+                    color: rgba(0, 0, 0, 0.65);
+                    background: #f3f3f3;
+                    padding: 0 4px;
+                    border-radius: 2px;
+                    margin: 0 2px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .addressEmpty {
+            .icon {
+                color: #f8b616;
+            }
+        }
+    }
+    .totalMsgWrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .total {
+        display: block;
+        font-size: 12px;
+        line-height: 28px;
+        text-align: left;
+    }
+    .arrow {
+        border-left: 8px solid #fff;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid transparent;
+        display: block;
+        position: absolute;
+        top: 170px;
+        right: -16px;
+    }
+}
+.showPopover {
+    display: block;
+}
+.tabTitle {
+    text-align: left;
+}
+.tab {
+    margin: 0 auto;
+    width: 400px;
+    // height: 200px;
+}
+.tr {
+    font-weight: 700;
+}
+.td {
+    border: solid #e8e8e8 1px;
+    box-sizing: border-box;
+}
+.textMessage {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+}
+.textMessageIcon {
+    color: #f8b616;
+    margin-right: 8px;
+}
+.textMessage p {
+    text-align: start;
+}
+
+.hidePopover {
+    display: none;
+}
+
+.getGradeStudentNoClassExcelOut {
+    width: 400px;
+    margin: 0 auto;
+}
+.getGradeStudentNoClassExcelOut a {
+    padding-bottom: 10px;
+    float: left;
+}
+
+.downloadStu {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection {
+            height: 36px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}

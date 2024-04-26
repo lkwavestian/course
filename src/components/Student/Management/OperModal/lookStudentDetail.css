@@ -1,0 +1,349 @@
+.detailPage {
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 16px 24px 110px;
+}
+.detailPage .personalInformationCard {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+.detailPage .personalInformation,
+.detailPage .personalInformationCard {
+  margin-bottom: 15px;
+}
+.detailPage .personalInformation .infoTitle,
+.detailPage .personalInformationCard .infoTitle {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.detailPage .personalInformation .infoTitle .editPersonalInfo,
+.detailPage .personalInformationCard .infoTitle .editPersonalInfo {
+  cursor: pointer;
+  float: right;
+  color: #4d7fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+}
+.detailPage .personalInformation .infoTitle .editPersonalInfo i,
+.detailPage .personalInformationCard .infoTitle .editPersonalInfo i {
+  margin-right: 5px;
+}
+.detailPage .personalInformation .infoUtil,
+.detailPage .personalInformationCard .infoUtil {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.detailPage .personalInformation .infoUtil span,
+.detailPage .personalInformationCard .infoUtil span {
+  display: block;
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  color: #000;
+  font-size: 14px;
+}
+.detailPage .personalInformation .infoUtil span em,
+.detailPage .personalInformationCard .infoUtil span em {
+  font-style: normal;
+  color: #666;
+  margin-left: 5px;
+}
+.detailPage .personalInformation .infoUtil span em.resetPwd,
+.detailPage .personalInformationCard .infoUtil span em.resetPwd {
+  color: #4d7fff;
+  font-size: 14px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+.detailPage .personalInformation .infoUtil span em.resetWechat,
+.detailPage .personalInformationCard .infoUtil span em.resetWechat {
+  color: #1CCC54;
+  font-size: 14px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+.detailPage .personalInformation .identityTabs,
+.detailPage .personalInformationCard .identityTabs {
+  display: block;
+}
+.detailPage .personalInformation .identityTabs .tabMenu,
+.detailPage .personalInformationCard .identityTabs .tabMenu {
+  border: 1px solid #ccc;
+  color: #ccc;
+  border-radius: 8px;
+  margin-right: 8px;
+  padding: 3px 6px;
+}
+.detailPage .personalInformation .identityTabs .activeMenu,
+.detailPage .personalInformationCard .identityTabs .activeMenu {
+  border: 1px solid #3b6ff5;
+  border-radius: 8px;
+  margin-right: 8px;
+  background: #3b6ff5;
+  color: #fff;
+  padding: 3px 6px;
+}
+.detailPage .personalInformation .recordAll .title,
+.detailPage .personalInformationCard .recordAll .title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.detailPage .personalInformation .recordAll .title .time,
+.detailPage .personalInformationCard .recordAll .title .time {
+  margin-right: 16px;
+}
+.detailPage .personalInformation .recordAll .item,
+.detailPage .personalInformationCard .recordAll .item {
+  margin-bottom: 12px;
+}
+.detailPage .personalInformation .recordAll .item .icon,
+.detailPage .personalInformationCard .recordAll .item .icon {
+  margin-right: 2px;
+}
+.detailPage .personalInformation .recordAll .item .sT,
+.detailPage .personalInformationCard .recordAll .item .sT {
+  margin-right: 6px;
+}
+.detailPage .personalInformation .recordAll .item .sB,
+.detailPage .personalInformationCard .recordAll .item .sB {
+  color: #969fa9;
+}
+.detailPage .personalInformation .recordAll .item .preview,
+.detailPage .personalInformationCard .recordAll .item .preview {
+  margin: 0 16px;
+}
+.detailPage .personalInformation .recordAll .item:last-child,
+.detailPage .personalInformationCard .recordAll .item:last-child {
+  margin-bottom: 0;
+}
+.detailPage .personalInformation .recordAll .itemFile,
+.detailPage .personalInformationCard .recordAll .itemFile {
+  display: flex;
+}
+.detailPage .personalInformation .recordAll .itemFile .file,
+.detailPage .personalInformationCard .recordAll .itemFile .file {
+  display: block;
+  margin-bottom: 6px;
+}
+.buttonList {
+  text-align: right;
+  margin-top: 20px;
+}
+.buttonList .saveBtn {
+  display: inline-block;
+  padding: 5px 20px;
+  background: #3b6ff5;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+.buttonList .cancelBtn {
+  display: inline-block;
+  padding: 5px 20px;
+  background: #fff;
+  color: #3b6ff5;
+  border: 1px solid #3b6ff5;
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.operationList {
+  border-top: 1px solid #ddd;
+  padding: 35px;
+  position: fixed;
+  width: 565px;
+  bottom: 0;
+  height: 100px;
+  background: #fff;
+}
+.operationList .tipsInfo {
+  color: #bebebe;
+  font-size: 13px;
+  margin-right: 15px;
+}
+.operationList .tipsInfo em {
+  font-style: normal;
+  color: #3b6ff5;
+  cursor: pointer;
+}
+.operationList .gotoHomepage {
+  color: #4d7fff;
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+.operationList .editBtn {
+  display: inline-block;
+  padding: 8px 23px;
+  background: #3b6ff5;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+.familyInfoCard {
+  border: 1px solid #ccc;
+  padding: 15px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.familyInfoCard .familyMember em {
+  font-style: normal;
+}
+.familyInfoCard .operationBtn {
+  float: right;
+  font-size: 18px;
+  color: #3b6ff5;
+}
+.familyInfoCard .operationBtn i {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.familyInfoCard :global(.ant-form-item) {
+  display: flex;
+  margin: 5px 0;
+}
+.cardOperation {
+  text-align: right;
+  margin-top: 10px;
+}
+.cardOperation .cancelBtn {
+  border: 1px solid #dddddd;
+  color: #666;
+  font-size: 14px;
+  padding: 4px 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cardOperation .saveBtn {
+  background: #3b6ff5;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.selectStyle > div {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.selectStyle > div :global .ant-select-selection__rendered {
+  line-height: 36px;
+}
+.datePickerStyle > div > input {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.inputStyle {
+  border-radius: 8px !important;
+  width: 165px;
+  height: 36px;
+}
+.drawerStyle > div > div > div > div:nth-child(2) {
+  padding: 0 !important;
+}
+.provinceStyle > input {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.closeDrawerBtn {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+.initLoad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.englishName :global .ant-input {
+  width: 100px;
+  border-radius: 8px;
+  height: 36px;
+}
+.englishName > div {
+  display: inline-block;
+}
+.teacherChildOrNot {
+  display: block;
+  width: auto;
+  height: 24px;
+  background: rgba(70, 216, 131, 0.1);
+  color: #46d883;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 5px;
+  padding: 4px;
+}
+.yunguFamilyOrNot {
+  margin-left: 8px;
+  display: block;
+  width: auto;
+  height: 24px;
+  background: rgba(55, 152, 255, 0.1);
+  color: #3798ff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 5px;
+  padding: 4px;
+}
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.cardHeader .parentEmployeeType {
+  display: block;
+  width: 74px;
+  height: 24px;
+  background: rgba(70, 216, 131, 0.1);
+  color: #46d883;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+.cardHeader .familyMember {
+  display: flex;
+  align-items: center;
+}
+.headerDom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.streetListShow :global .ant-select-selection {
+  border-radius: 8px;
+  height: 36px;
+}
+.streetListShow :global .ant-select-selection__rendered {
+  line-height: 36px;
+}
+.personalInformation :global .ant-form-inline .ant-form-item,
+.personalInformationCard :global .ant-form-inline .ant-form-item {
+  margin: 0;
+}
+.personalInformation :global .ant-row .ant-form-item,
+.personalInformationCard :global .ant-row .ant-form-item {
+  margin: 0 !important;
+}
+.drawerStyle :global .ant-drawer-header {
+  padding: 16px 24px;
+}

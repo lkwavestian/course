@@ -1,0 +1,278 @@
+.feeManageBox {
+    margin: 0 24px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection {
+            height: 36px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+.topLeft {
+    width: 29%;
+    display: flex;
+    justify-content: space-around;
+    :global {
+        .ant-select-selection {
+            border-radius: 5px !important;
+        }
+    }
+}
+.topRight {
+    width: 22%;
+    display: flex;
+    justify-content: space-around;
+    :global {
+        .ant-btn {
+            width: auto;
+            border-radius: 5px;
+        }
+    }
+}
+.tips {
+    :global {
+        .ant-tooltip-inner {
+            background: #fafafa;
+            color: black;
+        }
+        .ant-tooltip-arrow {
+            background: #fafafa;
+        }
+    }
+}
+.courseInfo {
+    width: 960px !important;
+    top: 12% !important;
+    /* max-height: 628px;
+    overflow: auto; */
+    .baseInfo {
+        margin: 0px 0px 10px 60px;
+        & > p {
+            & > span:nth-child(1) {
+                display: inline-block;
+                width: 120px;
+                text-align: right;
+            }
+        }
+    }
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection {
+            height: 36px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+    .feeWrapper {
+        display: flex;
+        .feeText {
+            margin-top: 5px;
+        }
+        .feeContentWrapper {
+            margin-left: 21px;
+        }
+        .feeRadioWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .feeRadio {
+                line-height: 32px;
+                height: 32px;
+                display: flex;
+                :global {
+                    .ant-radio-wrapper {
+                        margin-top: 5px;
+                        margin-right: 50px;
+                    }
+                }
+                .feeItemWrapper {
+                    display: flex;
+                    gap: 30px;
+                    .feeItem {
+                        display: flex;
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.courseBaseInfo {
+    margin: 0 0px 10px 60px;
+    & > p {
+        & > span:nth-child(1) {
+            display: inline-block;
+            width: 172px;
+            text-align: right;
+        }
+    }
+}
+.searchCourse {
+    width: 200px;
+    height: 30px;
+    :global {
+        .ant-input {
+            border-radius: 5px !important;
+        }
+    }
+}
+.upLoad {
+    // display: flex;
+    margin: 20px auto;
+    width: 100%;
+    & > span:nth-child(2) {
+        margin-left: 40px;
+    }
+}
+.btn {
+    width: 112px;
+    border-radius: 20px;
+    color: #3778ff;
+    border: 1px solid #3778ff;
+    margin: 0 5px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.text {
+    display: block;
+    text-align: center;
+}
+.desc {
+    text-align: center;
+    position: relative;
+    bottom: 28px;
+    display: flex;
+    justify-content: space-around;
+}
+.feeContent {
+    max-height: 510px;
+    overflow: auto;
+}
+.fileBtn {
+    :global {
+        .ant-btn {
+            border-radius: 5px !important;
+        }
+    }
+}
+.importFees {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection {
+            height: 36px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+.remark {
+    display: flex;
+    :global {
+        .ant-input {
+            height: auto !important;
+        }
+    }
+}

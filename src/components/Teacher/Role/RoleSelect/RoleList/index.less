@@ -1,0 +1,161 @@
+.roleList {
+    background-color: rgb(251, 251, 252);
+    height: calc(~'100vh - 200px');
+    overflow: scroll;
+    .roleHead {
+        // width: 100%;
+        height: 44px;
+        background-color: #fff;
+        font-family: PingFangSC-Medium;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px 0 12px;
+        box-shadow: 0 1px rgba(1, 17, 61, 0.07);
+        position: relative;
+        .roleIcon {
+            font-size: 16px;
+        }
+        .roleHeadName {
+            font-size: 14px;
+            font: #01113d;
+            position: absolute;
+            left: 50px;
+        }
+        .roleAdd {
+            color: #0445fc;
+            line-height: 20px;
+            font-size: 12px;
+            .systemRoleList {
+                z-index: 10;
+                width: 150px;
+                height: 400px;
+                overflow: scroll;
+                display: flex;
+                position: absolute;
+                flex-direction: column;
+                right: 0;
+                text-align: center;
+                padding: 7px 0;
+                border-radius: 5px;
+                background: #ffffff;
+                box-shadow: 0px 4px 16px 0px rgba(1, 17, 61, 0.08);
+                .systemBuiltRoleItem {
+                    font-family: PingFangSC-Regular;
+                    color: #01113d;
+                    font-size: 14px;
+                    line-height: 36px;
+                    height: 36px;
+                    opacity: 0.85;
+                    &:hover {
+                        background-color: rgba(4, 69, 252, 0.054366);
+                    }
+                }
+            }
+            .createRole {
+                border-top: 1px solid rgb(219, 222, 227);
+                color: #0445fc;
+                height: 36px;
+                line-height: 36px;
+                opacity: 0.85;
+            }
+        }
+    }
+    .roleItemList {
+        .roleItem {
+            height: 36px;
+            line-height: 36px;
+            padding-left: 50px;
+        }
+        .roleItemSelect {
+            background: rgba(4, 69, 252, 0.05);
+            color: #0445fc;
+        }
+    }
+}
+
+.managerRoleModal {
+    .plus {
+        position: absolute;
+        top: 40px;
+        right: 100px;
+    }
+
+    :global {
+        .editable-cell {
+            position: relative;
+        }
+
+        .ant-table-tbody > .ant-table-row > td {
+            padding: 5px 16px !important;
+        }
+
+        .editable-cell-value-wrap {
+            height: 29px;
+            // height: 46px;
+            padding: 5px 12px;
+            cursor: pointer;
+        }
+
+        .editable-row:hover .editable-cell-value-wrap {
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            padding: 4px 11px;
+        }
+
+        .ant-form-item-children {
+            .ant-input {
+                height: 28px;
+            }
+        }
+        /*  .ant-form-item {
+            position: absolute;
+            top: 40px;
+            bottom: -6px;
+        } */
+        .ant-modal-content {
+            top: -50px;
+        }
+        /*  .ant-table-row-cell-break-word {
+            padding-top: 0;
+            padding-bottom: 0;
+        } */
+        .ant-modal-body {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+        /* .ant-form-item-control-wrapper {
+            height: 28px;
+            padding: 0;
+            margin: 0;
+            top: 0;
+        }
+        .ant-form-item-control {
+            height: 28px;
+            padding: 0;
+            margin: 0;
+            top: 0;
+        }
+        .ant-form-item-children {
+            height: 28px;
+            padding: 0;
+            margin: 0;
+            top: 0;
+        } */
+    }
+}
+
+.insertRoleModal {
+    :global {
+        .ant-modal-body {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .ant-modal-footer {
+            padding-top: 0 !important;
+            > div {
+                text-align: center;
+            }
+        }
+    }
+}

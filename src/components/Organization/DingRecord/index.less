@@ -1,0 +1,100 @@
+.frameworkPage {
+    margin: 24px;
+    .cogradientOrg {
+        text-align: right;
+        margin-bottom: 24px;
+        span {
+            padding: 0 14px;
+            display: inline-block;
+            border-radius: 8px;
+            background: #3b6ff5;
+            color: #fff;
+            margin: 0 10px;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+            height: 36px;
+            line-height: 36px;
+            i {
+                font-size: 18px;
+                vertical-align: middle;
+                margin-right: 1px;
+                // line-height: 26px;
+               
+            }
+            &.reloadBtn {
+                background: #fff;
+                color: #3b6ff5;
+                border: 1px solid #3b6ff5;
+                line-height: 34px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.downloadUrl {
+    font-size: 18px;
+    cursor: pointer;
+    color: #3b6ff5;
+    i {
+        font-size: 18px;
+    }
+}
+.lookRecordLog {
+    //border-right: 1px solid #ddd;
+    //padding-right: 8px;
+    color: #3b6ff5;
+    cursor: pointer;
+    text-decoration: none;
+}
+.lookFailLog {
+    color: #3b6ff5;
+    cursor: pointer;
+    margin-left: 8px;
+    text-decoration: none;
+}
+
+//翻页器样式
+.paginationStyle {
+    margin: 0 auto;
+    background: #fff;
+    padding: 2% 0;
+    &:after {
+        content: '';
+        visibility: hidden;
+        clear: both;
+        display: block;
+    }
+    .pageContainer {
+        float: right;
+        margin-right: 20px;
+    }
+}
+
+.operationList {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    .modalBtn {
+        border: 1px solid rgba(59, 111, 245, 1);
+        border-radius: 8px;
+        padding: 6.5px 14px;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .submitBtn {
+        background: #3b6ff5;
+        color: #fff;
+    }
+    a {
+        flex: 1;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        text-align: right;
+    }
+}

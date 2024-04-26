@@ -1,0 +1,193 @@
+.Student {
+  width: 96.46%;
+  margin: 16px auto 0 auto;
+}
+.Student .left {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.Student .left::-webkit-scrollbar {
+  display: none;
+}
+.Student .left .classList {
+  background: #fff;
+  border-right: 8px;
+  margin-bottom: 12px;
+}
+.Student .left .classList .item {
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #f4f4f4;
+  display: block;
+  line-height: 58px;
+  padding: 0 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  width: 100%;
+  display: inline-block;
+}
+.Student .left .classList .item:last-child {
+  border-bottom: none;
+}
+.Student .left .classList .active {
+  color: #3778ff;
+}
+.Student .left .groupDetail {
+  background: #fff;
+  padding: 24px 22px;
+  border-radius: 8px;
+}
+.Student .left .groupDetail .title {
+  display: block;
+  color: #000;
+  font-size: 22px;
+}
+.Student .left .groupDetail .detailItem {
+  display: block;
+  margin-top: 16px;
+}
+.Student .left .groupDetail .detailItem .label {
+  display: block;
+  font-size: 16px;
+  color: #000;
+}
+.Student .right {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 13px 24px;
+}
+.Student .right .header {
+  margin-bottom: 13px;
+}
+.Student .right .header .title {
+  font-size: 22px;
+  color: #000;
+  margin-right: 24px;
+}
+.Student .right .header .item {
+  cursor: pointer;
+}
+.Student .right .header .item:last-child {
+  margin-left: 21px;
+}
+.Student .right .header .item .number {
+  font-size: 22px;
+  color: #464c56;
+  margin-right: 2px;
+}
+.Student .right .header .item .text {
+  font-size: 12px;
+  color: #969fa9;
+}
+.Student .right .header .active .number,
+.Student .right .header .active .text {
+  color: #3778ff;
+}
+.Student .right .screenAndAction {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.Student .right .screenAndAction .input {
+  display: inline-block;
+  width: 26%;
+  font-size: 14px;
+}
+.Student .right .screenAndAction .input :global .ant-input {
+  border-radius: 8px;
+  font-size: 14px;
+  height: 36px;
+}
+.Student .right .screenAndAction .operation button,
+.Student .right .screenAndAction .operation a {
+  border-radius: 8px;
+  margin-left: 10px;
+  height: 36px !important;
+  width: auto !important;
+  padding: 0 14px !important;
+}
+.Student .right .pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+}
+.Student .right .pagination .total {
+  display: inline-block;
+  color: #969fa9;
+}
+.Student .right .notShow {
+  display: none;
+}
+.Student .right .action .disabled {
+  pointer-events: none;
+  color: #999;
+}
+.adjustTime .item {
+  margin-right: 12px;
+}
+.adjustTime .selectStyle {
+  width: 70%;
+}
+.adjustTime .selectStyle > div {
+  border-radius: 20px !important;
+}
+.adjustTime .option {
+  color: #969fa9;
+}
+.adjustTime .option .time {
+  margin: 0 6px;
+}
+.removeContainer .title {
+  display: block;
+  width: 100%;
+  color: #464c56;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.removeContainer button {
+  border-radius: 8px;
+  height: 36px !important;
+  width: auto !important;
+  padding: 0 14px !important;
+}
+.removeContainer .title {
+  display: block;
+  width: 100%;
+  color: #464c56;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.removeContainer button {
+  border-radius: 8px;
+  height: 36px !important;
+  width: auto !important;
+  padding: 0 14px !important;
+}
+.paymentNotice :global .ant-modal-confirm-title {
+  text-align: center;
+}
+.paymentNotice .title {
+  display: block;
+  width: 100%;
+  color: #464c56;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.paymentNotice button {
+  border-radius: 8px;
+  height: 36px !important;
+  width: auto !important;
+  padding: 0 14px !important;
+}
+.tableStyle :global .ant-table-thead > tr > th,
+.tableStyle :global .ant-table-tbody > tr > td {
+  padding: 9px;
+}

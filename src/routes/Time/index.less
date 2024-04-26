@@ -1,0 +1,34 @@
+body {
+    background: #f1f4fe;
+    font-family: PingFangSC-Regular;
+}
+* {
+    // touch-action: none !important;
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+}
+.mainContent {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.flash {
+    background: red !important;
+    animation: flash 300ms 8;
+}
+@keyframes flash {
+    from {
+        background-color: #fff;
+    }
+    50% {
+        background-color: #1476ff;
+        color: #fff;
+    }
+    to {
+        background-color: #fff;
+    }
+}

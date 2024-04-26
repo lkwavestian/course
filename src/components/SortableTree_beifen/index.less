@@ -1,0 +1,60 @@
+.treeWrapper {
+    height: calc(96%);
+    .switchOnlyOrg {
+        margin: 15px 0 10px 15px;
+        span {
+            margin-left: 10px;
+            font-size: 14px;
+            color: #666;
+            vertical-align: middle;
+        }
+    }
+    .sortableTree {
+        width: 100%;
+    }
+    .searchInput {
+        & > input {
+            border-radius: 8px !important;
+        }
+    }
+}
+.setButton {
+    cursor: pointer;
+    vertical-align: middle;
+    i {
+        color: #333;
+    }
+}
+.activeButton {
+    cursor: pointer;
+    vertical-align: middle;
+    i {
+        color: #3b6ff5;
+    }
+}
+
+:global {
+    .rst__moveHandle,
+    .rst__loadingHandle {
+        background-image: url('../../assets/tree.png') !important;
+        background-size: 20px !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-color: #eee !important;
+        border: 1px solid #eee !important;
+    }
+    .rst__rowContents {
+        border: 1px solid #eee !important;
+        padding: 0 5px 0 10px !important;
+        min-width: 20px !important;
+        background-color: transparent !important;
+    }
+    .rst__rowSearchFocus {
+        outline: dashed 1px #3b6ff5 !important;
+        color: #3b6ff5;
+    }
+    .rst__rowSearchMatch {
+        outline: dashed 1px #3b6ff5 !important;
+        color: #3b6ff5;
+    }
+}

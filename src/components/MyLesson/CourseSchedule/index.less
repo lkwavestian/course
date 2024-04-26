@@ -1,0 +1,157 @@
+.courseSchedule {
+    padding: 12px 24px 0;
+    .head {
+        overflow: hidden;
+        .title {
+            font-size: 18px;
+            color: #666;
+            font-family: PingFangSC-medium;
+        }
+        .checkSchedule {
+            color: #4d7fff;
+            padding: 0 12px;
+            cursor: pointer;
+        }
+        .expend {
+            color: #4d7fff;
+            float: right;
+            cursor: pointer;
+            .iconD {
+                display: inline-block;
+                transform: rotate(180deg);
+                transition: all 0.3s linear;
+            }
+            .iconU {
+                display: inline-block;
+                transform: rotate(0);
+                transition: all 0.3s linear;
+            }
+        }
+        .scheduleMention {
+            display: block;
+            color: #999;
+            font-size: 12px;
+        }
+    }
+    .schedule {
+        height: 30vh;
+        //    background: #666;
+        border-radius: 6px;
+        //    overflow: scroll;
+        .produced {
+            border-radius: 6px;
+            height: 100%;
+            background: #fafafa;
+            border: 1px solid rgba(230, 230, 230, 1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .text,
+            .toSchedule {
+                display: block;
+            }
+            .text {
+                color: #999;
+                padding-bottom: 12px;
+            }
+            .toSchedule {
+                display: inline-block;
+                color: #4d7fff;
+                border-bottom: 1px solid #4d7fff;
+            }
+        }
+        .scheduleContent {
+            display: flex;
+            border-radius: 6px;
+            border: 1px solid rgba(230, 230, 230, 1);
+            height: 30vh;
+            // overflow: scroll;
+            background: #f1f2f3;
+            .week {
+                flex: 1;
+                text-align: center;
+                .header {
+                    border-right: 1px solid #e6e6e6;
+                    border-bottom: 1px solid #e6e6e6;
+                    display: block;
+                    background: #fff;
+                    line-height: 5vh;
+                }
+                .tds {
+                    display: block;
+                    line-height: 48px;
+                    height: 48px;
+                    border-right: 1px solid #e6e6e6;
+                    border-bottom: 1px solid #e6e6e6;
+                    background: #fff;
+                    .td {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: #f1f2f3;
+                        border: 1px solid #fff;
+                        pointer-events: none;
+                        color: #fff;
+                        font-size: 12px;
+                    }
+                    .optional {
+                        background: #fff;
+                        pointer-events: auto;
+                        cursor: pointer;
+                    }
+                    .partOptional {
+                        background: rgba(77, 127, 255, 0.2);
+                        pointer-events: auto;
+                        cursor: pointer;
+                    }
+                    .forbidden {
+                        background: rgba(2, 88, 191, 0.4);
+                        // pointer-events:none
+                        pointer-events: auto;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .week:nth-last-child(1) .header,
+            .td {
+                border-right: none;
+            }
+            .noData {
+                text-align: center;
+                width: 100%;
+                line-height: 30vh;
+            }
+            .example {
+                line-height: 30vh;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .scheduleContent::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+.scheduleModal {
+    :global {
+        .ant-modal {
+            padding-bottom: 0;
+        }
+        .ant-modal-content {
+            height: 100vh;
+            .ant-modal-body {
+                height: 100%;
+                padding: 24px 0;
+            }
+        }
+        .ant-modal-close {
+            top: 10px;
+            right: 15px;
+            .ant-modal-close-x {
+                font-size: 28px;
+            }
+        }
+    }
+}

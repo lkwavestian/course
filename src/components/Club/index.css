@@ -1,0 +1,274 @@
+.clubTablePage {
+  margin: 20px auto;
+  width: 98%;
+  min-height: 90vh;
+  background: #fff;
+  padding: 2% 0;
+}
+.clubTablePage .main {
+  background: #fff;
+  border-radius: 10px;
+}
+.clubTablePage .main .searchHeader {
+  margin: 0 auto;
+  padding: 0 2%;
+  display: inline-block;
+}
+.clubTablePage .main .searchHeader .activeMoreCondition {
+  display: inline-block;
+  width: 80px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px 9px;
+  text-align: center;
+  border: 1px solid #3b6ff5;
+  background: #3b6ff5;
+  color: #fff;
+  cursor: pointer;
+}
+.clubTablePage .main .searchHeader .showMoreCondition {
+  display: inline-block;
+  width: 80px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px 9px;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+  height: 32px;
+  vertical-align: middle;
+}
+.clubTablePage .main .searchHeader .searchDate {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 8px;
+}
+.clubTablePage .main .searchHeader .searchDate .searchDateMain {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+.clubTablePage .main .searchHeader :global .ant-select-selection {
+  border-radius: 8px !important;
+}
+.clubTablePage .main .operButton {
+  float: right;
+  margin-right: 2%;
+}
+.clubTablePage .main .operButton a {
+  background: #3a6ff5;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.clubTablePage .main .operButton .operBtnList .whiteButton {
+  display: inline-block;
+  width: 40px;
+  height: 40xp;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #3b6ff5;
+  color: #3b6ff5;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.clubTablePage .main .operButton .operBtnList .blueButton {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: #3b6ff5;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.clubTablePage .main .operButton .operBtnList .iconStyle {
+  display: inline-block;
+  line-height: 38px;
+  font-size: 16px;
+}
+.clubTablePage .main .moreCondition {
+  padding: 1% 0;
+  background: #ffffff;
+  box-shadow: 0px 6px 25px 0px rgba(59, 111, 245, 0.12);
+  width: 600px;
+  margin-left: 2%;
+}
+.clubTablePage .main .moreCondition .conditionList > div {
+  border: 0 none !important;
+}
+.clubTablePage .main .moreCondition .searchTeacher > div {
+  border: 0 none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0 !important;
+}
+.clubTablePage .main .moreCondition .searchInputStyle > input {
+  border: 0 none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0 !important;
+}
+.clubTablePage .main .scheduleContain {
+  clear: both;
+  width: 98vw;
+  overflow-x: scroll;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+.clubTablePage .main .scheduleContain::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.selectStyle {
+  margin-right: 8px;
+}
+.selectStyle > div {
+  border-radius: 20px !important;
+}
+.tipsText {
+  color: #3b6ff5;
+  font-size: 14px;
+}
+.batchOperButton p {
+  color: #999;
+  font-size: 14px;
+}
+.paginationStyle {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 98%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2% 0;
+  z-index: 99;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 12px rgba(59, 111, 245, 0.1);
+}
+.paginationStyle:after {
+  content: '';
+  visibility: hidden;
+  clear: both;
+  display: block;
+}
+.paginationStyle .pageContainer {
+  float: right;
+  margin-right: 20px;
+}
+.tagPlaceholder {
+  display: block;
+  width: 120px;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  line-height: 32px;
+  background: #fff;
+  padding-left: 12px;
+  pointer-events: none;
+}
+.tagPlaceholder .close {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.generateStyle,
+.downloadStyle,
+.errorStyle,
+.batchStyle {
+  width: 320px !important;
+}
+.generateStyle :global .ant-btn,
+.downloadStyle :global .ant-btn,
+.errorStyle :global .ant-btn,
+.batchStyle :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.generateStyle :global .ant-btn.ant-btn-primary,
+.downloadStyle :global .ant-btn.ant-btn-primary,
+.errorStyle :global .ant-btn.ant-btn-primary,
+.batchStyle :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.generateStyle .input,
+.downloadStyle .input,
+.errorStyle .input,
+.batchStyle .input {
+  width: 100px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+.errorStyle {
+  width: 450px !important;
+}
+.downloadStyle {
+  width: 420px !important;
+}
+.downloadStyle .input {
+  width: 60px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+.importFees :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.importFees :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.importFees :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.importFees :global .ant-select-selection {
+  height: 36px !important;
+}
+.importFees :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.importFees :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.importFees :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.upLoad {
+  margin: 20px auto;
+  width: 100%;
+}
+.upLoad > span:nth-child(2) {
+  margin-left: 40px;
+}
+.desc {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  right: 6px;
+  display: flex;
+  justify-content: space-around;
+}
+.fileBtn :global .ant-btn {
+  border-radius: 5px !important;
+}

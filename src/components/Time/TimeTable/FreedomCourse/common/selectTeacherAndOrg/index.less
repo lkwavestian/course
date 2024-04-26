@@ -1,0 +1,65 @@
+.searchMain {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 3px 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .addButton {
+        background: #eee;
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 5px;
+        display: inline-block;
+        border: 1px dashed #aaa;
+        cursor: pointer;
+        width: 60px;
+        height: 32px;
+        line-height: 32px;
+        color: #3b6ff5;
+    }
+}
+.selectStyle {
+    flex: 1;
+    & > div {
+        border: 0 none !important;
+        box-shadow: 0 0 0 transparent !important;
+    }
+}
+
+.lessonViewSearchMain {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #ddd;
+    padding: 3px 5px;
+    display: flex;
+    align-items: center;
+
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    transition: all 0.3s;
+    .lessonViewText {
+        width: 100%;
+        line-height: 20px;
+        white-space: nowrap;
+        text-align: left;
+        text-overflow: ellipsis;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .placeholder {
+        color: #bfbfbf;
+    }
+    .textWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text {
+        color: rgba(0, 0, 0, 0.65);
+    }
+}

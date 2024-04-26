@@ -1,0 +1,137 @@
+.complateSchedule {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .title {
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+    .describe {
+        text-align: center;
+        color: #999;
+    }
+    .scheduleTime {
+        display: flex;
+        font-size: 20px;
+        color: #666;
+        padding: 0 3% 15px;
+        .time {
+            padding-right: 40px;
+            font-weight: 300;
+            cursor: pointer;
+            transition: font-size 0.3s ease 0s;
+        }
+        .checked {
+            font-size: 24px;
+            color: #4d7fff;
+            font-weight: 500;
+        }
+    }
+    .week {
+        display: flex;
+        height: 36px;
+        .placeholder {
+            width: 5%;
+            height: 60px;
+            display: inline-block;
+            z-index: -1;
+        }
+        .weekDay {
+            text-align: center;
+            // height: 60px;
+            font-size: 20px;
+            display: inline-block;
+            flex: 1;
+        }
+    }
+    .day {
+        box-shadow: 0px 15px 24px 0px rgba(59, 111, 245, 0.1);
+        .weekDay {
+            font-size: 16px;
+        }
+    }
+    .scheduleContent {
+        flex: 1;
+        position: relative;
+        overflow: scroll;
+        .scheduleContentCenter {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            top: -54px;
+            .timeLine {
+                width: 6%;
+                padding-top: 10px;
+                float: left;
+                .timeHead {
+                    // padding:0 8px;
+                    display: block;
+                    height: 100px;
+                    font-size: 20px;
+                    color: #999;
+                    font-weight: 300;
+                    border-right: 1px solid #f4f4f4;
+                    position: relative;
+                    .text {
+                        position: absolute;
+                        top: -24px;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                .timeHead:first-child .text {
+                    display: none;
+                }
+            }
+            .bkgLine {
+                flex: 1;
+                display: flex;
+                float: right;
+                width: 94%;
+                .bkgLineWeek {
+                    flex: 1;
+                    position: relative;
+                    .td {
+                        height: 100px;
+                        border-right: 1px solid #f4f4f4;
+                        border-top: 1px dashed #f4f4f4;
+                    }
+                    .placeholder {
+                        border-right: 1px solid #f4f4f4;
+                    }
+                    .courseItem {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        .lessonItem {
+                            padding-left: 8px;
+                            height: 100%;
+                            display: inline-block;
+                            position: relative;
+                            .name,
+                            .time {
+                                display: block;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            .bkgColor {
+                                position: absolute;
+                                width: 4px;
+                                border-radius: 10px 0 0 10px;
+                                height: 100%;
+                                background: #999;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+                .bkgLineWeek:nth-last-child(1) {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}

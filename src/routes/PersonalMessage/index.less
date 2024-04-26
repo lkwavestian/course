@@ -1,0 +1,292 @@
+.personMessage {
+    background: rgb(242, 244, 245) !important;
+    padding: 24px 8px;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    .parentBox {
+        background: #fff;
+        padding: 0 16px;
+        border-radius: 8px;
+    }
+    .messageList {
+        height: calc(~'100vh - 110px');
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .stuMessageBox {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .safeTitle {
+        font-family: PingFangSC-Semibold;
+        color: #01113D;
+        font-size: 18px;
+        padding-left: 8px;
+        margin-bottom: 16px;
+    }
+    .safeItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        :global(.ant-switch) {
+            height: 32px;
+            width: 60px;
+            min-width: 60px;
+        }
+        :global(.ant-switch::after) {
+            width: 20px;
+            height: 20px;
+            top: 4px;
+        }
+        :global(.am-list-item) {
+            padding-left: 0px;
+        }
+        .setPassButton {
+            padding: 6px 20px;
+            background: rgba(1,17,61,0.05);
+            font-family: PingFangSC-Regular;
+            color: #01113D;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+    }
+    .secondTitle {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    :global(.am-input-item) {
+        padding-left: 0;
+        min-height: 50px;
+    }
+    :global(.am-input-label ) {
+        font-family: PingFangSC-Regular;
+        color: #01113D !important;
+        font-size: 16px;
+    }
+    :global(.am-input-control) {
+        input {
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.65);
+        }
+        
+    }
+    :global(.am-input-control) {
+        input:disabled {
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, .45) !important;
+            -webkit-text-fill-color: rgba(1, 17, 61, .45);
+            opacity: 1;
+        }   
+        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+            color: rgba(1, 17, 61, .25) !important; 
+            } 
+        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+        color: rgba(1, 17, 61, .25) !important; 
+        } 
+            
+    }
+    .stuBox {
+        margin-top: 20px;
+        background: #fff;
+        border-radius: 8px;
+        padding: 0 16px;
+    }
+    .firstBox {
+        margin-top: 0px !important;
+    }
+    .stuNameBox {
+        position: relative;
+        .delStu {
+            color: #0445FC;
+            position: absolute;
+            right: 0;
+            top: 15px;
+        }
+    }
+    .messageItem {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 44px;
+        align-items: center;
+        // border-bottom: 1PX solid #ddd;
+        
+        .name {
+            font-family: PingFangSC-Regular;
+            color: #01113D;
+            font-size: 17px;
+            margin-left: 0;
+            margin-right: 5px;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 2px 0;
+            width: 85px;
+        }
+        .role {
+            background: rgba(1,17,61,0.05);
+            height: 30px;
+            line-height: 30px;
+            width: 60px;
+            font-family: PingFangSC-Regular;
+            color: #01113D;
+            display: inline-block;
+            margin-right: 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+    }
+    .bottomBar {
+        position: absolute;
+        background-color: #ddd;
+        display: block;
+        z-index: 1;
+        top: auto;
+        right: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scaleY(0.5);
+        // transform: scaleY(0.5);
+        transform: scaleY(0.33);
+    }
+    .isCheck {
+        background: rgba(162,31,39,0.15) !important;
+        font-family: PingFangSC-Regular;
+        color: #A21F27 !important;        
+    }
+    .addChild {
+        color: #0445FC;
+        margin-top: 18px;
+        font-size: 16px;
+        margin-bottom: 30px;
+        i {
+            margin-right: 7px;
+        }
+    }
+    .submit {
+        background: #A21F27;
+        box-shadow: 0px 2px 4px 0px rgba(162,31,39,0.32);
+        color: #fff;
+        font-family: PingFangSC-Medium;
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+        height: 40px;
+        max-width: 800px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 20px;
+        z-index: 7;
+        // left: 10%;
+    }
+    .closeModal {
+        position: fixed;
+        font-size: 12px;
+        /* top: 20px; */
+        background: rgba(1, 17, 61, 0.85);
+        // opacity: 0.5;
+        height: 48px;
+        width: 48px;
+        text-align: center;
+        /* line-height: 48px; */
+        padding: 7px;
+        border-radius: 24px;
+        bottom: 100px;
+        right: 20px;
+        font-family: PingFangSC-Regular;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        span {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .submitButton {
+        position: fixed;
+        bottom: 40px;
+        width: calc(~'100% - 40px');
+        max-width: 800px; 
+        z-index: 7;    
+    }
+    .detailInstructionModal{
+        :global{
+            .am-list-item .am-input-control{
+                border-bottom: 1px solid #eee;
+            }
+        }
+    }
+    .logoutModal {
+        width: 100vw !important;
+        height: 100vh;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        top: 0;
+        padding-bottom: 0;
+        font-family: PingFangSC-Regular;
+        color: #01113D;
+        font-size: 16px;
+        :global(.ant-modal-content) {
+            height: 100%;
+            border-radius: 0;
+        }
+        .sureButton {
+            padding: 6px 20px;
+            background: rgba(1,17,61,0.05);
+            font-family: PingFangSC-Regular;
+            color: #01113D;
+            margin-top: 10px;
+            border-radius: 15px;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 80px;
+            text-align: center;
+        }
+    }
+}
+
+// @media screen and  (orientation:  portrait){
+//     .courseSelectDetail{
+//         // -webkit-transform:rotate(90deg);
+//         // -webkit-transform-origin:0% 0%;/*1.重置旋转中心*/
+
+//         // -moz-transform: rotate(90deg);
+//         // -moz-transform-origin:0% 0%;
+
+//         // -ms-transform: rotate(90deg);
+//         // -ms-transform-origin:0% 0%;
+
+//         transform: rotate(90deg);
+//         // transform-origin:0% 0%;
+
+//         width: 100vh;/*2.利用 vh 重置 ‘宽度’ */
+//         // height: 100vw;/* 3.利用 vw 重置 ‘高度’ */
+
+//         top: 0;
+//         left: 100vw;/* 4.旋转后页面超出屏幕，重置页面定位位置 */
+//     }
+// }
+
+
+.stuBox {
+    &:first-child {
+        margin-top: 0px;
+    }
+}
+input{
+   ::-webkit-input-placeholder {
+    color:rgba(1, 17, 61, 0.25)
+    }
+}
+.messBox {
+    margin-bottom: 15px;
+}

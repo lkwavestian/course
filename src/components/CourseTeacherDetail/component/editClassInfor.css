@@ -1,0 +1,148 @@
+.setCourseInfo {
+  width: 620px !important;
+  /* .minTeacherForm{
+        display: flex;
+        .assistTeacher{
+            width: 80%;
+            margin-bottom: 8px;
+        }
+    } */
+  /* :global{
+        .ant-btn{   //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary{  //确认按钮样式
+              background:  #3B6FF5 !important;
+              color: #fff !important;
+              
+            }
+          }
+          .ant-input{
+            height: 36px !important;
+            border-radius: 8px !important;
+          }
+        
+          .ant-select-selection__rendered{
+            line-height: 36px !important; 
+            min-height: 36px !important;
+          }
+          .ant-select-selection{
+            height: 36px !important;
+            border-radius: 8px !important;
+          }
+        
+          .ant-select-selection--single{
+            border-radius: 8px !important;
+            height: 36px;
+          }
+
+          .ant-select-selection__choice{
+            height: 30px !important;
+            margin-top: 2px !important;
+            line-height: 30px !important;
+          }
+        
+          .ant-select-lg .ant-select-selection--multiple{
+            min-height: 36px !important;
+            height: 36px;
+            border-radius: 8px !important;
+            padding-bottom: 0;
+          }
+  
+          .ant-select{
+              height: 36px !important;
+              line-height: 36px !important;
+              border-radius: 8px !important;
+          }
+          .ant-input-number{
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+          }
+          .ant-col{
+            margin-bottom: 0 !important;
+          }
+    } */
+}
+.setCourseInfo .item {
+  margin-bottom: 15px;
+}
+.setCourseInfo .title {
+  margin-right: 15px;
+  width: 135px;
+  display: inline-block;
+  text-align: right;
+}
+.setCourseInfo .label,
+.setCourseInfo .assistLabel {
+  height: 40px;
+  line-height: 40px;
+}
+.setCourseInfo .minTeacherForm {
+  display: flex;
+}
+.setCourseInfo .minTeacherForm .mainTeacher {
+  width: 400px;
+  line-height: 36px;
+  margin-bottom: 4px;
+}
+.setCourseInfo .minTeacherForm .assistTeacher {
+  width: 400px;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+.setCourseInfo :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.setCourseInfo :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.setCourseInfo :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.setCourseInfo :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+  min-height: 36px !important;
+}
+.setCourseInfo :global .ant-select-selection {
+  min-height: 36px !important;
+  border-radius: 8px !important;
+}
+.setCourseInfo :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.setCourseInfo :global .ant-select-selection__choice {
+  height: 30px !important;
+  margin-top: 2px !important;
+  line-height: 30px !important;
+}
+.setCourseInfo :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px !important;
+  height: 36px;
+  border-radius: 8px !important;
+  padding-bottom: 0;
+}
+.setCourseInfo :global .ant-select {
+  min-height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.setCourseInfo :global .ant-input-number {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}

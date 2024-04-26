@@ -1,0 +1,191 @@
+.borderBox {
+    .colTitle {
+        padding: 10px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        .titleItem {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+        }
+        .currentCol {
+            color: #346bfe;
+        }
+    }
+    .rowLine {
+        border-top: 2px solid #346bfe;
+        position: relative;
+        z-index: 2;
+        pointer-events: none;
+        .currentCol::before {
+            content: ' ';
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #346bfe;
+            position: relative;
+            left: -5px;
+            display: block;
+            top: -6px;
+        }
+        .timeBox {
+            position: relative;
+            text-align: center;
+            background-color: #fff;
+            top: -15px;
+            font-size: 18px;
+        }
+    }
+    .tableBody {
+        border-top: 1px dashed #e8e8e8;
+        .timeBox,
+        .timeLineBox {
+            // height: 120px;
+            height: 86px;
+            position: relative;
+            .positionBox {
+                position: relative;
+                top: -11px;
+                display: block;
+                width: 100%;
+                background-color: #fff;
+            }
+        }
+        .timeBox {
+            text-align: center;
+        }
+        .bgCol {
+            background-color: #fafafa;
+        }
+        .colMain {
+            padding: 0 6px 6px;
+            display: inline-block;
+            font-size: 12px;
+            //min-height: 75px;
+            overflow: auto;
+        }
+    }
+    .rendBox {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    //行事历
+    .floatEl {
+        background: rgba(109, 20, 247, 0.04);
+        color: #6d14f7;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        overflow: auto;
+        border: 1px solid #fff;
+        cursor: pointer;
+        vertical-align: top;
+        min-height: 35px !important;
+    }
+    //课程样式
+    .courseEl {
+        background: #edf7fb;
+        color: #0086e4;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        overflow: auto;
+        // border-left: 1px solid #fff;
+        // border-right: 1px solid #fff;
+        border: 1px solid #fff;
+        cursor: pointer;
+        vertical-align: top;
+        min-height: 35px !important;
+    }
+    //活动
+    .activeEl {
+        background: #f2f6f0;
+        color: #466d1b;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        overflow: auto;
+        border: 1px solid #fff;
+        cursor: pointer;
+        vertical-align: top;
+        min-height: 35px !important;
+    }
+    //作息表
+    .relaxsll {
+        background: #eee;
+        color: #888;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        overflow: auto;
+        border: 1px solid #fff;
+        cursor: pointer;
+        vertical-align: top;
+        min-height: 35px !important;
+    }
+    > .allDayRow {
+        border-top: 0;
+        border-bottom: 1px solid #e8e8e8;
+        margin-bottom: 20px;
+        .timeLineBox,
+        .timeBox {
+            height: 60px;
+        }
+        .positionBox {
+            top: 15px !important;
+        }
+    }
+}
+
+/*滚动条样式*/
+.floatEl::-webkit-scrollbar,
+.courseEl::-webkit-scrollbar,
+.activeEl::-webkit-scrollbar,
+.relaxsll::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 0px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0px;
+}
+.floatEl::-webkit-scrollbar-thumb,
+.courseEl::-webkit-scrollbar-thumb,
+.activeEl::-webkit-scrollbar-thumb,
+.relaxsll::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+.floatEl::-webkit-scrollbar-track,
+.courseEl::-webkit-scrollbar-track,
+.activeEl::-webkit-scrollbar-track,
+.relaxsll::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.colMain .deleteBtn {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 15px;
+    cursor: pointer;
+    color: #3b6ff5;
+}
+
+.currentWeekday {
+    font-weight: bold;
+}
+
+.copyContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

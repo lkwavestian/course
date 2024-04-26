@@ -1,0 +1,186 @@
+.scheduleListForTaskWrapper {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    .leftPart {
+        display: flex;
+        gap: 12px;
+        .selectStyle {
+            min-width: 120px;
+        }
+        .tagPlaceholder {
+            display: block;
+            width: 120px;
+            height: 32px;
+            border: 1px solid #d9d9d9;
+            border-radius: 8px;
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            line-height: 32px;
+            background: #fff;
+            padding-left: 12px;
+            pointer-events: none;
+            .close {
+                position: absolute;
+                right: 8px;
+                cursor: pointer;
+                pointer-events: auto;
+            }
+        }
+    }
+    .rightPart {
+        display: flex;
+        gap: 12px;
+        .btn {
+            background: #4d7fff;
+            color: #fff;
+            padding: 0 12px;
+            line-height: 32px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-right: 12px;
+            cursor: pointer;
+        }
+    }
+    :global {
+        .ant-select-selection--multiple {
+            border-radius: 8px;
+        }
+    }
+}
+
+.tableWrapper {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(1, 17, 61, 1);
+    .weekAcrossTime {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+        .triangle {
+            position: absolute;
+            top: 5px;
+            left: -16px;
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-left: 7px solid #0445fc;
+            border-bottom: 7px solid transparent;
+        }
+    }
+    .currentVersion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftPart {
+            display: flex;
+            padding: 6px 10px;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            cursor: pointer;
+            &:hover {
+                background: rgba(4, 69, 252, 0.05);
+                border-radius: 4px;
+            }
+            .isLastPublish {
+                display: flex;
+                width: 70px;
+                gap: 5px;
+                align-items: center;
+                font-family: PingFangSC-Medium;
+                font-size: 12px;
+                line-height: 20px;
+                .icon {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 8px;
+                }
+            }
+        }
+        .rightPart {
+            margin-left: 30px;
+            .historyVersion {
+                width: 52px;
+                font-size: 12px;
+                line-height: 20px;
+                color: #a1a6b3;
+            }
+        }
+    }
+    .currentWeekStatus {
+        border-radius: 4px;
+        padding: 4px 8px;
+        background: rgba(63, 198, 94, 0.1);
+        font-family: PingFangSC-Medium;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    :global {
+        .ant-table-column-title {
+            font-family: PingFangSC-Medium;
+        }
+        .ant-table-thead > tr > th,
+        .ant-table-tbody > tr > td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .ant-table-tbody > tr.ant-table-row:hover > td {
+            background: none !important;
+        }
+    }
+}
+
+.historyVersionListWrapper {
+    :global {
+        .ant-popover-inner-content {
+            padding: 10px 15px;
+        }
+    }
+    .historyVersionList {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 450px;
+        .versionItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: PingFangSC-Regular;
+            font-size: 13px;
+            line-height: 16px;
+            padding: 7px;
+            cursor: pointer;
+            &:hover {
+                background: rgba(4, 69, 252, 0.05);
+                border-radius: 4px;
+            }
+            .rightPart {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                width: 70px;
+                .icon {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 8px;
+                }
+                .text {
+                    font-family: PingFangSC-Medium;
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+}

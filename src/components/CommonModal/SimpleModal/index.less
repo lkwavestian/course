@@ -1,0 +1,41 @@
+.simpleModalWrapper {
+    :global {
+        .ant-modal-header {
+            border-bottom: 0 none !important;
+        }
+        .ant-modal-title {
+            text-align: center !important;
+        }
+        .ant-modal-body {
+            color: rgba(1, 17, 61, 0.85);
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        .ant-modal-footer {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            border-top: 0 none !important;
+            text-align: center !important;
+        }
+        .ant-modal-footer button + button {
+            margin-left: 15px;
+        }
+        .ant-btn {
+            height: 36px;
+            line-height: 36px;
+            color: rgba(1, 17, 61, 0.65);
+            background: rgba(1, 17, 61, 0.07);
+            border-radius: 8px;
+            &:hover {
+                border-color: rgba(1, 17, 61, 0.07);
+            }
+        }
+        .ant-btn-primary {
+            background: #3b6ff5;
+            color: #fff;
+            &:hover {
+                border-color: #3b6ff5;
+            }
+        }
+    }
+}

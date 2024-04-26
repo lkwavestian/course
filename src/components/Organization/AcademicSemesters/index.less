@@ -1,0 +1,172 @@
+.chooseSchool {
+    width: 100%;
+    padding: 24px 24px 0;
+    display: flex;
+    justify-content: space-between;
+    :global {
+        .ant-select {
+            width: 19%;
+        }
+        .ant-select-selection--single {
+            position: relative;
+            height: 36px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .ant-select-selection--single .ant-select-selection__rendered{
+            height: 34px;
+            line-height: 36px;
+        }
+    }
+}
+.createAcademic {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    background: #3b6ff5;
+    border-radius: 8px;
+    padding: 0 14px;
+    position: relative;
+    // left: 70%;
+    cursor: pointer;
+    i {
+        font-style: normal;
+        margin-right: 3px;
+    }
+}
+.modalContent {
+    .title {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 700;
+        font-family: PingFangSC-Medium;
+        color: #000 85%;
+        margin-right: 26px;
+    }
+    .academicName {
+        margin-bottom: 22px;
+        :global {
+            .ant-input {
+                width: 268px;
+                height: 36px;
+                border-radius: 8px;
+            }
+        }
+    }
+    .timeRange {
+        margin-bottom: 22px;
+        .to {
+            margin: 0 5px;
+        }
+        .pick {
+            margin-left: 5px;
+            display: inline-block;
+            :global {
+                .ant-calendar-picker-input {
+                    width: 140px;
+                    height: 36px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+.academicInfo {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: PingFangSC-Medium;
+    color: #000 85%;
+    margin-right: 26px;
+}
+.line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #eee;
+}
+
+.semesterStage {
+    padding-top: 25px;
+    margin-left: 10%;
+    :global {
+        .ant-input {
+            margin-right: 10px;
+            width: 182px;
+            height: 36px;
+            border-radius: 8px;
+        }
+    }
+    .semesterTime {
+        display: inline-block;
+        span {
+            margin: 0 5px;
+        }
+        :global {
+            .ant-calendar-picker-input {
+                width: 140px;
+                height: 36px;
+                border-radius: 8px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+.btns {
+    text-align: center;
+    margin-top: 106px;
+    .cancelBtn {
+        color: rgba(1, 17, 61, 0.65);
+        background: rgba(1, 17, 61, 0.07);
+        text-align: center;
+        margin-right: 10px;
+        border-radius: 8px;
+        padding: 8px 29px;
+        font-size: 14px;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .okBtn {
+        background: #3b6ff5;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        padding: 8px 29px;
+        font-size: 14px;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+.confirmText {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: PingFangSC-Regular;
+}
+.modal {
+    :global {
+        .ant-modal-content {
+            width: 1050px;
+            padding: 50px;
+        }
+        .ant-modal .index__modal___3gOtL {
+            width: 950px;
+        }
+    }
+}
+:global {
+    .ant-modal-confirm-btns {
+        .ant-btn {
+            border-radius: 8px;
+        }
+    }
+}
+
+.iframeModal{
+    top: 40px;
+}

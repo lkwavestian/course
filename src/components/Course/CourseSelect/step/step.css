@@ -1,0 +1,449 @@
+.changePicker {
+  font-size: 14px;
+  display: block;
+  min-width: 360px;
+}
+.changePicker > span {
+  border: none;
+  padding: 0;
+}
+.changePicker > span input {
+  height: 36px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.changePicker > span > span {
+  margin: 0 16px;
+  line-height: 36px;
+}
+.setDeclare {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.setDeclare :global .ant-select-selection {
+  margin-top: -7px;
+}
+.delPeriod {
+  padding-bottom: 5px;
+}
+.delPeriod :global .ant-btn {
+  width: 47.8px !important;
+  height: 24px !important;
+}
+.selectRule {
+  padding: 5px 0;
+  /* :global{
+        .ant-radio-group{
+            
+        }
+    } */
+}
+.declare {
+  display: flex;
+}
+.maxReported {
+  margin-left: 24px !important;
+  /* height: 40px; */
+  /* line-height: 40px; */
+  width: 260px;
+}
+.maxReported :global .ant-input-number {
+  width: 60px;
+}
+.radioNo1 {
+  height: 34px;
+  line-height: 34px;
+  /* display: flex;
+    :global{
+        .ant-radio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    } */
+}
+.infoStyle {
+  display: flex;
+}
+.Step1 .NewCreate .title {
+  color: #464c56;
+  font-size: 15px;
+  width: 172px;
+  height: 52px;
+  line-height: 52px;
+  text-align: right;
+  margin-right: 15px;
+}
+.Step1 .NewCreate .titleTime {
+  color: #464c56;
+  font-size: 15px;
+  height: 54px;
+  width: 188px;
+  line-height: 54px;
+  text-align: center;
+}
+.Step1 .NewCreate .changePickerStep1 {
+  position: relative;
+  top: 9px;
+}
+.Step1 .NewCreate .itemTop {
+  border-radius: 8px 8px 0 0;
+}
+.Step1 .NewCreate .itemBottom {
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 12px;
+}
+.Step1 .NewCreate .item {
+  height: 65px;
+  line-height: 65px;
+  display: flex;
+  padding-bottom: 0 !important;
+  background-color: #fff;
+}
+.Step1 .NewCreate .item input {
+  width: 60%;
+  height: 36px;
+  position: relative;
+  top: 12px;
+  left: 0;
+  border-radius: 8px;
+  line-height: 36px;
+  /*  border-top: 1px solid transparent;
+                border-left: 1px solid transparent;
+                border-right: 1px solid transparent; */
+}
+.Step1 .NewCreate .item input:hover,
+.Step1 .NewCreate .item input:focus {
+  /* border-top: 1px solid transparent !important;
+                    border-left: 1px solid transparent !important;
+                    border-right: 1px solid transparent !important; */
+  box-shadow: none;
+}
+.Step1 .NewCreate .item .box {
+  width: 80%;
+  padding-top: 12px;
+  margin-top: 6px;
+}
+.Step1 .NewCreate .item .box > div {
+  border-radius: 8px;
+}
+.Step1 .NewCreate .item .box label {
+  margin: 6px 21px 6px 0;
+}
+.Step1 .NewCreate .item .box input {
+  border-radius: 8px !important;
+}
+.Step1 .NewCreate .itemBox {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+}
+.Step1 .NewCreate .itemBox .box {
+  width: 80%;
+  padding-top: 12px;
+  margin-top: 4px;
+}
+.Step1 .NewCreate .itemBox .box input {
+  border-radius: 20px !important;
+}
+.Step1 .NewCreate .itemBox .box label {
+  margin-bottom: 6px;
+}
+.Step1 .NewCreate .itemBox .line {
+  display: inline-block;
+  width: 48px;
+  text-align: center;
+  color: #969fa9;
+  margin-top: 21px;
+}
+.Step1 .NewCreate .limitNumber {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+.Step1 .NewCreate .limitNumber .limitNumberItemWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.Step1 .NewCreate .limitNumber .limitNumberItem {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Step1 .NewCreate .limitNumber .limitNumberItem .limitCourseIcon {
+  color: #1890ff;
+  font-size: 18px;
+}
+.Step1 .NewCreate .limitNumber .limitText {
+  color: #cccccc;
+}
+.Step1 .NewCreate :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.Step1 .NewCreate :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.Step1 .NewCreate :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.Step1 .NewCreate :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.Step1 .NewCreate :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.Step1 .NewCreate :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.Step1 .NewCreate :global .ant-time-picker-input {
+  height: 36px;
+  line-height: 36px;
+  border-radius: 8px;
+}
+.Step1 .Announcement .title {
+  color: #464c56;
+  font-size: 15px;
+  width: 172px;
+  height: 52px;
+  line-height: 52px;
+  text-align: right;
+  margin-right: 15px;
+}
+.Step1 .Announcement .titleTime {
+  color: #464c56;
+  font-size: 15px;
+  height: 54px;
+  width: 188px;
+  line-height: 54px;
+  text-align: center;
+}
+.Step1 .Announcement .changePickerStep1 {
+  position: relative;
+  top: 9px;
+}
+.Step1 .Announcement .itemTop {
+  border-radius: 8px 8px 0 0;
+}
+.Step1 .Announcement .itemBottom {
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 12px;
+}
+.Step1 .Announcement .item {
+  height: 65px;
+  line-height: 65px;
+  display: flex;
+  padding-bottom: 0 !important;
+  background-color: #fff;
+}
+.Step1 .Announcement .item input {
+  width: 60%;
+  height: 36px;
+  position: relative;
+  top: 12px;
+  left: 0;
+  border-radius: 8px;
+  line-height: 36px;
+  /*  border-top: 1px solid transparent;
+                border-left: 1px solid transparent;
+                border-right: 1px solid transparent; */
+}
+.Step1 .Announcement .item input:hover,
+.Step1 .Announcement .item input:focus {
+  /* border-top: 1px solid transparent !important;
+                    border-left: 1px solid transparent !important;
+                    border-right: 1px solid transparent !important; */
+  box-shadow: none;
+}
+.Step1 .Announcement .item .box {
+  width: 80%;
+  padding-top: 12px;
+  margin-top: 6px;
+}
+.Step1 .Announcement .item .box > div {
+  border-radius: 8px;
+}
+.Step1 .Announcement .item .box label {
+  margin: 6px 21px 6px 0;
+}
+.Step1 .Announcement .item .box input {
+  border-radius: 8px !important;
+}
+.Step1 .Announcement .itemBox {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+}
+.Step1 .Announcement .itemBox .box {
+  width: 80%;
+  padding-top: 12px;
+  margin-top: 4px;
+}
+.Step1 .Announcement .itemBox .box input {
+  border-radius: 20px !important;
+}
+.Step1 .Announcement .itemBox .box label {
+  margin-bottom: 6px;
+}
+.Step1 .Announcement .itemBox .line {
+  display: inline-block;
+  width: 48px;
+  text-align: center;
+  color: #969fa9;
+  margin-top: 21px;
+}
+.Step2 {
+  background-color: #fff;
+}
+.Step2 .NewCreate .item {
+  display: flex;
+  /* .selectStyle {
+                > div {
+                    height: 32px !important;
+                    border-radius: 20px !important;
+                }
+            } */
+}
+.Step2 .NewCreate .item:first-child {
+  padding-top: 24px;
+  margin-bottom: 16px;
+}
+.Step2 .NewCreate .item .title {
+  font-size: 15px;
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  text-align: right;
+  margin-right: 15px;
+}
+.Step2 .NewCreate .item .midTitle {
+  padding: 0 16px;
+  line-height: 32px;
+}
+.Step2 .NewCreate .item .icon {
+  font-size: 24px;
+  color: #969fa9;
+  cursor: pointer;
+  line-height: 40px;
+  margin-left: 16px;
+}
+.Step2 .NewCreate .checkBoxs {
+  margin-left: 40px;
+  padding-top: 10px;
+}
+.Step2 .NewCreate .checkBoxs label {
+  margin: 10px 36px 10px 0;
+}
+.Step2 .NewCreate .checkBoxs .load {
+  text-align: center;
+  padding: 72px 0;
+}
+.Step2 .NewCreate .checkBoxs .mention {
+  padding-left: 24px;
+}
+.Step3 .tab {
+  width: 100%;
+  text-align: center;
+  padding: 21px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.Step3 .tab .item {
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+  padding-top: 24px;
+  border-radius: 8px;
+  width: 40%;
+  min-width: 390px;
+  height: 124px;
+}
+.Step3 .tab .item:last-child {
+  margin-left: 32px;
+}
+.Step3 .tab .item .a {
+  font-size: 20px;
+  cursor: pointer;
+}
+.Step3 .tab .item .b {
+  margin-top: 8px;
+  font-size: 8px;
+  color: #969fa9;
+}
+.Step3 .tab .active {
+  color: #1890ff;
+}
+.Step3 .tab .active .b {
+  color: #1890ff;
+}
+.Step3 .content .item {
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+.Step3 .content .item .title {
+  font-size: 14px;
+  color: #464c56;
+  margin-right: 32px;
+}
+.Step3 .content .item .sub {
+  font-size: 12px;
+  color: #969fa9;
+  margin-right: 12px;
+}
+.Step3 .content .item .radio {
+  font-size: 13px;
+  color: #464c56;
+}
+.Step3 .content .itemTop {
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 2px;
+}
+.Step3 .content .itemMid {
+  border-radius: 0;
+  margin-bottom: 2px;
+}
+.Step3 .content .itemBottom {
+  border-radius: 0 0 8px 8px;
+}
+.Step3 .content .itemBottom .grey:first-child {
+  margin-bottom: 8px;
+}
+.Step3 .content .itemBottom .grey:first-child > label {
+  margin-right: 36px;
+}
+.Step3 .content .itemBottom .grey span {
+  font-size: 12px;
+  color: #969fa9;
+}
+.Step3 .content .textTop {
+  vertical-align: top;
+}
+.Step3 .content .itemLast {
+  border-radius: 8px;
+}
+.selectPlan :global .ant-select-selection {
+  height: 36px;
+}
+.limitCourseIcon {
+  color: #1890ff;
+  font-size: 18px;
+}
+.specialStyle :global .ant-select-selection--multiple {
+  overflow: inherit !important;
+}

@@ -1,0 +1,630 @@
+.modalBtn {
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 23px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+.cancelBtn {
+    color: #3b6ff5;
+    background: #fff;
+    text-align: center;
+    margin-right: 10px;
+}
+.submitBtn {
+    background: #3b6ff5;
+    color: #fff;
+}
+.labelSpan {
+    font-size: 14px;
+}
+.labelSpan::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #f5222d;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+}
+.inputStyle {
+    border-radius: 20px !important;
+}
+.inputNameStyle {
+    border: none !important;
+}
+.operationList {
+    display: flex;
+    display: -webkit-flex;
+    text-align-last: center;
+    display: -moz-flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+.operationList .exportButtonList {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    text-align: center;
+}
+.operationList a {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    text-align: right;
+}
+.operationList .deleteBtn {
+    color: #3b6ff5;
+    font-size: 16px;
+    padding-left: 15px;
+    text-align: left;
+}
+.operationList .deleteBtn i {
+    margin-right: 5px;
+}
+.selectOrgStyle > span {
+    border: none !important;
+    box-shadow: 0 0 0 2px transparent !important;
+    -webkit-box-shadow: 0 0 0 2px transparent !important;
+}
+.selectOrgStyle > span > span > span {
+    display: none !important;
+}
+.labelContentStyle {
+    line-height: 20px;
+    width: 85px;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+}
+.isShowOrgTips {
+    color: #999;
+    font-size: 12px;
+}
+.orgCardList {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.orgCardList > div {
+    padding: 25px 30px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.deleteCard {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font-size: 15px;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+.saveCard {
+    position: absolute;
+    top: 9px;
+    right: 47px;
+    font-size: 15px;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+.saveCardDisabled {
+    position: absolute;
+    top: 9px;
+    right: 47px;
+    font-size: 15px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 3px 7px;
+}
+.addCardBtn {
+    width: 100%;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.addCardBtn .setButtonStyle {
+    width: 100%;
+    font-size: 15px;
+    color: #3b6ff5;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px dashed #ddd;
+    text-align: center;
+    padding: 6px 0;
+}
+.selectOrgStyle > div {
+    border-radius: 20px;
+}
+.selectPersonStyle > span {
+    border-radius: 20px !important;
+}
+.checkboxStyle {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    width: 108px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.exportTitle {
+    font-size: 16px;
+    color: #4c4c4c;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.checkboxContent {
+    font-size: 14px;
+    color: #666;
+    font-style: normal;
+}
+.exportTips {
+    font-size: 12px;
+    color: #999;
+}
+.exportRange {
+    color: #666;
+    margin-bottom: 20px;
+}
+.batchEditTips {
+    color: #999;
+    margin-bottom: 30px;
+}
+.batchEditTips span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.batchEditTips span a {
+    color: #3b6ff5;
+    cursor: pointer;
+}
+.uploadBtn {
+    width: 178px;
+    line-height: 23px;
+    margin-top: 7px;
+}
+.setOrgRoleSelectPerson > span {
+    border-radius: 20px !important;
+}
+.confirmEndClassModal .confirmTips {
+    font-size: 16px;
+    text-align: center;
+}
+.grayBtn {
+    background: #999;
+    color: #fff;
+    border: 1px solid #999;
+}
+.TransferSchool .leftTime input {
+    width: 240px;
+    border-radius: 20px !important;
+}
+.TransferSchool .suspensionTime input {
+    border-radius: 20px !important;
+}
+.TransferSchool .suspensionTime {
+    width: 45%;
+}
+.TransferSchool .suspensionTime:last-child {
+    margin-left: 5%;
+}
+.TransferSchool .enterSchool {
+    width: 240px;
+    border-radius: 16px !important;
+}
+.TransferSchool .btnBox {
+    padding-left: 118px;
+    display: flex;
+    justify-content: center;
+}
+.TransferSchool .btnBox .btn {
+    border: 1px solid rgba(24, 144, 255, 0.45);
+    border-radius: 20px;
+    color: #1890ff;
+    padding: 0 21px;
+}
+.TransferSchool .btnBox .btn:last-child {
+    color: #ffffff;
+    margin-left: 16px;
+}
+.detailBtn {
+    color: #3b6ff5;
+    cursor: pointer;
+}
+.paginationStyle {
+    width: 100%;
+    margin: 0 -21px;
+    background: #fff;
+    padding: 2% 0;
+}
+.paginationStyle:after {
+    content: '';
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+.paginationStyle .pageContainer {
+    float: right;
+    margin-right: 20px;
+}
+.LeftSchoolInfor .item {
+    margin-bottom: 24px;
+}
+.LeftSchoolInfor .item .title {
+    color: #000;
+    font-size: 14px;
+    margin-right: 12px;
+}
+.LeftSchoolInfor .item .desc {
+    color: #666;
+    font-size: 14px;
+}
+.LeftSchoolInfor .item .download {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+}
+.LeftSchoolInfor .item .download .grey {
+    color: #969fa9;
+    margin-right: 2px;
+}
+.LeftSchoolInfor .item .download a {
+    text-decoration: underline;
+}
+.LeftSchoolInfor .pDesc {
+    margin-bottom: 32px;
+    color: #969fa9;
+}
+.LeftSchoolInfor .pDesc .icon {
+    color: #3b6ff5;
+    margin-right: 6px;
+}
+.LeftSchoolInfor .btnBox {
+    display: flex;
+    justify-content: center;
+}
+.LeftSchoolInfor .btnBox button {
+    border: 1px solid rgba(24, 144, 255, 0.45);
+    border-radius: 20px;
+    color: #1890ff;
+    padding: 0 21px;
+}
+.LeftSchoolInfor .btnBox button:last-child {
+    color: #ffffff;
+    margin-left: 16px;
+}
+.LeftSchoolInfor .other .title {
+    position: relative;
+    top: 4px;
+    left: 0;
+}
+.fileBtn {
+    position: relative;
+}
+.fileBtn .form {
+    display: inline-block;
+}
+.fileBtn input {
+    width: 320px;
+    height: 30px;
+    position: relative;
+    top: 16px;
+    left: 0;
+    overflow: hidden;
+}
+.fileBtn .btnFlie {
+    max-width: 240px;
+    position: relative;
+    top: 4px;
+    left: 0;
+    z-index: 1;
+    padding-left: 12px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.GradeUp .title {
+    margin-bottom: 16px;
+}
+.GradeUp .title .m {
+    color: #000;
+    font-size: 14px;
+    margin-right: 6px;
+}
+.GradeUp .title .t {
+    color: #666;
+    font-size: 14px;
+}
+.GradeUp .content .item {
+    display: flex;
+    margin-bottom: 16px;
+}
+.GradeUp .content .item .t {
+    line-height: 32px;
+    color: #666;
+    font-size: 12px;
+}
+.GradeUp .content .item .t1 {
+    margin-right: 6px;
+}
+.GradeUp .content .item .l {
+    flex: 2;
+}
+.GradeUp .content .item .m {
+    flex: 1;
+    line-height: 32px;
+    color: #969fa9;
+}
+.GradeUp .content .item .r {
+    flex: 7;
+    display: flex;
+    justify-content: space-between;
+}
+.GradeUp .content .item .r .input {
+    width: 36%;
+    border-radius: 20px;
+    color: #666;
+    font-size: 12px;
+}
+.GradeUp .btnBox {
+    display: flex;
+    justify-content: center;
+}
+.GradeUp .btnBox button {
+    border: 1px solid rgba(24, 144, 255, 0.45);
+    border-radius: 20px;
+    color: #1890ff;
+    padding: 0 21px;
+}
+.GradeUp .btnBox button:last-child {
+    color: #ffffff;
+    margin-left: 16px;
+}
+.GradeUp .other .title {
+    position: relative;
+    top: 4px;
+    left: 0;
+}
+.twoJump {
+    display: flex;
+    justify-content: center;
+}
+.twoJump .t1 {
+    border-radius: 20px;
+    margin-right: 36px;
+    color: #1890ff;
+}
+.twoJump .t2 {
+    border-radius: 20px;
+}
+.studentXx {
+    margin-left: 91px;
+    font-size: 16px;
+    color: #666;
+}
+.studentMb {
+    margin-left: 91px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.searchItem {
+    display: inline-block;
+    margin-left: 36px;
+    margin-top: 21px;
+    flex: auto;
+}
+.searchItem .title {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    margin-right: 12px;
+}
+.searchStyle > input {
+    border-radius: 20px;
+}
+.searchSelectStyle > div {
+    border-radius: 20px !important;
+}
+.searchSelectStyle > span {
+    border-radius: 20px !important;
+}
+.searchItemOther {
+    display: inline-block;
+    margin-top: 21px;
+    margin-left: 46px;
+}
+.searchItemOther .time input {
+    border-radius: 20px !important;
+}
+.searchItemOther .line {
+    margin: 0 12px;
+}
+.changeRoleStyle > div {
+    border: none !important;
+    box-shadow: 0 0 0 2px transparent !important;
+    -webkit-box-shadow: 0 0 0 2px transparent !important;
+}
+.batchCondition {
+    width: 100%;
+    padding: 11px 44px;
+    display: flex;
+    justify-content: space-between;
+}
+.batchCondition .left .batchButton {
+    display: inline-block;
+    padding: 5px 13px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    color: #3b6ff5;
+}
+.batchCondition .left .batchButton i {
+    font-size: 15px;
+    margin-right: 7px;
+}
+.batchCondition .left .opText {
+    margin-left: 15px;
+    padding-right: 12px;
+    color: #969fa9;
+    line-height: 36px;
+}
+.batchCondition .right .batchButton {
+    display: inline-block;
+    padding: 5px 13px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    color: #fff;
+    background: #3b6ff5;
+}
+.batchCondition .right .batchButton i {
+    font-size: 15px;
+    margin-right: 7px;
+}
+.reloadBtn {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #fff;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+.reloadBtn i {
+    font-size: 16px;
+}
+.whiteSpace {
+    display: block;
+    max-width: 90px;
+    max-height: 62px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.whiteSpace span {
+    display: block;
+    width: 100%;
+}
+.upGradeList {
+    height: 500px;
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+.upGradeList .setUpGrade {
+    font-family: PingFangSC-Regular;
+    margin-bottom: 30px;
+}
+.upGradeList .setUpGrade .grade {
+    font-size: 20px;
+    display: inline-block;
+    line-height: 28px;
+    font-family: PingFangSC-Semibold;
+    margin-bottom: 24px;
+}
+.upGradeList .setUpGrade .later {
+    margin-bottom: 30px;
+}
+.upGradeList .setUpGrade .later .sourceName {
+    font-size: 16px;
+}
+.upGradeList .setUpGrade .later .targetPrefix {
+    font-size: 16px;
+}
+.upGradeList .setUpGrade .later .targetEnPrefix {
+    font-size: 16px;
+}
+.upGradeList .setUpGrade .later .classCName {
+    width: 187px;
+    height: 35px;
+    margin-left: 11px;
+    margin-right: 50px;
+    border-radius: 18px;
+}
+.upGradeList .setUpGrade .later .redClassCName {
+    width: 187px;
+    height: 35px;
+    margin-left: 11px;
+    margin-right: 50px;
+    border-radius: 18px;
+    border-color: red;
+}
+.upGradeList .setUpGrade .later .classEName {
+    width: 187px;
+    height: 35px;
+    border-radius: 18px;
+    margin-left: 14px;
+}
+.upGradeList .setUpGrade .later .redClassEName {
+    width: 187px;
+    height: 35px;
+    border-radius: 18px;
+    margin-left: 14px;
+    border-color: red;
+}
+.btns {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btns .cancelBtnUp {
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 9px 29px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #3b6ff5;
+    color: #3b6ff5;
+    text-align: center;
+}
+.btns .submitBtnUp {
+    border-radius: 20px;
+    padding: 9px 29px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #3b6ff5;
+    background: #3b6ff5;
+    color: #fff;
+    text-align: center;
+}
+.fixed {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+.selectGrade :global .ant-select-selection--single {
+    width: 158px;
+    height: 40px;
+    border-radius: 20px;
+    padding-top: 4px;
+}
+:global .ant-input-number-handler-wrap {
+    border-radius: 15px;
+}
+:global .ant-select .ant-select-enabled {
+    width: 200px;
+}

@@ -1,0 +1,118 @@
+.preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    .previewCover {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(51, 51, 51, 0.8);
+        padding-top: 61px;
+        display: flex;
+        justify-content: center;
+        .close {
+            font-size: 32px;
+            color: #fff;
+            font-weight: bold;
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            cursor: pointer;
+        }
+        .previewContent {
+            width: 375px;
+            height: 84.5vh;
+            background: #fff;
+            margin: 0 12px;
+            overflow: scroll;
+            padding-bottom: 24px;
+            .head {
+                color: #fff;
+                line-height: 44px;
+                background: #f9c545;
+                padding-left: 12px;
+            }
+            .msg {
+                padding: 0 24px;
+                line-height: 28px;
+                margin-bottom: 8px;
+                .title {
+                    display: block;
+                    font-size: 18px;
+                    color: #000;
+                    line-height: 38px;
+                    margin-top: 5px;
+                }
+                .item {
+                    display: block;
+                    .label {
+                        display: inline-block;
+                        width: 114px;
+                        color: #666;
+                    }
+                }
+            }
+            .card {
+                padding: 0 24px;
+                // .cardList{
+                //     max-height: 36vh;
+                //     overflow: scroll;
+                // }
+                .item {
+                    display: block;
+                    border: 1px solid #ededec;
+                    border-radius: 8px;
+                    background: #fafafa;
+                    padding: 10px 10px 0;
+                    margin-bottom: 8px;
+                    .itemPrice {
+                        border-bottom: 1px solid #f4f4f4;
+                        display: block;
+                        padding-bottom: 6px;
+                        overflow: hidden;
+                        .title {
+                            display: inline-block;
+                            width: 170px;
+                            color: #000;
+                        }
+                        .price {
+                            float: right;
+                            color: #999;
+                            text-align: right;
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                    .add {
+                        display: block;
+                        text-align: right;
+                        line-height: 34px;
+                        color: #000;
+                    }
+                }
+                .total {
+                    text-align: right;
+                    display: block;
+                    color: #000;
+                    span {
+                        color: #999;
+                    }
+                }
+            }
+            .mention {
+                padding: 0 24px;
+                color: #666;
+                .label {
+                    display: block;
+                    font-size: 16px;
+                    margin: 10px 0;
+                }
+                .text {
+                    display: block;
+                    white-space: pre-line;
+                }
+            }
+        }
+    }
+}

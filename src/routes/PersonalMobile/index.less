@@ -1,0 +1,114 @@
+.personalList {
+    background: #F5F6F7;
+    padding: 0px;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    .closeModal {
+        position: fixed;
+        font-size: 12px;
+        /* top: 20px; */
+        background: rgba(1, 17, 61, 0.85);
+        // opacity: 0.5;
+        height: 48px;
+        width: 48px;
+        text-align: center;
+        /* line-height: 48px; */
+        padding: 7px;
+        border-radius: 24px;
+        bottom: 100px;
+        right: 20px;
+        font-family: PingFangSC-Regular;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        span {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .cardList {
+        height: 100%;
+        background: #F5F6F7;
+        z-index: 6;
+        overflow: scroll;
+        padding: 16px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .personal {
+            .personBox {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0 20px;
+                margin-bottom: 20px;
+                background: #fff;
+                color: rgba(1, 17, 61, 0.65);
+                font-size: 16px;
+                font-family: PingFangSC-Regular;
+                height: 50px;
+                vertical-align: middle;
+                line-height: 50px;
+            }
+        }
+        .logoutButton {
+            background: #FFFFFF;
+            font-family: PingFangSC-Regular;
+            color: #A21F27;
+            font-size: 16px;
+            height: 56px;
+            line-height: 56px;
+            text-align: center;
+        }
+    }
+    .lessonChangeTab {
+        height: 50px;
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .changeButton {
+            text-align: center;
+            // line-height: 50px;
+            color: rgb(122, 129, 151);
+            i {
+                // color: rgb(144, 15, 29) !important;
+                font-size: 21px;
+            }
+            a {
+                color: rgb(122, 129, 151);
+            }
+        }
+        .isCheck {          
+            color: rgb(144, 15, 29) !important;
+        }
+        .isCheckName {
+            color: rgb(144, 15, 29) !important;
+            font-family: PingFangSC-Medium !important;
+        }
+    }
+}
+
+// @media screen and  (orientation:  portrait){
+//     .courseSelectDetail{
+//         // -webkit-transform:rotate(90deg);
+//         // -webkit-transform-origin:0% 0%;/*1.重置旋转中心*/
+
+//         // -moz-transform: rotate(90deg);
+//         // -moz-transform-origin:0% 0%;
+
+//         // -ms-transform: rotate(90deg);
+//         // -ms-transform-origin:0% 0%;
+
+//         transform: rotate(90deg);
+//         // transform-origin:0% 0%;
+
+//         width: 100vh;/*2.利用 vh 重置 ‘宽度’ */
+//         // height: 100vw;/* 3.利用 vw 重置 ‘高度’ */
+
+//         top: 0;
+//         left: 100vw;/* 4.旋转后页面超出屏幕，重置页面定位位置 */
+//     }
+// }

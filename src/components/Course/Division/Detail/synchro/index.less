@@ -1,0 +1,123 @@
+.content{
+    margin: 20px;
+    .syncText{
+        font-size: 16px;
+        font-weight: 900;
+    }
+    .syncSpan{
+        // font-weight: 600;
+        color: black;
+    }
+    .syncInfo{
+        // display: flex;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        position: relative;
+        .syncInfoDiv{
+            display: flex;
+            .syncInfoText{
+                display: flex;
+                flex-direction: column;
+                margin-left: 30px;
+                span{
+                    display: block;
+                    margin: 2px 0;
+                }
+            }
+            .syncInfoButton{
+                position: absolute;
+                right: 80px;
+                top: 15px;
+            }
+        }
+    }
+    .syncSchedule{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin: 10px 0;
+        .syncSecInfo{
+            display: flex;
+            // margin: 10px 0;
+            padding: 10px;
+            position: relative;
+            .syncSecInfoText{
+                display: flex;
+                flex-direction: column;
+                margin-left: 30px;
+                span{
+                    display: block;
+                    margin: 2px 0;
+                }
+            }
+            .syncSecInfoButton{
+                position: absolute;
+                right: 80px;
+                top: 15px;
+            }
+        }
+        .selectCourse{
+            display: flex;
+            // margin: 10px 0;
+            padding: 10px;
+            margin-bottom: 10px;
+            .syncChoiceSchedule{
+                margin-left: 30px;
+                margin-top: -4px;
+                display: flex;
+                // .dataPicker{
+                //     display: inline-block;
+                //     width: 244px;
+                //     :global{
+                //         .ant-calendar-picker-input{
+                //             display: inline-block;
+                //             width: 244px;
+                //         }
+                //     }
+                // }
+                .timePicker {
+                    // margin-bottom: 12px;
+                    position: relative;
+                    :global {
+                        .ant-calendar-picker {
+                            .ant-calendar-picker-input {
+                                visibility: hidden;
+                            }
+                        }
+                    }
+                    .timeText {
+                        position: absolute;
+                        top: 0px;
+                        border: 1px solid #d9d9d9;
+                        width: 240px;
+                        line-height: 30px;
+                        border-radius: 5px;
+                        padding: 0 12px;
+                    }
+                }
+            }
+        }
+        .setCourseSite{
+            display: flex;
+            // margin: 10px 0;
+            padding: 0 0 0 10px;
+            .setCourseSiteRight{
+                margin-left: 30px;
+                // margin-top: -5px;
+            }
+        }
+        .setCOurse{
+            display: flex;
+            // margin: 10px 0;
+            padding: 10px;
+            .setCOurseRight{
+                margin-left: 30px;
+                // margin-top: -5px;
+            }
+        }
+    }
+}
+

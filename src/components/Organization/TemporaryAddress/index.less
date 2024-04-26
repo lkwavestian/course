@@ -1,0 +1,257 @@
+.frameworkPage {
+    margin: 24px;
+    .btnList {
+        display: flex;
+    }
+    .cogradientOrg {
+        text-align: left;
+        margin-bottom: 24px;
+        span {
+            padding: 0 14px;
+            display: inline-block;
+            border-radius: 8px;
+            background: #3b6ff5;
+            color: #fff;
+            margin-right: 10px;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+            height: 36px;
+            line-height: 36px;
+            i {
+                font-size: 18px;
+                vertical-align: middle;
+                line-height: 26px;
+            }
+            &.reloadBtn {
+                background: #fff;
+                color: #3b6ff5;
+                border: 1px solid #3b6ff5;
+                line-height: 34px;
+            }
+        }
+    }
+    :global {
+        .ant-table-tbody > tr > td {
+            height: 38px !important;
+            padding: 0 !important;
+        }
+    }
+}
+
+.mainContent {
+    margin-top: -24px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    p {
+        margin-bottom: 0.5rem;
+    }
+    .instruction {
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+}
+
+.uploading {
+    margin-top: 1rem;
+    float: left;
+    text-align: center;
+}
+
+.ant-modal-header {
+    padding-bottom: 0 !important;
+}
+
+.explain {
+    display: block;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.desc {
+    width: 200px;
+}
+.upLoad {
+    display: flex;
+    margin-top: 15px;
+    .text {
+        font-weight: 900;
+        margin-right: 15px;
+    }
+}
+
+.btn {
+    width: auto;
+    margin-left: 10px;
+}
+
+.importCalendar,
+.successModal,
+.checkModal {
+    :global {
+        .ant-modal-header {
+            display: flex;
+            justify-content: center;
+        }
+        .ant-modal-title {
+            // width: 120px;
+            font-family: PingFangSC-Medium;
+            color: #01113d;
+            font-size: 20px;
+            line-height: 28px;
+            /* margin: auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-70px); */
+        }
+        .ant-table-row-cell-break-word {
+            white-space: pre-line;
+        }
+        .ant-select-selection-selected-value {
+            width: 190px;
+        }
+    }
+
+    .importMsg {
+        margin: 15px;
+        font-family: PingFangSC-Regular;
+        color: #01113d 100%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .form {
+        display: inherit;
+        margin-left: 20px;
+    }
+    .importCalendarSelect {
+        width: auto;
+        margin-left: 10px;
+        .ant-select-selection--single {
+            width: 150px;
+        }
+    }
+}
+
+.modalStyle{
+    :global{
+        .ant-modal-footer > div > .ant-btn {
+            border-radius: 8px;
+            color: rgba(1, 17, 61, 0.65);
+            background: rgba(1, 17, 61, 0.07);
+            border: 0;
+            &.ant-btn-primary{
+                background: #3b6ff5;
+                color: #fff;
+            }
+        }
+
+        .ant-input{
+            border-radius: 8px;
+            height: 36px;
+        }
+
+
+    }
+}
+
+.addAddressStyle{
+    :global{
+        .ant-input{
+            width: 300px;
+        }
+        .ant-form-explain, .ant-form-extra{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .ant-select-selection--single{
+            width: 300px;
+            height: 36px;
+            .ant-select-selection__rendered{
+                height: 36px;
+                line-height: 36px;
+            }
+        }
+        .ant-select-selection{
+            border-radius: 8px;
+        }
+        .ant-form-item{
+            margin-bottom: 10px;
+        }
+        .ant-modal-body {
+            padding: 24px 24px 10px;
+        }
+        .ant-input-number-input{
+            border-radius: 8px;
+            height: 36px;
+        }
+        .ant-input-number{
+            height: 36px;
+            border-radius: 8px;
+        }
+    }
+    .formItem{
+        :global(.ant-form-explain){
+            position: absolute;
+            left: 300px;
+            top: 10px;
+        }
+    }
+}
+
+.chooseBtn{
+    border-radius: 8px;
+}
+
+.upLoad{
+    // display: flex;
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    & > span:nth-child(2){
+        margin-left: 40px;
+    }
+}
+
+.importFees{
+    :global{
+        .ant-btn{   //取消按钮样式
+          height: 36px !important;
+          line-height: 36px !important;
+          border-radius: 8px !important;
+          color: rgba(1, 17, 61, 0.65) !important;
+          background: rgba(1, 17, 61, 0.07) !important;
+          text-align: center;
+          border: 0 !important;
+          &.ant-btn-primary{  //确认按钮样式
+            background:  #3B6FF5 !important;
+            color: #fff !important;
+            
+          }
+        }
+        .ant-input{
+          height: 36px !important;
+          border-radius: 8px !important;
+        }
+
+        .ant-select-selection{
+            height: 36px !important;
+        }
+      
+        .ant-select-selection__rendered{
+          line-height: 36px !important; 
+        }
+      
+        .ant-select-selection--single{
+          border-radius: 8px !important;
+          height: 36px;
+        }
+      
+        .ant-select-lg .ant-select-selection--multiple{
+          min-height: 36px;
+          border-radius: 8px;
+          padding-bottom: 0;
+      }
+      
+      
+    }
+}

@@ -1,0 +1,42 @@
+.ReplaceMobileApplication {
+    height: 100%;
+    :global {
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: #0445fc;
+        }
+    }
+    :global {
+        .am-list-item .am-list-line .am-list-content {
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(1, 17, 61, 0.85);
+            display: flex;
+            justify-content: space-between;
+            .ant-checkbox-checked .ant-checkbox-inner {
+                background-color: #0445fc;
+            }
+        }
+        .ant-switch-checked {
+            background-color: #0445fc;
+        }
+    }
+    :global {
+        .ant-spin-nested-loading,
+        .ant-spin-container {
+            height: 100%;
+        }
+    }
+}
+
+.calendarWrapper {
+    :global {
+        .am-modal-header {
+            padding-top: 15px;
+            padding-bottom: 10px;
+        }
+        .am-modal-close {
+            top: 14px;
+        }
+    }
+}

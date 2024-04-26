@@ -1,0 +1,117 @@
+.header {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    .semesterSel {
+        width: 250px;
+        margin-left: 20px;
+        :global {
+            .ant-select-selection--single {
+                border-radius: 5px;
+                height: 100%;
+            }
+            .ant-select-selection__rendered {
+                height: 100%;
+            }
+            .ant-select-selection-selected-value {
+                height: 100%;
+                line-height: 40px;
+                /* >span{
+                    display: inline-block;
+                    height: 100%;   
+                    line-height: 100%;
+                } */
+            }
+        }
+    }
+    :global {
+        .ant-btn-primary {
+            width: 112px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.card {
+    .msg {
+        margin: 20px 30px;
+        height: 80px;
+        // line-height: 60px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        > span {
+            display: inline-block;
+            line-height: 80px;
+        }
+        > span:nth-child(1) {
+            font-size: 20px;
+            font-weight: 800;
+            color: black;
+            padding-left: 20px;
+        }
+        > span:nth-child(2) {
+            font-size: 14px;
+            color: #ccc;
+            padding-right: 20px;
+        }
+    }
+}
+
+.selector {
+    width: 80%;
+    height: 40px;
+    margin: 10px 0 10px 5%;
+    display: flex;
+    // justify-content: space-between;
+    .semester {
+        display: inline-block;
+        width: 23%;
+        text-align: center;
+        line-height: 40px;
+    }
+    .bottomSel {
+        display: inline-block;
+        width: 70%;
+    }
+    :global {
+        .ant-select-selection--single {
+            border-radius: 5px;
+            height: 40px;
+        }
+        .ant-select-selection-selected-value {
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}
+.main {
+    display: flex;
+    // justify-content: end;
+    // width: 90%;
+    padding-left: 8.5%;
+    .divisionTypes {
+        // margin-left: 10px;
+        display: inline-block;
+        padding-top: 5px;
+    }
+    .selectors {
+        display: inline-block;
+        margin-left: 2%;
+    }
+}
+.divisionName {
+    display: flex;
+    margin: 10px 0 10px 1%;
+    justify-content: space-around;
+    width: 80%;
+    .nameInfo {
+        display: inline-block;
+        border-radius: 5px;
+        height: 40px;
+        width: 70%;
+    }
+}

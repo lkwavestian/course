@@ -1,0 +1,300 @@
+@lessonViewTableBorder: 1px solid rgb(228, 228, 228);
+.lessonViewWrapper {
+    border-left: @lessonViewTableBorder;
+    overflow: scroll;
+    .studentGroupName {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-between;
+        align-items: center;
+        border: @lessonViewTableBorder;
+        border-left: none;
+    }
+    .lessonView {
+        display: flex;
+        .lessonViewTableWrapper {
+            width: 84.5%;
+        }
+        .willArrangeWrapper {
+            width: 15.5%;
+        }
+    }
+}
+
+.weekDayPlaceholder {
+    display: flex;
+    .weekDayItem {
+        border-right: @lessonViewTableBorder;
+        border-bottom: @lessonViewTableBorder;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+.weekDayRowWrapper {
+    display: flex;
+}
+
+.halfDayItem {
+    display: flex;
+    flex-direction: column;
+    .halfDayItemDiv {
+        text-align: center;
+        border-right: @lessonViewTableBorder;
+        border-bottom: @lessonViewTableBorder;
+    }
+}
+
+.weekDayCol {
+    .lessonItemWrapper {
+        display: flex;
+        // flex-direction: column;
+        box-sizing: border-box;
+        border-right: @lessonViewTableBorder;
+        border-bottom: @lessonViewTableBorder;
+        position: relative;
+        overflow: scroll;
+    }
+    .lessonItem {
+        flex-grow: 1;
+        text-align: center;
+        // line-height: 50px;
+        display: flex;
+        box-sizing: border-box;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        .nameHidden {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            overflow: hidden;
+        }
+        .lockIcon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0px;
+            height: 0px;
+            border-color: transparent #000;
+            border-width: 0 0 15px 15px;
+            border-style: solid;
+        }
+    }
+
+    .exchangePlaceHolder {
+        flex-grow: 1;
+        height: calc(~'100% - 5px');
+        width: 30%;
+        position: absolute;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.rowPlaceHolder {
+    display: flex;
+    .rowPlaceHolderItem {
+        height: 25px;
+        border-right: @lessonViewTableBorder;
+        border-bottom: @lessonViewTableBorder;
+    }
+}
+
+.willArrangeWrapper {
+    border-right: @lessonViewTableBorder;
+    border-bottom: @lessonViewTableBorder;
+    width: 100%;
+    .willArrangeNum {
+        border-bottom: @lessonViewTableBorder;
+        text-align: center;
+        line-height: 40px;
+        height: 40px;
+        overflow: hidden;
+    }
+    .willArrangeList {
+        overflow: scroll;
+        .arrangeListItem {
+            position: relative;
+            height: 30px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        .willArrangeItem {
+            height: 30px;
+            box-sizing: border-box;
+            border: 2px solid rgb(20, 118, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(20, 118, 255);
+        }
+    }
+}
+.itemMessage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: @lessonViewTableBorder;
+    overflow: scroll;
+    position: relative;
+    .courseNameWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .extraText {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .itemNum {
+            color: #fff;
+            position: absolute;
+            right: 2px;
+        }
+    }
+}
+
+.reason {
+    width: 203px;
+    padding: 5px 10px 5px 10px;
+    overflow: scroll;
+    font-family: AlibabaPuHuiTiR;
+    font-size: 12px;
+    p {
+        overflow: hidden;
+    }
+    .poptitle {
+        font-size: 12px;
+        font-family: AlibabaPuHuiTiR;
+        i {
+            color: red;
+            margin-right: 7px;
+        }
+    }
+    .reasonTea {
+        font-size: 12px;
+        width: auto;
+        max-width: 100px;
+        height: 20px;
+        background: #f3f3f3;
+        font-family: AlibabaPuHuiTiR;
+        color: #000 100%;
+        border-radius: 4px;
+        padding: 1px 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    .timeConflict,
+    .roomConflict,
+    .noRules,
+    .reasonEquals {
+        font-family: AlibabaPuHuiTiR;
+        font-size: 12px;
+        float: right;
+    }
+
+    .noRules {
+        cursor: pointer;
+    }
+    .noRules:hover {
+        color: #1476ff;
+    }
+
+    .reasonMess {
+        font-size: 12px;
+        width: auto;
+        height: 20px;
+        background: #f3f3f3;
+        font-family: AlibabaPuHuiTiR;
+        border-radius: 4px;
+        padding: 1px 8px;
+        color: #000 65%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    .reasonRoom {
+        font-size: 12px;
+        width: auto;
+        height: 20px;
+        background: #f3f3f3;
+        font-family: AlibabaPuHuiTiR;
+        border-radius: 4px;
+        padding: 1px 8px;
+        color: #000 65%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    .bottom {
+        display: flex;
+
+        p {
+            font-family: AlibabaPuHuiTiR;
+            font-size: 12px;
+            position: relative;
+            bottom: -2px;
+        }
+        .noBtn {
+            display: inline-block;
+            width: 40px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid #f3f3f3;
+            border-radius: 4px;
+            right: 66px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .yesBtn {
+            display: inline-block;
+            background: #1476ff;
+            color: white;
+            width: 40px;
+            font-size: 12px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid #f3f3f3;
+            cursor: pointer;
+            right: 30px;
+        }
+    }
+}
+
+.lockIconList {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    gap: 4px;
+    .lock,
+    .unLock {
+        cursor: pointer;
+        &:hover {
+            color: #3b6ff5;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+body {
+    background: #f1f4fe;
+    font-family: PingFangSC-Regular;
+}
+/* * {
+  touch-action: none !important;
+} */
+* ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+.mainContent {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}

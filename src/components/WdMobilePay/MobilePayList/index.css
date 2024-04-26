@@ -1,0 +1,295 @@
+.root {
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+.mobileLoading {
+  text-align: center;
+  margin-top: 150px;
+}
+.mobilePayList .noData {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 150px;
+}
+.mobilePayList .noData .text {
+  margin-top: 12px;
+}
+.loading1 {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payList {
+  background: #f5f6f7;
+}
+.payList .nullStyle {
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payList :global(.ant-tabs-tab) {
+  margin: 0 3.25rem 0 0;
+  padding: 0.9375rem 1rem 0.9rem 1rem;
+}
+.payList :global(.ant-tabs-nav .ant-tabs-tab):hover {
+  color: #01113d !important;
+}
+.payList :global(.ant-tabs-ink-bar-animated) {
+  width: 1.75rem !important;
+  margin-left: 1rem !important;
+  background: #0445fc !important;
+  margin-bottom: 0.625rem;
+}
+.payList :global(.ant-tabs-nav-wrap) {
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+}
+.payList :global(.ant-tabs-bar) {
+  width: 100%;
+  position: fixed;
+  opacity: 1 !important;
+  background: #ffffff;
+  z-index: 999;
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+  font-size: 1rem;
+  border-bottom: none;
+}
+.payList .noData {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.payList .noData .text {
+  margin-top: 2.4375rem;
+  font-family: PingFangSC-Regular;
+  color: #01113d 0.65;
+  font-size: 1rem;
+  line-height: 1.4063rem;
+}
+.payList .noData img {
+  width: 9.6875rem;
+  height: 8.3125rem;
+}
+.chargeCard {
+  overflow: hidden;
+  margin: 1.125rem 0.8125rem 0.5rem;
+  border-radius: 0.5rem;
+  background: url('../../../assets/payLogo.png') #ffffff no-repeat right bottom !important;
+  background-size: 6rem !important;
+}
+.chargeCard .paymentStatus {
+  height: 3rem;
+  padding-left: 0.8125rem;
+  padding-right: 0.8125rem;
+  margin: 0.75rem 0;
+}
+.chargeCard .paymentStatus .leftSpan {
+  width: 60%;
+  height: 3rem;
+  font-family: PingFangSC-Medium;
+  color: #0445fc;
+  font-size: 1.875rem;
+  line-height: 3rem;
+}
+.chargeCard .paymentStatus .leftSpan1 {
+  width: 60%;
+  height: 3rem;
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+  font-size: 1.875rem;
+  line-height: 3rem;
+}
+.chargeCard .paymentStatus .rightSpan {
+  width: 40%;
+  height: 3rem;
+  right: 3rem;
+  line-height: 3rem;
+  float: right;
+}
+.chargeCard .paymentStatus .rightSpan span {
+  font-family: PingFangSC-Medium;
+  color: #0445fc;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  float: right;
+}
+.chargeCard .title {
+  height: 2.4375rem;
+  background-image: linear-gradient(to right, #104efd, #2d81ff);
+  padding: 0rem 0.8125rem 0rem 0.8125rem;
+  display: block;
+  font-size: 0.8125rem;
+  color: #ffffff;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+.chargeCard .title span {
+  line-height: 2.4375rem;
+}
+.chargeCard .title :global(.anticon) {
+  line-height: 2.63rem !important;
+}
+.chargeCard .title1 {
+  height: 2.4375rem;
+  background-image: linear-gradient(to right, #c5c5c5, #e5e5e5);
+  padding: 0rem 0.8125rem 0rem 0.8125rem;
+  display: block;
+  font-size: 0.8125rem;
+  color: #ffffff;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+.chargeCard .title1 :global(.anticon) {
+  line-height: 2.63rem !important;
+}
+.chargeCard .chargeMsg {
+  padding: 0rem 0.8125rem 1.1rem 0.8125rem;
+}
+.chargeCard .chargeMsg .userMsg {
+  display: block;
+  font-size: 0.75rem;
+}
+.chargeCard .chargeMsg .userMsg .label {
+  color: #01113d;
+  opacity: 0.65;
+}
+.chargeCard .chargeMsg .userMsg .name {
+  color: #01113d;
+  opacity: 0.85;
+}
+.chargeCard .chargeMsg img {
+  width: 20%;
+  height: 10%;
+  float: right;
+}
+.chargeCard .payMsg {
+  overflow: hidden;
+  padding: 1rem 1.25rem 1.25rem;
+  border-top: 1px solid #efefef;
+}
+.chargeCard .payMsg .deadLine {
+  float: left;
+}
+.chargeCard .payMsg .deadLine .time {
+  color: #333;
+  display: block;
+}
+.chargeCard .payMsg .deadLine .text {
+  color: #717171;
+  display: block;
+  font-size: 0.75rem;
+}
+.chargeCard .payMsg .priceAndStatus {
+  float: right;
+}
+.chargeCard .payMsg .priceAndStatus .price {
+  color: #333;
+  display: block;
+  font-size: 1rem;
+}
+.chargeCard .payMsg .priceAndStatus .status {
+  display: block;
+  color: #666;
+  font-size: 0.75rem;
+  text-align: right;
+}
+.chargeCard .payMsg .priceAndStatus .status .light {
+  color: #e9b635;
+}
+.educateCard {
+  background: #ffffff;
+  margin: 1.125rem 0.8125rem 0.875rem;
+  border-radius: 0.5rem;
+}
+.educateCard .chargeMsg {
+  padding-top: 1.0625rem;
+}
+.educateCard .chargeMsg .priceBorder {
+  width: 85%;
+  height: 1px;
+  border-bottom: 1px dashed #01113d;
+  opacity: 0.12;
+  margin: 0 auto;
+}
+.educateCard .educateTitle {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 1.4rem;
+}
+.educateCard .educateTitle .leftSpan {
+  width: 60%;
+  font-family: PingFangSC-Medium;
+  font-weight: 600;
+  color: #01113d;
+  font-size: 1rem;
+}
+.educateCard .educateTitle .rightSpan {
+  width: 40%;
+  float: right;
+  line-height: 1.4rem;
+}
+.educateCard .educateTitle .rightSpan span {
+  font-family: PingFangSC-Medium;
+  color: #0445fc;
+  font-size: 0.75rem;
+  float: right;
+}
+.educateCard .center {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.1875rem 0 1.8175rem 0;
+  border-bottom: 1px dashed rgba(1, 17, 61, 0.12);
+}
+.educateCard .center .priceTitle {
+  font-family: PingFangSC-Regular;
+  color: #01113d;
+  opacity: 0.65;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem;
+}
+.educateCard .center .priceValue {
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+  font-size: 1.875rem;
+  line-height: 2.625rem;
+}
+.educateCard .chargeMsgs {
+  padding: 1.1rem 0.8125rem 1.1rem 0.8125rem;
+  border-bottom: 1px solid rgba(1, 17, 61, 0.15);
+}
+.educateCard .chargeMsgs .userMsg {
+  display: block;
+  font-size: 0.75rem;
+}
+.educateCard .chargeMsgs .userMsg .label {
+  color: #01113d;
+  opacity: 0.65;
+}
+.educateCard .chargeMsgs .userMsg .name {
+  color: #01113d;
+  opacity: 0.85;
+}
+.educateCard .btnChange {
+  padding: 0.75rem 1rem 0.75rem 1rem;
+}
+.educateCard .btnChange .detail {
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+  font-size: 0.75rem;
+}
+.educateCard .btnChange .anticon .anticon-right {
+  height: 1rem;
+  font-size: 0.75rem;
+}
+.tabArea {
+  height: 60px;
+}

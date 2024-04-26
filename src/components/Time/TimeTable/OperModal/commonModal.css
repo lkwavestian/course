@@ -1,0 +1,730 @@
+.selectSemester {
+  margin-bottom: 20px;
+}
+.selectSemester .semesterTime {
+  font-size: 14px;
+  margin-left: 20px;
+  color: #999;
+  display: inline-block;
+}
+.useRange {
+  margin-bottom: 20px;
+}
+.operList {
+  border: 1px;
+  margin: 20px 0;
+}
+.operList th {
+  width: 120px;
+  height: 44px;
+  text-align: center;
+}
+.operList td {
+  width: 92px;
+  height: 44px;
+  text-align: center;
+  background: #f1f2f3;
+}
+.relaxsll {
+  background: #945858;
+  color: #888;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  overflow: auto;
+  border: 1px solid #fff;
+  cursor: pointer;
+  vertical-align: top;
+  min-height: 35px !important;
+}
+.selectedNum {
+  position: absolute;
+  bottom: 7%;
+  color: #666;
+  font-size: 14px;
+  left: 5%;
+}
+.modalBtn {
+  border: 1px solid #3b6ff5;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.cancelBtn {
+  color: #3b6ff5;
+  background: #fff;
+  text-align: center;
+  margin-right: 10px;
+}
+.submitBtn {
+  background: #3b6ff5;
+  color: #fff;
+  text-align: center;
+  margin-right: 10px;
+}
+.btnDisabled {
+  pointer-events: none;
+  cursor: default;
+  background: #999;
+  border-color: #999;
+}
+.btnCan {
+  cursor: pointer;
+  background: #3b6ff5;
+  color: #fff;
+}
+.fetCourseStyle {
+  margin-right: 10px;
+}
+.fetCourseStyle em {
+  font-style: normal;
+  color: #3b6ff5;
+}
+:global .ant-select-selection--single {
+  border-radius: 20px;
+}
+:global .ant-calendar-picker-input {
+  border-radius: 20px;
+}
+:global .ant-select-selection--multiple {
+  border-radius: 20px;
+}
+.saveResultType {
+  margin: 10px 20px;
+}
+.saveResultType > span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.saveVersionInput {
+  margin: 30px 20px;
+  width: 391px;
+}
+.saveVersionTextArea {
+  margin: 20px;
+  margin-top: -20px;
+  width: 391px;
+}
+.operButtonList {
+  float: right;
+}
+.operButtonList .disabled {
+  background: #f5f5f5;
+  pointer-events: none;
+  border-color: #f5f5f5;
+  color: rgba(0, 0, 0, 0.25);
+}
+.operButtonListCenter {
+  display: table;
+  margin: 20px auto;
+  margin-top: 40px;
+}
+.operButtonListCenter .disabled {
+  background: #f5f5f5;
+  pointer-events: none;
+  border-color: #f5f5f5;
+  color: rgba(0, 0, 0, 0.25);
+}
+.importPlanPage .importTips {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+.importPlanPage .showCourseOption {
+  margin: 20px 10px;
+  min-height: 220px;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+.importPlanPage .showCourseOption .courseMargin {
+  margin: 24px 24px 0 0;
+  display: inline-block;
+}
+.importPlanPage .showCourseOption .courseMargin .courseName {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  width: 130px;
+  font-style: normal;
+}
+.importPlanPage .showCourseOption .noData {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 50px;
+}
+.importPlanPage .selectAll {
+  margin-top: -9px;
+}
+.publishText {
+  margin: 10px 20px;
+}
+.publishText > span {
+  display: inline-block;
+  margin-right: 14px;
+}
+.publishTips {
+  font-size: 13px;
+  color: #999;
+  margin-left: 20px;
+}
+.publishRanPicker {
+  margin: 37px 20px 37px 56px;
+}
+.noticePerson {
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+.noticePerson > span {
+  display: inline-block;
+  margin-right: 14px;
+}
+.dateStyle > div > input {
+  border: none;
+  visibility: hidden;
+}
+.publishRanPicker .searchDateMain {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  width: 270px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+}
+.publishRanPicker .searchDateMain .arrow {
+  font-size: 18px;
+  cursor: pointer;
+}
+.publishRanPicker .searchDateMain span {
+  display: inline-block;
+  margin: 0 15px;
+}
+.addressContent .tipsTitle {
+  font-size: 16px;
+  color: #666;
+}
+.addressContent .operButtonList {
+  text-align: center;
+  float: none;
+  margin-top: 30px;
+}
+.addressContent .showDetial {
+  max-height: 250px;
+  overflow-y: scroll;
+}
+.errorMessage .closeModalBtn {
+  margin-top: 20px;
+  background: #3b6ff5;
+  border-radius: 20px;
+  padding: 8px 23px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 92px;
+  color: #fff;
+  margin: 0 auto;
+}
+.errorMessage .failMessage {
+  margin: 24px 0;
+  white-space: pre-wrap;
+}
+.copyModal .copyResultPicker {
+  margin: 0px auto 30px;
+  display: flex;
+  align-items: center;
+}
+.copyModal .copyResultPicker > p {
+  font-size: 16px;
+  color: #333;
+}
+.copyModal .scheduleList {
+  max-height: 54vh;
+  overflow: scroll;
+}
+.copyModal .scheduleList :global .ant-table-content .ant-table-thead > tr > th {
+  border: none;
+  background: #fff;
+  padding: 10px 16px;
+}
+.copyModal .scheduleList :global .ant-table-content .ant-table-tbody > tr:hover {
+  background: none;
+}
+.copyModal .scheduleList :global .ant-table-content .ant-table-tbody > .ant-table-row:hover > td {
+  background: none;
+}
+.copyModal .scheduleList :global .ant-table-content .ant-table-tbody > tr > td {
+  border: none;
+  padding: 10px 16px;
+}
+.copyModal .scheduleList :global .ant-table-content .ant-table-placeholder {
+  border: none;
+}
+.copyModal .scheduleList .preSchedule .name {
+  display: block;
+}
+.copyModal .scheduleList .preSchedule .name .published {
+  color: #9ac466;
+}
+.copyModal .scheduleList .preSchedule .originVersion {
+  font-size: 12px;
+}
+.copyModal .scheduleList .status {
+  white-space: nowrap;
+  color: #333;
+}
+.copyModal .operButtonList {
+  text-align: center;
+  margin-top: 20px;
+  float: unset;
+}
+.changeScheduleTop {
+  overflow: hidden;
+}
+.changeScheduleTop .changeLift {
+  float: left;
+  margin: 20px;
+}
+.changeRadio {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  padding-right: 20px;
+}
+.changeRadio .changeRadioTitle {
+  margin-right: 20px;
+}
+.changeRadio .changeRadioAlert {
+  font-size: 12px;
+}
+.versionConent {
+  font-size: 14px;
+  padding-left: 32px;
+  margin-top: 12px;
+  display: block;
+  height: 32px;
+}
+.versionConent .versionConentSpan {
+  display: inline-block;
+  width: 64px;
+  text-align: right;
+}
+.versionConent .versionConentDatePicker {
+  display: inline-block;
+  width: 230px;
+  border: 1px solid #d9d9d9;
+  border-radius: 30px;
+  height: 32px;
+  font-variant: tabular-nums;
+  position: relative;
+  vertical-align: top;
+}
+.versionConent .versionConentDatePicker > span:first-child {
+  position: absolute;
+  left: 11px;
+  top: 5px;
+}
+.versionConent > div {
+  margin-left: 12px;
+}
+.versionConent .modalBtn {
+  margin-left: 56px;
+}
+.operBtn {
+  float: right;
+  margin-top: 10px;
+}
+.operBtn > span {
+  float: left;
+}
+.versionHerder {
+  margin-top: 16px;
+}
+.titleSpan {
+  width: 440px;
+  display: inline-block;
+  text-align: center;
+}
+.contrastList {
+  width: 460px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 0px;
+  padding: 0px 22px;
+  font-size: 14px;
+}
+.clickKeyContent {
+  height: 190px;
+  overflow-y: scroll;
+  margin: 20px 30px;
+}
+.clickKeyContent .radioStyle {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.clickKeyContent .clickKeyClass {
+  display: inline-block;
+  font-style: normal;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+}
+.progressContent {
+  height: 350px;
+  text-align: center;
+  padding: 90px 5px;
+}
+.progressContent .downLoadFetch {
+  text-align: left;
+  margin-bottom: 0;
+}
+.progressContent .downLoadFetch .downLoadData {
+  float: right;
+}
+.progressContent .progressTips {
+  color: #999;
+  font-size: 14px;
+  margin-top: 12px;
+  text-align: left;
+}
+.progressContent .progressTips .progressData {
+  float: right;
+}
+.progressContent .operButtonStyle {
+  text-align: center;
+  margin: 20px auto;
+}
+.progressContent .operButtonStyle span {
+  background: #3b6ff5;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.errorPage .ruleMessage {
+  font-family: PingFangSC-Medium;
+  color: #01113d 100%;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 11px;
+}
+.errorPage .acMessageItem {
+  font-family: PingFangSC-Regular;
+  color: #0445fc 100%;
+  font-size: 14px;
+  line-height: 24px;
+}
+.colTitle {
+  margin-top: 50px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+.colTitle .currentCol {
+  color: #346bfe;
+}
+.tableBody {
+  border-top: 1px dashed #e8e8e8;
+}
+.tableBody .timeBox,
+.tableBody .timeLineBox {
+  height: 86px;
+  position: relative;
+}
+.tableBody .timeBox .positionBox,
+.tableBody .timeLineBox .positionBox {
+  position: relative;
+  top: -11px;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+}
+.tableBody .timeBox {
+  text-align: center;
+}
+.tableBody .bgCol {
+  background-color: #fafafa;
+}
+.tableBody .colMain {
+  padding: 0 6px 6px;
+  display: inline-block;
+  font-size: 12px;
+  overflow: auto;
+}
+.errMsgModal .ruleMessageContainer {
+  margin-bottom: 24px;
+}
+.errMsgModal .ruleMessageContainer .ruleMessage {
+  margin-bottom: 11px;
+}
+.errMsgModal .ruleMessageContainer .acMessageItem {
+  margin-bottom: 8px;
+}
+.errMsgModal .footerWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.errMsgModal .footerWrapper .downLoadUrl {
+  font-size: 14px;
+  line-height: 32px;
+  color: #0445fc;
+  text-align: center;
+}
+.errMsgModal .footerWrapper .adjustment {
+  height: 36px;
+  border-radius: 8px;
+  background: #3b6ff5;
+  color: #fff;
+}
+.errMsgModal :global .ant-modal-header {
+  border-bottom: 1px solid #e5e7eb !important;
+}
+.errMsgModal :global .ant-modal-body {
+  padding-left: 40px;
+  padding-right: 40px;
+  border-bottom: 1px solid #e5e7eb !important;
+  padding-bottom: 0;
+}
+.errMsgModal :global .ant-modal-footer {
+  padding-top: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.createStyle .spanStyle {
+  margin-left: -60px;
+  display: inline-block;
+  width: 87%;
+  text-align: initial;
+}
+.createStyle .divStyle {
+  max-height: 160px;
+  overflow: scroll;
+}
+.createStyle :global .ant-modal-body {
+  text-align: center;
+}
+.createStyle :global .ant-modal-body .ant-modal-confirm-content {
+  font-size: 18px;
+  color: #333;
+}
+.createStyle :global .ant-modal-body .ant-modal-confirm-btns {
+  margin: 10px auto 0;
+}
+.createStyle :global .ant-modal-body .ant-modal-confirm-btns .ant-btn {
+  height: 36px;
+  border-radius: 8px;
+  border-color: #4d7fff;
+  color: #4d7fff;
+}
+.createStyle :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary {
+  background: #4d7fff;
+  color: #fff;
+}
+.createStyle :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.createStyle :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.createStyle :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.createStyle :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.createStyle :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.createStyle :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.createStyle :global .ant-select {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.createStyle :global .ant-modal-confirm,
+.createStyle :global .ant-modal-confirm-btns {
+  float: none;
+}
+.createStyle :global .ant-select-selection--multiple {
+  border-radius: 8px !important;
+}
+.createStyle :global .ant-form-item {
+  margin-bottom: 0 !important;
+}
+.errorStyle :global .ant-modal-body {
+  text-align: center;
+}
+.errorStyle :global .ant-modal-body .ant-modal-confirm-content {
+  font-size: 18px;
+  color: #333;
+}
+.errorStyle :global .ant-modal-body .ant-modal-confirm-btns {
+  margin: 10px auto 0;
+}
+.errorStyle :global .ant-modal-body .ant-modal-confirm-btns .ant-btn {
+  height: 36px;
+  border-radius: 8px;
+  border-color: #4d7fff;
+  color: #4d7fff;
+}
+.errorStyle :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary {
+  background: #4d7fff;
+  color: #fff;
+}
+.errorStyle :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.errorStyle :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.tableStyle {
+  margin-top: 10px;
+}
+.tableStyle :global .ant-modal-body .ant-modal-confirm-content,
+.changeSchedule :global .ant-modal-body .ant-modal-confirm-content,
+.checkStyle :global .ant-modal-body .ant-modal-confirm-content,
+.saveVersion :global .ant-modal-body .ant-modal-confirm-content {
+  font-size: 18px;
+  color: #333;
+}
+.tableStyle :global .ant-modal-body .ant-modal-confirm-btns,
+.changeSchedule :global .ant-modal-body .ant-modal-confirm-btns,
+.checkStyle :global .ant-modal-body .ant-modal-confirm-btns,
+.saveVersion :global .ant-modal-body .ant-modal-confirm-btns {
+  margin: 10px auto 0;
+}
+.tableStyle :global .ant-modal-body .ant-modal-confirm-btns .ant-btn,
+.changeSchedule :global .ant-modal-body .ant-modal-confirm-btns .ant-btn,
+.checkStyle :global .ant-modal-body .ant-modal-confirm-btns .ant-btn,
+.saveVersion :global .ant-modal-body .ant-modal-confirm-btns .ant-btn {
+  height: 36px;
+  border-radius: 8px;
+  border-color: #4d7fff;
+  color: #4d7fff;
+}
+.tableStyle :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary,
+.changeSchedule :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary,
+.checkStyle :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary,
+.saveVersion :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary {
+  background: #4d7fff;
+  color: #fff;
+}
+.tableStyle :global .ant-btn,
+.changeSchedule :global .ant-btn,
+.checkStyle :global .ant-btn,
+.saveVersion :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.tableStyle :global .ant-btn.ant-btn-primary,
+.changeSchedule :global .ant-btn.ant-btn-primary,
+.checkStyle :global .ant-btn.ant-btn-primary,
+.saveVersion :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.tableStyle :global .ant-select-selection__rendered,
+.changeSchedule :global .ant-select-selection__rendered,
+.checkStyle :global .ant-select-selection__rendered,
+.saveVersion :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.tableStyle :global .ant-select-selection--single,
+.changeSchedule :global .ant-select-selection--single,
+.checkStyle :global .ant-select-selection--single,
+.saveVersion :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.tableStyle :global .ant-select-lg .ant-select-selection--multiple,
+.changeSchedule :global .ant-select-lg .ant-select-selection--multiple,
+.checkStyle :global .ant-select-lg .ant-select-selection--multiple,
+.saveVersion :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.tableStyle :global .ant-select,
+.changeSchedule :global .ant-select,
+.checkStyle :global .ant-select,
+.saveVersion :global .ant-select {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.tableStyle :global .ant-modal-confirm,
+.changeSchedule :global .ant-modal-confirm,
+.checkStyle :global .ant-modal-confirm,
+.saveVersion :global .ant-modal-confirm,
+.tableStyle :global .ant-modal-confirm-btns,
+.changeSchedule :global .ant-modal-confirm-btns,
+.checkStyle :global .ant-modal-confirm-btns,
+.saveVersion :global .ant-modal-confirm-btns {
+  float: none;
+}
+.tableStyle :global .ant-select-selection--multiple,
+.changeSchedule :global .ant-select-selection--multiple,
+.checkStyle :global .ant-select-selection--multiple,
+.saveVersion :global .ant-select-selection--multiple {
+  border-radius: 8px !important;
+}
+.changeSchedule {
+  width: 950px !important;
+}
+.checkStyle .singleStyle {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.checkStyle .doubleStyle {
+  margin: 20px 20px 0 50%;
+}
+.importCoursePlan :global .ant-btn {
+  height: 36px;
+  border-radius: 8px;
+  color: rgba(1, 17, 61, 0.65);
+  background: rgba(1, 17, 61, 0.07);
+  border: 0;
+}
+.importCoursePlan :global .ant-btn-primary {
+  background: #3b6ff5;
+  color: #fff;
+}
+.scheduleRange :global .ant-btn {
+  height: 36px;
+  border-radius: 8px;
+  color: rgba(1, 17, 61, 0.65);
+  background: rgba(1, 17, 61, 0.07);
+  border: 0;
+}
+.scheduleRange :global .ant-btn-primary {
+  background: #3b6ff5;
+  color: #fff;
+}

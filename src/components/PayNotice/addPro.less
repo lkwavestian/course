@@ -1,0 +1,128 @@
+.addPro {
+    :global {
+        .selectBox .ant-select-selection {
+            border: none;
+            outline: none;
+            box-shadow: unset;
+        }
+        .ant-select-arrow {
+            right: 30%;
+        }
+        .ant-tree.ant-tree-directory {
+            text-align: left;
+        }
+        .ant-tree.ant-tree-directory
+            > li.ant-tree-treenode-selected
+            > span.ant-tree-node-content-wrapper::before {
+            // height: 48px;
+            background: #3b6ff5;
+        }
+    }
+    .searchStudent {
+        border-bottom: 1px solid #efefef;
+        padding: 10px;
+    }
+    .selectBox {
+        box-shadow: 0px 2px 8px 0px rgba(59, 111, 245, 0.12);
+        margin-top: 10px;
+        width: 100%;
+        .selectTree {
+            overflow: hidden;
+            display: flex;
+            .select {
+                // float: left;
+                text-align: left;
+                width: 34%;
+                border-right: 1px solid #efefef;
+                .treeNode {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    cursor: pointer;
+                    color: #666;
+                    height: 2.5rem;
+                    .name {
+                        width: 93.5%;
+                        display: inline-block;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        word-break: break-all;
+                    }
+                }
+                .clickNode {
+                    background: #047fff;
+                    color: #fff;
+                }
+
+                .treeSelected {
+                    background: #047fff;
+                    color: #fff;
+                }
+                .count {
+                    float: right;
+                }
+                :global {
+                    .ant-tree li {
+                        padding: 10px 0 !important;
+                    }
+                    .ant-tree-treenode-selected {
+                        background: #047fff;
+                        .ant-tree-node-selected {
+                            background: #047fff;
+                            color: #fff;
+                        }
+                    }
+                    .ant-tree-node-content-wrapper {
+                        .ant-tree-title {
+                            width: 120px;
+                            display: block;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            word-break: break-all;
+                        }
+                    }
+                }
+            }
+            .checkbox {
+                // float: right;
+                flex: 1;
+                padding: 0px 15px 24px;
+                height: 340px;
+                overflow: scroll;
+
+                :global {
+                    .ant-checkbox-wrapper {
+                        display: block;
+                        margin-left: 0;
+                        margin-bottom: 16px;
+                    }
+                    .ant-checkbox-group {
+                        .ant-checkbox-wrapper {
+                            display: flex;
+                            .ant-checkbox-checked::after {
+                                border: none;
+                            }
+                        }
+                    }
+                }
+                .chargeBox {
+                    display: flex;
+                }
+                .chargeName {
+                    display: inline-block;
+                    width: 190px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    word-break: break-all;
+                    line-height: 14px;
+                }
+                .chargePrice {
+                    float: right;
+                    color: #999;
+                }
+            }
+        }
+    }
+}

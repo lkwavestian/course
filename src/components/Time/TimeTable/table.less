@@ -1,0 +1,906 @@
+// eslint-disable-next-line
+@tableBorderColor: #e8e8e8;
+.scheduleBox {
+    height: 100%;
+    min-width: 1950px;
+    .scheduleTitle {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        border-top: 1px solid @tableBorderColor;
+        border-bottom: 1px solid @tableBorderColor;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        .currentDateCol {
+            color: #3b6ff5;
+        }
+        .classBox {
+            width: 50px;
+            text-align: center;
+            color: #3b6ff5;
+            font-size: 14px;
+            padding: 10px 5px;
+            border-right: 1px solid @tableBorderColor;
+            i {
+                display: block;
+            }
+        }
+        .weekBox {
+            flex: 10;
+            -webkit-flex: 10;
+            -moz-flex: 10;
+            .scheduleClass {
+                height: 50%;
+                &:nth-child(1) {
+                    border-bottom: 1px solid @tableBorderColor;
+                }
+                &:nth-child(2) {
+                    & > div {
+                        padding: 5px 0;
+                    }
+                }
+                & > div {
+                    flex: 1;
+                    -webkit-flex: 1;
+                    -moz-flex: 1;
+                    text-align: center;
+                    height: 100%;
+                    padding: 3px 0 3px;
+                    border-right: 1px solid @tableBorderColor;
+                    color: #666;
+                    &:nth-last-child(1) {
+                        border-right: 0 none;
+                    }
+                }
+                .activeDeleteCol {
+                    border-left: 2px dashed #3b6ff5;
+                    border-right: 2px dashed #3b6ff5;
+                    border-top: 2px dashed #3b6ff5;
+                }
+                .noDeleteCol {
+                    border-left: 0 none;
+                    border-right: 1px dashed #9e9e9e;
+                    border-top: 0 none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .noDeleteCol:hover .copyWeekCol {
+                    opacity: 1;
+                }
+                .weekLineActive {
+                    color: #3b6ff5;
+                }
+                .weekLineActive:hover .copyWeekCol {
+                    opacity: 1;
+                }
+                .selectDelete {
+                    color: #3b6ff5;
+                    cursor: pointer;
+                    margin-right: 10px;
+                }
+                .cancelSelect {
+                    color: #ddd;
+                    cursor: pointer;
+                    margin-right: 10px;
+                }
+                .deleteWeekCol {
+                    border-left: 2px dashed #3b6ff5;
+                    border-right: 2px dashed #3b6ff5;
+                    border-bottom: 2px dashed #3b6ff5;
+                }
+                .noDeleteWeekCol {
+                    border-left: 0 none;
+                    border-right: 1px dashed #9e9e9e;
+                }
+                .timeLine {
+                    display: flex;
+                    align-items: center;
+                    flex: 1;
+                    -webkit-flex: 1;
+                    -moz-flex: 1;
+                    & > div {
+                        display: flex;
+                        flex-grow: 1;
+                        display: -webkit-flex;
+                        > span {
+                            display: inline-block;
+                            flex: 1;
+                            -webkit-flex: 1;
+                            text-align: center;
+                            font-size: 12px;
+                            color: #666;
+                        }
+                    }
+                }
+                .copyWeekCol {
+                    cursor: pointer;
+                    padding-left: 4px;
+                    opacity: 0;
+                    // position: absolute;
+                    top: 9px;
+                    transition: opacity ease 1s;
+                }
+                // .chooseAll {
+                //     :global {
+                //         .ant-checkbox-group {
+                //             // display: contents !important;
+                //             display: flex;
+                //             flex-direction: column !important;
+                //         }
+                //     }
+                // }
+            }
+        }
+    }
+
+    .scheduleMain {
+        min-height: 20vh;
+        overflow-y: scroll;
+        & > div {
+            border-bottom: 1px dashed @tableBorderColor;
+            display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+        }
+        .itemContent {
+            height: 40vh;
+            position: relative;
+            .plus {
+                position: absolute;
+                height: 20px;
+                bottom: -2%;
+                left: 0.8%;
+                display: none;
+                color: #3b6ff5;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            .block {
+                display: inline-block;
+            }
+        }
+        .classList:hover + .plus {
+            display: inline-block;
+        }
+        .plus:hover {
+            display: inline-block;
+        }
+        .defaultContent {
+            position: relative;
+            .classList {
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+            }
+            .plus {
+                position: absolute;
+                height: 20px;
+                bottom: -8%;
+                left: 0.8%;
+                display: none;
+                color: #3b6ff5;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            .block {
+                display: inline-block;
+            }
+        }
+
+        .classList:hover + .plus {
+            display: inline-block;
+        }
+        .plus:hover {
+            display: inline-block;
+        }
+        .classList {
+            width: 50px;
+            text-align: center;
+            color: #3b6ff5;
+            font-size: 14px;
+            padding: 30px 3px;
+            border-right: 1px solid @tableBorderColor;
+            position: relative;
+            overflow: scroll;
+            em {
+                height: 100%;
+                width: 5px;
+                background: rgba(59, 111, 245, 0.4);
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+            }
+            .closeCustom {
+                cursor: pointer;
+                position: absolute;
+                top: -3px;
+                left: 0;
+                i {
+                    color: #ccc;
+                }
+            }
+        }
+        .custom {
+            background: rgba(20, 118, 252, 0.1);
+            border: 1px solid rgba(228, 228, 228, 1);
+            cursor: pointer;
+            padding: 0;
+            .customContent {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .activeClassList {
+            width: 50px;
+            text-align: center;
+            color: #3b6ff5;
+            font-size: 14px;
+            padding: 30px 3px;
+            border-right: 1px solid @tableBorderColor;
+            position: relative;
+            overflow: scroll;
+            background: rgba(59, 111, 245, 0.2);
+            box-shadow: 0px 6px 30px 0px rgba(59, 111, 245, 0.1);
+            em {
+                height: 100%;
+                width: 5px;
+                background: rgba(59, 111, 245, 0.4);
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+            }
+        }
+        .scheduleList {
+            flex: 10;
+            -webkit-flex: 10;
+            -moz-flex: 10;
+            .scheduleDetail {
+                height: 100%;
+                display: flex;
+                display: -webkit-flex;
+                display: -moz-flex;
+                position: relative;
+                & > div {
+                    flex: 1;
+                    -webkit-flex: 1;
+                    -moz-flex: 1;
+                    border-right: 1px solid @tableBorderColor;
+                    text-align: center;
+                    overflow: hidden;
+                    &:nth-last-child(1) {
+                        border-right: 0 none;
+                    }
+                }
+                .deleteScheduleCol {
+                    border-left: 2px dashed #3b6ff5;
+                    border-right: 2px dashed #3b6ff5;
+                    border-bottom: 2px dashed #3b6ff5;
+                }
+                .noDeleteScheduleCol {
+                    border-left: 0 none;
+                    border-right: 1px dashed #9e9e9e;
+                    border-bottom: 0 none;
+                }
+                .courseBox {
+                    margin: 3px 6px;
+                    position: relative;
+                    width: 94%;
+                    height: 95%;
+                    :global {
+                        .ant-popover {
+                            z-index: 99 !important;
+                        }
+                    }
+                }
+                .scheduleCardNoClass {
+                    position: absolute;
+                    border: 1px solid #fff;
+                    padding: 3px 0;
+                    // display: -webkit-box;
+                    // -webkit-box-pack: center;
+                    // -webkit-box-align: center;
+                    overflow: hidden;
+                    font-size: 12px;
+                    cursor: pointer;
+                    min-width: 15px;
+                    background: rgba(55, 152, 255, 0.1);
+                    color: #3798ff;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                    .isLocked {
+                        position: absolute;
+                        top: 0;
+                        left: -4px;
+                        width: 0;
+                        height: 0;
+                        border-width: 0 7px 7px;
+                        overflow: hidden;
+                        border-style: solid;
+                        border-color: transparent transparent rgba(229, 73, 46, 0.7);
+                        transform: rotate(-45deg);
+                    }
+                    .isChoiced {
+                        position: absolute;
+                        top: 0;
+                        left: -4px;
+                        width: 0;
+                        height: 0;
+                        border-width: 0 7px 7px;
+                        overflow: hidden;
+                        border-style: solid;
+                        border-color: transparent transparent rgba(229, 180, 46, 0.7);
+                        transform: rotate(-45deg);
+                    }
+                    .isWaitingListed {
+                        position: absolute;
+                        top: 0;
+                        left: -4px;
+                        width: 0;
+                        height: 0;
+                        border-width: 0 7px 7px;
+                        overflow: hidden;
+                        border-style: solid;
+                        border-color: transparent transparent rgba(229, 73, 150, 0.7);
+                        transform: rotate(-45deg);
+                    }
+                }
+                .scheduleCard {
+                    position: relative;
+                    :global {
+                        .ant-popover-placement-left,
+                        .ant-popover-placement-leftTop,
+                        .ant-popover-placement-leftBottom {
+                            left: 25% !important;
+                        }
+                    }
+                    .content {
+                        width: 100%;
+                        line-height: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        .utilName {
+                            // display: -webkit-box;
+                            width: 100%;
+                            text-align: center;
+                            display: inline-block;
+                            // text-overflow: ellipsis;  文本省略号
+                            white-space: nowrap;
+                            overflow: hidden;
+                            height: 25px;
+                            line-height: 3;
+                        }
+                        .stuGroupName {
+                            overflow: hidden;
+                            width: 100%;
+                            // height: 54px;
+                            line-height: 1.5;
+                            // white-space: nowrap;  // 溢出不换行
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            /* autoprefixer: off*/
+                            // -webkit-box-orient: vertical; // 从上到下垂直排列子元素
+                            -webkit-line-clamp: 3;
+                            overflow-wrap: break-word;
+                        }
+                    }
+                    position: absolute;
+                    border: 1px solid #fff;
+                    padding: 3px 0;
+                    display: -webkit-box;
+                    display: flex;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    -webkit-box-align: center;
+                    overflow: hidden;
+                    font-size: 12px;
+                    cursor: pointer;
+                    min-width: 15px;
+                    background: rgba(55, 152, 255, 0.1);
+                    color: #3798ff;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                    .isLocked {
+                        position: absolute;
+                        top: 0;
+                        left: -4px;
+                        width: 0;
+                        height: 0;
+                        border-width: 0 7px 7px;
+                        overflow: hidden;
+                        border-style: solid;
+                        border-color: transparent transparent rgba(229, 73, 46, 0.7);
+                        transform: rotate(-45deg);
+                    }
+                    .isChoiced {
+                        position: absolute;
+                        top: 0;
+                        left: -4px;
+                        width: 0;
+                        height: 0;
+                        border-width: 0 7px 7px;
+                        overflow: hidden;
+                        border-style: solid;
+                        border-color: transparent transparent rgba(229, 180, 46, 0.7);
+                        transform: rotate(-45deg);
+                    }
+                    .isWaitingListed {
+                        position: absolute;
+                        top: 0;
+                        left: -4px;
+                        width: 0;
+                        height: 0;
+                        border-width: 0 7px 7px;
+                        overflow: hidden;
+                        border-style: solid;
+                        border-color: transparent transparent rgba(229, 73, 150, 0.7);
+                        transform: rotate(-45deg);
+                    }
+                }
+
+                .notRule {
+                    background-image: repeating-linear-gradient(315deg, #999, #fff 10%) !important;
+                }
+            }
+        }
+        .placeholder {
+            height: 40vh;
+        }
+    }
+    .fullStyle {
+        height: 80vh;
+    }
+}
+.emptySchedule {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    .emptyScheduleText {
+        color: #999;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+.notRuleCard {
+    :global {
+        width: 300px;
+        min-height: 80px;
+        padding: 20px 16px;
+        .ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow {
+            display: none;
+        }
+    }
+}
+
+.detailModal {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 350px;
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    .detailTitle {
+        padding: 19px 20px;
+        overflow: hidden;
+        height: 100px;
+        background: rgba(55, 152, 255, 0.1);
+        .detailTitleLeft {
+            float: left;
+            .detailTitleName {
+                color: #3798ff;
+            }
+            & > span {
+                display: block;
+                font-size: 14px;
+                color: #666;
+                margin-top: 3px;
+                &:nth-child(1) {
+                    font-size: 18px;
+                    width: 270px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                &:nth-child(3) {
+                    float: right;
+                    margin-top: -20px;
+                    margin-left: 200px;
+                }
+            }
+        }
+        .detailTitleRight {
+            float: right;
+            text-align: right;
+            font-size: 14px;
+            margin-right: 5%;
+            & > span {
+                font-size: 14px;
+                display: block;
+                color: #333;
+            }
+            .lockButtonStyle {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                background: #fff;
+                border-radius: 50%;
+                line-height: 34px;
+                border: 1px solid #eee;
+                text-align: center;
+                color: #eee;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .unLockButtonStyle {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                background: #fff;
+                border-radius: 50%;
+                line-height: 34px;
+                border: 1px solid #3b6ff5;
+                text-align: center;
+                color: #3b6ff5;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .changeClassStyle {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                background: #fff;
+                border-radius: 50%;
+                line-height: 34px;
+                border: 1px solid #eee;
+                text-align: center;
+                color: #3b6ff5;
+                font-size: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .notChangeClassStyle {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                background: #fff;
+                border-radius: 50%;
+                line-height: 34px;
+                border: 1px solid #eee;
+                text-align: center;
+                color: #eee;
+                font-size: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .showTeacher {
+        padding: 19px 20px;
+        color: #333;
+        height: 200px;
+        overflow-y: scroll;
+        & > p {
+            & > i {
+                font-size: 16px;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+            & > span {
+                em {
+                    display: inline-block;
+                    padding: 0 5px;
+                    // margin-right: 5px;
+                    font-style: normal;
+                    // background: #f3f3f3;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .allowSelf {
+            margin-left: 20px;
+            margin-top: -10px;
+        }
+        .createMsg {
+            color: #666;
+            float: right;
+        }
+    }
+    .operButton {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 20px 25px;
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        justify-content: space-between;
+        color: #3b6ff5;
+        font-size: 14px;
+        & > span {
+            cursor: pointer;
+        }
+        & > i {
+            margin-right: 5px;
+        }
+    }
+}
+.scheduleMain .noScheduleData {
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    line-height: 100px;
+    display: block !important;
+}
+.lockStyle {
+    margin-right: 5px;
+    color: #ddd;
+    cursor: pointer;
+}
+.lockClassStyle {
+    color: #ddd;
+    display: block;
+    cursor: pointer;
+}
+.unLockClassStyle {
+    color: #3b6ff5;
+    display: block;
+    cursor: pointer;
+}
+.lockIconList {
+    display: flex;
+    gap: 3px;
+    .lock,
+    .unLock {
+        cursor: pointer;
+        color: #dddddd;
+        &:hover {
+            color: #3b6ff5;
+        }
+    }
+}
+
+.selectEditContent {
+    margin: 0 40px 30px;
+}
+.operButtonList {
+    text-align: center;
+    .modalBtn {
+        border: 1px solid rgba(59, 111, 245, 1);
+        border-radius: 20px;
+        padding: 8px 23px;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .cancelBtn {
+        color: #3b6ff5;
+        background: #fff;
+        margin-right: 10px;
+    }
+    .submitBtn {
+        background: #3b6ff5;
+        color: #fff;
+    }
+}
+
+.menuItem {
+    position: relative;
+    .triangle {
+        display: block;
+        position: absolute;
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        border-left: 6px solid #000;
+        right: -20px;
+        top: 8px;
+    }
+}
+
+.studentInput,
+.teacherInput {
+    min-width: 220px;
+    padding: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 65px;
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    .confirm {
+        display: block;
+        background: #1476ff;
+        text-align: center;
+        line-height: 24px;
+        width: 48px;
+        color: #fff;
+        float: right;
+        border-radius: 4px;
+        margin-top: 20px;
+        height: 24px;
+    }
+}
+.teacherInput {
+    display: flex;
+    .searchPart {
+        width: auto;
+        display: flex;
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 2px 2px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -ms-flex-pack: center;
+        justify-content: center;
+        .addButton {
+            /* background: #eee;
+            text-align: center;
+            border-radius: 5px;
+            margin-right: 5px;
+            display: inline-block;
+            border: 1px dashed #aaa;
+            cursor: pointer;
+            width: 60px;
+            height: 32px;
+            line-height: 32px;
+            color: #3b6ff5; */
+            line-height: 32px;
+        }
+        :global {
+            .ant-select-selection {
+                border: none !important;
+            }
+        }
+    }
+    .confirm {
+        margin-top: 4px;
+        margin-left: 5px;
+        padding: 0 12px;
+    }
+}
+
+.searchContent {
+    .form {
+        display: flex;
+        padding-top: 8px;
+        :global {
+            .ant-select {
+                width: auto !important;
+            }
+            .ant-select-selection {
+                border: none;
+                font-size: 12px;
+            }
+        }
+        .search {
+            display: inline-block;
+            :global {
+                .ant-select-selection {
+                    border-bottom: 1px solid #f4f4f4;
+                    border-radius: 0;
+                    width: 150px;
+                }
+                .ant-input {
+                    border: none;
+                    border-bottom: 1px solid #f4f4f4;
+                    border-radius: 0;
+                    box-shadow: none;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .btnBox {
+        text-align: right;
+        margin-top: 20px;
+        font-size: 12px;
+        .cancel,
+        .confirm {
+            text-align: center;
+            display: inline-block;
+            border-radius: 8px;
+            font-family: AlibabaPuHuiTiR;
+            line-height: 28px;
+            padding: 0 16px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .cancel {
+            background: #e8e8e8;
+            color: rgba(0, 0, 0, 0.65);
+            margin-right: 8px;
+        }
+        .confirm {
+            background: #1476ff;
+            color: #fff;
+        }
+    }
+}
+.customPopover {
+    cursor: pointer;
+}
+
+.copyDayModal {
+    color: #7b7f94;
+    .selectPart {
+        .label {
+            padding-right: 20px;
+        }
+    }
+    .describe {
+        font-size: 12px;
+        margin: 12px 0;
+    }
+    .btnBox {
+        text-align: right;
+        .cancel {
+            margin-right: 12px;
+            color: #7b7f94;
+            background: #edeef2;
+            border-color: #edeef2;
+        }
+    }
+}
+.ruleMessageStyle {
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Checkbox_Group {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.chooseAll {
+    margin-right: 0px;
+    height: 24px;
+}
+
+:global {
+    .flash :local {
+        animation: flash 300ms 8;
+        // background-color: red !important;
+    }
+    @keyframes flash {
+        from {
+            background-color: #fff;
+        }
+        50% {
+            background-color: #1476ff;
+            color: #fff;
+        }
+        to {
+            background-color: #fff;
+        }
+    }
+}

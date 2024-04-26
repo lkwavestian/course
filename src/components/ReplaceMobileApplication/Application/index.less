@@ -1,0 +1,564 @@
+.replaceMobileApplicationWrapper {
+    height: 100%;
+    overflow: scroll;
+    background-color: rgb(245, 246, 247);
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    :global {
+        .am-calendar .content {
+            z-index: 1000;
+        }
+        .ant-upload-list-item-name {
+            max-width: 85vw;
+        }
+        .am-list-item {
+            flex-grow: 1;
+        }
+        .ant-upload-list-item-card-actions {
+            opacity: 1;
+        }
+        .am-calendar .confirm-panel {
+            display: none;
+        }
+    }
+}
+
+.replaceMobileApplicationWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.applicationBtnWrapper {
+    z-index: 10;
+    padding: 22px 12px;
+    background-color: #fff;
+    position: sticky;
+    top: calc(~'100% - 84px');
+    box-shadow: 0px 1px 4px 0px rgba(1, 17, 61, 0.12), inset 0px 1px 0px 0px rgba(1, 17, 61, 0.05);
+    .applicationBtn {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: PingFangSC-Medium;
+        font-size: 16px;
+        line-height: 22px;
+        .cancelBtn {
+            background: rgba(1, 17, 61, 0.07);
+            border-radius: 6px;
+            color: rgba(1, 17, 61, 0.65);
+            padding: 9px 42px;
+        }
+        .submitBtn {
+            background: #0445fc;
+            border-radius: 6px;
+            color: #ffffff;
+            padding: 9px 80px;
+        }
+    }
+}
+
+.itemWrapper {
+    .uploadButton {
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 22px;
+        color: #0445fc;
+    }
+    :global {
+        .am-textarea-control textarea {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+.applicationLabel,
+.editLabel {
+    padding-top: 14px;
+    padding-left: 12px;
+    padding-bottom: 8px;
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(1, 17, 61, 0.85);
+    background-color: rgba(245, 246, 247, 1);
+}
+
+.editLabel {
+    padding-top: 12px;
+    padding-bottom: 0;
+    background-color: #fff;
+    color: rgba(1, 17, 61, 0.85);
+}
+
+.editValue {
+    background-color: #fff;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(1, 17, 61, 0.85);
+    padding-top: 6px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .requestAttachmentItem {
+        padding: 5px 10px;
+        border-radius: 8px;
+        background: rgba(1, 17, 61, 0.02);
+        box-sizing: border-box;
+        border: 1px solid rgba(1, 17, 61, 0.1);
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        line-height: 22px;
+        color: rgba(1, 17, 61, 0.85);
+    }
+}
+
+.addLessonButtonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    .addLessonButton {
+        display: flex;
+        gap: 5px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 22px;
+        color: #0445fc;
+        align-items: center;
+    }
+}
+
+.lessonListModal {
+    :global {
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: #0445fc;
+        }
+        .am-modal-header {
+            box-shadow: inset 0px -1px 0px 0px rgba(1, 17, 61, 0.05);
+            border-radius: 11px 11px 0px 0px;
+            padding: 12px;
+            .am-modal-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                line-height: 22px;
+                color: rgba(1, 17, 61, 0.85);
+                // :nth-child(2) {
+                //     font-family: PingFangSC-Semibold;
+                //     font-size: 16px;
+                //     line-height: 19px;
+                // }
+                // :nth-child(3) {
+                //     color: #0445fc;
+                // }
+                .ant-radio-group {
+                    display: flex;
+                }
+                .ant-select {
+                    .ant-select-selection--multiple {
+                        border-radius: 8px;
+                    }
+                }
+                .ant-radio-button-wrapper {
+                    font-family: PingFangSC-Medium;
+                    font-size: 14px;
+                    text-align: center;
+                    font-weight: 500;
+                    border: 1px solid rgba(1, 17, 61, 0.1);
+                    &:hover {
+                        color: #0445fc;
+                    }
+                    &:first-child {
+                        border-radius: 7px 0 0 7px;
+                        border-right: none;
+                    }
+                    &:last-child {
+                        border-radius: 0 7px 7px 0;
+                        border-left: none;
+                    }
+                }
+                .ant-radio-button-wrapper-checked {
+                    background-color: rgba(4, 69, 252, 0.1);
+                    border: 1px solid rgba(4, 69, 252, 0.1);
+                    font-family: PingFangSC-Medium;
+                    font-size: 14px;
+                    letter-spacing: 0px;
+                    color: #0445fc;
+                }
+                .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+                    background-color: rgb(217, 217, 217) !important;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.timeRange {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 9px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(1, 17, 61, 0.85);
+    font-weight: 400;
+    background: #ffffff;
+    border: 1px solid rgba(1, 17, 61, 0.12);
+    border-radius: 7px;
+    gap: 20px;
+}
+
+.addLessonList {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(245, 246, 247, 1);
+    height: calc(~'100vh - 144px');
+    overflow-y: scroll;
+}
+
+.addLessonItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 12px;
+    padding-bottom: 17px;
+    padding-right: 17px;
+    align-items: center;
+    .lessonMsg {
+        display: flex;
+        flex-direction: column;
+        font-family: PingFangSC-Medium;
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(1, 17, 61, 0.85);
+        .lesson {
+            margin-left: 10px;
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.65);
+        }
+        .class {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            .studentGroups {
+                max-width: 200px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.selectedLessonList {
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    background-color: #fff;
+}
+
+.selectedLessonItem {
+    position: relative;
+    background-color: rgba(1, 17, 61, 0.03);
+    border-radius: 5px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    line-height: 26px;
+    color: rgba(1, 17, 61, 0.85);
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        padding: 13px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        .header {
+            display: flex;
+            gap: 13px;
+            flex-wrap: wrap;
+            .leftPart {
+                font-family: PingFangSC-Medium;
+                font-size: 14px;
+                max-width: 100px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .rightPart {
+                display: flex;
+                gap: 5px;
+            }
+        }
+        .middle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            .leftPart {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                .teacherItem {
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                }
+            }
+            .replaceIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 5px;
+                border-radius: 3px;
+                background-color: #fc8312;
+                color: #fff;
+            }
+            .exchangeIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 5px;
+                border-radius: 3px;
+                background-color: #0bc548;
+                color: #fff;
+            }
+            .exchangeSpan {
+                display: flex;
+                gap: 5px;
+            }
+        }
+        .footer {
+            align-self: flex-end;
+            .btnWrapper {
+                display: flex;
+                gap: 10px;
+            }
+        }
+        .clickItem {
+            font-size: 14px;
+            line-height: 17px;
+            color: #0445fc;
+            cursor: pointer;
+        }
+    }
+
+    .closeCircle {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        cursor: pointer;
+        font-size: 18px;
+        color: #8b93a7;
+    }
+}
+
+.conflictLessonItem {
+    border: 1px solid red;
+}
+
+.conflictMsg {
+    display: block;
+    margin-top: 5px;
+    color: red;
+}
+
+.steps {
+    margin-top: 25px;
+    margin-left: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+.lines {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 4px;
+    .lineItem {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        .icon {
+            width: 10px;
+            height: 10px;
+            border-radius: 22px;
+            font-size: 17px;
+        }
+        .line {
+            width: 2px;
+        }
+    }
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    .userItem {
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+        width: 300px;
+        padding-bottom: 26px;
+        .leftContent {
+            display: flex;
+            height: 40px;
+            width: 40px;
+            flex-wrap: wrap;
+            border-radius: 5px;
+            padding: 3px;
+            background-color: rgba(245, 246, 247, 1);
+            flex: 0 0 auto;
+            gap: 2px;
+            .leftContentItem {
+                height: 16px;
+                width: 16px;
+                border-radius: 10px;
+            }
+        }
+        .singleLeftContent {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .rightContent {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: PingFangSC-Regular;
+            .name {
+                color: rgba(1, 17, 61, 0.85);
+            }
+            .remark {
+                color: rgba(1, 17, 61, 0.65);
+            }
+            .statusString {
+                font-family: PingFangSC-Medium;
+            }
+            .time {
+                font-size: 12px;
+                line-height: 17px;
+                font-family: PingFangSC-Regular;
+                color: rgba(1, 17, 61, 0.45);
+            }
+        }
+    }
+}
+
+.versionList {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    .versionItem {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(1, 17, 61, 0.65);
+    }
+}
+
+.calendarHeader {
+    height: 50px;
+    border-radius: 11px 11px 0px 0px;
+    background: #ffffff;
+    box-shadow: inset 0px -1px 0px 0px rgba(1, 17, 61, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(1, 17, 61, 0.85);
+    padding: 0 15px;
+    .middle {
+        font-family: PingFangSC-Semibold;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .right {
+        color: #0445fc;
+    }
+}
+
+.requestRelated {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 12px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fc8312;
+    background-color: #fff;
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .top {
+            font-family: PingFangSC-Medium;
+            font-size: 18px;
+            line-height: 26px;
+            color: #111f2c;
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .requestRelatedList {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .relatedItem {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 17px;
+            letter-spacing: 0.44px;
+            color: rgba(1, 17, 61, 0.65);
+            border-radius: 9px;
+        }
+        .isCurrent {
+            background: rgba(4, 69, 252, 0.07);
+            color: rgba(4, 69, 252, 0.85);
+        }
+        .notCurrent {
+            background: rgba(1, 17, 61, 0.03);
+        }
+    }
+}

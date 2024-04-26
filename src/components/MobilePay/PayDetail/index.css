@@ -1,0 +1,255 @@
+.loading {
+  text-align: center;
+  margin-top: 150px;
+}
+.payDetail .head {
+  color: #fff;
+  line-height: 2.75rem;
+  color: #f9c545;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+  border-bottom: solid 1px rgba(1, 17, 61, 0.12);
+}
+.payDetail .head .title {
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+}
+.payDetail .head .head {
+  float: right;
+}
+.payDetail .head .payedHead {
+  float: right;
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+}
+.payDetail .head .payNot {
+  float: right;
+  font-family: PingFangSC-Medium;
+  color: #0445fc;
+}
+.payDetail .msg {
+  padding: 0 1.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.payDetail .msg .title {
+  display: block;
+  font-size: 1.125rem;
+  color: #000;
+  line-height: 2.375rem;
+  margin-top: 0.3125rem;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+.payDetail .msg .item {
+  display: block;
+}
+.payDetail .msg .item .label {
+  display: inline-block;
+  width: 7.125rem;
+  color: #666;
+}
+.payDetail .card {
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+.payDetail .card .item {
+  display: block;
+  border-radius: 0.5rem;
+  background: rgba(1, 17, 61, 0.02);
+  border: 1px solid rgba(1, 17, 61, 0.12);
+  padding: 0.625rem 0.625rem 0;
+  margin-bottom: 0.5rem;
+}
+.payDetail .card .item .itemPrice {
+  display: block;
+  padding-bottom: 0.375rem;
+  overflow: hidden;
+}
+.payDetail .card .item .itemPrice .title {
+  display: inline-block;
+  width: 10.625rem;
+  color: #000;
+}
+.payDetail .card .item .itemPrice .price {
+  float: right;
+  color: #999;
+  text-align: right;
+}
+.payDetail .card .item .itemPrice .price span {
+  display: block;
+}
+.payDetail .card .item .add {
+  display: block;
+  text-align: right;
+  line-height: 2.125rem;
+  color: #000;
+}
+.payDetail .card .aboutPrice {
+  display: block;
+}
+.payDetail .card .aboutPrice .total {
+  display: block;
+  color: #000;
+}
+.payDetail .card .aboutPrice .total span {
+  color: #999;
+  width: 5.5rem;
+  display: inline-block;
+}
+.payDetail .mention {
+  padding: 0 1.5rem;
+  color: #666;
+}
+.payDetail .mention .label {
+  display: block;
+  font-size: 1rem;
+  margin: 0.625rem 0;
+}
+.payDetail .mention .text {
+  display: block;
+  overflow: scroll;
+  white-space: pre-line;
+}
+.payDetail .placeholder {
+  display: block;
+  height: 6.25rem;
+}
+.payDetail .payBtn {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0px 0.375rem 1.5625rem 0px rgba(59, 111, 245, 0.12);
+}
+.payDetail .payBtn :global .ant-btn-primary-disabled,
+.payDetail .payBtn :global .ant-btn-primary-disabled.active,
+.payDetail .payBtn :global .ant-btn-primary-disabled:active,
+.payDetail .payBtn :global .ant-btn-primary-disabled:focus,
+.payDetail .payBtn :global .ant-btn-primary-disabled:hover,
+.payDetail .payBtn :global .ant-btn-primary.disabled,
+.payDetail .payBtn :global .ant-btn-primary.disabled.active,
+.payDetail .payBtn :global .ant-btn-primary.disabled:active,
+.payDetail .payBtn :global .ant-btn-primary.disabled:focus,
+.payDetail .payBtn :global .ant-btn-primary.disabled:hover,
+.payDetail .payBtn :global .ant-btn-primary[disabled],
+.payDetail .payBtn :global .ant-btn-primary[disabled].active,
+.payDetail .payBtn :global .ant-btn-primary[disabled]:active,
+.payDetail .payBtn :global .ant-btn-primary[disabled]:focus,
+.payDetail .payBtn :global .ant-btn-primary[disabled]:hover {
+  background-color: #f5f5f5 !important;
+  border-color: #d9d9d9 !important;
+}
+.payDetail .payBtn .arrearsOfMoney {
+  text-align: left;
+  width: 66%;
+  display: flex;
+}
+.payDetail .payBtn .arrearsOfMoney .price,
+.payDetail .payBtn .arrearsOfMoney .text {
+  display: block;
+}
+.payDetail .payBtn .arrearsOfMoney .price {
+  color: #0445fc;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+.payDetail .payBtn .arrearsOfMoney .text {
+  color: #999;
+  padding-left: 2px;
+  line-height: 2.5rem;
+}
+.payDetail .payBtn .btn {
+  width: 33%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+.confirm .cover {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.6);
+}
+.confirm .confirmPayWay {
+  position: fixed;
+  bottom: 0;
+  z-index: 4;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0px 0.375rem 1.5625rem 0px rgba(59, 111, 245, 0.12);
+  transition: height 0.5s;
+}
+.confirm .confirmPayWay .titleAndIcon {
+  padding: 0 1.75rem;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  margin-top: 0.75rem;
+}
+.confirm .confirmPayWay .titleAndIcon .icon {
+  color: #4d7fff;
+  float: left;
+}
+.confirm .confirmPayWay .titleAndIcon .title {
+  color: #333;
+  font-size: 1rem;
+}
+.confirm .confirmPayWay .payPrice {
+  display: block;
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid #efefef;
+}
+.confirm .confirmPayWay .payWay {
+  list-style-type: none;
+  padding: 0;
+  height: 12.75rem;
+  overflow: scroll;
+}
+.confirm .confirmPayWay .payWay .item {
+  padding: 1rem 1.75rem;
+  border-bottom: 1px solid #efefef;
+}
+.confirm .confirmPayWay .payWay .item .avatar {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #4d7fff;
+  border-radius: 0.5rem;
+}
+.confirm .confirmPayWay .payWay .item .avatar img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+.confirm .confirmPayWay .payWay .item .name {
+  padding-left: 1.25rem;
+}
+.confirm .confirmPayWay .payWay .item .radio {
+  float: right;
+}
+.confirm .confirmPayWay .btn {
+  display: block;
+  width: 80%;
+  line-height: 2.2rem;
+  background: #4d7fff;
+  color: #fff;
+  border-radius: 1.25rem;
+  text-align: center;
+  margin: 0 10% 0;
+}
+.fixedStyle {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+}
+.fixedStyle :global .ant-checkbox-inner {
+  border-radius: 100px !important;
+}

@@ -1,0 +1,161 @@
+.menuContent {
+    margin: 0 2%;
+
+    .condition {
+        display: flex;
+        align-items: center;
+    }
+
+    .tabbar {
+        display: inline-block;
+        box-shadow: 0 2px 8px 0 rgba(1,17,61,0.14);
+        border-radius: 5px;
+
+        .tabbarItem {
+            display: inline-block;
+            font-size: 14px;
+            color: rgba(1, 17, 61, 0.85);
+            border-right: 1px solid rgba(1, 17, 61, 0.12);
+            padding: 7px 12px;
+            cursor: pointer;
+
+            &:first-child {
+                border-radius: 5px 0 0 5px;
+            }
+
+            &:last-child {
+                border-right: 0 none;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+
+        .activeTab {
+            background: rgba(4, 69, 252, 0.12);
+            color: rgba(4, 69, 252, 0.85);
+        }
+    }
+
+    .identifyList {
+        margin-left: 20px;
+    }
+
+    .main {
+        margin-top: 20px;
+
+        .programList {
+            margin-bottom: 12px;
+
+            .title {
+                font-size: 16px;
+                font-weight: bolder;
+                i {
+                    font-weight: normal;
+                    margin-right: 6px;
+                }
+                label {
+                    vertical-align: middle;
+                    margin-right: 12px;
+                    line-height: 35px;
+                }
+            }
+
+            .box {
+                &::after {
+                    content: "";
+                    clear: both;
+                    display: flex;
+                }
+                margin: 0 22px;
+            }
+
+            .programItem {
+                width: 15%;
+                margin-right: 1.1%;
+                margin-left: 0;
+                float: left;
+                display: flex;
+                // flex-direction: column;
+                margin-top: 10px;
+
+                label {
+                    vertical-align: middle;
+                    margin-right: 12px;
+                    line-height: 35px;
+                }
+
+                i {
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 6px;
+                    border-radius: 8px;
+                    border: 1.5px solid rgba(4, 69, 252, 0.85);
+                    color: rgba(4, 69, 252, 0.85);
+                    background: rgba(4, 69, 252, 0.12);
+                    text-align: center;
+                    line-height: 32px;
+                    font-size: 20px;
+                }
+
+                .programTitle {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    line-height: 32px;
+                    flex: 1;
+                    color: rgba(1,17,61,0.85);
+                }
+            }
+
+            .programCard .programTitle{
+                border: 1px solid rgba(1, 17, 61, 0.6);
+                color: rgba(1,17,61,0.85);
+                text-align: center;
+                border-radius: 8px;
+                font-size: 13px;
+                background: rgba(1,17,61,0.2);
+                padding: 0 2px;
+            }
+        }
+
+        .flexProgramList {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.identify {
+    font-size: 14px;
+    color: rgba(1, 17, 61, 0.85);
+}
+
+.save {
+    margin: 24px auto;
+    text-align: center;
+
+    span {
+        display: inline-block;
+        color: #fff;
+        background: rgba(4, 69, 252, 0.8);
+        padding: 5px 24px;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+}
+
+.noData {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        width: 150px;
+        margin-bottom: 40px;
+    }
+
+    span {
+        color: rgba(1,17,61,0.6);
+        font-size: 12px;
+    }
+}

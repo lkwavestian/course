@@ -1,0 +1,836 @@
+.modalBtn {
+    display: inline-block;
+    border-radius: 8px;
+    padding: 0 14px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+.cancelBtn {
+    color: rgba(1, 17, 61, 0.65);
+    background: rgba(1, 17, 61, 0.07);
+    text-align: center;
+    margin-right: 10px;
+}
+.submitBtn {
+    background: #3b6ff5;
+    color: #fff;
+}
+.labelSpan {
+    font-size: 14px;
+    &::before {
+        display: inline-block;
+        margin-right: 4px;
+        color: #f5222d;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+    }
+}
+.inputStyle {
+    border-radius: 8px !important;
+    height: 36px;
+}
+.inputNameStyle {
+    border: none !important;
+}
+
+.operationList {
+    display: flex;
+    display: -webkit-flex;
+    text-align-last: center;
+    display: -moz-flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    .exportButtonList {
+        flex: 1;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        text-align: center;
+    }
+    a {
+        flex: 1;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        text-align: right;
+    }
+    .deleteBtn {
+        color: #3b6ff5;
+        font-size: 16px;
+        padding-left: 15px;
+        text-align: left;
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+//新建组织&&编辑组织
+.selectOrgStyle > span {
+    border: none !important;
+    box-shadow: 0 0 0 2px transparent !important;
+    -webkit-box-shadow: 0 0 0 2px transparent !important;
+}
+.selectOrgStyle > span > span > span {
+    display: none !important;
+}
+.labelContentStyle {
+    line-height: 20px;
+    width: 85px;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+}
+.isShowOrgTips {
+    color: #999;
+    font-size: 12px;
+}
+
+//设置组织角色
+.orgCardList {
+    max-height: 500px;
+    overflow-y: scroll;
+    & > div {
+        padding: 25px 30px 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+}
+.deleteCard {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font-size: 15px;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+    z-index: 299;
+}
+.saveCard {
+    position: absolute;
+    top: 9px;
+    right: 47px;
+    font-size: 15px;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+    z-index: 299;
+}
+.saveCardDisabled {
+    position: absolute;
+    top: 9px;
+    right: 47px;
+    font-size: 15px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 3px 7px;
+    z-index: 299;
+}
+.addCardBtn {
+    width: 100%;
+    margin: 20px auto;
+    cursor: pointer;
+    .setButtonStyle {
+        width: 100%;
+        font-size: 15px;
+        color: #3b6ff5;
+        font-weight: bold;
+        display: inline-block;
+        border: 1px dashed #ddd;
+        text-align: center;
+        padding: 6px 0;
+    }
+}
+.selectOrgStyle {
+    &>div{
+        border-radius: 8px;
+        height: 36px;
+    }
+    
+    :global{
+        .ant-select-selection--single .ant-select-selection__rendered{
+            height: 34px;
+            line-height: 34px;
+        }
+    }
+    
+}
+.selectPersonStyle > span {
+    border-radius: 8px !important;
+}
+
+.checkboxStyle {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    width: 108px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+//批量导出学生档案
+.exportTitle {
+    font-size: 16px;
+    color: #4c4c4c;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.exportStyle{
+    font-size: 14px;
+    color: #4c4c4c;
+    display: block;
+    margin-bottom: 10px;
+}
+.checkboxContent {
+    font-size: 14px;
+    color: #666;
+    font-style: normal;
+}
+.exportTips {
+    font-size: 12px;
+    color: #999;
+}
+.exportRange {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+//批量修改学生信息
+.batchEditTips {
+    color: #999;
+    margin-bottom: 30px;
+    span {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 13px;
+        a {
+            color: #3b6ff5;
+            cursor: pointer;
+        }
+    }
+}
+.uploadBtn {
+    width: 178px;
+    line-height: 23px;
+    margin-top: 7px;
+}
+.setOrgRoleSelectPerson{
+    &> span {
+        border-radius: 8px !important;
+    }
+    :global{
+        .ant-select-selection--multiple{
+            min-height: 36px;
+        }
+    }
+} 
+
+//结班操作弹窗
+.confirmEndClassModal {
+    .confirmTips {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+//禁止提交按钮
+.grayBtn {
+    background: #999;
+    color: #fff;
+    border: 1px solid #999;
+}
+
+.TransferSchool {
+    .leftTime input {
+        width: 240px;
+        border-radius: 8px !important;
+    }
+    .suspensionTime input {
+        border-radius: 8px !important;
+    }
+    .suspensionTime {
+        width: 45%;
+        &:last-child {
+            margin-left: 5%;
+        }
+    }
+    .enterSchool {
+        width: 240px;
+        border-radius: 16px !important;
+    }
+    .btnBox {
+        padding-left: 118px;
+        display: flex;
+        justify-content: center;
+        .btn {
+            border: 1px solid rgba(24, 144, 255, 0.45);
+            border-radius: 8px;
+            color: #1890ff;
+            padding: 0 21px;
+            &:last-child {
+                color: #ffffff;
+                margin-left: 16px;
+            }
+        }
+    }
+}
+
+.detailBtn {
+    color: #3b6ff5;
+    // padding-right: 5px;
+    // margin-right: 5px;
+    cursor: pointer;
+}
+
+.paginationStyle {
+    width: 100%;
+    margin: 0 -21px;
+    background: #fff;
+    padding: 2% 0;
+    &:after {
+        content: '';
+        visibility: hidden;
+        clear: both;
+        display: block;
+    }
+    .pageContainer {
+        float: right;
+        margin-right: 20px;
+    }
+}
+
+.LeftSchoolInfor {
+    .item {
+        margin-bottom: 24px;
+        .title {
+            color: #000;
+            font-size: 14px;
+            margin-right: 12px;
+        }
+        .desc {
+            color: #666;
+            font-size: 14px;
+        }
+        .download {
+            display: block;
+            margin-top: 25px;
+            text-align: center;
+            .grey {
+                color: #969fa9;
+                margin-right: 2px;
+            }
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    .pDesc {
+        margin-bottom: 32px;
+        color: #969fa9;
+        .icon {
+            color: #3b6ff5;
+            margin-right: 6px;
+        }
+    }
+    .btnBox {
+        display: flex;
+        justify-content: center;
+        button {
+            border-radius: 8px;
+            color: rgba(1, 17, 61, 0.65);
+            background: rgba(1, 17, 61, 0.07);
+            padding: 0 14px;
+            border: 0;
+            &:last-child {
+                color: #ffffff;
+                background: #3b6ff5;
+                margin-left: 16px;
+            }
+        }
+    }
+    .other {
+        .title {
+            position: relative;
+            top: 4px;
+            left: 0;
+        }
+    }
+}
+
+.fileBtn {
+    position: relative;
+    .form {
+        display: inline-block;
+    }
+    input {
+        width: 320px;
+        height: 30px;
+        position: relative;
+        top: 16px;
+        left: 0;
+        // filter: Alpha(opacity=0);
+        // opacity: 0;
+        // position: absolute;
+        // z-index: 2;
+        overflow: hidden;
+        // cursor: pointer;
+    }
+    .btnFlie {
+        max-width: 240px;
+        position: relative;
+        top: 4px;
+        left: 0;
+        z-index: 1;
+        padding-left: 12px;
+        border-radius: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+}
+
+.GradeUp {
+    .title {
+        margin-bottom: 16px;
+        .m {
+            color: #000;
+            font-size: 14px;
+            margin-right: 6px;
+        }
+        .t {
+            color: #666;
+            font-size: 14px;
+        }
+    }
+    .content {
+        .item {
+            display: flex;
+            margin-bottom: 16px;
+            .t {
+                line-height: 32px;
+                color: #666;
+                font-size: 12px;
+            }
+            .t1 {
+                margin-right: 6px;
+            }
+            .l {
+                flex: 2;
+            }
+            .m {
+                flex: 1;
+                line-height: 32px;
+                color: #969fa9;
+            }
+            .r {
+                flex: 7;
+                display: flex;
+                justify-content: space-between;
+                .input {
+                    width: 36%;
+                    border-radius: 8px;
+                    color: #666;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .btnBox {
+        display: flex;
+        justify-content: center;
+        button {
+            border: 1px solid rgba(24, 144, 255, 0.45);
+            border-radius: 8px;
+            color: #1890ff;
+            padding: 0 21px;
+            &:last-child {
+                color: #ffffff;
+                margin-left: 16px;
+            }
+        }
+    }
+    .other {
+        .title {
+            position: relative;
+            top: 4px;
+            left: 0;
+        }
+    }
+}
+
+.twoJump {
+    display: flex;
+    justify-content: center;
+    .t1 {
+        border-radius: 8px;
+        margin-right: 36px;
+        color: #1890ff;
+    }
+    .t2 {
+        border-radius: 8px;
+    }
+}
+.searchItem {
+    display: inline-block;
+    margin-left: 36px;
+    margin-top: 21px;
+    flex: 1;
+    .title {
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 14px;
+        margin-right: 12px;
+    }
+}
+.searchStyle > input {
+    border-radius: 8px;
+    height: 36px;
+}
+.searchSelectStyle > div {
+    border-radius: 8px !important;
+    min-height: 36px;
+    :global{
+        .ant-select-selection__rendered{
+            line-height: 34px;
+        }
+    }
+}
+.searchSelectStyle > span {
+    border-radius: 8px !important;
+    min-height: 36px;
+}
+.searchItemOther {
+    display: inline-block;
+    margin-top: 21px;
+    margin-left: 46px;
+    flex: 1.2;
+    .time input {
+        border-radius: 8px !important;
+        height: 36px;
+    }
+    .line {
+        margin: 0 12px;
+    }
+}
+.changeRoleStyle > div {
+    border: none !important;
+    box-shadow: 0 0 0 2px transparent !important;
+    -webkit-box-shadow: 0 0 0 2px transparent !important;
+}
+.batchCondition {
+    width: 100%;
+    padding: 11px 44px;
+    display: flex;
+    justify-content: space-between;
+    .left {
+        .batchButton {
+            display: inline-block;
+            padding: 5px 13px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #3b6ff5;
+            border-radius: 8px;
+            color: #3b6ff5;
+            i {
+                font-size: 15px;
+                margin-right: 7px;
+            }
+        }
+        .opText {
+            margin-left: 15px;
+            padding-right: 12px;
+            color: #969fa9;
+            line-height: 36px;
+        }
+    }
+    .right {
+        .batchButton {
+            display: inline-block;
+            padding: 5px 13px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #3b6ff5;
+            border-radius: 8px;
+            color: #fff;
+            background: #3b6ff5;
+            i {
+                font-size: 15px;
+                margin-right: 7px;
+            }
+        }
+    }
+}
+.reloadBtn {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #fff;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+    i {
+        font-size: 16px;
+    }
+}
+.whiteSpace {
+    display: block;
+    max-width: 90px;
+    max-height: 62px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin: 0 auto;
+    overflow: hidden;
+    span {
+        display: block;
+        width: 100%;
+    }
+}
+
+.upGradeList {
+    height: 500px;
+    overflow: scroll;
+    margin-bottom: 50px;
+    .setUpGrade {
+        font-family: PingFangSC-Regular;
+        margin-bottom: 30px;
+        .grade {
+            font-size: 20px;
+            display: inline-block;
+            line-height: 28px;
+            font-family: PingFangSC-Semibold;
+            margin-bottom: 24px;
+        }
+        .later {
+            margin-bottom: 30px;
+            .sourceName {
+                font-size: 16px;
+            }
+            .targetPrefix {
+                font-size: 16px;
+            }
+            .targetEnPrefix {
+                font-size: 16px;
+            }
+            .classCName {
+                width: 187px;
+                height: 35px;
+                margin-left: 11px;
+                margin-right: 50px;
+                border-radius: 18px;
+            }
+            .redClassCName {
+                width: 187px;
+                height: 35px;
+                margin-left: 11px;
+                margin-right: 50px;
+                border-radius: 18px;
+                border-color: red;
+            }
+            .classEName {
+                width: 187px;
+                height: 35px;
+                border-radius: 18px;
+                margin-left: 14px;
+            }
+            .redClassEName {
+                width: 187px;
+                height: 35px;
+                border-radius: 18px;
+                margin-left: 14px;
+                border-color: red;
+            }
+        }
+    }
+}
+
+.btns {
+    text-align: center;
+    margin-bottom: 20px;
+    .cancelBtnUp {
+        margin-right: 10px;
+        border-radius: 8px;
+        padding: 9px 29px;
+        font-size: 14px;
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid #3b6ff5;
+        color: #3b6ff5;
+        text-align: center;
+    }
+    .submitBtnUp {
+        border-radius: 8px;
+        padding: 9px 29px;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px solid #3b6ff5;
+        background: #3b6ff5;
+        color: #fff;
+        text-align: center;
+    }
+}
+.fixed {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+.selectGrade {
+    :global {
+        .ant-select-selection--single {
+            width: 158px;
+            height: 36px;
+            border-radius: 8px;
+            padding-top: 4px;
+        }
+    }
+}
+:global {
+    .ant-input-number-handler-wrap {
+        border-radius: 15px;
+    }
+    .ant-select .ant-select-enabled {
+        width: 200px;
+    }
+}
+
+.wrapper {
+    :global {
+        .ant-modal-title {
+            font-family: PingFangSC-Regular;
+            color: #333333;
+            // letter-spacing: -1.1 !important;
+            letter-spacing: -1.1px;
+            line-height: 33px;
+            font-size: 24px;
+            padding-top: 8px;
+        }
+    }
+    :global {
+        .ant-modal-footer {
+            padding-bottom: 40px !important;
+        }
+    }
+    .msgWrapper {
+        padding-left: 50px;
+        padding-top: 9px;
+        .studentMsg {
+            font-size: 14px;
+            color: #666;
+            font-family: PingFangSC-Regular;
+            color: #000 85%;
+            line-height: 20px;
+        }
+        .parentWrapper {
+            margin-top: 39px;
+            .parentMsg {
+                margin-bottom: 20px;
+                .updateMsg {
+                    font-family: PingFangSC-Medium;
+                    color: #000 85%;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                .required {
+                    font-family: PingFangSC-Regular;
+                    color: #666;
+                    font-size: 13px;
+                    line-height: 22px;
+                    margin-left: 16px;
+                }
+            }
+            .formItemMsg {
+                margin-left: 31px;
+                .allStuMsg {
+                    font-family: PingFangSC-Medium;
+                    color: #333;
+                    font-size: 14px;
+                    line-height: 22px;
+                    // margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                .notice {
+                    margin: 12px 0;
+                }
+                :global {
+                    .ant-form-item {
+                        margin-bottom: 0 !important;
+                    }
+                    .ant-col-6 {
+                        margin: 10px 0 !important;
+                    }
+                }
+            }
+        }
+        .studentMb {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .selectPersonStyle > span {
+            border-radius: 8px !important;
+        }
+        .clickButton {
+            margin-top: 39px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.drawerStyle{
+    :global{
+        .ant-drawer-header{
+            padding: 16px 24px !important;
+        } 
+    }
+}
+
+.setOrgRoleStyle{
+    :global{
+        .ant-modal-header{
+            padding: 16px 24px 10px;
+        }
+        .ant-modal-body{
+            padding: 0 24px;
+        } 
+        .ant-form-item{
+            margin-bottom: 10px;
+        }
+    }
+    .orgCardList>div{
+        padding: 15px 10px 5px;
+    }
+    .addCardBtn{
+        margin-top: 0;
+   }
+}
+
+.downloadStyles{
+    width: 1200px !important;
+    top: 50px;
+}

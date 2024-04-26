@@ -1,0 +1,475 @@
+.studentManagePage {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  justify-content: center;
+  background: #fff;
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+.studentManagePage .leftBar {
+  flex: 2;
+  -webkit-flex: 2;
+  -moz-flex: 2;
+  background: #fafbff;
+  padding: 20px;
+  min-width: 280px;
+  overflow-y: auto;
+  height: 100%;
+}
+.studentManagePage .rightContainer {
+  flex: 9;
+  -webkit-flex: 9;
+  -moz-flex: 9;
+  overflow-y: auto;
+  height: 100%;
+}
+.studentManagePage .rightContainer .infoCard {
+  background: #fff;
+  padding: 20px 22px 0px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  justify-content: space-between;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail {
+  flex: 3;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail p {
+  margin-bottom: 10px;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail .infoTitle {
+  display: inline-block;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail .infoTitle p .orgName {
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail .infoTitle p span {
+  color: #666;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail .infoTitle p .editOrgBtn {
+  color: #3b6ff5;
+  font-size: 14px;
+  cursor: pointer;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail .infoOther {
+  display: inline-block;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail .infoOther p span {
+  color: #000;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail .infoOther p span em {
+  font-style: normal;
+  color: #333;
+  font-size: 16px;
+  margin-right: 5px;
+  font-weight: normal;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail .infoOther p .setOrgBtn {
+  color: #3b6ff5;
+  font-size: 14px;
+  cursor: pointer;
+}
+.studentManagePage .rightContainer .infoCard .infoDetail .infoOther .isLeader {
+  color: #f7bd12;
+  font-size: 18px;
+  margin-right: 5px;
+  vertical-align: bottom;
+  font-weight: normal;
+}
+.studentManagePage .rightContainer .infoCard .infoOperation {
+  flex: 2;
+  text-align: right;
+  margin-top: -5px;
+}
+.studentManagePage .rightContainer .infoCard .infoOperation .createOrgBtn {
+  display: inline-block;
+  padding: 0 13px;
+  background: #3b6ff5;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  height: 36px;
+  line-height: 36px;
+  box-sizing: border-box;
+}
+.studentManagePage .rightContainer .infoCard .infoOperation .createOrgBtn i {
+  font-size: 16px;
+  margin-right: 3px;
+}
+.studentManagePage .rightContainer .infoCard .infoOperation .gradeUp {
+  padding: 0 21px;
+  background-color: #ffffff;
+  color: #3b6ff5;
+  border: 1px solid #3b6ff5;
+  line-height: 34px;
+}
+.studentManagePage .rightContainer .infoCard .infoOperation .getDd {
+  border: 1px solid #3b6ff5;
+  color: #3b6ff5;
+  font-size: 14px;
+  padding: 10px 17px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+.studentManagePage .rightContainer .init .content {
+  width: 68%;
+  height: 378px;
+  background: #f9f9f9;
+  position: relative;
+  top: 100px;
+  left: 15%;
+}
+.studentManagePage .rightContainer .init .content .twoSteps {
+  position: relative;
+  top: 26px;
+  left: 42px;
+}
+.studentManagePage .rightContainer .init .content .twoSteps .bigFont {
+  font-size: 32px;
+  font-family: PingFangSC-Semibold;
+  color: #2ca968;
+  letter-spacing: 1.3;
+  margin-right: 10px;
+  line-height: 45px;
+}
+.studentManagePage .rightContainer .init .content .twoSteps .smallFont {
+  font-size: 24px;
+}
+.studentManagePage .rightContainer .init .content .action {
+  position: relative;
+  top: 174px;
+  left: 47px;
+}
+.studentManagePage .rightContainer .init .content .action .step {
+  padding-bottom: 10px;
+}
+.studentManagePage .rightContainer .init .content .action .step .doNow {
+  display: inline-block;
+  width: 114px;
+  height: 35px;
+  background: #2ca968;
+  text-align: center;
+  border-radius: 17px;
+  padding-top: 7px;
+  color: #fff;
+  cursor: pointer;
+}
+.studentManagePage .rightContainer .init .content .done {
+  position: absolute;
+  right: 55px;
+  top: 133px;
+}
+.studentManagePage .rightContainer .infoTable {
+  padding: 15px 22px;
+}
+.studentManagePage .rightContainer .infoTable .searchNav {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .leftCondition .personNum {
+  font-size: 18px;
+  color: #000;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .leftCondition .personNum em {
+  font-size: 14px;
+  color: #666;
+  font-style: normal;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .rightCondition {
+  margin-left: 5px;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .rightCondition p {
+  display: inline-block;
+  margin: 0 5px 0 0 !important;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .rightCondition .updateRecord {
+  color: #3b6ff5;
+  margin-right: 21px;
+  cursor: pointer;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .rightCondition .updateRecord .icon {
+  margin-right: 4px;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .rightCondition .checkboxContent {
+  color: #666;
+  font-size: 14px;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .batchCondition {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .batchCondition .left {
+  margin-right: 5px;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .batchCondition .left .batchButton {
+  display: inline-block;
+  padding: 0 14px;
+  height: 36px;
+  line-height: 34px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #3b6ff5;
+  border-radius: 8px;
+  color: #3b6ff5;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .batchCondition .left .batchButton i {
+  font-size: 15px;
+  margin-right: 7px;
+}
+.studentManagePage .rightContainer .infoTable .searchNav .batchCondition .right {
+  padding-right: 12px;
+  color: #969fa9;
+  line-height: 36px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .searchStyle > input {
+  border-radius: 8px;
+  height: 36px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .searchSelect > div {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .searchSelect > div :global .ant-select-selection__rendered {
+  height: 34px;
+  line-height: 34px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .searchSelectStyle > div {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .searchSelectStyle > div :global .ant-select-selection__rendered {
+  height: 34px;
+  line-height: 34px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .searchItem {
+  margin-left: 10px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .searchItem .title {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  margin-right: 12px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .searchItemOther {
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 21px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .searchItemOther .time input {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .searchItemOther .line {
+  margin: 0 12px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .batchCondition {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex: 1;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .batchCondition .left {
+  margin-right: 5px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .batchCondition .left .batchButton {
+  display: inline-block;
+  padding: 0 14px;
+  height: 36px;
+  line-height: 34px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #3b6ff5;
+  border-radius: 8px;
+  color: #3b6ff5;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .batchCondition .left .batchButton i {
+  font-size: 15px;
+  margin-right: 7px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .batchCondition .left .addPerson {
+  height: 36px;
+  border-radius: 8px;
+  background: #3b6ff5;
+  color: white;
+  text-align: center;
+  line-height: 36px;
+  margin-left: 10px;
+  padding: 0 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .batchCondition .left .addPerson i {
+  font-size: 16px;
+  margin-right: 3px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .batchCondition .right {
+  padding-right: 12px;
+  color: #969fa9;
+  line-height: 36px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .addPerson {
+  height: 36px;
+  border-radius: 8px;
+  background: #3b6ff5;
+  color: white;
+  text-align: center;
+  line-height: 36px;
+  margin-left: 10px;
+  padding: 0 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .addPerson i {
+  font-size: 16px;
+  margin-right: 3px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .reloadBtn {
+  display: inline-block;
+  padding: 0 14px;
+  height: 36px;
+  line-height: 34px;
+  background: #fff;
+  border-radius: 8px;
+  color: #3b6ff5;
+  border: 1px solid #3b6ff5;
+  font-size: 14px;
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .reloadBtn i {
+  font-size: 16px;
+  margin-right: 3px;
+}
+.studentManagePage .rightContainer .infoTable .searchCondition .inputContainerStyle {
+  margin-bottom: 10px;
+  width: 100%;
+  margin-left: -11px;
+}
+.paginationStyle {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2% 0;
+}
+.paginationStyle:after {
+  content: '';
+  visibility: hidden;
+  clear: both;
+  display: block;
+}
+.paginationStyle .pageContainer {
+  float: right;
+  margin-right: 20px;
+}
+.batchDeleteBtn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #666;
+  margin-top: 5px;
+}
+.forbiddenBtn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #999;
+  margin-top: 5px;
+}
+.changeRoleStyle > div {
+  border: none !important;
+  box-shadow: 0 0 0 2px transparent !important;
+  -webkit-box-shadow: 0 0 0 2px transparent !important;
+}
+.explain {
+  display: block;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.desc {
+  width: 200px;
+}
+.upLoad {
+  display: flex;
+  margin-top: 15px;
+}
+.upLoad .text {
+  font-weight: 900;
+  margin-right: 15px;
+}
+.btn {
+  width: auto;
+  margin-left: 10px;
+  border-radius: 8px;
+  background-color: #3b6ff5;
+  color: #fff;
+  height: 36px;
+}
+:global .ant-modal-footer {
+  border-top: 0 none !important;
+  padding: 16px !important;
+  text-align: center;
+}
+.studentManagePage :global .ant-drawer-header {
+  padding: 16px 24px;
+}
+.exportModal :global .ant-btn {
+  border-radius: 8px;
+}
+.exportModal :global .ant-modal-footer > div > .ant-btn {
+  color: rgba(1, 17, 61, 0.65);
+  background: rgba(1, 17, 61, 0.07);
+  border: 0;
+  border-radius: 8px;
+  height: 36px;
+  line-height: 36px;
+}
+.exportModal :global .ant-modal-footer > div > .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff;
+}
+.fullPage {
+  height: 100vh;
+}
+.reloadBtn {
+  display: inline-block;
+  padding: 0 8px;
+  height: 36px;
+  line-height: 34px;
+  background: #fff;
+  border-radius: 8px;
+  color: #3b6ff5;
+  border: 1px solid #3b6ff5;
+  font-size: 14px;
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.reloadBtn i {
+  font-size: 16px;
+  margin-right: 3px;
+}

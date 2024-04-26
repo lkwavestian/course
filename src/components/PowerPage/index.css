@@ -1,0 +1,17 @@
+.haveNoPowerPage {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.haveNoPowerPage img {
+    width: 140px;
+}
+.haveNoPowerPage span {
+    color: #666;
+    font-size: 15px;
+    margin-left: 20px;
+}

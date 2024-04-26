@@ -1,0 +1,129 @@
+.copyScheduleWrapper {
+    .copyModalWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.85);
+        .item {
+            display: flex;
+            align-items: center;
+        }
+        .leftPart {
+            width: 15%;
+            text-align: right;
+            margin-right: 7px;
+        }
+        .semesterRightContent {
+            display: flex;
+            gap: 10px;
+        }
+        .copyRightContent {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            .leftText {
+                width: 100px;
+                text-align: right;
+            }
+            .middleText {
+                display: flex;
+                align-items: center;
+                .line {
+                    background: #ddd;
+                    width: 98px;
+                    height: 1px;
+                }
+                .icon {
+                    color: #ddd;
+                    font-size: 10px;
+                    margin-left: -3px;
+                }
+            }
+            .rightText {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                .warning {
+                    font-family: PingFangSC-Regular;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #e9b635;
+                    .warningText {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .topText {
+                display: flex;
+                gap: 145px;
+                color: rgba(102, 102, 102, 0.85);
+            }
+            .settingItem {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+        }
+    }
+    :global {
+        .ant-modal-header {
+            padding-top: 25px;
+            padding-bottom: 10px;
+            font-family: PingFangSC-Medium;
+            font-size: 18px;
+            line-height: 22px;
+            color: rgba(0, 0, 0, 0.85);
+        }
+        .ant-modal-footer {
+            padding-bottom: 25px;
+        }
+        .ant-radio-wrapper {
+            font-size: 14px;
+            line-height: 22px;
+            font-family: PingFangSC-Regular;
+            color: #333333;
+        }
+        .ant-radio-checked .ant-radio-inner {
+            border-color: rgba(4, 69, 252, 1);
+        }
+        .ant-radio-inner::after {
+            background-color: rgba(4, 69, 252, 1);
+        }
+
+        // .ant-btn-primary,
+        // .ant-btn-primary:hover,
+        // .ant-btn-primary:focus {
+        //     background: #0445fc;
+        //     color: #ffffff;
+        // }
+
+        .ant-modal-footer button + button {
+            margin-left: 25px;
+        }
+        .ant-btn {
+            padding: 8px 18px;
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0px;
+            color: rgba(1, 17, 61, 0.65);
+            background: rgba(1, 17, 61, 0.07);
+            height: auto;
+            border: none;
+            &:hover {
+                border-color: rgba(1, 17, 61, 0.07);
+            }
+        }
+        .ant-btn-primary {
+            background: #0445fc;
+            color: #fff;
+            &:hover {
+                border-color: #0445fc;
+            }
+        }
+    }
+}

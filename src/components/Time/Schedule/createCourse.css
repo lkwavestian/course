@@ -1,0 +1,169 @@
+.icon {
+  padding-right: 275px;
+}
+.righticon {
+  cursor: pointer;
+}
+.righticon .noAllowTime {
+  font-size: 14px;
+  color: #333;
+  font-style: normal;
+  position: relative;
+  bottom: 30px;
+}
+.righticon .noAllowTime::before {
+  display: inline-block;
+  margin-right: 4px;
+  color: #f5222d;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+.righticon .switchStyle {
+  position: relative;
+  bottom: 30px;
+}
+.righticon .textStyle {
+  display: inline-block;
+  width: 400px;
+  margin-left: 10px;
+}
+.modalBtn {
+  height: 36px;
+  border-radius: 8px;
+}
+.modalBtn:hover {
+  height: 36px;
+  border-radius: 8px;
+}
+.cancelBtn {
+  color: rgba(1, 17, 61, 0.65);
+  background: rgba(1, 17, 61, 0.07);
+  border: 0;
+}
+.cancelBtn:hover {
+  color: rgba(1, 17, 61, 0.65);
+  background: rgba(1, 17, 61, 0.07);
+  border: 0;
+}
+.submitBtn {
+  background: #3b6ff5;
+  color: #fff;
+  margin-left: 10px;
+}
+.submitBtn:hover {
+  background: #3b6ff5;
+  color: #fff;
+  margin-left: 10px;
+}
+.deleteicon {
+  margin: 0 5px 0 6px;
+}
+:global .ant-select-selection--single {
+  border-radius: 20px;
+}
+:global .ant-calendar-picker-input {
+  border-radius: 20px;
+}
+:global .ant-select-selection--multiple {
+  border-radius: 20px;
+}
+:global .ant-row .ant-form-item {
+  margin-bottom: 0;
+}
+:global .ant-input {
+  border-radius: 25px;
+}
+:global .ant-time-picker-input {
+  border-radius: 25px;
+}
+:global .ant-time-picker {
+  width: 110px;
+}
+:global .ant-form-inline .ant-form-item {
+  display: flex;
+  margin: 5px 0;
+}
+.deleteRow {
+  color: #666;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.nameWork {
+  display: flex;
+}
+.nameWork .nameDiv {
+  flex: 1;
+}
+.createVisible :global .ant-modal-body {
+  text-align: center;
+}
+.createVisible :global .ant-modal-body .ant-modal-confirm-content {
+  font-size: 18px;
+  color: #333;
+}
+.createVisible :global .ant-modal-body .ant-modal-confirm-btns {
+  margin: 10px auto 0;
+}
+.createVisible :global .ant-modal-body .ant-modal-confirm-btns .ant-btn {
+  height: 36px;
+  border-radius: 8px;
+  border-color: #4d7fff;
+  color: #4d7fff;
+}
+.createVisible :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary {
+  background: #4d7fff;
+  color: #fff;
+}
+.createVisible :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.createVisible :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.createVisible :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.createVisible :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.createVisible :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.createVisible :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.createVisible :global .ant-select {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.createVisible :global .ant-modal-confirm,
+.createVisible :global .ant-modal-confirm-btns {
+  float: none;
+}
+.createVisible :global .ant-calendar-picker-input {
+  border-radius: 20px;
+}
+.createVisible :global .ant-row .ant-form-item {
+  margin-bottom: 0;
+}
+.createVisible :global .ant-time-picker-input {
+  border-radius: 8px;
+}
+.createVisible :global .ant-time-picker {
+  width: 110px;
+}

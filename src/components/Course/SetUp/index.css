@@ -1,0 +1,612 @@
+.CourseSetUp {
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.CourseSetUp .CourseSetUpCon {
+  padding: 16px 21px 36px 21px;
+}
+.CourseSetUp .CourseSetUpCon .tab {
+  height: 36px;
+  line-height: 36px;
+  overflow: hidden;
+}
+.CourseSetUp .CourseSetUpCon .tab .title {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  font-size: 14px;
+  color: #969fa9;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.CourseSetUp .CourseSetUpCon .tab .active {
+  font-size: 16px;
+  color: #3778ff;
+}
+.CourseSetUp .CourseSetUpCon .courseContent .handle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.CourseSetUp .CourseSetUpCon .courseContent .handle :global .ant-btn {
+  border-radius: 5px;
+}
+.CourseSetUp .CourseSetUpCon .courseContent .handle .action {
+  font-size: 18px;
+  color: #464c56;
+  margin-right: 36px;
+  cursor: pointer;
+}
+.CourseSetUp .CourseSetUpCon .courseContent .handle .action span {
+  margin-left: 4px;
+  font-size: 12px;
+  color: #969fa9;
+}
+.CourseSetUp .CourseSetUpCon .courseContent .handle .active {
+  color: #3778ff;
+}
+.CourseSetUp .CourseSetUpCon .courseContent .handle .active span {
+  color: #3778ff;
+}
+.CourseSetUp .CourseSetUpCon .courseContent .handle .btn {
+  border-radius: 8px;
+}
+.CourseSetUp .CourseSetUpCon .subjectContent .handle {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+.CourseSetUp .CourseSetUpCon .subjectContent .handle .searchStyle > input {
+  border-radius: 8px;
+}
+.CourseSetUp .CourseSetUpCon .subjectContent .handle .btn {
+  border-radius: 8px;
+}
+.CourseSetUp :global .ant-btn {
+  width: auto;
+}
+.SearchHTML {
+  margin: 12px 0;
+}
+.SearchHTML .itemTitle {
+  margin-right: 12px;
+  font-size: 14px;
+}
+.SearchHTML .itemTitle2 {
+  margin-left: 21px;
+}
+.SearchHTML .selectStyle > div {
+  border-radius: 5px !important;
+}
+.SearchHTML .searchStyle {
+  margin-left: 24px;
+}
+.SearchHTML .searchStyle input {
+  border-radius: 5px;
+}
+.CourseTable .pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+.CourseTable .popover {
+  display: flex;
+  justify-content: space-around;
+}
+.CourseTable .popover .con {
+  overflow: hidden;
+  /*超出隐藏*/
+  text-overflow: ellipsis;
+  /*文本超出三点代替*/
+  max-height: 54px;
+}
+.CourseTable .popover .edit {
+  color: #1890ff;
+  cursor: pointer;
+}
+.CourseTable :global .ant-table-row-cell-break-word,
+.CourseTable :global .ant-table-header-column {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: rgba(1, 17, 61, 0.65);
+  padding: 8px;
+}
+.CourseTable :global .ant-table-thead > tr > th,
+.CourseTable :global .ant-table-tbody > tr > td {
+  padding: 8px;
+}
+.CourseTable :global .ant-table-thead .ant-table-row-cell-break-word,
+.CourseTable :global .ant-table-thead .ant-table-header-column,
+.CourseTable :global .ant-table-thead > tr > th {
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  padding: 6px 8px !important;
+}
+.CourseTable :global .ant-table-tbody > tr > td {
+  padding: 9px !important;
+}
+.CourseTable :global .ant-table-thead .ant-table-row-cell-break-word,
+.CourseTable :global .CourseTable___Oew4W .ant-table-thead > tr > th {
+  padding: 6px 0 !important;
+}
+.courseNav {
+  display: flex;
+  justify-content: space-between;
+}
+.courseNav .icon {
+  cursor: pointer;
+}
+.courseNav .btn {
+  border-radius: 20px;
+}
+.courseNav .jianjie {
+  font-size: 15px;
+  color: #969fa9;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.NewCourse .title {
+  color: #464c56;
+  font-size: 15px;
+  width: 115px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+.NewCourse .item {
+  height: 52px;
+  line-height: 52px;
+  display: flex;
+  padding-bottom: 12px;
+}
+.NewCourse .item input {
+  width: 60%;
+  height: 36px;
+  position: relative;
+  top: 5px;
+  left: 0;
+  border-radius: 8px;
+}
+.NewCourse .item input:hover,
+.NewCourse .item input:focus {
+  /* border-top: 1px solid transparent !important;
+                border-left: 1px solid transparent !important;
+                border-right: 1px solid transparent !important; */
+  box-shadow: none;
+}
+.NewCourse .item2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.NewCourse .ruleDetail {
+  font-size: 12px;
+  color: #969fa9;
+  position: relative;
+  top: 5px;
+  left: 0;
+  padding: 0 20px 12px 20px;
+}
+.NewCourse .ruleDetail .zd {
+  color: #464c56;
+  margin-right: 4px;
+}
+.NewCourse .itemBox {
+  display: flex;
+}
+.NewCourse .itemBox :global .ant-select-selection {
+  border-radius: 8px !important;
+}
+.NewCourse .itemBox .box {
+  width: 80%;
+  padding-top: 8px;
+}
+.NewCourse .itemBox .box label {
+  margin: 6px 3px 6px 0;
+}
+.NewCourse .itemBox .select {
+  margin-top: 7px;
+}
+.NewCourse .itemBox .select .elt {
+  margin-bottom: 16px;
+}
+.NewCourse .itemBox .select .elt .selectStyle > div {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.NewCourse .itemBox .select .elt .selectStyle > div :global .ant-select-selection__rendered {
+  line-height: 36px;
+}
+.NewCourse .itemBox .select .elt .core {
+  font-size: 14px;
+  color: #969fa9;
+  margin: 0 6px 0 16px;
+}
+.NewCourse .itemBox .select .elt .input {
+  border-radius: 20px !important;
+}
+.NewCourse .itemBox .select .elt .del {
+  color: #969fa9;
+  font-size: 14px;
+  margin: 0 16px;
+  cursor: pointer;
+}
+.NewCourse .itemBox .select .elt .btn {
+  font-size: 14px;
+  color: #1890ff;
+  cursor: pointer;
+}
+.NewCourse .itemBox .noBtn {
+  height: 32px;
+  line-height: 32px;
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #1890ff;
+  cursor: pointer;
+}
+.NewSubjectModal .title {
+  color: #464c56;
+  font-size: 15px;
+  width: 95px;
+  height: 36px;
+  line-height: 36px;
+  margin-right: 18px;
+  text-align: right;
+}
+.NewSubjectModal .title em {
+  font-style: normal;
+  color: #e61221;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.NewSubjectModal .title span {
+  vertical-align: middle;
+}
+.NewSubjectModal .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+.NewSubjectModal .item input {
+  width: 65%;
+  border-radius: 8px;
+  height: 36px;
+}
+.subjectModalWrap {
+  top: 60px !important;
+}
+.subjectModalWrap :global .ant-modal-footer > div > .ant-btn {
+  color: rgba(1, 17, 61, 0.65);
+  background: rgba(1, 17, 61, 0.07);
+  border: 0;
+  border-radius: 8px;
+  height: 36px;
+  line-height: 36px;
+}
+.subjectModalWrap :global .ant-modal-footer > div > .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff;
+}
+.newField {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 12px 0;
+}
+.newField .btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.newField .btn a {
+  margin-right: 16px;
+  line-height: 24px;
+}
+.newField .btn button {
+  margin-right: 12px;
+}
+.editorContainer {
+  height: 320px;
+}
+.editorContainer .editor {
+  height: 240px;
+}
+.avatar-uploader > .ant-upload {
+  width: 128px;
+  height: 128px;
+}
+.removeImg {
+  cursor: pointer;
+  color: #3778ff;
+  font-size: 14px;
+  margin-left: 12px;
+}
+.NewAreas .newAreasBtn {
+  border: 1px solid #1890ff;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: #1890ff;
+  cursor: pointer;
+}
+.rule {
+  width: 21px;
+  height: 21px;
+  display: block;
+  cursor: pointer;
+  color: #1890ff;
+  position: relative;
+  top: 30px;
+  left: 4px;
+}
+.explain {
+  display: block;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.desc {
+  width: 200px;
+}
+.upLoad {
+  display: flex;
+  margin-top: 15px;
+}
+.upLoad .text {
+  font-weight: 900;
+  margin-right: 15px;
+}
+.btn {
+  margin-left: 10px;
+  width: auto;
+}
+.btn :global .ant-btn {
+  border-radius: 5px !important;
+}
+.btn2 {
+  margin-left: auto;
+  width: auto;
+}
+.btn2 :global .ant-btn {
+  border-radius: 5px !important;
+}
+.btn3 {
+  margin-right: 10px;
+  width: auto;
+}
+.btn4 .ant-btn {
+  border-radius: 5px !important;
+}
+.batchSet {
+  /* & > p{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    } */
+}
+.batchSet :global .ant-btn {
+  border-radius: 5px;
+}
+.batchSet :global .ant-modal-footer {
+  text-align: center;
+}
+.batchSet :global .ant-modal-footer > div .ant-btn {
+  border-radius: 5px;
+}
+.batchSet :global .ant-modal-footer > div .ant-btn:nth-child(2) > span {
+  position: relative;
+}
+.importMsg {
+  margin: 15px;
+  font-family: PingFangSC-Regular;
+  color: #01113d 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+.desc {
+  width: 200px;
+}
+.failureNumber {
+  color: red;
+}
+.form {
+  display: inherit;
+  margin-left: 20px;
+}
+.checkModal :global .ant-modal-header {
+  display: flex;
+  justify-content: center;
+}
+.checkModal :global .ant-modal-title {
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+  font-size: 20px;
+  line-height: 28px;
+  /* margin: auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-70px); */
+}
+.checkModal :global .ant-table-row-cell-break-word {
+  white-space: pre-line;
+}
+.checkModal :global .ant-select-selection-selected-value {
+  width: 190px;
+}
+.checkModal .importMsg {
+  margin: 15px;
+  font-family: PingFangSC-Regular;
+  color: #01113d 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+.checkModal .form {
+  display: inherit;
+  margin-left: 20px;
+}
+.checkModal .importCalendarSelect {
+  width: auto;
+  margin-left: 10px;
+}
+.checkModal .importCalendarSelect .ant-select-selection--single {
+  width: 150px;
+}
+.checkModal :global .ant-modal-header {
+  display: flex;
+  justify-content: center;
+}
+.checkModal :global .ant-modal-title {
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+  font-size: 20px;
+  line-height: 28px;
+  /* margin: auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-70px); */
+}
+.checkModal :global .ant-table-row-cell-break-word {
+  white-space: pre-line;
+}
+.checkModal :global .ant-select-selection-selected-value {
+  width: 190px;
+}
+.checkModal .importMsg {
+  margin: 15px;
+  font-family: PingFangSC-Regular;
+  color: #01113d 100%;
+  font-size: 14px;
+  line-height: 22px;
+  width: 60%;
+  margin: auto;
+}
+.checkModal .form {
+  display: inherit;
+  margin-left: 30px;
+}
+.checkModal .importCalendarSelect {
+  width: auto;
+  margin-left: 10px;
+}
+.checkModal .importCalendarSelect .ant-select-selection--single {
+  width: 150px;
+}
+.addOrEdit :global .ant-modal {
+  padding-bottom: 0 !important;
+}
+.subjectContent .btn {
+  height: 36px;
+}
+.exportModal :global .ant-btn {
+  border-radius: 8px;
+}
+.exportModal :global .ant-modal-footer > div > .ant-btn {
+  color: rgba(1, 17, 61, 0.65);
+  background: rgba(1, 17, 61, 0.07);
+  border: 0;
+  border-radius: 8px;
+  height: 36px;
+  line-height: 36px;
+}
+.exportModal :global .ant-modal-footer > div > .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff;
+}
+.saveBtn {
+  background: #3b6ff5 !important;
+  color: #fff;
+  border-radius: 8px !important;
+}
+.newCourseModal :global .ant-modal-header {
+  padding: 10px 24px;
+}
+.newCourseModal :global .ant-modal-body {
+  padding: 10px 24px 0;
+  height: 530px;
+  overflow: scroll;
+}
+.createStyle :global .ant-modal-body {
+  padding: 10px 24px 0;
+  height: 530px;
+  overflow: scroll;
+}
+.courseContent :global .ant-btn-primary,
+.subjectContent :global .ant-btn-primary,
+.errorStyle :global .ant-btn-primary,
+.checkModal :global .ant-btn-primary,
+.exportModal :global .ant-btn-primary {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.courseContent :global .ant-input,
+.subjectContent :global .ant-input,
+.errorStyle :global .ant-input,
+.checkModal :global .ant-input,
+.exportModal :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.courseContent :global .ant-select-selection__rendered,
+.subjectContent :global .ant-select-selection__rendered,
+.errorStyle :global .ant-select-selection__rendered,
+.checkModal :global .ant-select-selection__rendered,
+.exportModal :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.courseContent :global .ant-select-selection--single,
+.subjectContent :global .ant-select-selection--single,
+.errorStyle :global .ant-select-selection--single,
+.checkModal :global .ant-select-selection--single,
+.exportModal :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.courseContent :global .ant-select-lg .ant-select-selection--multiple,
+.subjectContent :global .ant-select-lg .ant-select-selection--multiple,
+.errorStyle :global .ant-select-lg .ant-select-selection--multiple,
+.checkModal :global .ant-select-lg .ant-select-selection--multiple,
+.exportModal :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.colorMain {
+  width: 290px;
+  padding-top: 7px;
+}
+.colorMain .colorBox {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+}
+.colorMain .colorBox i {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.tableColorBox {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.conditionSelectStyle {
+  margin-right: 12px;
+  min-width: 120px;
+  display: inline-block;
+}
+.conditionSelectStyle > div {
+  border-radius: 20px !important;
+}
+.stageStyle {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: rgba(1, 17, 61, 0.65);
+}

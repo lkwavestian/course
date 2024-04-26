@@ -1,0 +1,136 @@
+
+.orderDetail {
+    .title {
+        font-size: 16px;
+        color: #333;
+        padding-left: 24px;
+    }
+
+    .orderMsg {
+        margin-top: 16px;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 0 24px 24px;
+
+        .orderMsgItem {
+            width: 50%;
+            display: inline-block;
+            line-height: 32px;
+
+            .label {
+                color: #333;
+            }
+        }
+
+        .orderMsgDescription {
+            margin-top: 8px;
+            display: block;
+
+            .label {
+                // display: block;
+                color: #333;
+            }
+        }
+    }
+    .orderItem {
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 24px;
+        .mainLabel {
+            font-size: 16px;
+            color: #333;
+            padding-left: 24px;
+            display: block;
+            margin: 24px 0 12px;
+        }
+        .orderCard {
+            overflow: hidden;
+            padding: 0 24px;
+            .item {
+                display: block;
+                border: 1px solid #ededec;
+                border-radius: 8px;
+                background: #fafafa;
+                padding: 10px 10px 0;
+                margin-bottom: 8px;
+                .itemPrice {
+                    border-bottom: 1px solid #f4f4f4;
+                    display: block;
+                    padding-bottom: 6px;
+                    overflow: hidden;
+                    .title {
+                        display: inline-block;
+                        width: 170px;
+                        color: #000;
+                    }
+
+                    .price {
+                        float: right;
+                        color: #999;
+                        text-align: right;
+
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+
+                .add {
+                    display: block;
+                    text-align: right;
+                    line-height: 34px;
+                    color: #000;
+                }
+            }
+
+            .aboutPrice {
+                display: block;
+                float: right;
+                .total {
+                    display: block;
+                    color: #000;
+
+                    span {
+                        text-align: right;
+                        color: #999;
+                        width: 72px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .tradeInfo {
+        .mainLabel {
+            font-size: 16px;
+            color: #333;
+            padding-left: 24px;
+            display: block;
+            margin: 24px 0 12px;
+        }
+        .info,
+        .closeInfo {
+            padding: 0 24px 24px;
+            line-height: 32px;
+            border-bottom: 1px solid #e8e8e8;
+            .label {
+                color: #333;
+            }
+            .half {
+                display: inline-block;
+                width: 50%;
+            }
+            .infoItem {
+                display: block;
+            }
+            .imgUpload {
+                .img {
+                    width: 35%;
+                    display: block;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

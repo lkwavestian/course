@@ -1,0 +1,202 @@
+.versionContrast {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.versionContrast .btnAndInfo {
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.versionContrast .btnAndInfo .btn {
+  color: #999;
+  background-color: #fff;
+  border: 1px solid #999;
+  padding: 0 18px;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  height: 34px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.versionContrast .btnAndInfo .dis {
+  background: #fff;
+  color: #999;
+}
+.versionContrast .btnAndInfo .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.versionContrast .btnAndInfo .info .left {
+  display: inline-block;
+  width: 70%;
+}
+.versionContrast .btnAndInfo .info .left .infoItem {
+  display: flex;
+  padding: 12px 0;
+  align-items: center;
+  width: 100%;
+}
+.versionContrast .btnAndInfo .info .left .infoItem .label {
+  display: inline-block;
+  width: 27%;
+  white-space: nowrap;
+  text-align: right;
+}
+.versionContrast .btnAndInfo .info .left .infoItem .text {
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: 4px;
+  height: 32px;
+  width: 73%;
+  display: inline-block;
+  position: relative;
+}
+.versionContrast .btnAndInfo .info .left .infoItem .text .info {
+  display: inline-block;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.versionContrast .btnAndInfo .info .left .infoItem .text .edit {
+  position: absolute;
+  right: 4px;
+}
+.versionContrast .btnAndInfo .info .connect {
+  padding-left: 12px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  height: 48px;
+  margin-left: 10px;
+}
+.versionContrast .record {
+  padding: 0 12px;
+  min-height: 300px;
+  max-height: 80vh;
+  overflow: scroll;
+  margin-top: 20px;
+}
+.versionContrast .record .extraContent {
+  font-size: 20px;
+  color: #333333;
+}
+.versionContrast .record .items {
+  overflow: hidden;
+}
+.versionContrast .record .items .tree {
+  margin: 13px 0;
+  display: inline-block;
+}
+.versionContrast .record .items .tree :global .ant-select-selection {
+  border-radius: 0;
+}
+.versionContrast .record .items .resultItem {
+  padding: 10px 0;
+  border-top: 1px solid #dfdfdf;
+  white-space: pre-wrap;
+}
+.versionContrast .record .items .results {
+  height: 400px;
+  overflow: scroll;
+}
+.versionContrast .record .items .results .result .groupName {
+  font-weight: 900;
+  line-height: 2;
+}
+.versionContrast .record .items .results .result .message {
+  line-height: 2;
+}
+.versionContrast .record .items .results .result .message:focus {
+  background-color: #1476ff;
+  color: white;
+}
+.versionContrast .record :global .ant-tabs-extra-content {
+  line-height: 47px;
+}
+.versionContrast .record :global .ant-tabs-top-bar {
+  margin-bottom: 0;
+}
+.versionContrast .record :global .ant-tabs-bar {
+  border-bottom: 0;
+}
+.versionContrast .record :global .ant-tabs-ink-bar {
+  display: none !important;
+}
+.versionContrast .record :global .ant-tabs-nav-scroll {
+  margin-left: 120px;
+  justify-content: flex-start;
+}
+.selectContrastModal {
+  margin-right: 8%;
+}
+.selectContrastModal .timePicker {
+  margin-bottom: 12px;
+  position: relative;
+}
+.selectContrastModal .timePicker :global .ant-calendar-picker .ant-calendar-picker-input {
+  visibility: hidden;
+}
+.selectContrastModal .timePicker .timeText {
+  position: absolute;
+  top: 0px;
+  border: 1px solid #d9d9d9;
+  width: 240px;
+  line-height: 32px;
+  border-radius: 16px;
+  padding: 0 12px;
+}
+.selectContrastModal .btn {
+  width: 100%;
+  text-align: right;
+  margin-top: 12px;
+}
+.selectContrastModal .btn .cancel,
+.selectContrastModal .btn .confirm {
+  display: inline-block;
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 12px;
+  padding: 0 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.selectContrastModal .btn .cancel {
+  background: #fff;
+  color: #4d7fff;
+}
+.selectContrastModal .btn .confirm {
+  background: #4d7fff;
+  color: #fff;
+  border-radius: 4px;
+}
+.arrow {
+  border-left: 8px solid #fff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid transparent;
+  display: block;
+  position: absolute;
+  top: 200px;
+  right: -16px;
+}
+.drawerTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.drawerTitle .close {
+  cursor: pointer;
+}
+.showPopover {
+  display: block;
+}
+.hidePopover {
+  display: none;
+}

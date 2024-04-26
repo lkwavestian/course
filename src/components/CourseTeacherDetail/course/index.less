@@ -1,0 +1,486 @@
+.Course {
+    .Skeleton {
+        width: 96.46%;
+        margin: 16px auto;
+    }
+    .search {
+        display: flex;
+        justify-content: space-between;
+        width: 96%;
+        margin: 16px auto;
+        flex-wrap: wrap;
+
+        .btn {
+            // margin-left: 10px;
+            .ant-btn,
+            .ant-btn .ant-btn-primary {
+                width: 100px !important;
+            }
+        }
+        :global {
+            .ant-btn-round {
+                border-radius: 0;
+            }
+            .ant-select-selection {
+                border-radius: 8px;
+                height: 36px;
+            }
+        }
+    }
+    .page {
+        width: 96.46%;
+        margin: 0 auto 16px auto;
+    }
+}
+.editModal {
+    .title {
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+    }
+    :global {
+        input {
+            border-radius: 16px;
+        }
+        .ant-select-selection {
+            border-radius: 16px;
+        }
+        .ant-input-number {
+            border-radius: 16px;
+        }
+        .ant-input-number-handler-wrap {
+            border-radius: 0 16px 16px 0;
+        }
+    }
+    .btn {
+        text-align: center;
+        .default,
+        .primary {
+            border-radius: 16px;
+            width: 80px;
+        }
+        .default {
+            border: 1px solid #4d7fff;
+            color: #4d7fff;
+            margin-right: 6px;
+        }
+        .primary {
+            background: #4d7fff;
+            margin-left: 6px;
+        }
+    }
+}
+
+.deleteConfirm {
+    :global {
+        .ant-modal-body {
+            text-align: center;
+            .ant-modal-confirm-content {
+                font-size: 18px;
+                color: #333;
+            }
+            .ant-modal-confirm-btns {
+                // float: unset;
+                margin: 10px auto 0;
+                .ant-btn {
+                    // width: 100px;
+                    height: 36px;
+                    border-radius: 8px;
+                    border-color: #4d7fff;
+                    color: #4d7fff;
+                }
+                .ant-btn-primary {
+                    background: #4d7fff;
+                    color: #fff;
+                }
+            }
+        }
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+
+        .ant-select {
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-modal-confirm,
+        .ant-modal-confirm-btns {
+            float: none;
+        }
+    }
+}
+
+.noData {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 92px;
+    img {
+        width: 180px;
+        margin: 0 auto;
+        display: block;
+    }
+    .title {
+        text-align: center;
+        color: #969fa9;
+        font-size: 16px;
+        margin: 16px 0;
+    }
+}
+
+.repeatModal {
+    padding: 30px 36px;
+    .courseNum {
+        margin-left: 50px;
+        margin-bottom: 16px;
+    }
+    .radio {
+        margin-left: 50px;
+    }
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+
+        .ant-select {
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+        }
+    }
+}
+.importText {
+    cursor: pointer;
+    margin: 10px 0px;
+}
+.popoverStyle {
+    :global {
+        .ant-popover-inner-content {
+            width: 150px;
+        }
+    }
+}
+.explain {
+    display: block;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.desc {
+    width: 200px;
+    margin-left: 30px;
+}
+.upLoad {
+    display: flex;
+    margin-top: 15px;
+    .text {
+        font-weight: 900;
+        margin-right: 15px;
+    }
+}
+.groupResult {
+    width: 92.46%;
+    margin: 0 auto 16px auto;
+    span {
+        margin: 0 10px;
+    }
+}
+.courseLists {
+    width: 100%;
+    font-size: 32px;
+    height: 55vh;
+    overflow-y: scroll;
+}
+.searchR {
+    margin-right: 50px;
+    :global {
+        .ant-btn {
+            border-radius: 5px;
+        }
+    }
+}
+.addCourse {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.exportCourse {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+
+        .ant-select {
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection {
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+        }
+    }
+}
+
+.exportByExcel {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+
+        .ant-select {
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+        }
+    }
+}
+
+.searchStyle {
+    :global {
+        .ant-btn {
+            border-radius: 5px !important;
+        }
+        .ant-input {
+            border-radius: 5px;
+        }
+    }
+}
+.printCon {
+    :global {
+        // width: 1050px !important;
+        width: 794px !important;
+        top: 0 !important;
+    }
+}
+@media print {
+    #printCon {
+        // width: 1050px;
+    }
+    @page {
+        size: A4;
+        margin: 0.1cm;
+    }
+    /* .printPage{
+        page-break-inside: avoid
+      } */
+}
+
+.exportOperate {
+    :global {
+        .ant-btn-primary {
+            margin-left: 30px;
+            height: 32px !important;
+            line-height: 32px !important;
+        }
+    }
+}
+.exportCourseStyle {
+    background-color: #3b6ff5;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 0 12px;
+    margin: 5px 0 0 5px;
+    color: white;
+}
+
+.formStyle {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}

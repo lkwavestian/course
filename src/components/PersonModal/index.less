@@ -1,0 +1,228 @@
+@import '~antd/lib/style/themes/default.less';
+.head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    background: #fff;
+    box-sizing: border-box;
+    height: 64px;
+    padding: 0 24px;
+    .icon {
+        color: #3a3a3a;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .head_title {
+        flex: 1;
+        text-align: center;
+        color: #3a3a3a;
+        font-size: 24px;
+    }
+    .head_btn {
+        width: 88px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background: #3b6ff5;
+        border-radius: 24px;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.templateContent {
+    display: flex;
+    height: calc(100vh - 64px);
+    margin: 0 24px;
+    padding: 0;
+    .templateContent_left {
+        width: 272px;
+        padding: 0 10px 0 0;
+        margin: 0;
+        border-right: 1px solid rgba(230, 230, 230, 1);
+        height: 100%;
+        & > li {
+            list-style: none;
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid rgba(230, 230, 230, 1);
+            box-sizing: border-box;
+            padding: 16px 24px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            & > h3 {
+                color: #666;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 8px;
+            }
+            & > p {
+                color: #999;
+                font-size: 12px;
+                height: 12px;
+                line-height: 12px;
+                margin: 0;
+            }
+        }
+        .active_li {
+            border: 1px solid rgba(77, 127, 255, 1);
+        }
+    }
+    .templateContent_right {
+        margin-left: 10px;
+        flex: 1;
+        height: 100%;
+        .right_con {
+            width: 100%;
+            background: #fff;
+            border-radius: 8px;
+            box-sizing: border-box;
+            padding: 24px 40px;
+            // height: calc(100% - 10px);
+            .listBox {
+                color: #000;
+                font-size: 14px;
+                .select {
+                    width: 168px;
+                    margin: 0 24px 0 10px;
+                    :global(.ant-select-selection) {
+                        border-radius: 20px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                    :global(.ant-select-selection__rendered) {
+                        line-height: 40px;
+                        color: #999;
+                    }
+                    :global(.ant-select-arrow .ant-select-arrow-icon) {
+                        color: #999;
+                        font-size: 16px;
+                    }
+                }
+                .input {
+                    margin-left: 16px;
+                    width: 216px;
+                    height: 40px;
+                }
+                :global(.ant-input-affix-wrapper .ant-input) {
+                    border-radius: 20px;
+                }
+                :global(.ant-input-affix-wrapper .ant-input-suffix :not(.anticon)) {
+                    color: #999 !important;
+                    font-size: 18px;
+                }
+            }
+            //   .checkBox_wrap{
+            //     height: 100%;
+            //     .checkBox{
+            //       height: 20px;
+            //       margin-top: 28px;
+            //       .choose{
+            //         color: #999;
+            //         font-size: 14px;
+            //         margin-left: 54px;
+            //         &>span{
+            //           margin: 10px;
+            //         }
+            //       }
+            //     }
+            //     .checkGroup{
+            //      margin-top: 25px;
+            //      height: calc(100% - 100px);
+            //     overflow-y: scroll;
+            //     &::-webkit-scrollbar {
+            //       display: none;
+            //   }
+            //    }
+            //   }
+
+            //  :global(.ant-checkbox-group-item){
+            //    width: 20%;
+            //    min-width: 150px;
+            //    margin-bottom: 27px;
+            //    padding-right: 10px;
+            //    margin-right: 0;
+            //    box-sizing: border-box;
+            //    white-space: nowrap;
+            //    overflow: hidden;
+            //    text-overflow: ellipsis;
+            //  }
+            .checkBox_wrap {
+                // margin-top: 24px;
+                // height: 100%;
+                :global(.ant-checkbox-group-item) {
+                    margin-right: 48px;
+                    display: inline-block;
+                }
+                .choose {
+                    & > span {
+                        margin: 0 5px;
+                    }
+                }
+                .checkGroup {
+                    margin: 24px 0 0;
+                    padding: 0;
+                    height: calc(100% - 100px);
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                    :global(.ant-checkbox-wrapper) {
+                        width: 20%;
+                        min-width: 150px;
+                        margin-bottom: 27px;
+                        margin-left: 0;
+                        padding-right: 10px;
+                        margin-right: 0;
+                        box-sizing: border-box;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+        .saveBtn,
+        .saveBtnLoading {
+            display: block;
+            margin: 12px auto 0;
+            border-radius: 20px;
+            width: 96px;
+            height: 40px;
+        }
+        .saveBtnLoading {
+            background: #1890ff;
+            text-align: center;
+            line-height: 40px;
+            cursor: default;
+            .icon {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 14px;
+            }
+        }
+    }
+    .templateContent_right_loading {
+        margin-left: 10px;
+        flex: 1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .templateContent {
+        .templateContent_right {
+            .right_con {
+                .checkBox_wrap {
+                    .checkGroup {
+                        height: calc(100% - 150px);
+                    }
+                }
+            }
+        }
+    }
+}

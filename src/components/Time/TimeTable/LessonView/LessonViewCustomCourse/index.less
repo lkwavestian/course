@@ -1,0 +1,61 @@
+.lessonViewCustomCourse {
+    display: flex;
+    gap: 10px;
+    height: 32px;
+    // width: 265px;
+    align-items: center;
+}
+
+.customLabelWrapper {
+    display: flex;
+    gap: 3px;
+    color: #3b6ff5;
+}
+
+.customValueWrapper {
+    position: relative;
+    display: flex;
+    .tagPlaceholder {
+        display: block;
+        width: 150px;
+        height: 32px;
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        line-height: 32px;
+        background: #fff;
+        padding-left: 12px;
+        pointer-events: none;
+        .close {
+            position: absolute;
+            right: 8px;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+    }
+    :global {
+        .ant-select {
+            height: 32px !important;
+            overflow: scroll !important;
+            width: 100%;
+        }
+    }
+}
+
+.arrow {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.studentViewSelect {
+    display: flex;
+    gap: 10px;
+}
+
+.teacherViewSelect {
+    width: 150px;
+}

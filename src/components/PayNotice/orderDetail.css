@@ -1,0 +1,135 @@
+.drawer :global .ant-drawer-body {
+  padding: 24px 0;
+}
+.drawer .drawerTitle .titlePayStatus {
+  font-size: 12px;
+  display: inline-block;
+  background: #f1f2f3;
+  padding: 0 6px;
+  border-radius: 12px;
+  color: #666;
+  margin-left: 12px;
+}
+.orderDetail .title {
+  font-size: 16px;
+  color: #333;
+  padding-left: 24px;
+}
+.orderDetail .orderMsg {
+  margin-top: 16px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 24px 24px;
+}
+.orderDetail .orderMsg .orderMsgItem {
+  width: 50%;
+  display: inline-block;
+  line-height: 32px;
+}
+.orderDetail .orderMsg .orderMsgItem .label {
+  color: #333;
+}
+.orderDetail .orderMsg .orderMsgDescription {
+  margin-top: 8px;
+  display: block;
+}
+.orderDetail .orderMsg .orderMsgDescription .label {
+  color: #333;
+}
+.orderDetail .orderItem {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 24px;
+}
+.orderDetail .orderItem .mainLabel {
+  font-size: 16px;
+  color: #333;
+  padding-left: 24px;
+  display: block;
+  margin: 24px 0 12px;
+}
+.orderDetail .orderItem .orderCard {
+  overflow: hidden;
+  padding: 0 24px;
+}
+.orderDetail .orderItem .orderCard .item {
+  display: block;
+  border: 1px solid #ededec;
+  border-radius: 8px;
+  background: #fafafa;
+  padding: 10px 10px 0;
+  margin-bottom: 8px;
+}
+.orderDetail .orderItem .orderCard .item .itemPrice {
+  border-bottom: 1px solid #f4f4f4;
+  display: block;
+  padding-bottom: 6px;
+  overflow: hidden;
+}
+.orderDetail .orderItem .orderCard .item .itemPrice .title {
+  display: inline-block;
+  width: 170px;
+  color: #000;
+}
+.orderDetail .orderItem .orderCard .item .itemPrice .price {
+  float: right;
+  color: #999;
+  text-align: right;
+}
+.orderDetail .orderItem .orderCard .item .itemPrice .price span {
+  display: block;
+}
+.orderDetail .orderItem .orderCard .item .add {
+  display: block;
+  text-align: right;
+  line-height: 34px;
+  color: #000;
+}
+.orderDetail .orderItem .orderCard .aboutPrice {
+  display: block;
+  float: right;
+}
+.orderDetail .orderItem .orderCard .aboutPrice .total {
+  display: block;
+  color: #000;
+}
+.orderDetail .orderItem .orderCard .aboutPrice .total span {
+  text-align: right;
+  color: #999;
+  width: 72px;
+  display: inline-block;
+}
+.orderDetail .tradeInfo .mainLabel {
+  font-size: 16px;
+  color: #333;
+  padding-left: 24px;
+  display: block;
+  margin: 24px 0 12px;
+}
+.orderDetail .tradeInfo .info,
+.orderDetail .tradeInfo .closeInfo {
+  padding: 0 24px 24px;
+  line-height: 32px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.orderDetail .tradeInfo .info .label,
+.orderDetail .tradeInfo .closeInfo .label {
+  color: #333;
+}
+.orderDetail .tradeInfo .info .half,
+.orderDetail .tradeInfo .closeInfo .half {
+  display: inline-block;
+  width: 50%;
+}
+.orderDetail .tradeInfo .info .infoItem,
+.orderDetail .tradeInfo .closeInfo .infoItem {
+  display: block;
+}
+.orderDetail .tradeInfo .info .imgUpload .img,
+.orderDetail .tradeInfo .closeInfo .imgUpload .img {
+  width: 35%;
+  display: block;
+}
+.orderDetail .tradeInfo .info .imgUpload .img img,
+.orderDetail .tradeInfo .closeInfo .imgUpload .img img {
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,335 @@
+body {
+  background: lightgray;
+}
+body .main {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  border: gainsboro solid 1px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 16px;
+}
+body .main .top {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-bottom: gainsboro solid 1px;
+  height: 46px;
+  margin-top: 13px;
+  /* :global{
+                .ant-btn{
+                    border-radius: 5px;
+                    width: auto;
+                }
+            } */
+}
+body .main .top :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+body .main .top :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+body .main .top :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+body .main .top :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+body .main .top :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+body .main .top :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+body .main .content {
+  margin: 20px auto;
+}
+body .main .content .contentP {
+  display: flex;
+  line-height: 30px;
+}
+body .main .content .contentP > span:nth-child(2) {
+  margin-left: 20px;
+}
+body .main .content .contentP .pStyle > p :global {
+  margin-bottom: 0 !important;
+}
+body .main .content .contentP .title {
+  font-family: PingFangSC-Medium;
+  color: #01113D 100%;
+  font-weight: 700;
+  font-size: 14px;
+  width: 205px;
+  text-align: end;
+}
+body .main .content .contentP .titleTxt {
+  display: flex;
+  flex-direction: column;
+}
+body .main .content .contentP .adminStyle {
+  display: inline-block;
+  width: calc(100% - 225px);
+}
+body .main .content .contentP .chargeStyle {
+  margin-left: 30px;
+}
+.toggleModal {
+  width: 700px !important;
+}
+.toggle {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.toggle :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.toggle :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.toggle :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.toggle :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.toggle :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.toggle :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.effective {
+  text-align: center;
+}
+.effective .title,
+.effective .text {
+  display: block;
+}
+.openCourse {
+  padding: 12px 16px;
+}
+.openCourse .item {
+  font-size: 12px;
+  color: #969fa9;
+}
+.openCourse .active {
+  font-size: 12px;
+  color: #3778ff;
+  cursor: pointer;
+}
+.openCourse .btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.openCourse button {
+  text-align: right;
+  border-radius: 20px;
+  margin-top: 12px;
+}
+.openCourse :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.openCourse :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.openCourse :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.openCourse :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.openCourse :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.openCourse :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.popAsync {
+  width: 300px !important;
+}
+.popAsync :global .ant-btn {
+  border-radius: 5px !important;
+  height: 35px !important;
+}
+.timePicker {
+  margin-bottom: 12px;
+  position: relative;
+}
+.timePicker :global .ant-calendar-picker .ant-calendar-picker-input {
+  visibility: hidden;
+}
+.timePicker .timeText {
+  position: absolute;
+  top: 0px;
+  border: 1px solid #d9d9d9;
+  width: 240px;
+  line-height: 32px;
+  border-radius: 5px;
+  padding: 0 12px;
+}
+.selectSchedule :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.selectSchedule :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.selectSchedule :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.selectSchedule :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.selectSchedule :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.selectSchedule :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.removeContainer :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.removeContainer :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.removeContainer :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.removeContainer :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.removeContainer :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.removeContainer :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.effectiveConfirm :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.effectiveConfirm :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.effectiveConfirm :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.effectiveConfirm :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.effectiveConfirm :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.effectiveConfirm :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.effectiveContent {
+  display: flex;
+  justify-content: space-around;
+}
+.effectiveContent .title {
+  margin-top: 5px;
+  font-weight: bolder;
+  color: black;
+}
+.effect .title {
+  margin: 5px;
+  font-weight: bolder;
+  color: black;
+  width: 150px;
+}
+.effect :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.effect :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.effect :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.effect :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.effect :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.effect :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}

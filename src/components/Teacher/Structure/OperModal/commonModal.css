@@ -1,0 +1,134 @@
+.modalBtn {
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 23px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+.cancelBtn {
+    color: #3b6ff5;
+    background: #fff;
+    text-align: center;
+    margin-right: 10px;
+}
+.submitBtn {
+    background: #3b6ff5;
+    color: #fff;
+}
+.inputStyle {
+    border-radius: 20px !important;
+}
+.operationList {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+.operationList a {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    text-align: right;
+}
+.operationList .deleteBtn {
+    color: #3b6ff5;
+    font-size: 16px;
+    padding-left: 15px;
+    text-align: left;
+}
+.operationList .deleteBtn i {
+    margin-right: 5px;
+}
+.selectOrgStyle > span {
+    border: none !important;
+    box-shadow: 0 0 0 2px transparent !important;
+    -webkit-box-shadow: 0 0 0 2px transparent !important;
+}
+.selectOrgStyle > span > span > span {
+    display: none !important;
+}
+.orgCardList {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.orgCardList > div {
+    padding: 25px 30px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.deleteCard {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font-size: 15px;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+.deleteCardDisabled {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font-size: 15px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+.saveCard {
+    position: absolute;
+    top: 9px;
+    right: 47px;
+    font-size: 15px;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+.saveCardDisabled {
+    position: absolute;
+    top: 9px;
+    right: 47px;
+    font-size: 15px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+.addCardBtn {
+    width: 100%;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.addCardBtn .setButtonStyle {
+    width: 100%;
+    font-size: 15px;
+    color: #3b6ff5;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px dashed #ddd;
+    text-align: center;
+    padding: 6px 0;
+}
+.selectOrgStyle > div {
+    border-radius: 20px;
+}
+.selectPersonStyle > div {
+    border-radius: 20px !important;
+}
+.selectAddStaff > span {
+    border-radius: 20px !important;
+}
+.setOrgRoleSelectPerson > span {
+    border-radius: 20px !important;
+}

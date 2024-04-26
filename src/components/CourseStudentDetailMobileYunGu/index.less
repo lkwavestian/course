@@ -1,0 +1,479 @@
+.wrapper {
+    padding: 0 16px 19px;
+    position: relative;
+    .selectCourseWrapper {
+        margin: -8px 0 10px;
+        // display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 3px;
+        font-family: PingFangSC-Regular;
+        color: #01113d;
+        font-size: 14px;
+        line-height: 20px;
+        :global {
+            .ant-input-search-icon {
+                display: none;
+            }
+        }
+        .filterStyle {
+            :global {
+                .ant-select-selection {
+                    background-color: rgb(245, 246, 247);
+                    border: none;
+                }
+                .ant-select-selection__placeholder,
+                .ant-select-search__field__placeholder {
+                    color: rgba(1, 17, 61, 0.85);
+                }
+            }
+        }
+    }
+    .courseFilter {
+        color: #01113d;
+    }
+    .courseFilterActive {
+        color: rgb(50, 98, 242);
+    }
+}
+
+.courseListWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px;
+    .placeHolder {
+        height: 54px;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.chooseCourseWrapper {
+    margin: 10px 0;
+    background: #ffffff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.chooseCourse {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 21px;
+    padding-bottom: 15px;
+    .courseName {
+        font-family: PingFangSC-Semibold;
+        color: #01113d;
+        padding-top: 13px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .courseDetailStyle {
+        display: flex;
+        .courseCoverStyle {
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+        }
+        .corseMessage {
+            margin-left: 11px;
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.65);
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            .corseMessageItem {
+                display: flex;
+                gap: 8px;
+                font-size: 14px;
+                line-height: 20px;
+                align-items: flex-start;
+                .courseFee {
+                    font-family: PingFangSC-Regular;
+                    // color: #fd9004;
+                }
+                .corseMessageItemIcons {
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+}
+
+.signUpList {
+    border-top: 1px solid rgb(247, 247, 247);
+    height: 40px;
+    font-size: 16px;
+    line-height: 22px;
+    .signUpStatus {
+        height: 100%;
+        padding: 0 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .wantSignUp {
+            font-family: PingFangSC-Semibold;
+            color: #0445fc;
+            margin-left: 0;
+        }
+    }
+    .signUpSuccessWrapper {
+        height: 100%;
+        padding: 0 21px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .signUpSuccess {
+            font-family: PingFangSC-Regular;
+            color: #59a409;
+        }
+        .signUpCancel {
+            font-family: PingFangSC-Semibold;
+            color: rgba(1, 17, 61, 0.65);
+        }
+    }
+    .fullStatus {
+        height: 100%;
+        padding: 0 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .fillSignUp {
+            font-family: PingFangSC-Semibold;
+            color: rgba(1, 17, 61, 0.25);
+            margin-left: 0;
+        }
+    }
+}
+
+.selectSuccessWrapper {
+    background: #263359;
+    width: 100vw;
+    height: 84px;
+    position: fixed;
+    bottom: 0;
+    font-family: PingFangSC-Medium;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 22px;
+    .successMsgWrapper {
+        padding-top: 13px;
+        padding-bottom: 49px;
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.selectDrawerWrapper {
+    :global {
+        .ant-drawer-content-wrapper {
+            height: auto;
+        }
+        .ant-drawer-content {
+            background: #263359;
+            color: #ffffff;
+            .ant-drawer-body {
+                height: 100%;
+                padding-top: 13px;
+                padding-bottom: 49px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+    }
+}
+
+.successMsgWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.selectCourseListWrapper {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .selectCourseWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .selectCourse {
+            padding-left: 12px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 300px;
+            height: 70px;
+            background-color: rgb(91, 102, 129);
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+            border-radius: 6px;
+            .courseName {
+                font-family: PingFangSC-Regular;
+                color: rgb(223, 224, 229);
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .courseTime {
+                font-family: PingFangSC-Light;
+                color: rgb(162, 166, 180);
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+        .deleteIcon {
+            font-size: 18px;
+            margin-right: 12px;
+        }
+    }
+}
+
+.filterDrawerWrapper {
+    :global {
+        .ant-drawer-content-wrapper {
+            width: auto !important;
+        }
+        .ant-drawer-content {
+            background-color: #fff;
+            .ant-drawer-body {
+                height: 100%;
+                padding-top: 71px;
+                padding-bottom: 44px;
+                padding-left: 23px;
+                padding-right: 21px;
+                width: 300px;
+                position: relative;
+            }
+        }
+    }
+}
+
+.selectItemWrapper {
+    margin-bottom: 42px;
+    .selectTitle {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: PingFangSC-Semibold;
+        color: #01113d;
+    }
+    .selectItemList {
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 5px 17px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 40px;
+        .selectItem {
+            background: rgba(1, 17, 61, 0.05);
+            color: #01113d;
+            padding: 5px 17px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            line-height: 20px;
+            border-radius: 40px;
+            margin-right: 5px;
+            flex-shrink: 0;
+        }
+        .hasSelectedItem {
+            background: rgba(4, 69, 252, 0.1);
+            color: #0445fc;
+            padding: 5px 17px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            line-height: 20px;
+            border-radius: 40px;
+            margin-right: 5px;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.btnList {
+    left: 23px;
+    bottom: 44px;
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: PingFangSC-Medium;
+    .reSetBtn {
+        width: 80px;
+        height: 40px;
+        background: rgba(1, 17, 61, 0.07);
+        color: rgba(1, 17, 61, 0.65);
+        border-radius: 5px;
+    }
+    .confirmBtn {
+        width: 165px;
+        height: 40px;
+        background: #0445fc;
+        color: #ffffff;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+}
+
+.confirmText {
+    text-align: center;
+    .title {
+        display: block;
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+    .text {
+        display: block;
+    }
+    :global {
+        // .ant-modal-confirm-btns {
+        //     float: none;
+        //     .ant-btn {
+        //         border-radius: 16px;
+        //     }
+        //     .ant-btn-primary {
+        //         background: #4d7fff;
+        //     }
+        // }
+        // .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+        //     margin-left: 0;
+        // }
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-modal-confirm-btns {
+            float: none;
+            margin-right: 0;
+        }
+    }
+}
+.tabsStyle {
+    :global {
+        .ant-tabs-nav-scroll {
+            display: flex;
+            justify-content: center;
+        }
+        .ant-tabs-tab-active {
+            color: #3b6ff5 !important;
+        }
+        .ant-tabs-ink-bar {
+            background-color: #3b6ff5 !important;
+        }
+    }
+}
+.loadingBox {
+    transition: all 300ms ease 0s;
+    height: 0;
+    // padding-top: 10px;
+    overflow: hidden;
+    background: #fafbff;
+    width: 100%;
+    .loaded {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        -webkit-animation-name: locate-loading;
+        -moz-animation-name: locate-loading;
+        animation-name: locate-loading;
+        -webkit-animation-duration: 1.58s;
+        -moz-animation-duration: 1.58s;
+        animation-duration: 1.58s;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        border-top: 2px solid #f43939;
+        border-left: 2px solid #df5555;
+        margin: auto;
+    }
+    .loadText {
+        text-align: center;
+    }
+}
+
+.groupContent {
+    display: flex;
+    margin: 0 0 5px 0;
+    // flex-wrap: nowrap;
+    width: 100vw;
+    overflow: scroll;
+
+    .selectItem {
+        background: rgba(1, 17, 61, 0.05);
+        color: #01113d;
+        padding: 5px 17px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 40px;
+        margin-right: 5px;
+        flex-shrink: 0;
+    }
+    .hasSelectedItem {
+        background: rgba(4, 69, 252, 0.1);
+        color: #0445fc;
+        padding: 5px 17px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 40px;
+        margin-right: 5px;
+        flex-shrink: 0;
+    }
+}
+
+.groupContent::-webkit-scrollbar {
+    display: none;
+}
+
+.showCourseNoticeModal {
+    :global {
+        .ant-modal-content {
+            border-radius: 12px;
+            // height: 84vh;
+        }
+        .ant-modal-close-x {
+            font-size: 24px;
+        }
+    }
+    .title {
+        text-align: center;
+        color: rgba(1, 17, 61, 0.85);
+        font-size: 16px;
+    }
+    .inform {
+        text-align: center;
+        font-size: 14px;
+        color: rgba(1, 17, 61, 0.85);
+    }
+}

@@ -1,0 +1,366 @@
+.content {
+    width: 90%;
+    position: relative;
+    left: 4%;
+    top: 50px;
+    border: 1px solid #efefef;
+}
+.content .grid {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    position: relative;
+    min-height: 120px;
+    width: 100%;
+}
+.content .grid .schoolYear {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    text-align: center;
+    min-width: 45%;
+    border-bottom: 1px solid #efefef;
+}
+.content .grid .schoolYear .title {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: PingFangSC-Semibold;
+    position: absolute;
+    left: 31px;
+    top: 28px;
+}
+.content .grid .schoolYear .timeRange {
+    color: #999;
+    font-family: PingFangSC-Regular;
+    position: absolute;
+    left: 31px;
+    top: 70px;
+}
+.content .grid .schoolYear .info {
+    cursor: pointer;
+    position: relative;
+    left: 7%;
+    top: 40px;
+}
+.content .grid .schoolYear .info i {
+    font-size: 28px;
+    color: orange;
+}
+.content .grid .schoolYear .startYear {
+    position: absolute;
+    left: 28%;
+    top: 40px;
+    color: #3b6ff5;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 23px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+}
+.content .grid .schoolYear .currentYear {
+    color: orange;
+    position: absolute;
+    left: 29%;
+    top: 49px;
+}
+.content .grid .schoolYear .edit {
+    position: absolute;
+    left: 37%;
+    top: 40px;
+    color: #3b6ff5;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 23px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+}
+.content .grid .semester {
+    flex: 10;
+    -webkit-flex: 10;
+    -moz-flex: 10;
+    border-left: 1px solid #efefef;
+}
+.content .grid .semester .rowStyle {
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    display: -webkit-flex;
+}
+.content .grid .semester .rowStyle :global .ant-col .ant-col-10 {
+    width: 100%;
+}
+.content .grid .semester .rowStyle .semesterName {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+    position: absolute;
+    top: 50%;
+    /* left: 8%; */
+    left: 4%;
+    transform: translateY(-50%);
+}
+.content .grid .semester .rowStyle .semesterTime {
+    color: #999;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+    line-height: 100%;
+    position: absolute;
+    top: 50%;
+    /* left: 30%; */
+    left:25%;
+    transform: translateY(-50%);
+}
+.content .grid .semester .rowStyle .currentSemester {
+    color: orange;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.content .grid .semester .rowStyle .startSemester {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3b6ff5;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 23px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+}
+.content .grid .semester .rowStyle .creatSemester {
+    position: absolute;
+    right: -15%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3b6ff5;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 13px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+}
+.modalContent .title {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: PingFangSC-Medium;
+    color: #000 85%;
+    margin-right: 26px;
+}
+.modalContent .semesterCName {
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+.modalContent .semesterCName :global .ant-input {
+    width: 268px;
+    height: 40px;
+    border-radius: 20px;
+}
+.modalContent .timeRange {
+    margin-bottom: 22px;
+}
+.modalContent .timeRange .to {
+    margin: 0 5px;
+}
+.modalContent .timeRange .pick {
+    margin-left: 5px;
+    display: inline-block;
+}
+.modalContent .timeRange .pick :global .ant-calendar-picker-input {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+}
+.modalContent .btns {
+    text-align: center;
+    margin-top: 38px;
+}
+.modalContent .btns .cancelBtn {
+    color: #3b6ff5;
+    background: #fff;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 29px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.modalContent .btns .okBtn {
+    background: #3b6ff5;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 29px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.popoverContent .term {
+    margin-bottom: 20px;
+}
+.popoverContent .first {
+    margin-bottom: 5px;
+    text-align: left;
+}
+.popoverContent .second {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.popoverContent .set {
+    margin-left: 5px;
+    color: #3b6ff5;
+    text-align: right;
+    cursor: pointer;
+}
+.popoverContent .set1 {
+    cursor: pointer;
+    margin-left: 19px;
+    color: #3b6ff5;
+    text-align: right;
+}
+.modalContent .title {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: PingFangSC-Medium;
+    color: #000 85%;
+    margin-right: 26px;
+}
+.modalContent .academicName {
+    margin-bottom: 22px;
+}
+.modalContent .academicName :global .ant-input {
+    width: 268px;
+    height: 40px;
+    border-radius: 20px;
+}
+.modalContent .timeRange {
+    margin-bottom: 22px;
+}
+.modalContent .timeRange .to {
+    margin: 0 5px;
+}
+.modalContent .timeRange .pick {
+    margin-left: 5px;
+    display: inline-block;
+}
+.modalContent .timeRange .pick :global .ant-calendar-picker-input {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+}
+.academicInfo {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: PingFangSC-Medium;
+}
+.line {
+    display: inline-block;
+    width: 80%;
+    height: 1px;
+    background: #eee;
+}
+.semesterStage {
+    padding-top: 25px;
+    margin-left: 10%;
+}
+.semesterStage :global .ant-input {
+    margin-right: 10px;
+    width: 182px;
+    height: 40px;
+    border-radius: 20px;
+}
+.semesterStage .semesterTime {
+    display: inline-block;
+}
+.semesterStage .semesterTime span {
+    margin: 0 5px;
+}
+.semesterStage .semesterTime :global .ant-calendar-picker-input {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 0px;
+}
+.btns {
+    text-align: center;
+    margin-top: 106px;
+}
+.btns .cancelBtn {
+    color: #3b6ff5;
+    background: #fff;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 29px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btns .okBtn {
+    background: #3b6ff5;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    padding: 8px 29px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cantCreat {
+    display: inline-block;
+    margin-top: 30px;
+}
+.cantCreat .condition {
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+.cantCreat .condition1 {
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+    margin-right: 54px;
+    margin-top: 10px;
+}
+.cantCreat .toSet {
+    color: #1890ff;
+    cursor: pointer;
+}
+:global .ant-modal-mask {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+:global .ant-modal-confirm-btns .ant-btn {
+    border-radius: 8px;
+}

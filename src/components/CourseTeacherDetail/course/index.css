@@ -1,0 +1,370 @@
+.Course .Skeleton {
+  width: 96.46%;
+  margin: 16px auto;
+}
+.Course .search {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  margin: 16px auto;
+  flex-wrap: wrap;
+}
+.Course .search .btn .ant-btn,
+.Course .search .btn .ant-btn .ant-btn-primary {
+  width: 100px !important;
+}
+.Course .search :global .ant-btn-round {
+  border-radius: 0;
+}
+.Course .search :global .ant-select-selection {
+  border-radius: 8px;
+  height: 36px;
+}
+.Course .page {
+  width: 96.46%;
+  margin: 0 auto 16px auto;
+}
+.editModal .title {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+.editModal :global input {
+  border-radius: 16px;
+}
+.editModal :global .ant-select-selection {
+  border-radius: 16px;
+}
+.editModal :global .ant-input-number {
+  border-radius: 16px;
+}
+.editModal :global .ant-input-number-handler-wrap {
+  border-radius: 0 16px 16px 0;
+}
+.editModal .btn {
+  text-align: center;
+}
+.editModal .btn .default,
+.editModal .btn .primary {
+  border-radius: 16px;
+  width: 80px;
+}
+.editModal .btn .default {
+  border: 1px solid #4d7fff;
+  color: #4d7fff;
+  margin-right: 6px;
+}
+.editModal .btn .primary {
+  background: #4d7fff;
+  margin-left: 6px;
+}
+.deleteConfirm :global .ant-modal-body {
+  text-align: center;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-content {
+  font-size: 18px;
+  color: #333;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-btns {
+  margin: 10px auto 0;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-btns .ant-btn {
+  width: 100px;
+  height: 36px;
+  border-radius: 8px;
+  border-color: #4d7fff;
+  color: #4d7fff;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary {
+  background: #4d7fff;
+  color: #fff;
+}
+.deleteConfirm :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.deleteConfirm :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.deleteConfirm :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.deleteConfirm :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.deleteConfirm :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.deleteConfirm :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.deleteConfirm :global .ant-select {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.deleteConfirm :global .ant-modal-confirm,
+.deleteConfirm :global .ant-modal-confirm-btns {
+  float: none;
+}
+.noData {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 92px;
+}
+.noData img {
+  width: 180px;
+  margin: 0 auto;
+  display: block;
+}
+.noData .title {
+  text-align: center;
+  color: #969fa9;
+  font-size: 16px;
+  margin: 16px 0;
+}
+.repeatModal {
+  padding: 30px 36px;
+}
+.repeatModal .courseNum {
+  margin-left: 50px;
+  margin-bottom: 16px;
+}
+.repeatModal .radio {
+  margin-left: 50px;
+}
+.repeatModal :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.repeatModal :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.repeatModal :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.repeatModal :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.repeatModal :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.repeatModal :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.repeatModal :global .ant-select {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.importText {
+  cursor: pointer;
+  margin: 10px 0px;
+}
+.popoverStyle :global .ant-popover-inner-content {
+  width: 150px;
+}
+.explain {
+  display: block;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.desc {
+  width: 200px;
+}
+.upLoad {
+  display: flex;
+  margin-top: 15px;
+}
+.upLoad .text {
+  font-weight: 900;
+  margin-right: 15px;
+}
+.groupResult {
+  width: 92.46%;
+  margin: 0 auto 16px auto;
+}
+.groupResult span {
+  margin: 0 10px;
+}
+.courseLists {
+  width: 100%;
+  font-size: 32px;
+  height: 55vh;
+  overflow-y: scroll;
+}
+.searchR {
+  margin-left: 50px;
+}
+.searchR :global .ant-btn {
+  border-radius: 5px;
+}
+.addCourse :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.addCourse :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.addCourse :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.addCourse :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.addCourse :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.addCourse :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.exportCourse :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.exportCourse :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.exportCourse :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.exportCourse :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.exportCourse :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.exportCourse :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.exportCourse :global .ant-select {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.exportCourse :global .ant-select-selection {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.exportByExcel :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.exportByExcel :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.exportByExcel :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.exportByExcel :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.exportByExcel :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.exportByExcel :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.exportByExcel :global .ant-select {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.searchStyle :global .ant-btn {
+  border-radius: 5px !important;
+}
+.printCon :global {
+  width: 794px !important;
+  top: 0 !important;
+}
+@media print {
+  @page {
+    size: A4;
+    margin: 0.1cm;
+  }
+  /* .printPage{
+        page-break-inside: avoid
+      } */
+}
+.formStyle :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.formStyle :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.formStyle :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.formStyle :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.formStyle :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.formStyle :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}

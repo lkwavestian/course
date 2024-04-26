@@ -1,0 +1,141 @@
+.Course .Skeleton {
+    width: 96.46%;
+    margin: 16px auto;
+}
+.Course .search {
+    width: 96.46%;
+    margin: 16px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Course .search .selectStyle > div {
+    border-radius: 20px !important;
+}
+.Course .search .searchStyle input {
+    border-radius: 20px;
+}
+.Course .search .btn {
+    border-radius: 25px;
+    margin-left: 10px;
+}
+.Course .search .btn .ant-btn,
+.Course .search .btn .ant-btn .ant-btn-primary {
+    width: 100px !important;
+}
+.Course .page {
+    width: 96.46%;
+    margin: 0 auto 16px auto;
+}
+.editModal .title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+.editModal :global input {
+    border-radius: 16px;
+}
+.editModal :global .ant-select-selection {
+    border-radius: 16px;
+}
+.editModal :global .ant-input-number {
+    border-radius: 16px;
+}
+.editModal :global .ant-input-number-handler-wrap {
+    border-radius: 0 16px 16px 0;
+}
+.editModal .btn {
+    text-align: center;
+}
+.editModal .btn .default,
+.editModal .btn .primary {
+    border-radius: 16px;
+    width: 80px;
+}
+.editModal .btn .default {
+    border: 1px solid #4d7fff;
+    color: #4d7fff;
+    margin-right: 6px;
+}
+.editModal .btn .primary {
+    background: #4d7fff;
+    margin-left: 6px;
+}
+.deleteConfirm :global .ant-modal-body {
+    text-align: center;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-content {
+    font-size: 18px;
+    color: #333;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-btns {
+    float: unset;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-btns .ant-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: #4d7fff;
+    color: #4d7fff;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary {
+    background: #4d7fff;
+    color: #fff;
+}
+.noData {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 92px;
+}
+.noData img {
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+}
+.noData .title {
+    text-align: center;
+    color: #969fa9;
+    font-size: 16px;
+    margin: 16px 0;
+}
+.repeatModal {
+    padding: 30px 36px;
+}
+.repeatModal .courseNum {
+    margin-left: 50px;
+    margin-bottom: 16px;
+}
+.repeatModal .radio {
+    margin-left: 50px;
+}
+.importText {
+    cursor: pointer;
+    margin: 10px 0px;
+}
+.popoverStyle :global .ant-popover-inner-content {
+    width: 150px;
+}
+.explain {
+    display: block;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.desc {
+    width: 200px;
+}
+.upLoad {
+    display: flex;
+    margin-top: 15px;
+}
+.upLoad .text {
+    font-weight: 900;
+    margin-right: 15px;
+}
+.treeSelectStyle :global .ant-select-selection--multiple {
+    border-radius: 20px;
+}
+.promiseRepeat :global .ant-select-selection--single {
+    border-radius: 20px;
+    margin: 0 16px;
+}

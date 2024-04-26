@@ -1,0 +1,48 @@
+.recordListWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    .recordItem {
+        border-radius: 11px;
+        background: #ffffff;
+        padding: 15px;
+    }
+}
+
+.recordItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .topPart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(1, 17, 61, 1);
+        .leftPart {
+            display: flex;
+            gap: 5px;
+            font-family: PingFangSC-Medium;
+            color: rgba(1, 17, 61, 1);
+        }
+        .rightPart {
+            display: flex;
+            gap: 5px;
+            font-family: PingFangSC-Semibold;
+            color: rgba(1, 17, 61, 0.85);
+        }
+    }
+    .bottomPart {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 17px;
+        color: #01113d;
+        color: rgba(1, 17, 61, 0.65);
+    }
+}

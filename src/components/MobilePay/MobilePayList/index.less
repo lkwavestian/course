@@ -1,0 +1,333 @@
+.root {
+    // background-color: ;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+.mobileLoading {
+    text-align: center;
+    margin-top: 150px;
+}
+.mobilePayList {
+    .noData {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding-top: 150px;
+        .text {
+            margin-top: 12px;
+        }
+    }
+}
+.loading1 {
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payList {
+    .nullStyle {
+        width: 100%;
+        min-height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    background: #f5f6f7;
+    :global(.ant-tabs-tab) {
+        margin: 0 3.25rem 0 0;
+        padding: 0.9375rem 1rem 0.9rem 1rem;
+    }
+    :global(.ant-tabs-nav .ant-tabs-tab):hover {
+        color: #01113d !important;
+    }
+    :global(.ant-tabs-ink-bar-animated) {
+        width: 1.75rem !important;
+        margin-left: 1rem !important;
+        background: #0445fc !important;
+        margin-bottom: 0.625rem;
+    }
+    :global(.ant-tabs-nav-wrap) {
+        // width: 100%;
+        // padding-left: 4rem;
+        // margin-right: 6rem;
+        text-align: center;
+        font-family: PingFangSC-Medium;
+        color: #01113d;
+    }
+    :global(.ant-tabs-bar) {
+        width: 100%;
+        position: fixed;
+        opacity: 1 !important;
+        background: #ffffff;
+        z-index: 999;
+        font-family: PingFangSC-Medium;
+        color: #01113d;
+        font-size: 1rem;
+        border-bottom: none;
+    }
+    .noData {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        // padding-top: 50%;
+        .text {
+            margin-top: 2.4375rem;
+            font-family: PingFangSC-Regular;
+            color: #01113d 0.65;
+            font-size: 1rem;
+            line-height: 1.4063rem;
+        }
+        img {
+            width: 9.6875rem;
+            height: 8.3125rem;
+        }
+    }
+}
+.chargeCard {
+    overflow: hidden;
+    // background: #FFFFFF;
+    // box-shadow: 0px 4px 16px 0px rgba(59,111,245,0.12);
+    margin: 1.125rem 0.8125rem 0.5rem;
+    border-radius: 0.5rem;
+    background: url('../../../assets/payLogo.png') #ffffff no-repeat right bottom !important;
+    background-size: 6rem !important;
+
+    .paymentStatus {
+        // text-align: center;
+        height: 3rem;
+        padding-left: 0.8125rem;
+        padding-right: 0.8125rem;
+        margin: 0.75rem 0;
+        // display: flex;
+        // justify-content: space-between;
+        .leftSpan {
+            width: 60%;
+            height: 3rem;
+            font-family: PingFangSC-Medium;
+            color: #0445fc;
+            font-size: 1.875rem;
+            line-height: 3rem;
+            // text-align: center;
+        }
+        .leftSpan1 {
+            width: 60%;
+            height: 3rem;
+            font-family: PingFangSC-Medium;
+            color: #01113d;
+            font-size: 1.875rem;
+            line-height: 3rem;
+            // text-align: center;
+        }
+        .rightSpan {
+            width: 40%;
+            height: 3rem;
+            right: 3rem;
+            // font-weight: 600;
+            // float: right;
+            line-height: 3rem;
+            float: right;
+            // padding-left: 25.5%;
+            span {
+                font-family: PingFangSC-Medium;
+                color: #0445fc;
+                font-size: 0.8125rem;
+                font-weight: 600;
+                float: right;
+            }
+        }
+    }
+    .title {
+        height: 2.4375rem;
+        background-image: linear-gradient(to right, #104efd, #2d81ff);
+        // margin-bottom: 1rem;
+        padding: 0rem 0.8125rem 0rem 0.8125rem;
+        // background-color:#0445FC ;
+        display: block;
+        font-size: 0.8125rem;
+        color: #ffffff;
+        font-weight: 500;
+        word-wrap: break-word;
+        span {
+            line-height: 2.4375rem;
+        }
+        :global(.anticon) {
+            line-height: 2.63rem !important;
+        }
+    }
+    .title1 {
+        height: 2.4375rem;
+        background-image: linear-gradient(to right, #c5c5c5, #e5e5e5);
+        // margin-bottom: 1rem;
+        padding: 0rem 0.8125rem 0rem 0.8125rem;
+        // background-color:#0445FC ;
+        display: block;
+        font-size: 0.8125rem;
+        color: #ffffff;
+        font-weight: 500;
+        word-wrap: break-word;
+        :global(.anticon) {
+            line-height: 2.63rem !important;
+        }
+    }
+    .chargeMsg {
+        padding: 0rem 0.8125rem 1.1rem 0.8125rem;
+
+        .userMsg {
+            display: block;
+            font-size: 0.75rem;
+            // margin-top: 0.375rem;
+            .label {
+                color: #01113d;
+                opacity: 0.65;
+            }
+            .name {
+                color: #01113d;
+                opacity: 0.85;
+            }
+        }
+        img {
+            width: 20%;
+            height: 10%;
+            float: right;
+        }
+    }
+    .payMsg {
+        overflow: hidden;
+        padding: 1rem 1.25rem 1.25rem;
+        border-top: 1px solid #efefef;
+        // font-size: 0.875rem;
+        .deadLine {
+            float: left;
+            .time {
+                color: #333;
+                display: block;
+            }
+            .text {
+                color: #717171;
+                display: block;
+                font-size: 0.75rem;
+            }
+        }
+        .priceAndStatus {
+            float: right;
+            .price {
+                color: #333;
+                display: block;
+                font-size: 1rem;
+            }
+            .status {
+                display: block;
+                color: #666;
+                font-size: 0.75rem;
+                text-align: right;
+                .light {
+                    color: #e9b635;
+                }
+            }
+        }
+    }
+}
+
+.payList {
+    // display: flex !important;
+    // font-size: 1.5rem;
+    // font-weight: 700;
+}
+.educateCard {
+    // width: auto;
+    background: #ffffff;
+    // box-shadow: 0px 6px 25px 0px rgba(59,111,245,0.12);
+    margin: 1.125rem 0.8125rem 0.875rem;
+    border-radius: 0.5rem;
+    // height: 36rem;
+    .chargeMsg {
+        padding-top: 1.0625rem;
+        .priceBorder {
+            width: 85%;
+            height: 1px;
+            border-bottom: 1px dashed #01113d;
+            opacity: 0.12;
+            margin: 0 auto;
+        }
+    }
+    .educateTitle {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: 1.4rem;
+        .leftSpan {
+            width: 60%;
+            // height: 3rem;
+            // text-align: center;
+            font-family: PingFangSC-Medium;
+            font-weight: 600;
+            color: #01113d;
+            font-size: 1rem;
+        }
+        .rightSpan {
+            width: 40%;
+            float: right;
+            line-height: 1.4rem;
+            // padding-left: 25%;
+            span {
+                font-family: PingFangSC-Medium;
+                color: #0445fc;
+                font-size: 0.75rem;
+                float: right;
+            }
+        }
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2.1875rem 0 1.8175rem 0;
+        border-bottom: 1px dashed rgba(1, 17, 61, 0.12);
+        .priceTitle {
+            font-family: PingFangSC-Regular;
+            color: #01113d;
+            opacity: 0.65;
+            font-size: 0.875rem !important;
+            line-height: 1.25rem;
+        }
+        .priceValue {
+            font-family: PingFangSC-Medium;
+            color: #01113d;
+            font-size: 1.875rem;
+            line-height: 2.625rem;
+        }
+    }
+
+    .chargeMsgs {
+        padding: 1.1rem 0.8125rem 1.1rem 0.8125rem;
+        border-bottom: 1px solid rgba(1, 17, 61, 0.15);
+        .userMsg {
+            display: block;
+            font-size: 0.75rem;
+            // margin-top: 0.375rem;
+            // padding-left: 1rem;
+            .label {
+                color: #01113d;
+                opacity: 0.65;
+            }
+            .name {
+                color: #01113d;
+                opacity: 0.85;
+            }
+        }
+    }
+    .btnChange {
+        padding: 0.75rem 1rem 0.75rem 1rem;
+        .detail {
+            font-family: PingFangSC-Medium;
+            color: #01113d;
+            font-size: 0.75rem;
+        }
+        .anticon .anticon-right {
+            height: 1rem;
+            font-size: 0.75rem;
+            // line-height: 1rem;
+        }
+    }
+}

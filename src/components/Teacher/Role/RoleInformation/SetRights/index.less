@@ -1,0 +1,32 @@
+.main{
+    display: flex;
+    height: 80vh;
+    border-top: 1px solid #ccc;
+    .left{
+        display: inline-block;
+        width: 300px;
+        border-right: 1px solid #ccc;
+        .totolStyle{
+            padding-top: 15px;
+        }
+        .selectedStyle{
+            background-color: #EAECF4;
+        }
+        .selNameStyle{
+            color: blue;
+        }
+    }
+    .right{
+        flex: 1;
+        overflow: scroll;
+        .topStyle{
+            display: flex;
+            justify-content: space-between;
+            height: 45px;
+            line-height: 45px;
+        }
+        .detailStyle{
+            // margin: 12px;
+        }
+    }
+}

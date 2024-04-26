@@ -1,0 +1,80 @@
+.batchSet {
+    /* & > p{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    } */
+    :global {
+        .ant-btn {
+            border-radius: 5px;
+        }
+        .ant-modal-footer {
+            text-align: center;
+            & > div {
+                .ant-btn {
+                    border-radius: 5px;
+                }
+                .ant-btn:nth-child(2) {
+                    & > span {
+                        position: relative;
+                        // left:-7px
+                    }
+                }
+            }
+        }
+    }
+}
+
+.exportModal {
+    :global {
+        .ant-btn {
+            border-radius: 8px;
+        }
+        .ant-modal-footer > div > .ant-btn {
+            color: rgba(1, 17, 61, 0.65);
+            background: rgba(1, 17, 61, 0.07);
+            border: 0;
+            border-radius: 8px;
+            height: 36px;
+            line-height: 36px;
+            &.ant-btn-primary {
+                background: #3b6ff5 !important;
+                color: #fff;
+            }
+        }
+    }
+}
+.checkModal {
+    :global {
+        .ant-btn-primary {
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            background: #3b6ff5 !important;
+            color: #fff !important;
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.form {
+    display: inline-block;
+}

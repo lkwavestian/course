@@ -1,0 +1,416 @@
+body {
+    background: lightgray;
+    .main {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        border: gainsboro solid 1px;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 16px;
+        .top {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            border-bottom: gainsboro solid 1px;
+            height: 46px;
+            margin-top: 13px;
+            /* :global{
+                .ant-btn{
+                    border-radius: 5px;
+                    width: auto;
+                }
+            } */
+            :global {
+                .ant-btn {
+                    //取消按钮样式
+                    height: 36px !important;
+                    line-height: 36px !important;
+                    border-radius: 8px !important;
+                    color: rgba(1, 17, 61, 0.65) !important;
+                    background: rgba(1, 17, 61, 0.07) !important;
+                    text-align: center;
+                    border: 0 !important;
+                    &.ant-btn-primary {
+                        //确认按钮样式
+                        background: #3b6ff5 !important;
+                        color: #fff !important;
+                    }
+                }
+                .ant-input {
+                    height: 36px !important;
+                    border-radius: 8px !important;
+                }
+
+                .ant-select-selection__rendered {
+                    line-height: 36px !important;
+                }
+
+                .ant-select-selection--single {
+                    border-radius: 8px !important;
+                    height: 36px;
+                }
+
+                .ant-select-lg .ant-select-selection--multiple {
+                    min-height: 36px;
+                    border-radius: 8px;
+                    padding-bottom: 0;
+                }
+            }
+        }
+        .content {
+            // margin-top: 20px;
+            // margin-left: 150px;
+            // margin: 20px auto;
+            .contentP {
+                display: flex;
+                line-height: 30px;
+                & > span:nth-child(2) {
+                    margin-left: 20px;
+                }
+                .pStyle {
+                    width: 50%;
+                    // :global{
+                    & > p {
+                        :global {
+                            margin-bottom: 0 !important;
+                        }
+                    }
+                }
+                .title {
+                    // display: block;
+                    font-family: PingFangSC-Medium;
+                    color: #01113d 100%;
+                    font-weight: 700;
+                    font-size: 14px;
+                    width: 205px;
+                    text-align: end;
+                }
+                .titleTxt {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .adminStyle {
+                    display: inline-block;
+                    // width: calc(100%-225px);
+                    width: calc(~'100% - 225px');
+                }
+                .chargeStyle {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+    // :global{
+    //   .ant-modal-wrap{
+    //     z-index: 1030 !important;
+    //   }
+    // }
+}
+.toggleModal {
+    width: 700px !important;
+}
+.toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+.effective {
+    text-align: center;
+    .title,
+    .text {
+        display: block;
+    }
+}
+
+.openCourse {
+    padding: 12px 16px;
+    .item {
+        font-size: 12px;
+        color: #969fa9;
+    }
+    .active {
+        font-size: 12px;
+        color: #3778ff;
+        cursor: pointer;
+    }
+    .btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+    button {
+        text-align: right;
+        border-radius: 20px;
+        margin-top: 12px;
+    }
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+.popAsync {
+    width: 300px !important;
+    :global {
+        .ant-btn {
+            border-radius: 5px !important;
+            height: 35px !important;
+        }
+    }
+}
+.timePicker {
+    margin-bottom: 12px;
+    position: relative;
+    :global {
+        .ant-calendar-picker {
+            .ant-calendar-picker-input {
+                visibility: hidden;
+            }
+        }
+    }
+    .timeText {
+        position: absolute;
+        top: 0px;
+        border: 1px solid #d9d9d9;
+        width: 240px;
+        line-height: 32px;
+        border-radius: 5px;
+        padding: 0 12px;
+    }
+}
+.selectSchedule {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+.removeContainer {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.effectiveConfirm {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.effectiveContent {
+    display: flex;
+    justify-content: space-around;
+    .title {
+        margin-top: 5px;
+        font-weight: bolder;
+        color: black;
+    }
+}
+.effect {
+    .title {
+        margin: 5px;
+        font-weight: bolder;
+        color: black;
+        width: 150px;
+    }
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}

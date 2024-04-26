@@ -1,0 +1,98 @@
+.globalCardUtil {
+    border: 1px solid #efefef;
+    margin-bottom: 30px;
+    min-width: 600px;
+}
+.globalCardUtil .cardHeader {
+    background: #f1f2f3;
+    font-size: 18px;
+    height: 56px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+.globalCardUtil .cardHeader p {
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+.globalCardUtil .cardHeader .groupName {
+    display: inline-block;
+    margin-right: 10px;
+}
+.globalCardUtil .setPlanTable .rowStyle {
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    display: -webkit-flex;
+}
+.globalCardUtil .setPlanTable .rowStyle:nth-last-child(1) {
+    border-bottom: 0 none;
+}
+.globalCardUtil .setPlanTable .rowStyle > div {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    padding: 15px 0;
+    border-right: 1px solid #efefef;
+}
+.globalCardUtil .setPlanTable .rowStyle > div:nth-last-child(1) {
+    border-right: 0 none;
+}
+.globalCardUtil .setPlanTable .rowStyle .addRow {
+    color: #666;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.globalCardUtil .setPlanTable .rowStyle .numberText {
+    color: #999;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.globalCardUtil .setPlanTable .rowStyle .arrangeHas {
+    color: #999;
+    font-size: 14px;
+    margin: 0 8px;
+}
+.globalCardUtil .setPlanTable .rowStyle .arrangeHas .num {
+    color: #3798ff;
+    margin: 0 1px;
+}
+.globalCardUtil .setPlanTable .rowStyle .everytime {
+    color: #999;
+    margin: 0 8px;
+}
+.globalCardUtil .setPlanTable .rowStyle .arrangeNum {
+    display: block;
+    margin-top: 5px;
+}
+.globalCardUtil .setPlanTable .rowStyle .deleteRow {
+    color: #666;
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 12px;
+}
+.treeSelectStyle {
+    max-height: 90px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.treeSelectStyle > span > ul > li {
+    max-width: 88px !important;
+}
+.treeSelectStyle > span {
+    border: none !important;
+    outline: none !important;
+}
+:global .ant-select-focused .ant-select-selection,
+:global .ant-select-selection:focus,
+:global .ant-select-selection:active {
+    -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0);
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0);
+}

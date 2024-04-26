@@ -1,0 +1,74 @@
+.title {
+    display: flex;
+    justify-content: space-between;
+    .icon {
+        cursor: pointer;
+    }
+    button {
+        border-radius: 20px;
+    }
+}
+.importCourse {
+    width: 100%;
+    .top {
+        width: 100%;
+    }
+    .condition {
+        display: flex;
+        &:first-child {
+            margin-bottom: 16px;
+        }
+        .item {
+            display: flex;
+            margin-right: 12px;
+            .title {
+                font-size: 14px;
+                color: #464c56;
+                margin-right: 6px;
+                line-height: 30px;
+            }
+        }
+        input {
+            border-radius: 20px !important;
+        }
+    }
+    .all {
+        display: flex;
+        margin: 12px 0;
+        .a {
+            color: #464c5690;
+        }
+        .title {
+            font-size: 12px;
+            color: #969fa9;
+            line-height: 21px;
+        }
+    }
+    .box {
+        height: 56vh;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        label {
+            margin-bottom: 12px;
+            span {
+                color: #464c5690;
+            }
+        }
+    }
+    .tryLoad {
+        height: 56vh;
+        text-align: center;
+        padding-top: 120px;
+    }
+}
+
+.selectStyle {
+    margin-right: 12px;
+    min-width: 120px;
+    display: inline-block;
+    > div {
+        border-radius: 20px !important;
+    }
+}

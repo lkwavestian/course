@@ -1,0 +1,147 @@
+.detailList {
+  padding: 20px;
+  padding-bottom: 80px;
+}
+.detailBox {
+  border-radius: 8px;
+  background: #fff;
+  padding: 18px;
+  margin-bottom: 10px;
+}
+.detailBox .couseLessonBox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 26px;
+  flex-wrap: wrap;
+}
+.detailBox .couseLessonBox .checkContent {
+  background: rgba(1, 17, 61, 0.04);
+  padding: 5px 20px;
+  font-family: PingFangSC-Regular;
+  color: rgba(1, 17, 61, 0.85);
+  font-size: 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.detailBox .couseLessonBox .isCheck {
+  background: rgba(162, 31, 39, 0.05);
+  border: 1px solid #a21f27;
+  font-family: PingFangSC-Regular;
+  color: rgba(162, 31, 39, 0.85);
+  font-size: 12px;
+}
+.detailBox .courseTitle {
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+  font-size: 22px;
+}
+.detailBox .price {
+  font-family: PingFangSC-Semibold;
+  color: #A21F27;
+  font-size: 24px;
+  margin-top: 16px;
+}
+.detailBox .progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+.detailBox .progress .step {
+  font-size: 12px;
+  position: relative;
+}
+.detailBox .progress .step .checkLabel {
+  background: #0054AF;
+  color: #fff !important;
+}
+.detailBox .progress .step .checkText {
+  color: #0054AF !important;
+  font-family: PingFangSC-Semibold !important;
+}
+.detailBox .progress .step .label {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  text-align: center;
+  font-family: PingFangSC-Semibold;
+  color: #3e72bb;
+  border: 1px solid #efefef;
+  line-height: 24px;
+}
+.detailBox .progress .step .text {
+  font-family: PingFangSC-Semibold;
+  color: #3e72bb;
+  position: absolute;
+}
+.detailBox .progress .bar {
+  width: 50px;
+  height: 6px;
+  background: #dfeaf5;
+}
+.detailBox .classTitle {
+  font-family: PingFangSC-Semibold;
+  color: #01113D;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.detailBox .classTeacher {
+  background: rgba(190, 155, 96, 0.26);
+  padding: 6px 16px;
+  border-radius: 18px;
+  width: fit-content;
+  margin-bottom: 18px;
+}
+.detailBox .classTeacher .classTeacherLeft {
+  font-family: PingFangSC-Regular;
+  color: #D78F17;
+}
+.detailBox .classTeacher .classTeacherRight {
+  font-family: PingFangSC-Semibold;
+  color: #D78F17;
+}
+.detailBox .classDes {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #01113D;
+}
+.detailBox img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+.detailBox .classItem {
+  display: flex;
+  flex-direction: row;
+  font-family: PingFangSC-Medium;
+  color: #01113D;
+  font-size: 14px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.detailBox .classItem .classLabel {
+  font-family: PingFangSC-Regular;
+  color: rgba(1, 17, 61, 0.65);
+  font-size: 14px;
+  min-width: 80px;
+}
+.detailBox .classItem .classContent {
+  flex: 1;
+}
+.checkContent {
+  color: #01113d;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.mobileDetail {
+  height: 100vh;
+  background: #f6f7f8;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: scroll;
+  overflow-x: hidden;
+}

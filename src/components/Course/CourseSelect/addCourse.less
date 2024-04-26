@@ -1,0 +1,117 @@
+.AddCourse {
+    display: flex;
+    // height: 72vh;
+    background-color: #f1f4fe;
+    padding: 24px;
+    .left {
+        width: 210px;
+        margin-right: 16px;
+        // box-shadow: 0 0 3px rgba(0,0,0,0.25);
+        padding: 32px 0 0 32px;
+        border-radius: 8px;
+        background: #ffffff;
+        .baseCircle {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            font-size: 14px;
+            line-height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            cursor: pointer;
+        }
+        .current {
+            color: #ffffff;
+            background-color: #3778ff;
+        }
+        .isNew {
+            cursor: not-allowed;
+        }
+        .grey {
+            background-color: #cccccc;
+            color: #ffffff;
+        }
+        .item {
+            display: block;
+            height: 32px;
+            margin-left: 12px;
+            line-height: 32px;
+            padding-bottom: 72px;
+            color: #969fa9;
+            font-size: 15px;
+            font-weight: 500;
+            .middle {
+                display: block;
+                font-size: 12px;
+                color: #969fa9;
+            }
+        }
+        .active {
+            color: #3778ff;
+            cursor: pointer;
+        }
+        .isNew {
+            cursor: not-allowed;
+        }
+        .isEdit {
+            cursor: pointer;
+        }
+    }
+    .right {
+        width: 100%;
+        .content {
+            min-height: 60vh;
+            border-radius: 8px;
+            // box-shadow: 0 0 3px rgba(0,0,0,0.25);
+        }
+        .btn {
+            text-align: center;
+            margin-top: 21px;
+            button {
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.courseNav {
+    display: flex;
+    justify-content: space-between;
+    line-height: 36px;
+    :global{
+        .ant-btn{
+            border-radius: 8px !important;
+        }
+    }
+    .icon {
+        cursor: pointer;
+    }
+    .btn {
+        border-radius: 20px;
+    }
+}
+
+.loadingDetails {
+    text-align: center;
+    line-height: 50vh;
+}
+.addOrUpdate{
+    padding-bottom: 0;
+    :global{
+        .ant-modal-header{
+            position: sticky;
+            top: 0;
+            z-index: 1033;
+            border-bottom: 1px solid #ddd !important;
+        }
+        .ant-modal-body{
+            height: 100vh;
+            overflow-y: scroll;
+            padding:0 24px
+        }
+        .ant-select-selection{
+            border-radius: 5px !important;
+        }
+    }
+}

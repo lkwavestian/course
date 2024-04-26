@@ -1,0 +1,231 @@
+.frameworkPage {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: center;
+    background: #fff;
+    width: 100%;
+}
+.frameworkPage .leftBar {
+    flex: 2;
+    -webkit-flex: 2;
+    -moz-flex: 2;
+    background: #fafbff;
+    min-height: 100vh;
+    padding: 20px;
+    min-width: 300px;
+    overflow-y: scroll;
+}
+.frameworkPage .rightContainer {
+    flex: 9;
+    -webkit-flex: 9;
+    -moz-flex: 9;
+}
+.frameworkPage .rightContainer .infoCard {
+    background: #fff;
+    padding: 37px 22px 22px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+}
+.frameworkPage .rightContainer .infoCard .infoDetail {
+    flex: 2;
+    -webkit-flex: 2;
+    -moz-flex: 2;
+}
+.frameworkPage .rightContainer .infoCard .infoDetail p {
+    margin-bottom: 20px;
+}
+.frameworkPage .rightContainer .infoCard .infoDetail .infoTitle p .orgName {
+    font-size: 24px;
+    color: #000;
+    margin: 0;
+}
+.frameworkPage .rightContainer .infoCard .infoDetail .infoTitle p span {
+    color: #666;
+    font-size: 14px;
+    margin: 0 10px;
+}
+.frameworkPage .rightContainer .infoCard .infoDetail .infoTitle p .editOrgBtn {
+    color: #3b6ff5;
+    font-size: 14px;
+    cursor: pointer;
+}
+.frameworkPage .rightContainer .infoCard .infoDetail .infoOther p span {
+    color: #000;
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.frameworkPage .rightContainer .infoCard .infoDetail .infoOther p span em {
+    font-style: normal;
+    color: #333;
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+.frameworkPage .rightContainer .infoCard .infoDetail .infoOther p .setOrgBtn {
+    color: #3b6ff5;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.frameworkPage .rightContainer .infoCard .infoDetail .infoOther .isLeader {
+    color: #f7bd12;
+    font-size: 18px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    font-weight: normal;
+}
+.frameworkPage .rightContainer .infoCard .infoOperation {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    text-align: right;
+}
+.frameworkPage .rightContainer .infoCard .infoOperation .createOrgBtn {
+    display: inline-block;
+    padding: 8px 13px;
+    background: #3b6ff5;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.frameworkPage .rightContainer .infoCard .infoOperation .createOrgBtn i {
+    font-size: 16px;
+    margin-right: 3px;
+}
+.frameworkPage .rightContainer .infoCard .infoOperation .getDd {
+    border: 1px solid #3b6ff5;
+    color: #3b6ff5;
+    font-size: 14px;
+    padding: 10px 17px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.frameworkPage .rightContainer .infoTable {
+    padding: 37px 22px 22px;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .leftCondition {
+    flex: 2;
+    -webkit-flex: 2;
+    -moz-flex: 2;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .leftCondition p {
+    margin-bottom: 20px;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .leftCondition .personNum {
+    font-size: 24px;
+    color: #000;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .leftCondition .personNum em {
+    font-size: 14px;
+    color: #666;
+    font-style: normal;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .leftCondition .searchStyle > input {
+    border-radius: 20px;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .leftCondition .batchCondition {
+    margin-bottom: 20px;
+}
+.frameworkPage
+    .rightContainer
+    .infoTable
+    .searchCondition
+    .leftCondition
+    .batchCondition
+    .batchButton {
+    display: inline-block;
+    padding: 5px 13px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    color: #3b6ff5;
+}
+.frameworkPage
+    .rightContainer
+    .infoTable
+    .searchCondition
+    .leftCondition
+    .batchCondition
+    .batchButton
+    i {
+    font-size: 15px;
+    margin-right: 7px;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .leftCondition .batchStyle > div {
+    border-radius: 20px;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .leftCondition .addPerson {
+    display: inline-block;
+    padding: 5px 12px;
+    background: #3b6ff5;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .leftCondition .addPerson i {
+    font-size: 16px;
+    margin-right: 3px;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .leftCondition .inputContainerStyle {
+    margin-bottom: 20px;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .rightCondition {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    text-align: right;
+}
+.frameworkPage .rightContainer .infoTable .searchCondition .rightCondition .checkboxContent {
+    color: #666;
+    font-size: 14px;
+}
+.paginationStyle {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2% 0;
+}
+.paginationStyle:after {
+    content: '';
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+.paginationStyle .pageContainer {
+    float: right;
+    margin-right: 20px;
+}
+.batchDeleteBtn {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: #666;
+    margin-top: 5px;
+}
+.changeRoleStyle > div {
+    border: none !important;
+    box-shadow: 0 0 0 2px transparent !important;
+    -webkit-box-shadow: 0 0 0 2px transparent !important;
+}

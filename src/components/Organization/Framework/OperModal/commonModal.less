@@ -1,0 +1,190 @@
+.modalBtn {
+    border-radius: 8px;
+    padding: 0 14px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.parntId {
+    border: 1px solid;
+    display: inline;
+    padding: 0px 5px;
+    position: absolute;
+    top: 16px;
+    left: 130px;
+    color: #fff;
+}
+.cancelBtn {
+    color: rgba(1, 17, 61, 0.65);
+    background: rgba(1, 17, 61, 0.07);
+    text-align: center;
+    margin-right: 10px;
+}
+.submitBtn {
+    background: #3b6ff5;
+    color: #fff;
+    line-height: 36px;
+}
+.labelSpan {
+    font-size: 14px;
+    &::before {
+        display: inline-block;
+        margin-right: 4px;
+        color: #f5222d;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+    }
+}
+.inputStyle {
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    color: rgba(1, 17, 61, 0.85);
+    border-radius: 8px;
+    &>input {
+        border: 0 none;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px 0 rgba(1, 17, 61, 0.04) !important;
+    }
+}
+
+.inputNameStyle {
+    border: none !important;
+}
+
+.operationList {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    a {
+        flex: 1;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        text-align: right;
+    }
+    .deleteBtn {
+        color: #3b6ff5;
+        font-size: 16px;
+        padding-left: 15px;
+        text-align: left;
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+//新建组织&&编辑组织
+.selectOrgStyle > span {
+    border: none !important;
+    box-shadow: 0 0 0 2px transparent !important;
+    -webkit-box-shadow: 0 0 0 2px transparent !important;
+}
+.selectOrgStyle > span > span > span {
+    display: none !important;
+}
+.labelContentStyle {
+    line-height: 20px;
+    width: 85px;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+}
+.isShowOrgTips {
+    color: #999;
+    font-size: 12px;
+}
+// .selectGradeStyle > div {
+//     border-radius: 20px !important;
+//     box-shadow: 0 0 0 2px transparent !important;
+// }
+
+//设置组织角色
+.orgCardList {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.orgCard {
+    padding: 25px 30px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    .deleteCard {
+        position: absolute;
+        top: 9px;
+        right: 9px;
+        font-size: 15px;
+        color: #666;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        padding: 3px 7px;
+        cursor: pointer;
+    }
+    .saveCard {
+        position: absolute;
+        top: 9px;
+        right: 47px;
+        font-size: 15px;
+        color: #3b6ff5;
+        border: 1px solid #3b6ff5;
+        border-radius: 50%;
+        padding: 3px 7px;
+        cursor: pointer;
+    }
+}
+.addCardBtn {
+    width: 100%;
+    margin: 20px auto;
+    cursor: pointer;
+    .setButtonStyle {
+        width: 100%;
+        font-size: 15px;
+        color: #3b6ff5;
+        font-weight: bold;
+        display: inline-block;
+        border: 1px dashed #ddd;
+        text-align: center;
+        padding: 6px 0;
+    }
+}
+.selectOrgStyle > div {
+    border-radius: 20px;
+}
+.selectPersonStyle > span {
+    border-radius: 20px;
+}
+
+.checkboxStyle {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    width: 108px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.radioStyle > label {
+    // width: 90px;
+    width: 152px;
+}
+
+.selectGradeStyle {
+    &>div {
+        height: 36px !important;
+        box-shadow: 0px 2px 8px 0px rgba(1, 17, 61, 0.04) !important;
+        border: 0 none;
+        border-radius: 8px !important;
+        font-size: 14px;
+        color: rgba(1, 17, 61, 0.85);
+    }
+    &>div>div {
+        line-height: 36px !important;
+    }
+}

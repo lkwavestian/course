@@ -1,0 +1,130 @@
+.formStyle {
+    height: 500px;
+    overflow-y: scroll;
+    :global {
+        .ant-form-item {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.modalBtn {
+    border: 1px solid rgba(59, 111, 245, 1);
+    border-radius: 20px;
+    padding: 8px 23px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.createActivity {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+    }
+}
+.cancelBtn {
+    color: #3b6ff5;
+    background: #fff;
+    text-align: center;
+    margin-right: 10px;
+}
+.submitBtn {
+    background: #3b6ff5;
+    color: #fff;
+    text-align: center;
+}
+.submitBtnGray {
+    background: #999;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #999;
+}
+.redRemark {
+    display: inline-block;
+    margin-right: 4px;
+    color: #f5222d;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+}
+
+.addPlus {
+    font-size: 25px;
+    margin-left: 2px;
+    text-align: center;
+    display: block;
+    color: #666;
+    cursor: pointer;
+}
+
+.formItemLayout {
+    color: rgba(0, 0, 0, 0.85);
+    &::before {
+        display: inline-block;
+        margin-right: 4px;
+        color: #f5222d;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+    }
+}
+
+.summarize {
+    margin-bottom: 20px;
+    .num {
+        color: #f5222d;
+    }
+    .delete {
+        font-size: 16px;
+        color: #f5222d;
+    }
+}
+
+.content {
+    margin-bottom: 5px;
+    .conflictClassMsg {
+        margin-right: 7%;
+        line-height: 24px;
+    }
+    .conflictDetail {
+        color: #3b6ff5;
+        line-height: 24px;
+    }
+}
+.tip {
+    display: inline-block;
+    margin-top: 20px;
+    i {
+        color: orange;
+    }
+}
+
+.addressConflictContent {
+    // display: flex;
+    // align-items: center;
+    // flex-wrap: wrap;
+    // gap: 5px;
+    .text {
+        color: #3b6ff5;
+    }
+    > span {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}

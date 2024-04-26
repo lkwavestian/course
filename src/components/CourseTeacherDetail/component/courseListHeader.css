@@ -1,0 +1,438 @@
+.CourseListHeader {
+  width: 96.46%;
+  margin: 0 auto 16px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+  transition: all 0.5s;
+}
+.CourseListHeader:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+}
+.CourseListHeader .top {
+  height: 60px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+.CourseListHeader .top .title {
+  width: 121%;
+  font-size: 16px;
+  color: #464c56;
+  font-weight: 600;
+}
+.CourseListHeader .top .title .isBan {
+  font-size: 12px;
+  color: #666;
+  font-weight: 300;
+}
+.CourseListHeader .top .sub {
+  display: flex;
+  justify-content: space-between;
+  width: 150%;
+  text-align: center;
+  font-size: 13px;
+  color: #969fa9;
+}
+.CourseListHeader .top .sub .a,
+.CourseListHeader .top .sub .b {
+  margin-right: 6px;
+}
+.CourseListHeader .top .sub .b {
+  margin-left: 21px;
+}
+.CourseListHeader .top .sub .classFeeModelList {
+  display: flex;
+}
+.CourseListHeader .top .addClass {
+  cursor: pointer;
+  margin-left: 15%;
+  width: 40%;
+  color: #0445fc;
+}
+.CourseListHeader .top .editClass {
+  cursor: pointer;
+  width: 55%;
+  color: #0445fc;
+}
+.CourseListHeader .top .icon {
+  text-align: right;
+}
+.CourseListHeader .top .icon .i {
+  font-size: 32px;
+  color: black;
+  font-weight: bold;
+  transform: rotateZ(90deg);
+  cursor: pointer;
+}
+.CourseListHeader .top .icon .disable {
+  cursor: not-allowed;
+}
+.CourseListHeader .ul {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 18px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.CourseListHeader .ul:last-child {
+  border-bottom: none;
+}
+.CourseListHeader .ul .title {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid #f0f0f0;
+}
+.CourseListHeader .ul .title .name {
+  display: block;
+  font-size: 14px;
+  color: #464c56;
+  text-align: center;
+}
+.CourseListHeader .ul .title .name .edit {
+  color: #3778ff;
+  margin-left: 4px;
+  cursor: pointer;
+}
+.CourseListHeader .ul .title .name :global .anticon-form {
+  font-size: 18px;
+}
+.CourseListHeader .ul .title .num {
+  display: block;
+  font-size: 12px;
+  color: #969fa9;
+}
+.CourseListHeader .ul .ename {
+  width: 12%;
+  border-right: 1px solid #f0f0f0;
+  text-align: center;
+  font-size: 13px;
+  color: #969fa9;
+  max-height: 48px;
+  overflow-y: scroll;
+}
+.CourseListHeader .ul .ename::-webkit-scrollbar {
+  display: none;
+}
+.CourseListHeader .ul .select {
+  width: 30%;
+  line-height: 72px;
+  border-right: 1px solid #f0f0f0;
+}
+.CourseListHeader .ul .select .item {
+  height: 36px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 13px;
+  color: #969fa9;
+  position: relative;
+}
+.CourseListHeader .ul .select .item::after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 1px;
+  height: 36px;
+  background-color: #f0f0f0;
+}
+.CourseListHeader .ul .select .item:last-child::after {
+  background-color: transparent;
+}
+.CourseListHeader .ul .select .item .num {
+  color: #464c56;
+  font-size: 18px;
+  margin-right: 4px;
+}
+.CourseListHeader .ul .time {
+  width: 26.5%;
+  font-size: 14px;
+  color: #969fa9;
+  border-right: 1px solid #f0f0f0;
+  padding-left: 21px;
+}
+.CourseListHeader .ul .time p {
+  margin: 0;
+}
+.CourseListHeader .ul .time .icon {
+  margin-right: 4px;
+}
+.CourseListHeader .ul .detail {
+  width: 8%;
+  padding-left: 18px;
+  display: flex;
+  justify-content: space-around;
+}
+.CourseListHeader .ul .detail a {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+}
+.CourseListHeader .ul .detail .removeDisabled,
+.CourseListHeader .ul .detail .disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+.CourseListHeader .ul .detail .alreadyCancel {
+  color: #999;
+  padding: 0 12px;
+}
+.deleteConfirm :global .ant-modal-body {
+  text-align: center;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-content {
+  font-size: 18px;
+  color: #333;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-btns {
+  float: unset;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-btns .ant-btn {
+  width: 88px;
+  height: 40px;
+  border-radius: 20px;
+  border-color: #4d7fff;
+  color: #4d7fff;
+}
+.deleteConfirm :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary {
+  background: #4d7fff;
+  color: #fff;
+}
+.deleteConfirm :global .ant-modal-confirm-btns {
+  margin-right: 0 !important;
+}
+.deleteConfirm :global .ant-modal-confirm-btns .ant-btn {
+  border-radius: 8px !important;
+}
+.deleteConfirm :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.deleteConfirm :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.deleteConfirm :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.deleteConfirm :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.deleteConfirm :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.deleteConfirm :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.deleteConfirm :global .ant-select {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.addModal {
+  padding: 0 5%;
+  margin-top: -10px;
+}
+.addModal .classZnName {
+  display: inline-block;
+  width: 85px;
+  text-align: right;
+  margin-left: 45px;
+}
+.addModal div {
+  margin-bottom: 15px;
+}
+.addModal .minTeacherForm {
+  width: 100%;
+  display: flex;
+  margin-bottom: -6px;
+}
+.addModal .minTeacherForm .label {
+  line-height: 32px;
+  margin-left: 14px;
+  margin-right: 15px;
+}
+.addModal .minTeacherForm .label i {
+  color: red;
+}
+.addModal .minTeacherForm .assistLabel {
+  line-height: 40px;
+  margin-left: 12px;
+  margin-right: 18px;
+}
+.addModal .minTeacherForm .mainTeacher {
+  display: flex;
+  width: 300px;
+}
+.addModal .minTeacherForm .mainTeacher :global .ant-form-item-control-wrapper {
+  width: 300px;
+}
+.addModal .minTeacherForm .assistTeacher {
+  display: flex;
+  width: 300px;
+}
+.addModal .minTeacherForm .assistTeacher :global .ant-form-item-control-wrapper {
+  width: 300px;
+}
+.addModal .minTeacherForm :global .ant-form-item-control {
+  margin-bottom: 0 !important;
+}
+.addModal .minTeacherForm :global .ant-row {
+  margin-bottom: 0 !important;
+}
+.addModal .chName {
+  width: 70%;
+  border-radius: 8px !important;
+  margin-left: 3%;
+}
+.addModal .enName {
+  width: 70%;
+  margin-left: 3%;
+  border-radius: 8px !important;
+}
+.site {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #f0f0f0;
+  text-align: center;
+  width: 10%;
+}
+.setCourseInfo {
+  width: 620px !important;
+}
+.setCourseInfo .item {
+  margin-bottom: 15px;
+}
+.setCourseInfo .title {
+  margin-right: 15px;
+}
+.setCourseInfo .label,
+.setCourseInfo .assistLabel {
+  height: 40px;
+  line-height: 32px;
+}
+.setCourseInfo .minTeacherForm {
+  display: flex;
+}
+.setCourseInfo .minTeacherForm .mainTeacher {
+  width: 80%;
+}
+.setCourseInfo .minTeacherForm {
+  display: flex;
+}
+.setCourseInfo .minTeacherForm .assistTeacher {
+  width: 80%;
+}
+.setCourseInfo :global .ant-modal-body {
+  margin: 0 50px;
+}
+.addNewClass {
+  width: 620px !important;
+}
+.addNewClass :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.addNewClass :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.addNewClass :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.addNewClass :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+  min-height: 36px !important;
+}
+.addNewClass :global .ant-select-selection {
+  min-height: 36px !important;
+  border-radius: 8px !important;
+}
+.addNewClass :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.addNewClass :global .ant-select-selection__choice {
+  height: 30px !important;
+  margin-top: 2px !important;
+  line-height: 30px !important;
+}
+.addNewClass :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px !important;
+  height: 36px;
+  border-radius: 8px !important;
+  padding-bottom: 0;
+}
+.addNewClass :global .ant-select {
+  min-height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.addNewClass :global .ant-input-number {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.addNewClass :global .ant-col {
+  margin-bottom: 0 !important;
+}
+.addNewClass :global .ant-form-item-control {
+  margin-bottom: 0 !important;
+}
+.rainDaySite :global .ant-input {
+  border-radius: 8px !important;
+}
+.selectGrade {
+  margin-bottom: -12px !important;
+  margin-left: 20px;
+}
+.selectGrade :global .ant-select {
+  margin-bottom: -13px !important;
+}
+.suitgrade {
+  font-size: 12px;
+  color: rgba(1, 17, 61, 0.45);
+}
+.address :global .ant-select-selection {
+  margin-bottom: 0;
+}
+.searchAddress :global .ant-select-selection {
+  margin-bottom: 0 !important;
+}
+.classTime div {
+  margin-bottom: 10px;
+}
+.classDetail:hover {
+  color: #0445fc;
+}
+.courseFeeDetailModels .studentGroup {
+  display: flex;
+  gap: 5px;
+}
+.courseFeeDetailModels :global .ant-tooltip-content .ant-tooltip-inner {
+  background-color: white;
+  font-family: PingFangSC-Medium;
+  color: #666;
+  font-size: 13px;
+}

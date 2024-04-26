@@ -1,0 +1,87 @@
+.dealFlow {
+    .form {
+        margin: 6px 0;
+        :global {
+            .ant-form-item {
+                display: inline-block !important;
+                margin-right: 16px !important;
+                margin-bottom: 8px !important;
+            }
+            .ant-select-lg .ant-select-selection__rendered {
+                line-height: 36px;
+            }
+            .ant-select-lg .ant-select-selection--single {
+                height: 36px;
+                border-radius: 8px;
+            }
+            .ant-calendar-picker-input.ant-input {
+                line-height: 36px;
+                height: 36px;
+                width: 150px;
+            }
+        }
+    }
+    .export {
+        width: 80px;
+        height: 36px;
+        border-radius: 8px;
+        background: #3b6ff5;
+        margin-top: 6px;
+        // margin-bottom: 12px;
+    }
+    .balanceStatistical {
+        // padding: 24px 0;
+        // border: 1px solid #efefef;
+        // border-radius: 8px;
+        .cardItem {
+            display: inline-block;
+            text-align: left;
+            width: 33%;
+
+            .card {
+                display: inline-block;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                span {
+                    display: block;
+                }
+
+                .label {
+                    font-size: 12px;
+                    color: #999;
+                }
+
+                .number {
+                    font-size: 24px;
+                    color: #333;
+                }
+            }
+        }
+
+        .border {
+            border-right: 1px solid #efefef;
+            border-left: 1px solid #efefef;
+        }
+    }
+    .tableAndPage {
+        .payWayImg {
+            display: block;
+            width: 1.25rem;
+            height: 1.25rem;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        :global {
+            .ant-table-thead > tr > th,
+            .ant-table-tbody > tr > td {
+                padding: 9.5px 14px;
+            }
+            .ant-table {
+                font-size: 12px;
+            }
+        }
+    }
+}

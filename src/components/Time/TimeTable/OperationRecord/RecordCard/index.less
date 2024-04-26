@@ -1,0 +1,163 @@
+.recordCardWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.recordCard {
+    width: 172px;
+    height: 67px;
+    border-radius: 8%;
+    background: rgba(1, 17, 61, 0.03);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .recordCardInner {
+        margin: 12px;
+        .cardWeekDay {
+            font-family: PingFangSC-Medium;
+            color: #01113d;
+            font-size: 13px;
+        }
+        .cardLesson {
+            font-family: PingFangSC-Medium;
+            color: #01113d;
+            font-size: 13px;
+        }
+        .cardCourse {
+            font-family: PingFangSC-Regular;
+            color: #01113d;
+            font-size: 12px;
+        }
+        .cardGroup {
+            font-family: PingFangSC-Regular;
+            color: #01113d;
+            font-size: 12px;
+        }
+    }
+}
+
+.doubleArrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .leftTriangle {
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-right: 7px solid #50dc65;
+        border-bottom: 5px solid transparent;
+    }
+    .connectLines {
+        width: 20px;
+        height: 3px;
+        background-color: #50dc65;
+    }
+    .rightTriangle {
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-left: 7px solid #50dc65;
+        border-bottom: 5px solid transparent;
+    }
+}
+
+.singleArrow {
+    display: flex;
+    align-items: center;
+    .connectLines {
+        width: 25px;
+        height: 3px;
+        background-color: #5183f6;
+    }
+    .rightTriangle {
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-left: 7px solid #5183f6;
+        border-bottom: 5px solid transparent;
+    }
+}
+
+.durationCardsWrapper {
+    display: flex;
+    flex-direction: column;
+    .recordCard:nth-child(2) {
+        margin-top: 4px;
+    }
+}
+
+.cardDivider {
+    height: 7px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.operationMessage {
+    font-family: PingFangSC-Regular;
+    color: rgb(149, 156, 172);
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    margin-bottom: 0;
+    span {
+        margin-left: 12px;
+    }
+}
+
+.conflictSingleArrow {
+    display: flex;
+    align-items: center;
+    .singleConnectLines {
+        width: 10px;
+        height: 3px;
+        background-color: #728a75;
+    }
+    .singleChangeArrow {
+        width: 0;
+        height: 0;
+        border-top: 3px solid transparent;
+        border-left: 10px solid #728a75;
+        border-bottom: 3px solid transparent;
+    }
+}
+
+.userChange {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-family: PingFangSC-Regular;
+    color: #01113d;
+    font-size: 12px;
+}
+.addressChange {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-family: PingFangSC-Regular;
+    color: #01113d;
+    font-size: 12px;
+}
+
+.revoke {
+    color: #0445fc;
+    cursor: pointer;
+}
+
+//改变popover Z-index，不会被Modal隐藏
+:global {
+    .ant-popover {
+        z-index: 1032 !important;
+        // margin-right: 60px;
+    }
+    /*  .ant-btn {
+    width: auto;
+    height: auto;
+  } */
+}
+
+.fetMsg {
+    color: rgba(1, 17, 61, 1);
+}

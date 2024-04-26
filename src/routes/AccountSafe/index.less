@@ -1,0 +1,142 @@
+.accountSafe {
+    background: #fff;
+    padding: 20px;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    .safeTitle {
+        font-family: PingFangSC-Medium;
+        color: #01113D;
+        font-size: 14px;
+    }
+    .closeModal {
+        position: fixed;
+        font-size: 12px;
+        /* top: 20px; */
+        background: rgba(1, 17, 61, 0.85);
+        // opacity: 0.5;
+        height: 48px;
+        width: 48px;
+        text-align: center;
+        /* line-height: 48px; */
+        padding: 7px;
+        border-radius: 24px;
+        bottom: 100px;
+        right: 20px;
+        font-family: PingFangSC-Regular;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        span {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .safeItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        :global(.ant-switch) {
+            height: 32px;
+            width: 60px;
+            min-width: 60px;
+        }
+        :global(.ant-switch::after) {
+            width: 20px;
+            height: 20px;
+            top: 4px;
+        }
+        :global(.am-list-item) {
+            padding-left: 0px;
+        }
+        :global{
+            .am-list-item .am-input-control input:disabled,
+            .am-list-item.am-input-disabled .am-input-label{
+                color: #000;
+            }
+        }
+        .setPassButton {
+            padding: 6px 20px;
+            background: rgba(1,17,61,0.05);
+            font-family: PingFangSC-Regular;
+            color: #01113D;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+    }
+    .surepassWord {
+        padding: 6px 20px;
+        background: rgba(1,17,61,0.05);
+        font-family: PingFangSC-Regular;
+        color: #01113D;
+        margin-top: 10px;
+        border-radius: 15px;
+        min-width: 80px;
+        max-width: 100px;
+        text-align: center;
+    }
+}
+
+// @media screen and  (orientation:  portrait){
+//     .courseSelectDetail{
+//         // -webkit-transform:rotate(90deg);
+//         // -webkit-transform-origin:0% 0%;/*1.重置旋转中心*/
+
+//         // -moz-transform: rotate(90deg);
+//         // -moz-transform-origin:0% 0%;
+
+//         // -ms-transform: rotate(90deg);
+//         // -ms-transform-origin:0% 0%;
+
+//         transform: rotate(90deg);
+//         // transform-origin:0% 0%;
+
+//         width: 100vh;/*2.利用 vh 重置 ‘宽度’ */
+//         // height: 100vw;/* 3.利用 vw 重置 ‘高度’ */
+
+//         top: 0;
+//         left: 100vw;/* 4.旋转后页面超出屏幕，重置页面定位位置 */
+//     }
+// }
+.detailInstructionModal{
+    :global{
+        .am-list-item .am-input-control{
+            border-bottom: 1px solid #eee;
+        }
+    }
+}
+.logoutModal {
+    width: 100vw !important;
+    height: 100vh;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    top: 0;
+    padding-bottom: 0;
+    font-family: PingFangSC-Regular;
+    color: #01113D;
+    font-size: 16px;
+    :global(.ant-modal-content) {
+        height: 100%;
+        border-radius: 0;
+    }
+    .sureButton {
+        padding: 6px 20px;
+        background: rgba(1,17,61,0.05);
+        font-family: PingFangSC-Regular;
+        color: #01113D;
+        margin-top: 10px;
+        border-radius: 15px;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 80px;
+        text-align: center;
+    }
+}
+.pwdArea{
+    :global{
+        .am-list-item .am-input-control{
+            border-bottom: none;
+        }
+    }
+}
+

@@ -1,0 +1,734 @@
+.sure {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.cannel {
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  border: 0 !important;
+}
+.Student {
+  width: 100%;
+}
+.Student .left .item {
+  height: 70px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  position: relative;
+}
+.Student .left .item:last-child {
+  border-bottom: 1px solid transparent;
+}
+.Student .left .item .time {
+  color: #969fa9;
+}
+.Student .left .item .time .going {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 10px solid #3778ff;
+  border-bottom: 6px solid transparent;
+}
+.Student .left .item .activeTime {
+  color: #3778ff;
+}
+.Student .left .item .activeTime i {
+  font-size: 12px;
+  position: absolute;
+  right: 4px;
+  top: 21px;
+  cursor: pointer;
+}
+.Student .left .title {
+  color: #969fa9;
+  cursor: pointer;
+}
+.Student .left .icon {
+  color: #3778ff;
+  cursor: pointer;
+}
+.Student .left .icon i {
+  margin-right: 6px;
+}
+.Student .right {
+  width: 100%;
+  height: 100%;
+}
+.Student .right .search {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+.Student .right .search :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.Student .right .search :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.Student .right .search :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.Student .right .search :global .ant-input-number {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.Student .right .search :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.Student .right .search :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.Student .right .search :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.Student .right .search .searchL .selectStyle > div {
+  border-radius: 8px !important;
+}
+.Student .right .search .searchL .selectStyles > div {
+  border-radius: 8px !important;
+}
+.Student .right .search .searchL .searchInput {
+  max-width: 130px;
+  margin-left: 8px;
+}
+.Student .right .search .searchL .searchInput input {
+  border-radius: 8px;
+}
+.Student .right .search .searchR .b {
+  margin-right: 12px;
+}
+.Student .right .search .searchR .lotOperate {
+  /* padding-left: 10px;
+                    padding-right: 10px; */
+  padding: 0 8px;
+  width: auto;
+  border-radius: 8px !important;
+}
+.Student .right .search .searchR :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.Student .right .search .searchR :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.Student .right .search .searchR :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.Student .right .search .searchR :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.Student .right .search .searchR :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.Student .right .search .searchR :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.Student .right .tr {
+  padding: 0;
+}
+.Student .right .tbodyTr {
+  padding: 0;
+  width: 162px;
+  height: 70px;
+}
+.Student .right .trItem {
+  width: 230px;
+  height: 100%;
+  padding-top: 4px;
+  padding-left: 12px;
+  box-sizing: border-box;
+  position: relative;
+}
+.Student .right .trItem .item {
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #464c56;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 50px;
+}
+.Student .right .trItem .item a {
+  color: #464c56;
+}
+.Student .right .trItem .teacher {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #969fa9;
+}
+.Student .right .trItem .itemMiddle {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+.Student .right .trItem .itemMiddle .icon {
+  color: #e9b635;
+  margin-right: 6px;
+}
+.Student .right .trItem .itemCheck {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #969fa9;
+  cursor: pointer;
+}
+.Student .right .trItem .itemCheck .icon {
+  margin-right: 6px;
+}
+.Student .right .trItem .itemS {
+  color: #3778ff;
+}
+.Student .right .trItem .unSubmited {
+  pointer-events: none;
+}
+.Student .right .trItem .triangle {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #3778ff;
+  border-right: 10px solid transparent;
+}
+.Student .right .active {
+  border: 1px solid #3778ff;
+}
+.Student .right .activeType {
+  border-right: 1px solid transparent;
+}
+.Student .right .operation .item {
+  height: 24px;
+  line-height: 24px;
+}
+.Student .right .operation .item .remove {
+  color: #969fa9;
+  cursor: not-allowed;
+}
+.Student .right .noData {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 92px;
+}
+.Student .right .noData img {
+  width: 180px;
+  margin: 0 auto;
+  display: block;
+}
+.Student .right .noData .title {
+  text-align: center;
+  color: #969fa9;
+  font-size: 16px;
+  margin: 16px 0;
+}
+.Student .right .noData .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Student .right .noData .btn button {
+  padding: 6px 24px !important;
+  border-radius: 8px;
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+.Dropdown {
+  width: 280px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 12px;
+}
+.Dropdown .title {
+  font-size: 14px;
+  color: #969fa9;
+  margin-bottom: 12px;
+}
+.Dropdown .input .line {
+  color: #969fa9;
+  margin: 0 12px;
+}
+.Dropdown .input .icon {
+  color: #3778ff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 16px;
+}
+.removeContainer .title {
+  display: block;
+  width: 100%;
+  color: #464c56;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.removeContainer button {
+  border-radius: 8px;
+}
+.removeContainer :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.removeContainer :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.removeContainer :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.removeContainer :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.removeContainer :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.removeContainer :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.setupSelectCourseTime {
+  padding: 12px;
+}
+.setupSelectCourseTime .item {
+  margin-bottom: 16px;
+}
+.setupSelectCourseTime .item .title {
+  color: #464c56;
+  font-size: 14px;
+  margin-right: 6px;
+  width: 72px;
+  display: inline-block;
+  text-align: end;
+}
+.setupSelectCourseTime .operation {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.setupSelectCourseTime .operation .del {
+  font-size: 14px;
+  color: #969fa9;
+  cursor: pointer;
+  margin: 7px;
+}
+.setupSelectCourseTime .operation .btn button {
+  border-radius: 8px;
+}
+.setupSelectCourseTime .operation .btn button:first-child {
+  margin-right: 12px;
+  width: 88px;
+  height: 41px;
+}
+.setupSelectCourseTime .operation .btn button:nth-child(2) {
+  width: 88px;
+  height: 41px;
+}
+.setupSelectCourseTime .operation .btn :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.setupSelectCourseTime .operation .btn :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.setupSelectCourseTime .operation .btn :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.setupSelectCourseTime .operation .btn :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.setupSelectCourseTime .operation .btn :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.setupSelectCourseTime .operation .btn :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.setupSelectCourseTime input {
+  border-radius: 8px;
+}
+.adjustTime .item {
+  margin-right: 12px;
+}
+.adjustTime .selectStyle {
+  width: 70%;
+}
+.adjustTime .selectStyle > div {
+  border-radius: 8px !important;
+}
+.adjustTime .option {
+  color: #969fa9;
+}
+.adjustTime .option .time {
+  margin: 0 6px;
+}
+.openCourse {
+  padding: 12px 16px;
+}
+.openCourse .item {
+  font-size: 12px;
+  color: #969fa9;
+}
+.openCourse .active {
+  font-size: 12px;
+  color: #3778ff;
+  cursor: pointer;
+}
+.openCourse .btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.openCourse button {
+  text-align: right;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+.oneClickSelect {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}
+.oneClickSelect .load {
+  display: flex;
+  justify-content: center;
+}
+.oneClickSelect .item {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #969fa9;
+}
+.treeSelectStyle {
+  margin-right: 8px;
+}
+.treeSelectStyle :global .ant-select-selection--multiple {
+  border-radius: 8px;
+  width: 120px;
+  height: 36px;
+}
+.lotTypeRadio {
+  margin-left: 6px !important;
+}
+.statistics {
+  height: 50px;
+  display: flex;
+}
+.statistics .left {
+  width: 60%;
+  margin-bottom: 0;
+  line-height: 50px;
+}
+.statistics .left span {
+  display: inline-block;
+  width: 20%;
+}
+.statistics .right {
+  flex: 1;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+.statistics .right span {
+  padding-right: 0;
+}
+.selectType {
+  width: 75%;
+  padding-left: 25%;
+}
+.selectType :global .ant-radio-wrapper {
+  margin: 5px 0;
+}
+.addCourse :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.addCourse :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.addCourse :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.addCourse :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.addCourse :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.addCourse :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.setTime :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.setTime :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.setTime :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.setTime :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.setTime :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.setTime :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.exportSelect :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.exportSelect :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.exportSelect :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.exportSelect :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.exportSelect :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.exportSelect :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.openSelect :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.openSelect :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.openSelect :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.openSelect :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.openSelect :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.openSelect :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.move {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+.importCalendar :global .ant-modal-header,
+.successModal :global .ant-modal-header,
+.checkModal :global .ant-modal-header {
+  display: flex;
+  justify-content: center;
+}
+.importCalendar :global .ant-modal-title,
+.successModal :global .ant-modal-title,
+.checkModal :global .ant-modal-title {
+  font-family: PingFangSC-Medium;
+  color: #01113d;
+  font-size: 20px;
+  line-height: 28px;
+}
+.importCalendar :global .ant-table-row-cell-break-word,
+.successModal :global .ant-table-row-cell-break-word,
+.checkModal :global .ant-table-row-cell-break-word {
+  white-space: pre-line;
+}
+.importCalendar :global .ant-select-selection-selected-value,
+.successModal :global .ant-select-selection-selected-value,
+.checkModal :global .ant-select-selection-selected-value {
+  width: 190px;
+}
+.importCalendar .importMsg,
+.successModal .importMsg,
+.checkModal .importMsg {
+  margin: 15px;
+  font-family: PingFangSC-Regular;
+  color: #01113d 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+.importCalendar .form,
+.successModal .form,
+.checkModal .form {
+  display: inherit;
+  margin-left: 20px;
+}
+.importCalendar .importCalendarSelect,
+.successModal .importCalendarSelect,
+.checkModal .importCalendarSelect {
+  width: auto;
+  margin-left: 10px;
+}
+.importCalendar .importCalendarSelect .ant-select-selection--single,
+.successModal .importCalendarSelect .ant-select-selection--single,
+.checkModal .importCalendarSelect .ant-select-selection--single {
+  width: 150px;
+}
+.emailNotice .pStyle .pointStyle {
+  color: red;
+  margin: 5px 15px 5px 7px;
+}
+.emailNotice .pStyle .previewStyle {
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  color: #5381dc;
+}
+.emailNotice .pStyle .previewStyle :global {
+  margin-bottom: 0 !important;
+}
+.emailNotice .specialStyle :global {
+  margin-bottom: 0 !important;
+}
+.emailNotice :global .ant-modal-body {
+  padding: 24px 80px !important;
+}
+.emailNotice :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.emailNotice :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.stageAndGrade {
+  position: relative;
+  display: inline-block;
+}
+.stageAndGrade .moreDisabled {
+  color: rgba(0, 0, 0, 0.25);
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+.stageAndGrade .tagPlaceholder {
+  display: block;
+  width: 110px;
+  height: 36px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  line-height: 32px;
+  background: #fff;
+  padding-left: 12px;
+  pointer-events: none;
+}
+.stageAndGrade .tagPlaceholder .close {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.stageAndGrade .selectStyles {
+  width: 110px;
+}
+.stageAndGrade .selectStyles :global .ant-select-dropdown {
+  width: 180px !important;
+}
+.stageAndGrade .selectStyles :global .ant-select-dropdown--multiple {
+  width: 180px !important;
+}
+.stageAndGrade .selectStyles :global .ant-select-dropdown-menu {
+  width: 180px !important;
+}
+.selectStyles :global .ant-select-selection {
+  height: 36 !important;
+}

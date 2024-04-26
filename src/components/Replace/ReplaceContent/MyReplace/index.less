@@ -1,0 +1,41 @@
+.myReplaceWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .subtotal {
+        font-family: PingFangSC-Medium;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(1, 17, 61, 0.65);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .leftPart {
+            font-size: 14px;
+            line-height: 22px;
+            color: rgba(1, 17, 61, 0.85);
+        }
+        .rightPart {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .totalItem {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .count {
+                font-family: PingFangSC-Medium;
+                font-size: 24px;
+                line-height: 29px;
+                color: #1677ff;
+            }
+        }
+    }
+}

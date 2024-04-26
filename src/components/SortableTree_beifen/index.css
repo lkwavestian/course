@@ -1,0 +1,55 @@
+.treeWrapper {
+    height: calc(96%);
+}
+.treeWrapper .switchOnlyOrg {
+    margin: 15px 0 10px 15px;
+}
+.treeWrapper .switchOnlyOrg span {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666;
+    vertical-align: middle;
+}
+.treeWrapper .sortableTree {
+    width: 100%;
+}
+.treeWrapper .searchInput > input {
+    border-radius: 20px !important;
+}
+.setButton {
+    cursor: pointer;
+    vertical-align: middle;
+}
+.setButton i {
+    color: #333;
+}
+.activeButton {
+    cursor: pointer;
+    vertical-align: middle;
+}
+.activeButton i {
+    color: #3b6ff5;
+}
+:global .rst__moveHandle,
+:global .rst__loadingHandle {
+    background-image: url('../../assets/tree.png') !important;
+    background-size: 20px !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-color: #eee !important;
+    border: 1px solid #eee !important;
+}
+:global .rst__rowContents {
+    border: 1px solid #eee !important;
+    padding: 0 5px 0 10px !important;
+    min-width: 20px !important;
+    background-color: transparent !important;
+}
+:global .rst__rowSearchFocus {
+    outline: dashed 1px #3b6ff5 !important;
+    color: #3b6ff5;
+}
+:global .rst__rowSearchMatch {
+    outline: dashed 1px #3b6ff5 !important;
+    color: #3b6ff5;
+}

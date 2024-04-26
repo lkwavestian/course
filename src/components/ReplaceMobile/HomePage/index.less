@@ -1,0 +1,97 @@
+.mainListWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    .commonBgc {
+        border-radius: 11px;
+        background: #ffffff;
+    }
+}
+
+.subtotal {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    padding: 12px 12px 18px 12px;
+    .text {
+        font-family: PingFangSC-Medium;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(1, 17, 61, 1);
+    }
+    .list {
+        display: flex;
+        justify-content: space-between;
+        .listItem {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .number {
+            font-family: PingFangSC-Medium;
+            font-size: 18px;
+            line-height: 26px;
+            color: rgba(1, 17, 61, 1);
+        }
+        .itemText {
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            line-height: 14px;
+            color: rgba(1, 17, 61, 0.65);
+        }
+    }
+}
+
+.curList {
+    display: flex;
+    flex-direction: column;
+    .curItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 13px;
+        background: #ffffff;
+        box-shadow: inset 0px -1px 0px 0px rgba(1, 17, 61, 0.05);
+        .leftPart {
+            display: flex;
+            align-items: center;
+            .curText {
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(1, 17, 61, 0.85);
+            }
+            .num {
+                width: 20px;
+                height: 14px;
+                line-height: 14px;
+                border-radius: 7px;
+                background: #ff4500;
+                margin-left: 5px;
+                font-family: PingFangSC-Medium;
+                font-size: 9px;
+                line-height: 14px;
+                color: #ffffff;
+                text-align: center;
+            }
+            .explainText {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-left: 22px;
+                font-family: PingFangSC-Regular;
+                font-size: 12px;
+                line-height: 24px;
+                color: rgba(1, 17, 61, 0.45);
+            }
+        }
+
+        .curIcon {
+            font-size: 16px;
+            color: rgba(1, 17, 61, 1);
+        }
+    }
+}

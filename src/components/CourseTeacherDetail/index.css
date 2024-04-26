@@ -1,0 +1,157 @@
+.loadInitData {
+    width: 91.46%;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+.CourseDetail {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #ffffff;
+}
+.CourseDetail .nav {
+    width: 97.46%;
+    margin: 0 auto;
+    height: 54px;
+    line-height: 54px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.CourseDetail .nav .navTop .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-top: 4px solid #969fa9;
+    border-left: 4px solid #969fa9;
+    border-radius: 4px;
+    transform: rotate(-45deg);
+    transform-origin: center center;
+}
+.CourseDetail .nav .navTop .title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #464c56;
+    margin: 0 6px;
+}
+.CourseDetail .nav .navTop .type .bz {
+    width: 48px;
+    height: 36px;
+    padding: 5px 16px;
+    border-radius: 21px;
+    font-size: 8px;
+}
+.CourseDetail .nav .navTop .type .type0,
+.CourseDetail .nav .navTop .type .type2,
+.CourseDetail .nav .navTop .type .type3 {
+    color: #969fa9;
+    background-color: #f0f0f0;
+}
+.CourseDetail .nav .navTop .type .type1 {
+    background-color: rgba(55, 120, 255, 0.15);
+    color: #3778ff;
+}
+.CourseDetail .nav .navTop .type .time {
+    position: relative;
+    top: -4px;
+    left: 0;
+}
+.CourseDetail .nav .area .btn {
+    width: 112px;
+    border-radius: 20px;
+    color: #3778ff;
+    border: 1px solid #3778ff;
+    margin: 0 5px;
+}
+.CourseDetail .nav .area .btnDis {
+    border-radius: 20px;
+    margin: 0 5px;
+}
+.CourseDetail .nav .area .pop {
+    margin-left: 16px;
+    position: relative;
+    top: -3px;
+    left: 0;
+}
+.CourseDetail .nav .area .pop i {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #969fa9;
+    border-radius: 50%;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.CourseDetail .nav .area .disabled {
+    cursor: not-allowed;
+}
+.CourseDetail .nav .area .disabled i {
+    cursor: auto;
+}
+.CourseDetail .navMain {
+    width: 97.46%;
+    margin: 0 auto;
+}
+.CourseDetail .tabContent .tab {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+    height: 54px;
+    line-height: 54px;
+    box-sizing: border-box;
+}
+.CourseDetail .tabContent .tab .title {
+    display: inline-block;
+    width: 185px;
+    text-align: center;
+    font-size: 16px;
+    color: #969fa9;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.CourseDetail .tabContent .tab .active .el {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 54px;
+    padding: 0 12px;
+    color: #3778ff;
+    transition: all 0.5s;
+    border-bottom: 3px solid #3778ff;
+}
+.popover {
+    width: 100px;
+}
+.popover .item {
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #464c56;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.popover .item:hover {
+    font-size: 14px;
+    color: #3778ff;
+    transition: all 0.5s;
+}
+.effectiveConfirm .effective {
+    text-align: center;
+}
+.effectiveConfirm .effective .title,
+.effectiveConfirm .effective .text {
+    display: block;
+}
+.effectiveConfirm :global .ant-modal-confirm-btns {
+    float: unset;
+    text-align: center;
+}
+.effectiveConfirm :global .ant-modal-confirm-btns .ant-btn {
+    width: 88px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #4d7fff;
+    color: #4d7fff;
+}
+.effectiveConfirm :global .ant-modal-confirm-btns .ant-btn-primary {
+    background: #4d7fff;
+    color: #fff;
+}

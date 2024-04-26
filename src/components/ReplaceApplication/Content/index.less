@@ -1,0 +1,471 @@
+@leftContentPadding: 20px 70px 20px 40px;
+.contentWrapperLoading {
+    height: calc(~'100% - 64px');
+    :global {
+        .ant-spin-container {
+            height: 100%;
+        }
+    }
+}
+.contentWrapper {
+    // height: calc(100% - 64px);
+    height: 100%;
+    background-color: #f5f6fa;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 15px;
+    flex-grow: 1;
+    gap: 15px;
+    position: relative;
+}
+
+.leftContentWrapper {
+    background: #f5f6fa;
+    box-shadow: 0px 1px 4px -4px rgba(1, 17, 61, 0.12);
+    flex: 1;
+    border-radius: 15px;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainContent {
+    padding: @leftContentPadding;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.backgroundNote,
+.arrangement,
+.addLesson,
+.supplementLesson,
+.cc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .title {
+        display: flex;
+        align-items: center;
+        height: 21px;
+        .text {
+            font-family: PingFangSC-Medium;
+            color: #01113d;
+            font-size: 14px;
+            line-height: 20px;
+            margin-right: 8px;
+        }
+        .icon {
+            font-size: 14px;
+            line-height: 24px;
+            color: #f34137;
+        }
+    }
+    .detailMsg {
+        font-family: PingFangSC-Regular;
+        color: rgba(1, 17, 61, 0.85);
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.cc {
+    :global {
+        .ant-checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+.addLessonItem {
+    position: relative;
+    .closeCircle {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        cursor: pointer;
+    }
+}
+
+.addLessonButtonWrapper {
+    width: 85px;
+    height: 30px;
+    background: rgba(4, 69, 252, 0.1);
+    font-family: PingFangSC-Medium;
+    color: #0445fc;
+    line-height: 20px;
+    font-size: 12px;
+    border-radius: 6px;
+
+    .addLessonButton {
+        padding: 4px;
+        padding-left: 6px;
+        .icon {
+            font-size: 18px;
+            margin-right: 4px;
+        }
+    }
+}
+
+.addLessonList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addLessonItem {
+    width: 520px;
+    height: 74px;
+    padding: 13px 11px;
+    border: 1px solid rgba(1, 17, 61, 0.12);
+    font-family: PingFangSC-Regular;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    .leftPart {
+        // width: 330px;
+        display: flex;
+        flex-direction: column;
+        color: rgba(1, 17, 61, 1);
+        font-size: 14px;
+        line-height: 24px;
+        .lesson {
+            margin-left: 10px;
+            font-size: 13px;
+            color: rgba(1, 17, 61, 0.65);
+        }
+        .class {
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            gap: 10px;
+            .studentGroups {
+                max-width: 130px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .middlePart {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        margin-top: 8px;
+        .doubleArrow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .leftTriangle {
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-right: 7px solid #50dc65;
+                border-bottom: 5px solid transparent;
+            }
+            .connectLines {
+                width: 20px;
+                height: 3px;
+                background-color: #50dc65;
+            }
+            .rightTriangle {
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-left: 7px solid #50dc65;
+                border-bottom: 5px solid transparent;
+            }
+        }
+        .resetCourse {
+            font-family: PingFangSC-Regular;
+            color: #0445fc;
+        }
+    }
+
+    .rightPartTeacher {
+        position: absolute;
+        left: 330px;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        .rightPartTeacherTitle {
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.65);
+        }
+        .bottomPart {
+            display: flex;
+            gap: 8px;
+        }
+        .rightPartTeacherName {
+            font-family: PingFangSC-Semibold;
+            color: rgba(1, 17, 61, 0.85);
+        }
+        .resetTeacher {
+            font-family: PingFangSC-Regular;
+            color: #0445fc;
+        }
+    }
+    .rightPartEmpty {
+        gap: 15px;
+        margin-right: 50px;
+        color: #0445fc;
+        display: flex;
+        align-items: center;
+    }
+    .rightPart > span {
+        cursor: pointer;
+    }
+}
+
+.selectedLessonItem {
+    border: 2px solid rgba(255, 162, 0, 1);
+}
+
+.conflictLessonItem {
+    border: 1px solid red;
+}
+
+.conflictMsg {
+    display: block;
+    margin-top: 5px;
+    color: red;
+}
+
+.supplementLesson {
+    .uploadButton {
+        background: rgba(1, 17, 61, 0.07);
+        width: 68px;
+        height: 28px;
+        padding: 4px 10px;
+        font-family: PingFangSC-Medium;
+        color: rgba(1, 17, 61, 0.65);
+        font-size: 12px;
+        line-height: 20px;
+        border-radius: 5px;
+    }
+    .requestAttachmentList {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        border-radius: 5px;
+        .requestAttachmentItem {
+            background: #ffffff;
+            border: 1px solid rgba(1, 17, 61, 0.12);
+            width: 300px;
+            height: 36px;
+            padding: 7px 15px;
+            font-family: PingFangSC-Regular;
+            color: #01113d;
+            font-size: 14px;
+            line-height: 22px;
+            border-radius: 5px;
+        }
+    }
+    .uploadWrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.scheduleVersion {
+    padding: @leftContentPadding;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.version,
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    .title {
+        font-family: PingFangSC-Semibold;
+        color: rgba(1, 17, 61, 0.85);
+    }
+    .versionList {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+        .versionItem {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .versionTitle {
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.65);
+        }
+        .versionName {
+            font-family: PingFangSC-Regular;
+            color: #01113d;
+        }
+    }
+    .detailMsg {
+        font-family: PingFangSC-Regular;
+        color: rgba(1, 17, 61, 0.65);
+    }
+}
+
+.progress {
+    padding: @leftContentPadding;
+    background-color: #fff;
+    border-radius: 15px;
+    .title {
+        font-family: PingFangSC-Semibold;
+        color: rgba(1, 17, 61, 0.85);
+    }
+    .steps {
+        margin-top: 25px;
+        margin-left: 5px;
+        display: flex;
+        gap: 20px;
+        // flex-direction: row-reverse;
+        // justify-content: flex-end;
+    }
+}
+
+.lines {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 4px;
+    .lineItem {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        .icon {
+            width: 10px;
+            height: 10px;
+            border-radius: 22px;
+            font-size: 17px;
+        }
+        .line {
+            width: 2px;
+        }
+    }
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    .userItem {
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+        width: 300px;
+        padding-bottom: 26px;
+        .leftContent {
+            display: flex;
+            height: 40px;
+            width: 40px;
+            flex-wrap: wrap;
+            border-radius: 5px;
+            padding: 3px;
+            background-color: rgba(245, 246, 247, 1);
+            flex: 0 0 auto;
+            gap: 2px;
+            .leftContentItem {
+                height: 16px;
+                width: 16px;
+                border-radius: 10px;
+            }
+        }
+        .singleLeftContent {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .rightContent {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 12px;
+            line-height: 20px;
+            font-family: PingFangSC-Regular;
+            .name {
+                color: rgba(1, 17, 61, 0.85);
+            }
+            .remark {
+                color: rgba(1, 17, 61, 0.65);
+            }
+            .statusString {
+                font-family: PingFangSC-Medium;
+            }
+            .time {
+                font-size: 12px;
+                line-height: 17px;
+                font-family: PingFangSC-Regular;
+                color: rgba(1, 17, 61, 0.45);
+            }
+        }
+    }
+}
+
+.requestRelatedList {
+    width: 260px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: PingFangSC-Regular;
+    color: rgba(1, 17, 61, 0.85);
+    .header {
+        border-bottom: 1px solid rgba(1, 17, 61, 0.12);
+        padding: 23px;
+        padding-bottom: 15px;
+    }
+    .list {
+        padding: 23px;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .listItem {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.calendarWrapper {
+    :global {
+        .ant-modal {
+            width: 50% !important;
+        }
+        .ant-modal-close,
+        .ant-modal-footer {
+            display: none;
+        }
+        .ant-modal-body {
+            padding-top: 10px;
+        }
+    }
+}

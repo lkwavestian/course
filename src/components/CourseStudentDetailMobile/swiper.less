@@ -1,0 +1,58 @@
+.swiperBox{
+  width: 100%;
+  height: 160px !important;
+  margin: 20px 0;
+}
+.tabBar {
+  background: #FFFFFF;
+  width: (calc(~'100% - 16px'));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  border-radius: 6px;
+  padding-top: 16px;
+  
+  .tabItem {
+    width: 25%;
+    text-align: center;
+    .itemIcon {
+      border: 0.5px solid rgba(231,231,231,1);  
+      border-radius: 8px;
+      height: 60px;
+      width: 60px;
+      margin: 0 auto;
+      margin-bottom: 8px;
+      line-height: 60px;
+    }
+    .itemName {
+      font-family: PingFangSC-Regular;
+      color: #01113D;
+      font-size: 12px;
+    }
+  }
+}
+.swiperList{
+  height: 160px !important;
+  :global{
+    .slider-list{
+      height: 160px !important;
+    }
+    .am-carousel-wrap-dot>span {
+      background: #fff
+    }
+    .am-carousel-wrap-dot-active>span {
+        background: #900f1d
+    }
+  }
+}
+
+.banner{
+  width: 100%;
+  height: 160px !important;
+  line-height: 160px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}

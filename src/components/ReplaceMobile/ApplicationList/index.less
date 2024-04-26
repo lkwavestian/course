@@ -1,0 +1,110 @@
+.applicationListWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    .applicationItem {
+        border-radius: 11px;
+        background: #ffffff;
+        padding: 15px;
+        padding-right: 10px;
+        position: relative;
+    }
+}
+
+.applicationItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .topPart {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: PingFangSC-Medium;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(1, 17, 61, 1);
+        .avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(1, 17, 61, 0.05);
+        }
+    }
+    .bottomPart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        line-height: 20px;
+        .leftPart {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-left: 32px;
+            .icon {
+                width: 6px;
+                height: 6px;
+                border-radius: 6px;
+                background-color: #ff4500;
+            }
+            .text {
+                color: rgba(1, 17, 61, 0.65);
+            }
+        }
+        .rightPart {
+            color: rgba(1, 17, 61, 0.45);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+    .statusSpan {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0 10px;
+        height: 24px;
+        border-radius: 0px 11px 0px 11px;
+        font-family: PingFangSC-Semibold;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+    }
+}
+
+.selectWrapper {
+    display: flex;
+    gap: 5px;
+    height: 48px;
+    padding: 10px 12px;
+    background: #ffffff;
+    :global {
+        .ant-select-selection--single {
+            height: 32px;
+            font-size: 14px;
+            width: 110px;
+        }
+    }
+}
+
+.middleWrapper {
+    display: flex;
+    gap: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: -12px;
+    .middleItem {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        border-radius: 11px;
+        padding: 2px 8px;
+        background: rgba(254, 138, 38, 0.1);
+        font-family: PingFangSC-Semibold;
+        font-size: 12px;
+        line-height: 20px;
+        color: rgba(254, 138, 38, 1);
+    }
+}

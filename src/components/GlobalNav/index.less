@@ -1,0 +1,36 @@
+@import '~antd/lib/style/themes/default.less';
+
+.navContent {
+    text-align: center;
+    margin-top: 5px;
+    height: 58px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: center;
+    align-items: flex-end;
+    a {
+        display: inline-block;
+        // font-weight: bold;
+        height: 39px;
+        color: #8288f4;
+        &.cur {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+        }
+        //教师组件样式覆盖
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 3000px) {
+    .navContent {
+        a {
+            font-size: 16px;
+            padding: 0 20px;
+            margin: 0 20px;
+        }
+    }
+}

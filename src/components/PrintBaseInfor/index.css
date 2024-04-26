@@ -1,0 +1,11 @@
+@media print{
+    @page{
+        size:A4
+    }
+    .printPage{
+        page-break-after: always;
+    }
+    #export{
+        display: none;
+    }
+}

@@ -1,0 +1,434 @@
+.pageMain {
+    height: 100%;
+    padding: 12px 14px;
+    background: #f4f5f6;
+
+    .main {
+        // background: #fff;
+        height: 100%;
+        border-radius: 8px;
+        overflow-y: scroll;
+        box-shadow: 0 1px 4px -4px rgba(1, 17, 61, 12%);
+    }
+
+    .conditionArea {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .tabbar {
+        background: #fff;
+        box-shadow: 0 2px 8px 0 rgba(1, 17, 61, 4%);
+        border-radius: 8px;
+        text-align: center;
+        overflow: hidden;
+        height: 36px;
+        font-family: AppleSystemUIFont;
+        display: inline-block;
+
+        span {
+            cursor: pointer;
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.45);
+            font-size: 14px;
+            padding: 0 24px;
+            border-right: 1px solid rgba(4, 69, 252, 0.15);
+            height: 36px;
+            line-height: 36px;
+            display: inline-block;
+
+            &:last-child {
+                border-right: 0 none;
+            }
+        }
+
+        .activeTab {
+            background: rgba(4, 69, 252, 0.15);
+            color: #0445FC;
+        }
+    }
+
+    .selectStyle {
+        width: 160px;
+        margin-right: 12px;
+    
+        &>div {
+            height: 36px !important;
+            border: 1px solid rgba(1, 17, 61, 0.1);
+            border-radius: 8px !important;
+            font-size: 14px;
+            color: rgba(1, 17, 61, 0.85);
+        }
+    
+        &>div>div {
+            line-height: 36px !important;
+        }
+    }
+    
+    .inputStyle {
+        width: 200px;
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        font-size: 14px;
+        margin-right: 12px;
+    
+        &>input {
+            color: rgba(1, 17, 61, 0.85);
+            border: 1px solid rgba(1, 17, 61, 0.1);
+            border-radius: 8px !important;
+        }
+    }
+}
+
+.mobilePageMain {
+    height: 100%;
+    padding: 5px 12px;
+    background: #f4f5f6;
+    width: 100vw;
+
+    .main {
+        // background: #fff;
+        height: 100%;
+        border-radius: 8px;
+        overflow-y: scroll;
+        box-shadow: 0 1px 4px -4px rgba(1, 17, 61, 12%);
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .conditionArea {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 12px;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .mobileSearch {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .tabbar {
+        background: #fff;
+        box-shadow: 0 2px 8px 0 rgba(1, 17, 61, 4%);
+        border-radius: 8px;
+        text-align: center;
+        overflow: hidden;
+        height: 32px;
+        font-family: AppleSystemUIFont;
+        display: inline-block;
+
+        span {
+            cursor: pointer;
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.45);
+            font-size: 14px;
+            padding: 0 12px;
+            border-right: 1px solid rgba(4, 69, 252, 0.15);
+            height: 32px;
+            line-height: 32px;
+            display: inline-block;
+
+            &:last-child {
+                border-right: 0 none;
+            }
+        }
+
+        .activeTab {
+            background: rgba(4, 69, 252, 0.15);
+            color: #0445FC;
+        }
+    }
+    .rightArea {
+        width: 100%;
+    }
+    .selectStyle {
+        // flex: 1;
+        // min-width: 150px;
+        margin-right: 12px;
+        width: 160px;
+    
+        &>div {
+            height: 36px !important;
+            border: 1px solid rgba(1, 17, 61, 0.1);
+            border-radius: 8px !important;
+            font-size: 14px;
+            color: rgba(1, 17, 61, 0.85);
+        }
+    
+        &>div>div {
+            line-height: 36px !important;
+        }
+    }
+    
+    .inputStyle {
+        // flex: 1;
+        // min-width: 150px;
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        font-size: 14px;
+        // margin-right: 12px;
+        width: 160px;
+        &>input {
+            color: rgba(1, 17, 61, 0.85);
+            border: 1px solid rgba(1, 17, 61, 0.1);
+            border-radius: 8px !important;
+        }
+    }
+    .infoStyle {
+       display: flex;
+       flex-direction: row;
+       :global(.classList) {
+        width: 20px !important;
+       }
+    }
+    .tabMain {
+        height: calc(~'100% - 105px');
+        :global {
+
+            .ant-table-thead>tr>th,
+            .ant-table-tbody>tr>td {
+                padding: 6px 2px !important;
+            }
+    
+            .ant-table-tbody>tr:nth-child(odd) {
+                background: #F8F9FB;
+            }
+    
+            .ant-table-thead>tr>th {
+                background: #fff;
+                height: 50px;
+            }
+        }
+        .avatar {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 6px;
+            object-fit: cover;
+        }
+        .txt {
+            font-family: PingFangSC-Regular;
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 12px;
+        }
+    
+        .tableTitle {
+            font-family: PingFangSC-Regular;
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 12px;
+        }
+    
+        .studentName {
+            display: inline-block;
+            font-family: PingFangSC-Regular;
+            color: rgba(0, 0, 0, 0.65);
+            font-size: 12px;
+        }
+    }
+
+}
+
+
+
+
+
+.exportBtn,
+.exportBtnGray {
+    display: inline-block;
+    padding: 0 14px;
+    background: #0445FC;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: PingFangSC-Medium;
+    height: 36px;
+    line-height: 36px;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.exportBtnGray {
+    background: rgba(4, 69, 252, 0.6);
+    cursor: default;
+}
+
+
+.checkedTips {
+    font-style: normal;
+    font-size: 12px;
+    color: #0445fc;
+    font-family: PingFangSC-Medium;
+    margin-right: 12px;
+}
+
+.filterArea {
+    margin-top: 5px;
+
+    p {
+        margin-bottom: 8px;
+    }
+}
+
+.tabMain {
+    background: #fff;
+    border-radius: 8px;
+    height: calc(~'100% - 53px');
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    :global {
+
+        .ant-table-thead>tr>th,
+        .ant-table-tbody>tr>td {
+            padding: 9px 6px !important;
+        }
+
+        .ant-table-tbody>tr:nth-child(odd) {
+            background: #F8F9FB;
+        }
+
+        .ant-table-thead>tr>th {
+            background: #fff;
+            height: 50px;
+        }
+    }
+
+    .avatar {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-right: 12px;
+        object-fit: cover;
+    }
+
+    .txt {
+        font-family: PingFangSC-Regular;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 14px;
+    }
+
+    .tableTitle {
+        font-family: PingFangSC-Regular;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 14px;
+    }
+
+    .studentName {
+        display: inline-block;
+        font-family: PingFangSC-Regular;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 14px;
+    }
+
+}
+
+.showPage {
+    padding: 25px 16px;
+    text-align: right;
+}
+
+.selectTeacher {
+    height: 25px !important;
+
+    :global {
+        .ant-select-selection {
+            height: 25px !important;
+        }
+
+        .ant-select-selection--multiple {
+            height: 25px !important;
+            min-height: 0 !important;
+        }
+
+        .ant-select-selection__rendered {
+            height: 25px !important;
+            line-height: 25px !important;
+        }
+
+        .ant-select-arrow {
+            top: 13px !important;
+        }
+    }
+}
+
+.infoStyle {
+    :global(.classList) {
+        display: inline-block;
+    }
+}
+
+.importFees {
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection {
+            height: 36px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.desc {
+    text-align: center;
+    position: relative;
+    bottom: 28px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 65px;
+}
+
+.inlineBlock {
+    display: inline-block;
+}

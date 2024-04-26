@@ -1,0 +1,240 @@
+.addStudent {
+    min-height: 54vh;
+    .top {
+        background-color: #ffffff;
+        padding: 12px;
+        border-radius: 8px;
+        position: relative;
+        height: 141px;
+        .list {
+            border-bottom: 1px solid #969fa930;
+            margin-bottom: 12px;
+            max-height: 120px;
+            overflow: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .item {
+                display: inline-block;
+                color: #969fa9;
+                font-size: 12px;
+                background-color: #f0f0f0;
+                height: 24px;
+                line-height: 20px;
+                border-radius: 12px;
+                padding: 2px 16px;
+                margin-right: 12px;
+                margin-bottom: 12px;
+                .icon {
+                    cursor: pointer;
+                    margin-left: 4px;
+                }
+            }
+        }
+        .del {
+            font-size: 16px;
+            cursor: pointer;
+            position: absolute;
+            right: 16px;
+            bottom: 64px;
+            color: #969fa9;
+            z-index: 99;
+        }
+
+        .search {
+            input {
+                border-top: 1px solid transparent;
+                border-left: 1px solid transparent;
+                border-right: 1px solid transparent;
+                border-radius: 0;
+                &:hover,
+                &:focus {
+                    border-top: 1px solid transparent !important;
+                    border-left: 1px solid transparent !important;
+                    border-right: 1px solid transparent !important;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        margin-top: 12px;
+        height: 54vh;
+        display: flex;
+        .left {
+            width: 240px;
+            background-color: #ffffff;
+            padding: 12px;
+            border-radius: 8px;
+            overflow: scroll;
+            .gradeList {
+                border-bottom: 1px solid #969fa930;
+                padding-bottom: 12px;
+                margin-bottom: 12px;
+                .select {
+                    > div {
+                        border: none;
+                        box-shadow: none;
+                        &:focus {
+                            border: none !important;
+                        }
+                    }
+                }
+            }
+            .classList {
+                max-height: 480px;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                .item {
+                    height: 36px;
+                    line-height: 36px;
+                    font-size: 14px;
+                    color: #969fa9;
+                    padding: 0 12px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    margin-bottom: 6px;
+                    display: flex;
+                    justify-content: space-between;
+                    &:hover {
+                        background-color: #3778ff15;
+                        transition: all 0.5s;
+                    }
+                    .num {
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        line-height: 24px;
+                        text-align: center;
+                        border-radius: 50%;
+                        font-size: 8px;
+                        color: #ffffff;
+                        background-color: #3778ff;
+                    }
+                }
+                .active {
+                    background-color: #3778ff15;
+                }
+            }
+        }
+        .right {
+            width: 100%;
+            margin-left: 12px;
+            background-color: #ffffff;
+            padding: 12px;
+            border-radius: 8px;
+            overflow: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .rightContent {
+                width: 94.46%;
+                margin: 0 auto;
+                .allChecked {
+                    margin: 12px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    .a {
+                        font-size: 16px;
+                        color: #969fa9;
+                    }
+                    .allNum {
+                        font-size: 14px;
+                        color: #969fa9;
+                    }
+                }
+                .studentList {
+                    height: 45vh;
+                    overflow: hidden auto;
+                    .item {
+                        margin-bottom: 16px;
+                        .name {
+                            font-size: 14px;
+                            color: #969fa9;
+                        }
+                    }
+                    .tryLoad {
+                        text-align: center;
+                    }
+                    .noMore {
+                        display: block;
+                        width: 100%;
+                        font-size: 14px;
+                        color: #969fa9;
+                        text-align: center;
+                    }
+                }
+            }
+            .load {
+                text-align: center;
+                padding: 120px 0;
+            }
+        }
+    }
+}
+
+.studentNavTitle {
+    button {
+        border-radius: 20px;
+        &:first-child {
+            margin-right: 16px;
+        }
+    }
+    :global{
+        .ant-btn{   //取消按钮样式
+          height: 36px !important;
+          line-height: 36px !important;
+          border-radius: 8px !important;
+          color: rgba(1, 17, 61, 0.65) !important;
+          background: rgba(1, 17, 61, 0.07) !important;
+          text-align: center;
+          border: 0 !important;
+          &.ant-btn-primary{  //确认按钮样式
+            background:  #3B6FF5 !important;
+            color: #fff !important;
+            
+          }
+        }
+        .ant-input{
+          height: 36px !important;
+          border-radius: 8px !important;
+        }
+      
+        .ant-select-selection__rendered{
+          line-height: 36px !important; 
+        }
+      
+        .ant-select-selection--single{
+          border-radius: 8px !important;
+          height: 36px;
+        }
+      
+        .ant-select-lg .ant-select-selection--multiple{
+          min-height: 36px;
+          border-radius: 8px;
+          padding-bottom: 0;
+        }
+    }
+}
+
+.noData {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 180px;
+        margin: 0 auto;
+        display: block;
+    }
+    .title {
+        text-align: center;
+        color: #969fa9;
+        font-size: 16px;
+        margin: 16px 0;
+    }
+}

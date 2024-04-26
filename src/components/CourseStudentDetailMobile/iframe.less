@@ -1,0 +1,69 @@
+.contentBox{
+  background: #F5F6F7;
+  padding: 0px;
+  height: 100%;
+
+  .header{
+    height: 60px;
+    background: #fff;
+  }
+  .closeModal {
+    position: fixed;
+    font-size: 12px;
+    /* top: 20px; */
+    background: rgba(1, 17, 61, 0.85);
+    // opacity: 0.5;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    /* line-height: 48px; */
+    padding: 7px;
+    border-radius: 24px;
+    bottom: 100px;
+    right: 20px;
+    font-family: PingFangSC-Regular;
+    color: #fff;
+}
+  .content{
+    width: 100%;
+    height: calc(~'100vh - 60px');    
+    background: #F5F6F7;
+    z-index: 6;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .lessonChangeTab {
+      height: 50px;
+      background: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .changeButton {
+          text-align: center;
+          // line-height: 50px;
+          color: rgb(122, 129, 151);
+          i {
+              font-size: 21px;
+          }
+          a {
+              color: rgb(122, 129, 151);
+          }
+      }
+      .isCheck {          
+          color: rgb(144, 15, 29) !important;
+      }
+      .isCheckName {
+        color: rgb(144, 15, 29) !important;
+        font-family: PingFangSC-Medium !important;
+      }
+  }
+}

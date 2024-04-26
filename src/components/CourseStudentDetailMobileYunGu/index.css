@@ -1,0 +1,312 @@
+.wrapper {
+  padding: 0 16px 19px;
+  position: relative;
+}
+.wrapper .selectCourseWrapper {
+  margin: -8px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3px;
+  font-family: PingFangSC-Regular;
+  color: #01113d;
+  font-size: 14px;
+  line-height: 20px;
+}
+.wrapper .selectCourseWrapper :global .ant-input-search-icon {
+  display: none;
+}
+.wrapper .courseFilter {
+  color: #01113d;
+}
+.wrapper .courseFilterActive {
+  color: #3262f2;
+}
+.courseListWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  gap: 10px;
+}
+.courseListWrapper .placeHolder {
+  height: 54px;
+  width: 100%;
+  margin-top: 10px;
+}
+.chooseCourseWrapper {
+  margin: 10px 0;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.chooseCourse {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 0 21px;
+  padding-bottom: 20px;
+}
+.chooseCourse .courseName {
+  font-family: PingFangSC-Semibold;
+  color: #01113d;
+  padding-top: 23px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.chooseCourse .corseMessage {
+  font-family: PingFangSC-Regular;
+  color: rgba(1, 17, 61, 0.65);
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.chooseCourse .corseMessage .corseMessageItem {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: flex-start;
+}
+.chooseCourse .corseMessage .corseMessageItem .courseFee {
+  font-family: PingFangSC-Regular;
+  color: #fd9004;
+}
+.chooseCourse .corseMessage .corseMessageItem .corseMessageItemIcons {
+  margin-top: 4px;
+}
+.signUpList {
+  border-top: 1px solid #f7f7f7;
+  height: 45px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.signUpList .signUpStatus {
+  height: 100%;
+  padding: 0 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUpList .signUpStatus .wantSignUp {
+  font-family: PingFangSC-Semibold;
+  color: #0445fc;
+  margin-left: 0;
+}
+.signUpList .signUpSuccessWrapper {
+  height: 100%;
+  padding: 0 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.signUpList .signUpSuccessWrapper .signUpSuccess {
+  font-family: PingFangSC-Regular;
+  color: #59a409;
+}
+.signUpList .signUpSuccessWrapper .signUpCancel {
+  font-family: PingFangSC-Semibold;
+  color: rgba(1, 17, 61, 0.65);
+}
+.signUpList .fullStatus {
+  height: 100%;
+  padding: 0 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUpList .fullStatus .fillSignUp {
+  font-family: PingFangSC-Semibold;
+  color: rgba(1, 17, 61, 0.25);
+  margin-left: 0;
+}
+.selectSuccessWrapper {
+  background: #263359;
+  width: 100vw;
+  height: 84px;
+  position: fixed;
+  bottom: 0;
+  font-family: PingFangSC-Medium;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+}
+.selectSuccessWrapper .successMsgWrapper {
+  padding-top: 13px;
+  padding-bottom: 49px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectDrawerWrapper :global .ant-drawer-content-wrapper {
+  height: auto;
+}
+.selectDrawerWrapper :global .ant-drawer-content {
+  background: #263359;
+  color: #ffffff;
+}
+.selectDrawerWrapper :global .ant-drawer-content .ant-drawer-body {
+  height: 100%;
+  padding-top: 13px;
+  padding-bottom: 49px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.successMsgWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  line-height: 22px;
+}
+.selectCourseListWrapper {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.selectCourseListWrapper .selectCourseWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectCourseListWrapper .selectCourseWrapper .selectCourse {
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 300px;
+  height: 70px;
+  background-color: #5b6681;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
+}
+.selectCourseListWrapper .selectCourseWrapper .selectCourse .courseName {
+  font-family: PingFangSC-Regular;
+  color: #dfe0e5;
+  font-size: 14px;
+  line-height: 20px;
+}
+.selectCourseListWrapper .selectCourseWrapper .selectCourse .courseTime {
+  font-family: PingFangSC-Light;
+  color: #a2a6b4;
+  font-size: 12px;
+  line-height: 17px;
+}
+.selectCourseListWrapper .selectCourseWrapper .deleteIcon {
+  font-size: 19px;
+  margin-right: 5px;
+}
+.filterDrawerWrapper :global .ant-drawer-content-wrapper {
+  width: auto !important;
+}
+.filterDrawerWrapper :global .ant-drawer-content {
+  background-color: #fff;
+}
+.filterDrawerWrapper :global .ant-drawer-content .ant-drawer-body {
+  height: 100%;
+  padding-top: 71px;
+  padding-bottom: 44px;
+  padding-left: 23px;
+  padding-right: 21px;
+  width: 300px;
+  position: relative;
+}
+.selectItemWrapper {
+  margin-bottom: 42px;
+}
+.selectItemWrapper .selectTitle {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: PingFangSC-Semibold;
+  color: #01113d;
+}
+.selectItemWrapper .selectItemList {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5px 17px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 40px;
+}
+.selectItemWrapper .selectItemList .selectItem {
+  background: rgba(1, 17, 61, 0.05);
+  color: #01113d;
+  padding: 5px 17px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 40px;
+}
+.selectItemWrapper .selectItemList .hasSelectedItem {
+  background: rgba(4, 69, 252, 0.1);
+  color: #0445fc;
+  padding: 5px 17px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 40px;
+}
+.btnList {
+  left: 23px;
+  bottom: 44px;
+  position: absolute;
+  display: flex;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: PingFangSC-Medium;
+}
+.btnList .reSetBtn {
+  width: 80px;
+  height: 40px;
+  background: rgba(1, 17, 61, 0.07);
+  color: rgba(1, 17, 61, 0.65);
+  border-radius: 5px;
+}
+.btnList .confirmBtn {
+  width: 165px;
+  height: 40px;
+  background: #0445fc;
+  color: #ffffff;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.confirmText {
+  text-align: center;
+}
+.confirmText .title {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+.confirmText .text {
+  display: block;
+}
+.confirmText :global .ant-modal-confirm-btns {
+  float: none;
+}
+.confirmText :global .ant-modal-confirm-btns .ant-btn {
+  border-radius: 16px;
+}
+.confirmText :global .ant-modal-confirm-btns .ant-btn-primary {
+  background: #4d7fff;
+}
+.confirmText :global .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+  margin-left: 0;
+}
+.tabsStyle :global .ant-tabs-nav-scroll {
+  display: flex;
+  justify-content: center;
+}

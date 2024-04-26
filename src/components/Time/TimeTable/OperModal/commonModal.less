@@ -1,0 +1,928 @@
+.commonModal {
+    :global {
+        .ant-modal-header {
+            padding-bottom: 10px;
+            .ant-modal-title {
+                font-family: PingFangSC-Medium;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: -0.84px;
+                color: #333333;
+            }
+        }
+        .ant-modal-footer {
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            line-height: 22px;
+            padding-bottom: 16px;
+            .ant-modal-footer button + button {
+                margin-left: 10px;
+            }
+            .ant-btn {
+                padding: 6px 20px;
+                border-radius: 7px;
+                background: rgba(1, 17, 61, 0.07);
+                color: rgba(1, 17, 61, 0.65);
+                &:hover,
+                &:focus {
+                    border-color: rgba(1, 17, 61, 0.07);
+                }
+            }
+            .ant-btn-primary {
+                background: #0445fc;
+                color: #ffffff;
+            }
+        }
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: #3b6ff5;
+            border-color: #3b6ff5;
+        }
+        .ant-checkbox-checked::after {
+            background-color: #3b6ff5;
+        }
+    }
+}
+.selectSemester {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .timePicker {
+        position: relative;
+        margin-top: 5px;
+        .datePicker {
+            width: 250px;
+            position: absolute;
+            top: -16px;
+            left: -10px;
+        }
+        .timeText {
+            position: absolute;
+            top: -18px;
+            left: -10px;
+            border: 1px solid #d9d9d9;
+            width: 250px;
+            line-height: 32px;
+            border-radius: 5px;
+            padding: 0 12px;
+            padding-left: 0;
+            color: rgba(0, 0, 0, 0.65);
+            font-size: 14px;
+            height: 32px;
+            padding-left: 0;
+            .placeHolder {
+                color: #c2c2c2;
+                position: absolute;
+                left: 10px;
+            }
+        }
+        :global {
+            .ant-calendar-picker {
+                .ant-calendar-picker-input {
+                    visibility: hidden;
+                }
+            }
+            .ant-calendar-input-wrap {
+                display: none;
+            }
+            .ant-calendar-picker-container {
+                // top: -3px;
+                top: 40px !important;
+            }
+        }
+    }
+}
+.useRange {
+    margin-bottom: 20px;
+}
+.operList {
+    border: 1px;
+    margin: 20px 0;
+    th {
+        width: 120px;
+        height: 44px;
+        text-align: center;
+    }
+    td {
+        width: 92px;
+        height: 44px;
+        text-align: center;
+        background: #f1f2f3;
+    }
+}
+.relaxsll {
+    background: #945858;
+    color: #888;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    overflow: auto;
+    border: 1px solid #fff;
+    cursor: pointer;
+    vertical-align: top;
+    min-height: 35px !important;
+}
+.selectedNum {
+    position: absolute;
+    bottom: 7%;
+    color: #666;
+    font-size: 14px;
+    left: 5%;
+}
+.modalBtn {
+    border: 1px solid rgba(59, 111, 245, 1);
+    border-radius: 8px;
+    // padding: 8px 23px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cancelBtn {
+    color: #3b6ff5;
+    background: #fff;
+    text-align: center;
+    margin-right: 10px;
+}
+.submitBtn {
+    background: #3b6ff5;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+}
+.btnDisabled {
+    pointer-events: none;
+    cursor: default;
+    background: #999;
+    border-color: #999;
+}
+.btnCan {
+    cursor: pointer;
+    background: #3b6ff5;
+    color: #fff;
+}
+.fetCourseStyle {
+    margin-right: 10px;
+    em {
+        font-style: normal;
+        color: #3b6ff5;
+    }
+}
+/* :global {
+    .ant-select-selection--single {
+        border-radius: 20px;
+    }
+    .ant-calendar-picker-input {
+        border-radius: 20px;
+    }
+    .ant-select-selection--multiple {
+        border-radius: 20px;
+    }
+} */
+
+//保存版本
+.saveResultType {
+    margin: 10px 20px;
+    & > span {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+.saveVersionInput {
+    margin: 30px 20px;
+    width: 391px;
+}
+.saveVersionTextArea {
+    margin: 20px;
+    margin-top: -20px;
+    width: 391px;
+}
+.operButtonList {
+    float: right;
+    .disabled {
+        background: #f5f5f5;
+        pointer-events: none;
+        border-color: #f5f5f5;
+        color: rgba(0, 0, 0, 0.25);
+    }
+}
+
+.operButtonListCenter {
+    display: table;
+    margin: 20px auto;
+    margin-top: 40px;
+    .disabled {
+        background: #f5f5f5;
+        pointer-events: none;
+        border-color: #f5f5f5;
+        color: rgba(0, 0, 0, 0.25);
+    }
+}
+
+//导入课时计划
+.importPlanPage {
+    .importTips {
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+    }
+    .showCourseOption {
+        margin: 20px 10px;
+        min-height: 220px;
+        max-height: 250px;
+        overflow-y: scroll;
+        .courseMargin {
+            margin: 24px 24px 0 0;
+            display: inline-block;
+            .courseName {
+                display: inline-block;
+                vertical-align: top;
+                float: right;
+                width: 130px;
+                font-style: normal;
+            }
+        }
+        .noData {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            line-height: 50px;
+        }
+    }
+    .selectAll {
+        margin-top: -9px;
+    }
+}
+
+//公布课表
+.publishText {
+    margin: 10px 20px;
+    & > span {
+        display: inline-block;
+        margin-right: 14px;
+    }
+}
+.publishTips {
+    font-size: 13px;
+    color: #999;
+    margin-left: 20px;
+}
+.publishRanPicker {
+    margin: 37px 20px 37px 56px;
+}
+.noticePerson {
+    margin-left: 20px;
+    margin-bottom: 40px;
+    & > span {
+        display: inline-block;
+        margin-right: 14px;
+    }
+}
+
+.dateStyle > div > input {
+    border: none;
+    visibility: hidden;
+}
+
+.publishRanPicker .searchDateMain {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    width: 270px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    .arrow {
+        font-size: 18px;
+        cursor: pointer;
+    }
+    span {
+        display: inline-block;
+        margin: 0 15px;
+    }
+}
+.addressContent {
+    .tipsTitle {
+        font-size: 16px;
+        color: #666;
+    }
+    .operButtonList {
+        text-align: center;
+        float: none;
+        margin-top: 30px;
+    }
+    .showDetial {
+        max-height: 250px;
+        overflow-y: scroll;
+    }
+}
+.errorMessage {
+    .closeModalBtn {
+        margin-top: 20px;
+        background: rgba(59, 111, 245, 1);
+        border-radius: 20px;
+        padding: 8px 23px;
+        font-size: 14px;
+        cursor: pointer;
+        width: 92px;
+        color: #fff;
+        margin: 0 auto;
+    }
+    .failMessage {
+        margin: 24px 0;
+        white-space: pre-wrap;
+    }
+}
+
+//复制排课结果
+.copyModal {
+    .copyResultPicker {
+        margin: 0px auto 30px;
+        display: flex;
+        align-items: center;
+        & > p {
+            font-size: 16px;
+            color: #333;
+        }
+    }
+    .scheduleList {
+        max-height: 54vh;
+        overflow: scroll;
+        :global {
+            .ant-table-content {
+                .ant-table-thead > tr > th {
+                    border: none;
+                    background: #fff;
+                    padding: 10px 16px;
+                }
+                .ant-table-tbody > tr:hover {
+                    background: none;
+                }
+                .ant-table-tbody > .ant-table-row:hover > td {
+                    background: none;
+                }
+                .ant-table-tbody > tr > td {
+                    border: none;
+                    padding: 10px 16px;
+                }
+                .ant-table-placeholder {
+                    border: none;
+                }
+            }
+        }
+        .preSchedule {
+            .name {
+                display: block;
+                .published {
+                    color: #9ac466;
+                }
+            }
+            .originVersion {
+                font-size: 12px;
+            }
+        }
+        .status {
+            white-space: nowrap;
+            color: #333;
+        }
+    }
+    .operButtonList {
+        text-align: center;
+        margin-top: 20px;
+        float: unset;
+    }
+}
+//更改作息表
+.changeScheduleTop {
+    overflow: hidden;
+    .changeLift {
+        float: left;
+        margin: 20px;
+    }
+}
+.changeRadio {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    padding-right: 20px;
+    .changeRadioTitle {
+        margin-right: 20px;
+    }
+    .changeRadioAlert {
+        font-size: 12px;
+    }
+}
+//版本对比
+.versionConent {
+    font-size: 14px;
+    padding-left: 32px;
+    margin-top: 12px;
+    display: block;
+    height: 32px;
+    .versionConentSpan {
+        display: inline-block;
+        width: 64px;
+        text-align: right;
+    }
+    .versionConentDatePicker {
+        display: inline-block;
+        width: 230px;
+        border: 1px solid #d9d9d9;
+        border-radius: 30px;
+        height: 32px;
+        font-variant: tabular-nums;
+        position: relative;
+        vertical-align: top;
+        > span:first-child {
+            position: absolute;
+            left: 11px;
+            top: 5px;
+        }
+    }
+    > div {
+        margin-left: 12px;
+    }
+    .modalBtn {
+        margin-left: 56px;
+    }
+}
+.operBtn {
+    float: right;
+    margin-top: 10px;
+    > span {
+        float: left;
+    }
+}
+.versionHerder {
+    margin-top: 16px;
+}
+.titleSpan {
+    width: 440px;
+    display: inline-block;
+    text-align: center;
+}
+.contrastList {
+    width: 460px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px 0px;
+    padding: 0px 22px;
+    font-size: 14px;
+}
+
+//一键排课
+.clickKeyContent {
+    margin-bottom: 20px;
+    overflow-y: scroll;
+    .radioStyle {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+    }
+    .clickKeyClass {
+        display: inline-block;
+        font-style: normal;
+        margin-right: 10px;
+        font-size: 14px;
+        color: #333;
+    }
+    :global {
+        .ant-col-8 {
+            margin-top: 10px;
+        }
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: #3b6ff5;
+            border-color: #3b6ff5;
+        }
+        .ant-checkbox-checked::after {
+            border-color: #3b6ff5;
+        }
+    }
+}
+
+//进度条展示
+.progressContent {
+    height: 350px;
+    text-align: center;
+    padding: 90px 5px;
+    .downLoadFetch {
+        text-align: left;
+        margin-bottom: 0;
+        .downLoadData {
+            float: right;
+        }
+    }
+    .progressTips {
+        color: #999;
+        font-size: 14px;
+        margin-top: 12px;
+        text-align: left;
+        .progressData {
+            float: right;
+        }
+    }
+    .operButtonStyle {
+        text-align: center;
+        margin: 20px auto;
+        span {
+            background: #3b6ff5;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}
+
+//排课失败界面
+.errorPage {
+    .ruleMessage {
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 24px;
+        white-space: pre-line;
+    }
+}
+
+.colTitle {
+    margin-top: 50px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    .currentCol {
+        color: #346bfe;
+    }
+}
+.tableBody {
+    border-top: 1px dashed #e8e8e8;
+    .timeBox,
+    .timeLineBox {
+        // height: 120px;
+        height: 86px;
+        position: relative;
+        .positionBox {
+            position: relative;
+            top: -11px;
+            display: block;
+            width: 100%;
+            background-color: #fff;
+        }
+    }
+    .timeBox {
+        text-align: center;
+    }
+    .bgCol {
+        background-color: #fafafa;
+    }
+    .colMain {
+        padding: 0 6px 6px;
+        display: inline-block;
+        font-size: 12px;
+        //min-height: 75px;
+        overflow: auto;
+    }
+}
+
+.errMsgModal {
+    .ruleMessageContainer {
+        margin-bottom: 24px;
+        .ruleMessage {
+            margin-bottom: 11px;
+        }
+        .acMessageItem {
+            margin-bottom: 8px;
+        }
+    }
+    .footerWrapper {
+        display: flex;
+        justify-content: space-between;
+        .downLoadUrl {
+            font-size: 14px;
+            line-height: 32px;
+            color: #0445fc;
+            text-align: center;
+        }
+        .adjustment {
+            height: 36px;
+            border-radius: 8px;
+            background: #3b6ff5;
+            color: #fff;
+        }
+    }
+
+    :global {
+        .ant-modal-header {
+            border-bottom: 1px solid rgba(229, 231, 235, 1) !important;
+        }
+        .ant-modal-body {
+            padding-left: 40px;
+            padding-right: 40px;
+            border-bottom: 1px solid rgba(229, 231, 235, 1) !important;
+            padding-bottom: 0;
+        }
+        .ant-modal-footer {
+            padding-top: 0;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+.createStyle {
+    .spanStyle {
+        display: inline-block;
+        text-align: initial;
+        line-height: normal;
+        margin-top: 10px;
+    }
+    .divStyle {
+        max-height: 160px;
+        overflow: scroll;
+    }
+    .rangeWrapper {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    :global {
+        .ant-modal-body {
+            text-align: center;
+            padding-top: 8px;
+            padding-bottom: 0;
+            overflow-y: visible;
+            padding-bottom: 15px;
+            .ant-modal-confirm-content {
+                font-size: 18px;
+                color: #333;
+            }
+            .ant-modal-confirm-btns {
+                // float: unset;
+                margin: 10px auto 0;
+                .ant-btn {
+                    // width: 100px;
+                    height: 36px;
+                    border-radius: 8px;
+                    border-color: #4d7fff;
+                    color: #4d7fff;
+                }
+                .ant-btn-primary {
+                    background: #4d7fff;
+                    color: #fff;
+                }
+            }
+        }
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            border-radius: 8px !important;
+        }
+
+        /* .ant-select-selection__rendered {
+            line-height: 36px !important;
+        } */
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+
+        .ant-select {
+            line-height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-modal-confirm,
+        .ant-modal-confirm-btns {
+            float: none;
+        }
+        .ant-select-selection--multiple {
+            border-radius: 8px !important;
+        }
+        .ant-form-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            align-items: center;
+        }
+    }
+}
+.errorStyle {
+    :global {
+        .ant-modal-body {
+            text-align: center;
+            .ant-modal-confirm-content {
+                font-size: 18px;
+                color: #333;
+            }
+            .ant-modal-confirm-btns {
+                // float: unset;
+                margin: 10px auto 0;
+                .ant-btn {
+                    // width: 100px;
+                    height: 36px;
+                    border-radius: 8px;
+                    border-color: #4d7fff;
+                    color: #4d7fff;
+                }
+                .ant-btn-primary {
+                    background: #4d7fff;
+                    color: #fff;
+                }
+            }
+        }
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+    }
+}
+.tableStyle {
+    margin-top: 10px;
+}
+.tableStyle,
+.changeSchedule,
+.checkStyle,
+.saveVersion {
+    :global {
+        .ant-modal-body {
+            // text-align: center;
+            .ant-modal-confirm-content {
+                font-size: 18px;
+                color: #333;
+            }
+            .ant-modal-confirm-btns {
+                // float: unset;
+                margin: 10px auto 0;
+                .ant-btn {
+                    // width: 100px;
+                    height: 36px;
+                    border-radius: 8px;
+                    border-color: #4d7fff;
+                    color: #4d7fff;
+                }
+                .ant-btn-primary {
+                    background: #4d7fff;
+                    color: #fff;
+                }
+            }
+        }
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+
+        .ant-select {
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-modal-confirm,
+        .ant-modal-confirm-btns {
+            float: none;
+        }
+        .ant-select-selection--multiple {
+            border-radius: 8px !important;
+        }
+    }
+}
+.changeSchedule {
+    width: 950px !important;
+}
+.checkStyle {
+    .singleStyle {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .doubleStyle {
+        margin: 20px 20px 0 50%;
+    }
+}
+.importCoursePlan {
+    :global {
+        .ant-btn {
+            height: 36px;
+            border-radius: 8px;
+            color: rgba(1, 17, 61, 0.65);
+            background: rgba(1, 17, 61, 0.07);
+            border: 0;
+        }
+        .ant-btn-primary {
+            background: #3b6ff5;
+            color: #fff;
+        }
+    }
+}
+.scheduleRange {
+    :global {
+        .ant-btn {
+            height: 36px;
+            border-radius: 8px;
+            color: rgba(1, 17, 61, 0.65);
+            background: rgba(1, 17, 61, 0.07);
+            border: 0;
+        }
+        .ant-btn-primary {
+            background: #3b6ff5;
+            color: #fff;
+        }
+    }
+}
+
+.takePartClass {
+    :global {
+        .ant-col-8 {
+            margin-bottom: 15px;
+        }
+    }
+    .mainContent {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .contentItem {
+            display: flex;
+            align-items: flex-start;
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.85);
+        }
+        .leftText {
+            display: flex;
+            gap: 3px;
+            width: 110px;
+            font-size: 16px;
+            line-height: 19px;
+            .icon {
+                font-size: 4px;
+                color: red;
+            }
+        }
+        .rightText {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
+
+.confirmModal {
+    .confirmContent {
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+        line-height: 32px;
+        color: rgba(1, 17, 61, 0.85);
+    }
+}

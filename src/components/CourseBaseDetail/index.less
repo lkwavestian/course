@@ -1,0 +1,70 @@
+.BaseDetail {
+    background-color: #ddd;
+    .Skeleton {
+        width: 96.46%;
+        margin: 16px auto;
+    }
+    .nav {
+        width: 100%;
+        height: 58px;
+        line-height: 58px;
+        background-color: #ffffff;
+        .inner {
+            width: 96.46%;
+            margin: 0 auto;
+            position: relative;
+            .link {
+                position: absolute;
+                top: 0;
+                left: 0;
+                .icon {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    border-top: 4px solid #969fa9;
+                    border-left: 4px solid #969fa9;
+                    border-radius: 4px;
+                    transform: rotate(-45deg);
+                    transform-origin: center center;
+                }
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #464c56;
+                    margin: 0 6px;
+                }
+                .sub {
+                    height: 36px;
+                    padding: 4px 6px;
+                    border-radius: 21px;
+                    font-size: 8px;
+                    color: #969fa9;
+                    border: 1px solid #969fa950;
+                }
+            }
+        }
+        .tab {
+            width: 360px;
+            margin: 0 auto;
+            .item {
+                display: inline-block;
+                // width: 180px;
+                font-size: 18px;
+                color: #969fa9;
+                cursor: pointer;
+                > span {
+                    padding: 0 12px;
+                    height: 58px;
+                    border-bottom: 2px solid transparent;
+                }
+                .active {
+                    display: inline-block;
+                    padding: 0 12px;
+                    height: 58px;
+                    border-bottom: 2px solid #3778ff;
+                    color: #3778ff;
+                }
+            }
+        }
+    }
+}

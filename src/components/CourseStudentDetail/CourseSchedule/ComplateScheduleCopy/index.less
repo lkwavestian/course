@@ -1,0 +1,383 @@
+.borderBox {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 30px;
+    background: #fff;
+    .colTitle {
+        padding: 10px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        .currentCol {
+            color: #346bfe;
+        }
+    }
+    .rowLine {
+        border-top: 2px solid #c3d4ff;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        display: -webkit-flex;
+        .spanBox {
+            flex: 1;
+            -webit-flex: 1;
+        }
+        .calendarContainer {
+            flex: 12;
+            -webkit-flex: 12;
+            display: flex;
+            display: -webkit-flex;
+        }
+        .currentCol::before {
+            content: ' ';
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #346bfe;
+            position: relative;
+            left: -5px;
+            display: block;
+            top: -6px;
+        }
+        .timeBox {
+            position: relative;
+            text-align: center;
+            background-color: #fff;
+            top: -15px;
+            font-size: 13px;
+            color: #3b6ff5;
+            font-weight: bold;
+            &::before {
+                content: '';
+                position: absolute;
+                border-width: 6px;
+                border-style: solid;
+                border-color: #c3d4ff #c3d4ff transparent transparent;
+                transform: rotate(45deg);
+                left: -7px;
+                top: 24%;
+            }
+        }
+    }
+    .tableBody {
+        border-top: 1px dashed #e8e8e8;
+        display: flex;
+        display: -webkit-flex;
+        .spanBox {
+            flex: 1;
+            -webkit-flex: 1;
+        }
+        .calendarContainer {
+            flex: 12;
+            -webkit-flex: 12;
+            display: flex;
+            display: -webkit-flex;
+        }
+
+        .timeBox,
+        .timeLineBox {
+            // height: 120px;
+            height: 50px;
+            position: relative;
+            .positionBox {
+                position: relative;
+                top: -11px;
+                display: block;
+                width: 100%;
+                background-color: #fff;
+            }
+        }
+        .timeBox {
+            text-align: center;
+        }
+        .bgCol {
+            background-color: #fafafa;
+        }
+        .colMain {
+            padding: 2px 6px 0;
+            color: #666;
+            display: inline-block;
+            font-size: 12px;
+            line-height: 11.5px;
+            //min-height: 75px;
+            overflow: auto;
+            .leftBarStyle {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 4px;
+                border-radius: 10px 0 0 10px;
+            }
+            .courseName {
+                font-style: normal;
+                width: 100%;
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .timeStyle {
+                font-style: normal;
+                display: block;
+            }
+        }
+    }
+    .rendBox {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    //行事历
+    .floatEl {
+        // background: rgba(109,20,247,0.04);
+        // color: #6D14F7;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        overflow: hidden;
+        border: 1px solid #fff;
+        cursor: pointer;
+        vertical-align: top;
+        min-height: 20px !important;
+    }
+    //课程样式
+    .courseEl {
+        // background:#edf7fb;
+        // color: #0086e4;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        overflow: hidden;
+        // border-left: 1px solid #fff;
+        // border-right: 1px solid #fff;
+        border: 1px solid #fff;
+        cursor: pointer;
+        vertical-align: top;
+        min-height: 20px !important;
+    }
+    //活动
+    .activeEl {
+        // background:#f2f6f0;
+        // color: #466d1b;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        overflow: hidden;
+        border: 1px solid #fff;
+        cursor: pointer;
+        vertical-align: top;
+        min-height: 20px !important;
+    }
+    //作息表
+    .relaxsll {
+        // background:#eee;
+        // color: #888;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        overflow: hidden;
+        border: 1px solid #fff;
+        cursor: pointer;
+        vertical-align: top;
+        min-height: 20px !important;
+    }
+    > .allDayRow {
+        border-top: 0;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background: #fff;
+        top: 0;
+        box-shadow: 0px 6px 35px 0px rgba(59, 111, 245, 0.1);
+        .timeLineBox,
+        .timeBox {
+            height: 30px;
+        }
+        .positionBox {
+            top: 5px !important;
+        }
+    }
+}
+
+/*滚动条样式*/
+.floatEl::-webkit-scrollbar,
+.courseEl::-webkit-scrollbar,
+.activeEl::-webkit-scrollbar,
+.relaxsll::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 0px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0px;
+}
+.floatEl::-webkit-scrollbar-thumb,
+.courseEl::-webkit-scrollbar-thumb,
+.activeEl::-webkit-scrollbar-thumb,
+.relaxsll::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+.floatEl::-webkit-scrollbar-track,
+.courseEl::-webkit-scrollbar-track,
+.activeEl::-webkit-scrollbar-track,
+.relaxsll::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+//弹出框样式
+.modalContent {
+    position: relative;
+    padding-bottom: 0.2rem;
+    p {
+        text-align: left;
+    }
+    .modalTitle {
+        padding: 0.3rem 0.2rem;
+        text-align: left;
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 0.15rem;
+        .closeButton {
+            float: right;
+            color: #333;
+            font-size: 21px;
+        }
+    }
+    .modalList {
+        text-align: left;
+        font-size: 15px;
+        color: #333;
+        padding-left: 0.35rem;
+        margin-bottom: 0.1rem;
+        .iconStyle {
+            margin-right: 15px;
+            font-size: 16px;
+            color: rgb(51, 51, 51);
+        }
+    }
+    .buttonList {
+        overflow: hidden;
+        margin: 0.2rem auto;
+        .deleteButton {
+            float: left;
+            margin-left: 0.5rem;
+            color: #437af6;
+            display: inline-block;
+        }
+        .editButton {
+            display: inline-block;
+            float: left;
+            margin-left: 1.8rem;
+            background: #437af6;
+            color: #fff;
+            border-radius: 10px;
+            padding: 2px 14px;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}
+
+.showDrawerStyle > div > div > div > div {
+    padding: 0 !important;
+}
+//展开收缩
+.showHideList {
+    margin-left: 0.62rem;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 66%;
+}
+.showHideListRemark {
+    margin-left: 0.23rem;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 66%;
+}
+.showMoreList {
+    margin-left: 0.62rem;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    width: 66%;
+}
+.showMoreListRemark {
+    margin-left: 0.35rem;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    width: 66%;
+}
+.contentStyle {
+    background: #f3f3f3;
+    margin-right: 6px;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 4px;
+}
+.arrowIcon {
+    background: rgb(243, 243, 243);
+    color: #0086e4;
+    font-size: 15px;
+    position: absolute;
+    right: 12%;
+    margin-top: 3px;
+}
+
+.noDataTips {
+    text-align: center;
+    color: #888;
+    padding: 16px;
+    font-size: 14px;
+}
+
+//不同的日程详情，背景色修改
+//行事历详情
+.stylesll {
+    background: rgba(109, 20, 247, 0.1);
+    color: #6d14f7;
+}
+//课程详情
+.courseEl {
+    background: #edf7fb;
+    color: #0086e4;
+}
+
+//活动详情
+.activeEl {
+    background: #f2f6f0;
+    color: #466d1b;
+}
+
+//作息表详情
+.relaxsll {
+    background: #eee;
+    color: #888;
+}
+
+.createUser {
+    text-align: left;
+    display: block;
+    margin-left: 0.4rem;
+    font-style: normal;
+    color: #333;
+    em {
+        font-style: normal;
+    }
+}

@@ -1,0 +1,229 @@
+.schedulePage {
+  margin: 20px auto;
+  width: 98%;
+  min-height: 90vh;
+  border-radius: 10px;
+  background: #fff;
+  padding: 2% 0;
+}
+.schedulePage .main {
+  background: #fff;
+  border-radius: 10px;
+}
+.schedulePage .main .searchHeader {
+  margin: 0 auto;
+  padding: 0 2%;
+  display: inline-block;
+}
+.schedulePage .main .calendatContain {
+  clear: both;
+  margin-top: 30px;
+}
+.schedulePage .main .clickLookGrade {
+  color: #3a6ff5;
+  font-size: 14px;
+  text-decoration: none;
+}
+.schedulePage .main .operButtonList {
+  float: right;
+  margin-right: 2%;
+  /*  a {
+                background: #3a6ff5;
+                color: #fff;
+                padding: 10px 14px;
+                border-radius: 20px;
+                display: inline-block;
+                cursor: pointer;
+                &:nth-child(3) {
+                    margin: 0 5px;
+                }
+                min-width: 80px;
+                text-align: center;
+            } */
+}
+.schedulePage .main .operButtonList .deleteSchedule {
+  display: inline-block;
+  padding: 0 14px;
+  height: 36px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #3b6ff5;
+  border-radius: 8px;
+  color: #3b6ff5;
+  margin-right: 10px;
+}
+.schedulePage .main .operButtonList .deleteSchedule i {
+  font-size: 15px;
+  margin-right: 7px;
+}
+.schedulePage .main .operButtonList .createSchedule {
+  display: inline-block;
+  padding: 0 14px;
+  height: 36px;
+  line-height: 36px;
+  background: #3b6ff5;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.schedulePage :global .ant-modal-body {
+  text-align: center;
+}
+.schedulePage :global .ant-modal-body .ant-modal-confirm-content {
+  font-size: 18px;
+  color: #333;
+}
+.schedulePage :global .ant-modal-body .ant-modal-confirm-btns {
+  margin: 10px auto 0;
+}
+.schedulePage :global .ant-modal-body .ant-modal-confirm-btns .ant-btn {
+  height: 36px;
+  border-radius: 8px;
+  border-color: #4d7fff;
+  color: #4d7fff;
+}
+.schedulePage :global .ant-modal-body .ant-modal-confirm-btns .ant-btn-primary {
+  background: #4d7fff;
+  color: #fff;
+}
+.schedulePage :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.schedulePage :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}
+.schedulePage :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.schedulePage :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.schedulePage :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.schedulePage :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.schedulePage :global .ant-select {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+}
+.schedulePage :global .ant-modal-confirm,
+.schedulePage :global .ant-modal-confirm-btns {
+  float: none;
+}
+.selectStyle {
+  margin-right: 8px;
+}
+.selectStyle > div {
+  border-radius: 20px !important;
+}
+.treeStyle {
+  width: 120px;
+  margin-right: 8px;
+}
+.treeStyle > span {
+  border-radius: 20px !important;
+}
+.soidnail {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 50px;
+  bottom: 70px;
+  background-color: #3a6ff5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.soidnail .add {
+  font-size: 35px;
+  color: #fff;
+}
+.bottom {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 88;
+}
+.bottom .addBtn {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50% !important;
+}
+.bottom .addBtn i {
+  position: relative;
+  left: -3px;
+}
+.popoverBox button {
+  display: block;
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+}
+.popoverBox button i {
+  position: relative;
+  left: -3px;
+}
+.popoverBox button .text_title {
+  color: #3a6ff5;
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  right: 45px;
+  border: 1x solid #eee;
+  background: #f3f4f4;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.tooltipBox {
+  z-index: 88;
+}
+.tooltipBox div {
+  background-color: inherit;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.tooltipBox > div > div:first-child {
+  display: none;
+}
+:global .scheduleMenu {
+  width: 360px !important;
+}
+:global .scheduleMenu .ant-select-dropdown-menu-item span {
+  float: right;
+}
+.deleteCalendar :global .ant-btn {
+  height: 36px;
+  border-radius: 8px;
+  color: rgba(1, 17, 61, 0.65);
+  background: rgba(1, 17, 61, 0.07);
+  border: 0;
+}
+.deleteCalendar :global .ant-btn-primary {
+  background: #3b6ff5;
+  color: #fff;
+}

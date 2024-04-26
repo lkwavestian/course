@@ -1,0 +1,53 @@
+.contentBox{
+  background: #F5F6F7;
+  padding: 0px;
+  height: 100%;
+
+  .header{
+    height: 60px;
+    background: #fff;
+  }
+
+  .content{
+    width: 100%;
+    height: calc(~'100vh - 110px');    
+    background: #F5F6F7;
+    z-index: 6;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .lessonChangeTab {
+      height: 50px;
+      background: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .changeButton {
+          text-align: center;
+          // line-height: 50px;
+          color: rgb(122, 129, 151);
+          i {
+              font-size: 21px;
+          }
+          a {
+              color: rgb(122, 129, 151);
+          }
+      }
+      .isCheck {          
+          color: rgb(144, 15, 29) !important;
+      }
+      .isCheckName {
+        color: rgb(144, 15, 29) !important;
+        font-family: PingFangSC-Medium !important;
+      }
+  }
+}

@@ -1,0 +1,397 @@
+@import (reference) '../../utils/variables.less';
+
+.noticeMask {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 110;
+}
+.notice_mini,
+.notice {
+    position: absolute;
+    z-index: 23;
+    animation: move_left 0.3s ease-out;
+}
+.notice {
+    top: 57px;
+    right: 35%;
+    border-radius: 10px;
+    z-index: 111;
+    &:before {
+        content: '';
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: #fafbff;
+        position: absolute;
+        top: -7px;
+        right: 48px;
+        transform: rotateZ(45deg);
+        box-shadow: -2px -2px 10px 0 rgba(59, 111, 245, 0.3);
+    }
+
+    :global(.ant-tabs-nav) {
+        display: flex;
+        display: -webkit-flex;
+        // width:100%;
+        // &>div{
+        //   display: flex;
+        //   flex-direction: row;
+        // }
+    }
+    :global(.ant-tabs-tab) {
+        flex: 1;
+        text-align: center;
+        &:hover {
+            color: @brandColor1;
+        }
+    }
+    :global(.ant-tabs-tab-active) {
+        color: @brandColor1;
+    }
+    :global(.ant-tabs-ink-bar) {
+        background-color: @brandColor1;
+    }
+}
+.notice_mini {
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    top: 7px;
+    right: 34%;
+}
+.notice {
+    width: 340px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(59, 111, 245, 0.3);
+    .title {
+        background: @INNER_BACKGROUND;
+        border-radius: 10px 10px 0 0;
+    }
+    :global(.display) {
+        overflow: hidden;
+        padding: 0;
+        color: #666;
+        font-family: @quill-font-family-medium;
+    }
+}
+.title {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #666;
+    font-size: 16px;
+    position: relative;
+}
+.close {
+    flex: 1 0 20%;
+    text-align: center;
+    color: rgb(152, 152, 152);
+    vertical-align: bottom;
+    font-family: 'record-iconfont', serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.title_content {
+    flex: 3 0 100%;
+    text-align: center;
+}
+.bell {
+    display: inline-block;
+    flex: 1 0 20%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    .num {
+        display: inline-block;
+        margin: 0 1px;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        color: #fff;
+        font-size: 12px;
+        background: #d5543a;
+        border-radius: 50%;
+        position: absolute;
+        right: -4px;
+        top: 7px;
+    }
+    .noticeIcon {
+        margin: 0 1px;
+        vertical-align: bottom;
+        font-family: 'record-iconfont', serif;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+.list {
+    height: calc(~'100% - 50px');
+    background: #fff;
+    overflow-y: scroll;
+    .noMessage {
+        text-align: center;
+        line-height: 30px;
+        margin-top: 100px;
+        color: #ccc;
+    }
+}
+.mainDom {
+    max-height: 500px;
+    overflow: scroll;
+    padding: 0 20px;
+}
+.listItem {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+    height: 105px;
+    &:last-child {
+        border-bottom: 0;
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style: none;
+        }
+    }
+    // --------------------user start
+    .teacher,
+    .student {
+        width: 62px;
+        text-align: center;
+        margin-right: 5px !important;
+    }
+    :global(.conUser) {
+        width: 62px;
+        margin-right: 5px;
+    }
+    :global(.userimg) {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 2px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    :global(.cn),
+    :global(.en) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    :global(.cn) {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    :global(.en) {
+        font-size: 12px;
+    }
+    :global(.detail) {
+        text-align: center;
+    }
+    // --------------------user end
+    :global(.display) {
+        cursor: pointer;
+    }
+}
+.t {
+    color: @teacher;
+}
+.s {
+    color: @student;
+}
+.p {
+    color: @parent;
+}
+.noticeRight {
+    flex: 1;
+    overflow: hidden;
+}
+.text {
+    line-height: 22px;
+    color: #666;
+    font-size: 12px;
+    overflow: hidden;
+    height: 44px;
+    margin: 12px 0;
+    :global(.display) {
+        padding: 0;
+        width: 100%;
+        line-height: 22px;
+        overflow: hidden;
+    }
+}
+.time {
+    color: #a9a9a9;
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: inherit;
+}
+.notice :global(.ql-editor a.topic) {
+    span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+        margin: 0;
+    }
+}
+.notice .tabs {
+    .listItem {
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+        border-bottom: 1px solid #e6e6e6;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        cursor: pointer;
+        .userImg {
+            width: 34px;
+            margin-right: 10px;
+            img {
+                width: 34px;
+                border-radius: 20px;
+            }
+        }
+        .main {
+            flex: 1;
+            .employee {
+                color: @brandColor1;
+            }
+            .student {
+                color: #67b251;
+            }
+            .parent {
+                color: #b9161c;
+            }
+            .commentTitle {
+                width: 236px;
+                margin-bottom: 10px;
+                margin-top: 3px;
+            }
+            .commentCon {
+                color: #b8b8b8;
+                width: 100%;
+                height: auto;
+                font-size: 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                /* autoprefixer: ignore next */
+                -webkit-box-orient: vertical;
+                /* autoprefixer: on */
+                -webkit-line-clamp: 2; //行数
+            }
+        }
+        .time {
+            width: 100%;
+            color: #b8b8b8;
+        }
+        .mask {
+            position: absolute;
+            width: 80px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            right: -100px;
+            top: 0;
+            color: @brandColor1;
+            background: rgba(174, 216, 292, 0.5);
+            transition: right 1s;
+            cursor: pointer;
+        }
+        &:hover .mask {
+            right: -20px;
+        }
+    }
+    .bottom {
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        color: @brandColor1;
+        a {
+            color: @brandColor1;
+        }
+    }
+    .disabled {
+        color: #999;
+    }
+    .noMessage {
+        min-height: 150px;
+        line-height: 150px;
+        color: #ccc;
+        text-align: center;
+    }
+}
+.notice :global(.ant-tabs-bar) {
+    margin: 0;
+}
+
+@media screen and (max-width: @screen-xs) {
+    .notice_mini {
+        /*适配移动端*/
+        top: 0;
+        right: 9%;
+        .noticeIcon {
+            color: #fff;
+        }
+    }
+    .notice {
+        position: fixed;
+        width: 100%;
+        right: 0;
+        height: 90%;
+        overflow: hidden;
+
+        &:before {
+            right: 116px;
+        }
+        .mainDom {
+            height: 80%;
+            overflow-x: hidden;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .notice_mini {
+        top: 0;
+        right: 20%;
+        .noticeIcon {
+            color: #fff;
+        }
+    }
+    .notice {
+        right: 21%;
+    }
+}
+
+@keyframes move_left {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

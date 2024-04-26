@@ -1,0 +1,47 @@
+.changeVersion {
+    overflow: hidden;
+}
+.changeVersion .saveVersionInput .title {
+    color: rgba(0, 0, 0, 0.65);
+    display: block;
+    line-height: 32px;
+    margin-bottom: 4px;
+}
+.changeVersion .saveVersionInput :global .ant-input {
+    border-radius: 8px;
+    width: 300px;
+}
+.changeVersion .operButtonList {
+    margin-top: 15px;
+    float: right;
+}
+.changeVersion .operButtonList .modalBtn {
+    line-height: 24px;
+    display: inline-block;
+    text-align: center;
+    padding: 0 12px;
+    margin-right: 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.changeVersion .operButtonList .cancelBtn {
+    background: #e6e6e6;
+    color: rgba(0, 0, 0, 0.65);
+}
+.changeVersion .operButtonList .submitBtn {
+    background: #1476ff;
+    color: #fff;
+}
+.changeVersion .changeLoad {
+    display: block;
+    width: 145px;
+    color: #fff;
+    background: #bbb;
+    border-radius: 4px;
+    padding: 0 12px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 16px;
+}

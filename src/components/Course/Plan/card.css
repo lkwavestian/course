@@ -1,0 +1,885 @@
+.globalCardUtil {
+  font-size: 10px;
+  border: 1px solid #efefef;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  min-width: 600px;
+}
+.globalCardUtil.active {
+  border: 1px solid #1890ff;
+}
+.globalCardUtil .cardHeader {
+  background: #f9f9f9 !important;
+  border-bottom: 1px solid #efefef;
+  font-size: 14px;
+  border-radius: 12px;
+  height: 56px;
+  line-height: 56px;
+  display: flex;
+  justify-content: center;
+}
+.globalCardUtil .cardHeader .courseMsg {
+  flex-grow: 2;
+}
+.globalCardUtil .cardHeader div > i > svg {
+  font-size: 31px;
+}
+.globalCardUtil .cardHeader.active {
+  background: rgba(59, 111, 245, 0.1);
+  border-radius: 12px;
+}
+.globalCardUtil .cardHeader p,
+.globalCardUtil .cardHeader div {
+  flex: 1;
+  color: #666;
+  margin: 0;
+}
+.globalCardUtil .cardHeader p span,
+.globalCardUtil .cardHeader div span {
+  display: inline-block;
+  /* &.subjectName:hover{
+                    overflow: visible;
+                    text-overflow: inherit;
+                } */
+}
+.globalCardUtil .cardHeader p span.subjectName,
+.globalCardUtil .cardHeader div span.subjectName {
+  font-size: 18px;
+  margin: 0 15px;
+  float: left;
+  /* overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis; */
+}
+.globalCardUtil .cardHeader p span.headerTeacher,
+.globalCardUtil .cardHeader div span.headerTeacher {
+  font-size: 14px;
+  margin-right: 10px;
+  color: #999;
+}
+.globalCardUtil .cardHeader p span.planCourseTime,
+.globalCardUtil .cardHeader div span.planCourseTime {
+  color: #999;
+}
+.globalCardUtil .cardHeader p span.allCourseNum,
+.globalCardUtil .cardHeader div span.allCourseNum {
+  color: #999;
+  margin-left: 14px;
+}
+.globalCardUtil .cardHeader p .edit,
+.globalCardUtil .cardHeader div .edit {
+  display: inline-block;
+  font-size: 17px;
+  transform: translate(-18px, -2px);
+  color: #3b6ff5;
+  cursor: pointer;
+  position: relative;
+  top: -3px;
+}
+.globalCardUtil .cardHeader p .edit i,
+.globalCardUtil .cardHeader div .edit i {
+  position: relative;
+  top: -5px;
+}
+.globalCardUtil .cardHeader p .addStyleNone,
+.globalCardUtil .cardHeader div .addStyleNone {
+  display: none;
+}
+.globalCardUtil .cardHeader p .addStyleBlock,
+.globalCardUtil .cardHeader div .addStyleBlock {
+  color: #3b6ff5;
+  font-size: 25px;
+  display: inline-block;
+  height: 29px;
+  top: -7px;
+}
+.globalCardUtil .cardHeader p .addStyleBlock .saveBtn,
+.globalCardUtil .cardHeader div .addStyleBlock .saveBtn {
+  cursor: pointer;
+  color: #3b6ff5;
+  font-size: 20px;
+  z-index: 100;
+  /* .anticon{
+                      font-size: 20px;
+                      position: relative;
+                      top: 0.5px;
+                  } */
+}
+.globalCardUtil .cardHeader p .addStyleBlock .addTree,
+.globalCardUtil .cardHeader div .addStyleBlock .addTree {
+  display: inline-block;
+  transform: translate(-43px, 5px);
+  width: 35px;
+  cursor: pointer;
+  opacity: 0;
+}
+.globalCardUtil .cardHeader p .addStyleBlock .addTree span:nth-of-type(1),
+.globalCardUtil .cardHeader div .addStyleBlock .addTree span:nth-of-type(1) {
+  padding: 0 10px;
+}
+.globalCardUtil .cardHeader p .addStyleBlock .addTree :global .ant-select .ant-select-enabled,
+.globalCardUtil .cardHeader div .addStyleBlock .addTree :global .ant-select .ant-select-enabled {
+  padding: 0 10px;
+}
+.globalCardUtil .cardHeader p .addStyleBlock .addTree :global .ant-select-selection__rendered,
+.globalCardUtil .cardHeader div .addStyleBlock .addTree :global .ant-select-selection__rendered {
+  display: none;
+}
+.globalCardUtil .cardHeader p .addStyleBlock .addTree :global .ant-select-selection__choice__content,
+.globalCardUtil .cardHeader div .addStyleBlock .addTree :global .ant-select-selection__choice__content {
+  display: none;
+}
+.globalCardUtil .cardHeader p i > svg,
+.globalCardUtil .cardHeader div i > svg {
+  position: relative;
+  top: -10px;
+}
+.globalCardUtil:hover {
+  border: 1px solid #1890ff;
+}
+.noGroup {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+.noGroup p {
+  cursor: pointer;
+}
+.noGroup p .addCourseIcon {
+  margin-right: 5px;
+  font-size: 14px;
+  vertical-align: top;
+}
+.courseClass {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  position: relative;
+  border-bottom: 1px solid #efefef;
+  min-height: 80px;
+}
+.courseClass:nth-last-child(1) {
+  border-bottom: 0 none;
+}
+.courseClass.active .copyBtn {
+  color: #3b6ff5;
+}
+.courseClass.active .rowStyle .addRow {
+  color: #3b6ff5;
+  font-size: 18px;
+}
+.courseClass.active .rowStyle .deleteRow {
+  color: #3b6ff5;
+}
+.courseClass.active .rowStyle .changePicker > span > i {
+  color: #3b6ff5;
+  transform: translate(15px, -6px);
+}
+.courseClass .copySelect {
+  opacity: 0;
+}
+.courseClass .copySelect span:nth-of-type(1) {
+  width: 35px;
+}
+.courseClass .copyBtn {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+.courseClass .selectClass {
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  text-align: center;
+  min-width: 230px;
+}
+.courseClass .selectClass > div {
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+}
+.courseClass .selectClass > div > span {
+  display: block;
+}
+.courseClass .selectClass .arrowBottom {
+  position: absolute;
+  top: 37%;
+  right: 14%;
+  z-index: 0;
+}
+.courseClass .selectClass .classContent :global .ant-select-selection {
+  transition: none;
+}
+.courseClass .selectClass .classContent :global .ant-select-selection__rendered {
+  transition: none;
+}
+.courseClass .selectClass .classContent :global .ant-select-selection__rendered .ant-select-selection__choice {
+  transition: none;
+}
+.courseClass .selectClass .classContent :global .ant-select-selection__rendered .ant-select-selection__choice .ant-select-selection__choice__content {
+  transition: none;
+}
+.courseClass .selectClass .classContent :global .ant-select-selection__rendered .ant-select-selection__choice .ant-select-selection__choice__remove {
+  transition: none;
+}
+.courseClass .selectClass .groupText {
+  width: 237px;
+  display: inline-block;
+  height: 100%;
+}
+.courseClass .selectClass .groupText .selectGroup {
+  float: left;
+  max-width: 94%;
+  margin-right: 4px;
+  padding: 0 20px 0 10px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  cursor: default;
+  border-radius: 25px !important;
+  width: 100%;
+  height: 36px !important;
+  text-align: left;
+  position: relative;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+.courseClass .selectClass .groupText .selectGroup .name {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 34px;
+}
+.courseClass .selectClass .groupText .selectGroup .close {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.45);
+}
+.courseClass .selectClass .groupText .groupPlaceholder {
+  color: #bfbfbf;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding-left: 12px;
+  padding-top: 1px;
+  margin-top: 10px;
+}
+.courseClass .setPlanTable {
+  flex: 10;
+  -webkit-flex: 10;
+  -moz-flex: 10;
+  border-left: 1px solid #efefef;
+}
+.courseClass .setPlanTable .singleLine {
+  display: -webkit-box;
+  display: inlinocke-bl;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+  line-height: 22px;
+}
+.courseClass .setPlanTable .singleLine .eachWeek {
+  height: 22px;
+}
+.courseClass .setPlanTable .singleLine .eachWeek div {
+  height: 22px;
+  /* span{
+                      height: 22px;
+                      position: relative;
+                      top: 0;
+                  } */
+}
+.courseClass .setPlanTable .singleLine .eachWeek div div {
+  height: 22px;
+  line-height: 22px;
+}
+.courseClass .setPlanTable .singleLine .eachWeek div div div {
+  height: 22px;
+}
+.courseClass .setPlanTable .singleLine .eachWeek div span > i {
+  position: relative;
+  top: 1px;
+}
+.courseClass .setPlanTable .singleLine .dividerLine {
+  display: inline-block;
+  margin: 0 2px;
+}
+.courseClass .setPlanTable .singleLine :global .ant-select-selection--multiple {
+  border-radius: 8px !important;
+}
+.courseClass .setPlanTable .singleLine :global .ant-input-number {
+  height: 22px;
+  line-height: 22px;
+  margin-top: 0 !important;
+  margin-right: 2px;
+}
+.courseClass .setPlanTable .singleLine :global .ant-input-number .ant-input-number-input-wrap {
+  height: 22px;
+}
+.courseClass .setPlanTable .singleLine :global .ant-input-number .ant-input-number-input-wrap input {
+  height: 22px;
+}
+.courseClass .setPlanTable .singleLine :global .ant-input {
+  height: 22px;
+  line-height: 22px;
+  position: relative;
+  top: -4px;
+}
+.courseClass .setPlanTable .paddingStyle {
+  padding-bottom: 3px;
+}
+.courseClass .setPlanTable .teacherText {
+  display: inline-block;
+  max-height: 47px;
+  overflow: scroll;
+}
+.courseClass .setPlanTable .teacherText .selectTeacher {
+  margin-left: 5px;
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  white-space: nowrap;
+  border-radius: 12px;
+  padding: 0 20px 0 10px;
+  display: block;
+  max-width: 90px !important;
+  overflow: hidden;
+  line-height: 22px;
+  position: relative;
+  margin-top: 3px;
+  height: 24px;
+  float: left;
+}
+.courseClass .setPlanTable .teacherText .selectTeacher .name {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.courseClass .setPlanTable .teacherText .selectTeacher .close {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.45);
+}
+.courseClass .setPlanTable .teacherText .teacherPlaceholder {
+  color: #bfbfbf;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding-left: 12px;
+  padding-top: 1px;
+}
+.courseClass .rowStyle {
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  display: -webkit-flex;
+}
+.courseClass .rowStyle .forRole i {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  cursor: pointer;
+}
+.courseClass .rowStyle .forRole .roleTree {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  cursor: pointer;
+  opacity: 0;
+}
+.courseClass .rowStyle .forRole .roleTree :global .ant-select-selection__choice {
+  display: none;
+}
+.courseClass .rowStyle .forDepartment i {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  cursor: pointer;
+}
+.courseClass .rowStyle .forDepartment .departmentTree {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  cursor: pointer;
+  opacity: 0;
+}
+.courseClass .rowStyle .forDepartment .departmentTree :global .ant-select-selection__choice {
+  display: none;
+}
+.courseClass .rowStyle:nth-last-child(1) {
+  border-bottom: 0 none;
+}
+.courseClass .rowStyle > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 0;
+  border-right: 1px solid #efefef;
+}
+.courseClass .rowStyle > div:nth-last-child(1) {
+  border-right: 0 none;
+}
+.courseClass .rowStyle .modalnumberTextleft {
+  color: #999;
+  font-weight: 600 !important;
+  font-size: 14px;
+  margin-right: 8px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.courseClass .rowStyle .numberTextleft {
+  color: #999;
+  font-size: 14px;
+  margin-right: 8px;
+  margin-left: 10px;
+}
+.courseClass .rowStyle .addRow {
+  color: #3b6ff5;
+  font-size: 15px;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.courseClass .rowStyle .deleteRow {
+  color: #3b6ff5;
+  font-size: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+.classTreeSelectStyle li {
+  border-radius: 25px !important;
+  width: 94%;
+  height: 36px !important;
+  text-align: left;
+}
+.classTreeSelectStyle li span:nth-child(2) {
+  text-align: left;
+  margin: 6px 0 0 4px;
+}
+.classTreeSelectStyle > span {
+  border: none !important;
+  outline: none !important;
+}
+.treeSelectStyle {
+  max-height: 90px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.treeSelectStyle > span > ul > li {
+  max-width: 90px !important;
+  border-radius: 12px !important;
+}
+.treeSelectStyle > span {
+  border: none !important;
+  outline: none !important;
+}
+.eachWeek > div {
+  border: none !important;
+}
+.changePicker {
+  height: 22px;
+}
+.changePicker span {
+  border: 0 none !important;
+  background: none;
+  cursor: pointer;
+  height: 22px;
+}
+.changePicker span > input {
+  display: none;
+}
+.changePicker span > span {
+  display: none;
+}
+.changePicker span > i {
+  font-size: 16px;
+  margin-top: -8px;
+  cursor: pointer;
+  left: 38px;
+  padding-top: 3px;
+}
+.changePicker .ant-calendar-picker-input {
+  height: 22px;
+  /* i{
+          // margin-top: -4px
+          position: relative;
+          top: 2px;
+      } */
+}
+.changePickerAct > span {
+  border: 0 none !important;
+  background: none;
+  cursor: pointer;
+}
+.changePickerAct > span > input {
+  display: none;
+}
+.changePickerAct > span > span {
+  display: none;
+}
+.changePickerAct > span > i {
+  font-size: 16px;
+  margin-top: 2px;
+  cursor: pointer;
+  left: 35px;
+  top: 29%;
+  color: #1890ff;
+}
+.applyModal {
+  text-align: center;
+}
+.applyModal p {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 14px;
+}
+:global .ant-calendar-picker:focus .ant-calendar-picker-input:not(.ant-input-disabled) {
+  border-color: #fff !important;
+  border-right-width: 0px !important;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0) !important;
+}
+:global .ant-calendar-range .ant-calendar-input-wrap {
+  visibility: hidden;
+}
+.saveBtnc {
+  margin: 0 26px 0 19px;
+  background: #1890ff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 19px;
+}
+.addLines:nth-of-type(1) {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.weekPlan {
+  margin-left: 6%;
+}
+.addLines {
+  display: block;
+  position: relative;
+  left: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.addLines .inputnum {
+  width: 50px;
+  border-radius: 20px;
+}
+.addLines .times {
+  width: 50px;
+  border-radius: 4px;
+}
+.addLines .numberText {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.addLines .everyTime {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.addLines .jie {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.addLines .everyJie {
+  margin-right: 5px;
+}
+.addLines .min {
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.addLines .time {
+  display: inline-block;
+}
+.addLines .time :global .ant-input {
+  border-radius: 4px;
+  width: 50px;
+}
+.addLines .select :global .ant-select-selection--single {
+  border-radius: 4px;
+  width: 50px;
+}
+.addLines .add,
+.addLines .delete {
+  color: #4d7fff;
+  cursor: pointer;
+}
+.addLines .add {
+  margin-left: 10%;
+}
+.addLines .delete {
+  margin-right: 10px;
+  font-size: 16px;
+}
+.add {
+  cursor: pointer;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  color: #4d7fff;
+}
+.singleLines {
+  display: block;
+  margin-left: 29px;
+  margin-bottom: 10px;
+}
+.singleLines .inputnum {
+  width: 50px;
+  margin: 0 8px;
+  border-radius: 20px;
+}
+.singleLines .times {
+  width: 50px;
+  margin: 0 8px;
+  border-radius: 4px;
+}
+.singleLines .time {
+  display: inline-block;
+}
+.singleLines .time :global .ant-input {
+  border-radius: 4px;
+  width: 50px;
+}
+.singleLines .select :global .ant-select-selection--single {
+  border-radius: 4px;
+  width: 50px;
+}
+.singleLines .add,
+.singleLines .delete {
+  color: #4d7fff;
+  cursor: pointer;
+}
+.singleLines .add {
+  margin-left: 10%;
+}
+.singleLines .delete {
+  margin-left: 5%;
+}
+.groupName {
+  font-style: normal;
+  min-width: 153px;
+  padding: 8px 10px;
+  text-align: left;
+  min-height: 52px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  align-items: center;
+  display: block;
+  margin-bottom: 2px;
+}
+.titleText {
+  min-width: 556px;
+  text-align: center;
+  color: #4d7fff;
+  cursor: pointer;
+}
+.daeleModal {
+  width: 300px;
+  margin: 0 auto;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+}
+.popover_icon {
+  color: #464c56;
+  font-size: 30px;
+  position: relative;
+  top: 4px;
+  left: 0;
+  padding-right: 24px;
+  cursor: pointer;
+}
+.popover_icon1 {
+  color: #464c56;
+  font-size: 36px;
+  position: relative;
+  top: 8px;
+  left: 0;
+  padding-right: 24px;
+  cursor: pointer;
+}
+.fromHistory {
+  color: #3b6ff5;
+  cursor: pointer;
+}
+.handle {
+  margin-right: 27px;
+  color: #3b6ff5;
+  cursor: pointer;
+  position: relative;
+  top: -7px;
+}
+.or {
+  margin: 0 12px;
+}
+.btnItem > div {
+  line-height: 36px;
+  cursor: pointer;
+}
+.btnItem > div:hover {
+  color: #1890ff;
+}
+.copySelect :global .ant-select .ant-select-enabled {
+  opacity: 0;
+}
+:global .ant-modal-confirm-title {
+  text-align: center;
+}
+:global .ant-modal-confirm-btns {
+  margin-right: 29%;
+  margin-top: 40px;
+}
+:global .ant-btn {
+  height: 40px;
+  border-radius: 20px;
+}
+:global .ant-btn .ant-btn-primary {
+  height: 40px;
+  border-radius: 20px;
+}
+.import {
+  font-size: 24px;
+}
+.text {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 18px;
+  display: inline-block;
+}
+.text i {
+  color: red;
+  font-size: 24px;
+  display: inline-block;
+  transform: translate(0px, 4px);
+  margin-right: 10px;
+}
+.lastTermCourse {
+  width: 250px;
+  height: 40px;
+}
+.lastTermCourse :global .ant-select-selection {
+  width: 120px;
+}
+.toRigth {
+  position: absolute;
+  left: 250px;
+  color: #eee;
+}
+.nowSemester {
+  position: absolute;
+  left: 400px;
+}
+:global .ant-select .ant-select-enabled {
+  padding: 0 10px;
+}
+:global .ant-select-selection__choice__remove {
+  display: none;
+}
+:global .ant-select-selection__choice__content {
+  display: none;
+}
+/* .setCourseStyle{
+    :global {
+        .ant-modal-body {
+            text-align: center;
+            .ant-modal-confirm-content {
+                font-size: 18px;
+                color: #333;
+            }
+            .ant-modal-confirm-btns {
+                // float: unset;
+                margin: 10px auto 0;
+                .ant-btn {
+                    // width: 100px;
+                    height: 36px;
+                    border-radius: 8px;
+                    border-color: #4d7fff;
+                    color: #4d7fff;
+                }
+                .ant-btn-primary {
+                    background: #4d7fff;
+                    color: #fff;
+                }
+            }
+        }
+        .ant-btn{   //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary{  //确认按钮样式
+              background:  #3B6FF5 !important;
+              color: #fff !important;
+              
+            }
+          }
+          .ant-input{
+            height: 36px !important;
+            border-radius: 8px !important;
+          }
+        
+          .ant-select-selection__rendered{
+            line-height: 36px !important; 
+          }
+        
+          .ant-select-selection--single{
+            border-radius: 8px !important;
+            height: 36px;
+          }
+        
+          .ant-select-lg .ant-select-selection--multiple{
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+          }
+  
+          .ant-select{
+              height: 36px !important;
+              line-height: 36px !important;
+              border-radius: 8px !important;
+          }
+
+          .ant-modal-confirm, .ant-modal-confirm-btns{
+            float: none;
+          }
+    }
+} */
+.reviseStyle {
+  width: 420px !important;
+}
+.reviseStyle :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.reviseStyle :global .ant-btn.ant-btn-primary {
+  background: #3B6FF5 !important;
+  color: #fff !important;
+}

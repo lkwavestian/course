@@ -1,0 +1,997 @@
+//已添加排课
+.addedRulesList {
+    height: 92vh;
+    overflow-y: scroll;
+    padding-bottom: 7vh;
+}
+
+.setStyle {
+    margin-top: 10px;
+    :global {
+        .ant-btn {
+            border-radius: 0;
+        }
+    }
+}
+
+.siteRule {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    & > span {
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+    }
+}
+
+//不排课
+.ruleContainer {
+    height: 92vh;
+    overflow-y: scroll;
+    padding-bottom: 7vh;
+    .ruleTips {
+        width: 436px;
+        color: #999;
+        font-size: 12px;
+        text-indent: 12px;
+        margin-bottom: 10px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .addPlus {
+        height: 40px;
+        border: 1px solid #eee;
+        font-size: 24px;
+        text-align: center;
+        width: 436px;
+        cursor: pointer;
+    }
+    .searchCondition {
+        margin: 20px 10px 4px;
+        background: #fff;
+        display: flex;
+        display: -webkit-flex;
+        width: 436px;
+        justify-content: space-around;
+        align-items: center;
+        .addRulesTitle {
+            flex: 1;
+            -webkit-flex: 1;
+            margin: 0;
+        }
+        .searchTeacher {
+            flex: 1;
+            -webkit-flex: 1;
+            max-width: 165px;
+        }
+    }
+    // .addRulesTitle {
+    //     margin: 20px 0;
+    //     display: inline-block;
+    // }
+    // .searchTeacher {
+    //     float: right;
+    //     margin-right: 25px;
+    //     margin-top: 13px;
+    //     &>div {
+    //         border: 0 none !important;
+    //     }
+    // }
+    .formContent {
+        border: 1px solid #eee;
+        width: 436px;
+        padding: 20px 10px;
+        .byLessons {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            width: 406px;
+        }
+        .hint {
+            color: #999;
+        }
+    }
+
+    .copyRules {
+        color: #3b6ff5;
+        margin-top: 20px;
+        margin-left: 10px;
+        .copyCancel {
+            float: right;
+            margin-right: 20px;
+            .copyTo {
+                background-color: #3b6ff5;
+                color: #fff;
+                margin-left: 20px;
+                padding: 2px 15px 2px 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.selectors {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    :global {
+        .ant-select-selection--single {
+            border-radius: 0;
+        }
+    }
+}
+.searchCourse {
+    & > table {
+        text-align: center;
+        .selectSites {
+            width: 80%;
+            :global {
+                .ant-select-selection--single {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
+.addTips {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    color: #567fe4;
+}
+//不排课的表格渲染
+.commonFormStyle {
+    .weekRowStyle {
+        width: 406px;
+        border: 1px solid #eee;
+        border-bottom: none;
+        & > div {
+            border-right: 1px solid #eee;
+            text-align: center;
+            padding: 5px;
+            &:nth-last-child(1) {
+                border-right: none;
+            }
+        }
+    }
+    .lessonRowStyle {
+        width: 406px;
+        border: 1px solid #eee;
+        border-bottom: none;
+        &:nth-last-child(1) {
+            border-bottom: 1px solid #eee;
+        }
+        & > div {
+            border-right: 1px solid #eee;
+            text-align: center;
+            padding: 5px;
+            &:nth-last-child(1) {
+                border-right: none;
+            }
+        }
+    }
+    .blueCol {
+        background: #3b6ff5;
+        color: #3b6ff5;
+        cursor: pointer;
+        &:after {
+            content: 'x';
+            font-size: 18px;
+            position: absolute;
+            left: 44%;
+            top: 0;
+            color: #fff;
+        }
+    }
+    .whiteCol {
+        background: #fff;
+        color: #fff;
+        cursor: pointer;
+    }
+    .canNotClick {
+        background: #ccc;
+        color: #ccc;
+    }
+}
+.remarkArea {
+    margin: 20px 0;
+    width: 406px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    .remarkInput {
+        flex: 4;
+        -webkit-flex: 4;
+    }
+    .conditionList {
+        flex: 2;
+        -webkit-flex: 2;
+        margin-left: 10px;
+        position: relative;
+        .commonButton {
+            display: block;
+            color: #fff;
+            border-radius: 20px;
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .necessaryBtn {
+            background: #67b251;
+        }
+        .unNecessaryBtn {
+            background: rgba(103, 178, 81, 0.4);
+        }
+        .showResult {
+            // width: 110px;
+            padding: 0 10px;
+        }
+        .showConditionList {
+            position: absolute;
+            width: 110px;
+            padding: 10px;
+            height: 100px;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            background: #ffffff;
+            box-shadow: 0px 6px 25px 0px rgba(59, 111, 245, 0.12);
+            > span {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.operButton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    > span {
+        display: inline-block;
+    }
+    .saveBtn {
+        background: #3b6ff5;
+        padding: 4px 20px;
+        color: #fff;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .cancelBtn {
+        color: #666;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
+
+.intervalTime {
+    margin: 20px 0;
+    width: 406px;
+}
+
+//间隔上列表
+.intervalRuleList {
+    height: 40vh;
+    overflow-y: scroll;
+}
+//错开上列表
+.staggerRuleList {
+    height: 45vh;
+    overflow-y: scroll;
+}
+//同时上列表
+.togetherRuleList {
+    height: 57vh;
+    overflow-y: scroll;
+}
+
+.upLoad {
+    display: flex;
+    line-height: 40px;
+}
+
+.desc {
+    margin-left: 10px;
+}
+.classInfo {
+    :global {
+        .ant-table-tbody > tr > td,
+        .ant-table-thead > tr > td {
+            padding: 0;
+        }
+        .ant-select-selection--multiple {
+            border-radius: 0;
+        }
+    }
+}
+
+.versionListSelect {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.timePicker {
+    margin-bottom: 12px;
+    position: relative;
+    margin-left: 50px;
+    :global {
+        .ant-calendar-picker {
+            .ant-calendar-picker-input {
+                visibility: hidden;
+            }
+        }
+    }
+    .timeText {
+        position: absolute;
+        top: 0px;
+        border: 1px solid #d9d9d9;
+        width: 240px;
+        line-height: 32px;
+        border-radius: 4px;
+        padding: 0 12px;
+    }
+}
+
+.classBind {
+    width: 436px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .topText {
+        font-family: 思源黑体;
+        font-size: 12px;
+        color: #999999;
+        white-space: pre-line;
+    }
+    .selectHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+    .deleteHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .rightSide {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            .cancelDelete {
+                font-family: 思源黑体;
+                font-size: 12px;
+                color: #3b6ff5;
+                cursor: pointer;
+            }
+        }
+    }
+    .contentWrapper {
+        height: calc(~'94vh - 315px');
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .roleItem {
+        width: 100%;
+        border: 1px solid rgba(1, 17, 61, 0.1);
+        padding: 12px 20px 20px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .roleItemHeader {
+            display: flex;
+            justify-content: space-between;
+            .studentGroupName {
+                font-size: 14px;
+                color: #666;
+                line-height: 17px;
+                font-family: PingFangSC-Regular;
+            }
+            .btnList {
+                display: flex;
+                gap: 12px;
+                color: #3b6ff5;
+                font-size: 15px;
+            }
+        }
+
+        .layerList {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .layerItem {
+                display: flex;
+                font-size: 12px;
+                line-height: 14px;
+                .leftPart {
+                    font-family: PingFangSC-Medium;
+                    width: 80px;
+                }
+                .rightPart {
+                    font-family: PingFangSC-Regular;
+                }
+            }
+        }
+    }
+    :global {
+        .ant-btn-primary {
+            padding: 0 8px;
+            background-color: #3b6ff5;
+        }
+    }
+}
+
+.importModalWrapper {
+    :global {
+        .ant-modal-title {
+            font-family: PingFangSC-Medium;
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+        }
+        .ant-modal-body {
+            padding: 24px 44px;
+            display: flex;
+            flex-direction: column;
+        }
+        .ant-modal-footer {
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            line-height: 22px;
+            padding-bottom: 25px;
+        }
+    }
+    .cancelBtn {
+        border-radius: 7px;
+        background: rgba(1, 17, 61, 0.07);
+        color: rgba(51, 51, 51, 0.65);
+        padding: 5px 26px;
+    }
+    .submitBtn {
+        border-radius: 7px;
+        background: #3b6ff5;
+        color: #ffffff;
+        padding: 5px 12px;
+    }
+    .importModal {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .modalItem {
+            display: flex;
+            justify-content: space-between;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            line-height: 22px;
+            color: rgba(51, 51, 51, 0.85);
+            position: relative;
+            .uploadBtn {
+                height: 28px;
+                border-radius: 6px;
+                background: rgba(59, 111, 245, 0.1);
+                font-family: PingFangSC-Medium;
+                font-size: 12px;
+                line-height: 20px;
+                color: #3b6ff5;
+                font-size: 12px;
+                line-height: 20px;
+                padding: 4px 10px;
+            }
+            :global {
+                .ant-upload-list {
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.deleteModalWrapper {
+    :global {
+        .ant-modal-body {
+            padding-top: 50px;
+            font-family: PingFangSC-Regular;
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+            display: flex;
+            justify-content: center;
+        }
+        .ant-modal-footer {
+            padding-top: 0;
+            padding-bottom: 40px;
+        }
+    }
+    .cancelBtn {
+        border-radius: 7px;
+        background: rgba(1, 17, 61, 0.07);
+        color: rgba(51, 51, 51, 0.65);
+        padding: 5px 26px;
+    }
+    .submitBtn {
+        border-radius: 7px;
+        background: #3b6ff5;
+        color: #ffffff;
+        padding: 5px 12px;
+    }
+}
+
+.teacherConstraintsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    padding-left: 0;
+    .conditionList {
+        margin-left: 12px;
+        position: relative;
+        .showConditionList {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: absolute;
+            width: 110px;
+            padding: 10px;
+            height: 100px;
+            left: 0;
+            top: 0;
+            z-index: 99;
+            background: #fff;
+            box-shadow: 0 6px 25px 0 rgba(59, 111, 245, 0.12);
+        }
+    }
+    .commonButton {
+        display: block;
+        color: #fff;
+        border-radius: 20px;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .necessaryBtn {
+        background-color: #67b251;
+    }
+    .unNecessaryBtn {
+        background-color: rgba(103, 178, 81, 0.4);
+    }
+}
+
+.dropdownText {
+    display: flex;
+    justify-content: space-between;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #333333;
+    padding: 15px;
+    border-radius: 3px;
+    background: rgba(153, 153, 153, 0.1);
+}
+
+.teacherConstraintsRules {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .text {
+        font-family: PingFangSC-Medium;
+        font-size: 14px;
+        line-height: 17px;
+        color: #666666;
+        .extraText {
+            line-height: 1.5;
+            margin-left: 5px;
+            font-family: PingFangSC-Regular;
+            color: rgba(51, 51, 51, 0.6);
+        }
+    }
+    .clickToSetting {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 52px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid rgba(1, 17, 61, 0.1);
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 18px;
+        color: #333333;
+    }
+    .exceptionsRulesHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .addRules {
+        height: 24px;
+        border-radius: 5px;
+        background: #3b6ff5;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        line-height: 22px;
+        color: #ffffff;
+        padding: 1px 8px;
+        cursor: pointer;
+    }
+    .exceptionsRuleList {
+        height: 62vh;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .defaultClickStatus {
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(1, 17, 61, 0.1);
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 18px;
+        color: #333333;
+    }
+}
+
+.teacherConstraintsRuleItem {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid rgba(1, 17, 61, 0.1);
+    .leftPart {
+        display: flex;
+        gap: 10px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 18px;
+        color: #333333;
+    }
+    .rightPart {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+}
+
+.noScheduleRules {
+    :global {
+        .ant-tabs-nav .ant-tabs-tab {
+            margin-right: 10px;
+        }
+    }
+}
+
+.coursePackageRuleList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.coursePackageRuleItem {
+    width: 436px;
+    border: 1px solid rgba(1, 17, 61, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .topPart {
+        display: flex;
+        .topText {
+            margin-left: 10px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 18px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+    }
+    .bottomPart {
+        display: flex;
+        justify-content: space-between;
+        .bottomText {
+            margin-left: 30px;
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 18px;
+            color: #999999;
+        }
+        .iconList {
+            display: flex;
+            gap: 12px;
+            font-size: 14px;
+            color: #3b6ff5;
+        }
+    }
+}
+
+.coursePackageEdit {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 436px;
+    border: 1px solid #efefef;
+    padding: 16px 10px;
+    font-family: PingFangSC-Regular;
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 17px;
+        letter-spacing: 0px;
+        color: #666666;
+        .name {
+            white-space: nowrap;
+        }
+    }
+    .coursePackageList {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .title {
+            font-size: 14px;
+            line-height: 18px;
+            display: flex;
+            justify-content: space-between;
+            .text {
+                color: #666666;
+            }
+            .generate {
+                cursor: pointer;
+                color: #3b6ff5;
+                margin-left: 20px;
+            }
+            .rightPart {
+                cursor: pointer;
+                color: #3b6ff5;
+            }
+        }
+        .selectCourseDropdown {
+            position: absolute;
+            top: 20px;
+            height: 100px;
+        }
+        .coursePackageItem {
+            display: flex;
+            position: relative;
+            .header {
+                .topTriangle,
+                .bottomTriangle {
+                    width: 0;
+                    height: 0;
+                    border-bottom: 7px solid #3b6ff5;
+                    border-top: 0px solid #3b6ff5;
+                    border-right: 0px solid transparent;
+                    border-left: 14px solid transparent;
+                }
+                .middleRectangle {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 14px;
+                    font-family: PingFangSC-Regular;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #ffffff;
+                    background: #3b6ff5;
+                    text-align: center;
+                }
+                .bottomTriangle {
+                    transform: rotateX(180deg);
+                }
+            }
+            .contentWrapper {
+                display: flex;
+                justify-content: space-between;
+                flex-grow: 1;
+                // height: 58px;
+                border-radius: 0px 7px 7px 0px;
+                border: 1px solid rgba(1, 17, 61, 0.1);
+                border-left: none;
+                padding: 9px;
+                font-family: PingFangSC-Regular;
+                font-size: 12px;
+                line-height: 18px;
+                color: rgba(0, 0, 0, 0.65);
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+                .courseItem {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 3px 3px 3px 7px;
+                    border-radius: 10px;
+                    background: #f1f2f3;
+                    line-height: 14px;
+                    color: #333333;
+                    position: relative;
+                    .courseCloseIcon {
+                        cursor: pointer;
+                        color: #d9d9d9;
+                        font-size: 15px;
+                        margin-left: 20px;
+                    }
+                }
+                .cancelMerge {
+                    font-family: PingFangSC-Regular;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #3b6ff5;
+                }
+            }
+            .coursePackageItemCloseIcon {
+                cursor: pointer;
+                right: 0;
+                color: #999999;
+                position: absolute;
+            }
+        }
+    }
+    .btnList {
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
+        gap: 16px;
+        font-size: 14px;
+        .confirm {
+            padding: 3px 8px;
+            border-radius: 7px;
+            background: #3b6ff5;
+            line-height: 22px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .cancel {
+            line-height: 17px;
+            color: #3b6ff5;
+            cursor: pointer;
+        }
+    }
+}
+
+.mergeGroupContentWrapper {
+    :global {
+        .ant-popover-inner {
+            width: 420px;
+        }
+        .ant-popover-inner-content {
+            padding-top: 4px;
+        }
+        .ant-checkbox-wrapper {
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            line-height: 22px;
+            color: #333333;
+        }
+        .ant-col {
+            margin-top: 8px;
+        }
+    }
+}
+.mergeGroupContent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .mergeBtn {
+        align-self: flex-end;
+        font-family: PingFangSC-Medium;
+        font-size: 12px;
+        line-height: 22px;
+        color: #ffffff;
+        padding: 0 8px;
+        border-radius: 3px;
+        background: #3b6ff5;
+    }
+}
+
+.hasMergedContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    .contentTitle {
+        font-family: PingFangSC-Medium;
+        font-size: 12px;
+        line-height: 22px;
+        color: #333333;
+    }
+    .hasMergedItem {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 7px;
+        border: 1px solid rgba(1, 17, 61, 0.1);
+        padding: 7px;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        line-height: 18px;
+        .text {
+            color: #333333;
+        }
+        .cancelMerge {
+            color: #3b6ff5;
+        }
+    }
+}
+
+.selectCourseGroupWrapper,
+.selectCourseDropdown {
+    .dropdownWrapper {
+        position: absolute;
+        z-index: 100;
+        width: 346px;
+        background: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0px 6px 25px 0px rgba(59, 111, 245, 0.12);
+        padding: 9px 6px;
+    }
+    .dropdownHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        .flexItem {
+            flex-basis: 40%;
+        }
+    }
+    .dropdownContent {
+        max-height: 350px;
+        overflow: scroll;
+        padding: 16px 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 12px;
+    }
+    .listItem {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-family: PingFangSC;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0px;
+        color: rgba(51, 51, 51, 0.65);
+    }
+    .dropdownBottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 18px;
+        padding-right: 13px;
+        padding-bottom: 8px;
+        .confirmBtn {
+            padding: 1px 12px;
+            background: #3b6ff5;
+            border-radius: 12px;
+            font-family: PingFangSC;
+            font-size: 12px;
+            line-height: 22px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+}
+
+.maskContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0);
+    z-index: 97;
+}

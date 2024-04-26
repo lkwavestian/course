@@ -1,0 +1,325 @@
+.courseSelected {
+    margin-top: 20px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .head {
+        overflow: hidden;
+        padding: 0 24px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .leftHead {
+            display: flex;
+            align-items: center;
+        }
+        .title {
+            font-size: 18px;
+            color: #666;
+            font-family: PingFangSC-medium;
+        }
+        .amount {
+            padding-left: 10px;
+            color: #b6b6b6;
+        }
+        .clearAll,
+        .optional {
+            float: right;
+        }
+        .clearAll {
+            color: #4d7fff;
+            cursor: pointer;
+        }
+    }
+    .creditsMarks {
+        padding: 4px 24px;
+        .credits,
+        .price {
+            display: inline-block;
+            width: 50%;
+        }
+        .credits {
+            .icon {
+                color: #00a5b7;
+            }
+            i {
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 15px;
+            }
+        }
+        .price {
+            .icon {
+                color: #e9b635;
+            }
+            .number {
+                color: #e9b635;
+            }
+        }
+    }
+    .selected {
+        flex: 1;
+        -webkit-overflow-scrolling: touch;
+        overflow: auto;
+        .selectedList {
+            padding: 0 24px 24px;
+            .listItem {
+                border: 1px solid rgba(230, 230, 230, 1);
+                border-radius: 8px;
+                padding: 12px;
+                .header {
+                    overflow: hidden;
+                    display: block;
+                    .courseName {
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, 0.85);
+                        display: inline-block;
+                        margin-right: 12px;
+                    }
+                    .credits {
+                        color: #666;
+                        padding-right: 10px;
+                        .icon {
+                            color: #00a5b7;
+                        }
+                    }
+                    .detail {
+                        color: rgba(0, 0, 0, 0.5);
+                        cursor: pointer;
+                        font-size: 12px;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                        line-height: 12px;
+                        display: inline-block;
+                    }
+                    .action {
+                        color: #666;
+                        float: right;
+                        font-size: 18px;
+                        cursor: pointer;
+                    }
+                    .submited {
+                        float: right;
+                    }
+                    .published {
+                        color: #67b251;
+                        float: right;
+                    }
+                    .actionDelete {
+                        font-size: 14px;
+                        padding-left: 10px;
+                        float: right;
+                        cursor: pointer;
+                    }
+                }
+                .lessonMsg {
+                    background: #fafafa;
+                    padding: 6px 13px;
+                    display: flex;
+                    margin-top: 4px;
+                    align-items: center;
+                    justify-content: space-between;
+                    .titleAndTime {
+                        display: inline-block;
+                        width: 80%;
+                    }
+                    .time {
+                        display: block;
+                    }
+                    .title {
+                        color: #666;
+                    }
+                    .time {
+                        color: #999;
+                    }
+                    .action {
+                        color: #4d7fff;
+                        cursor: pointer;
+                        white-space: nowrap;
+                        font-family: PingFangSC-Semibold;
+                    }
+                }
+                .addPrice {
+                    margin-top: 11px;
+                    display: block;
+                    overflow: hidden;
+                    .coin {
+                        .icon {
+                            color: #efc667;
+                        }
+                    }
+                    .label {
+                        padding: 0 8px;
+                    }
+                    .inputNumber {
+                        color: #666;
+                        display: inline-block;
+                        margin-left: 26px;
+                        span {
+                            display: inline-block;
+                        }
+                        .subtract,
+                        .add {
+                            width: 20px;
+                            line-height: 20px;
+                            text-align: center;
+                            border: 1px solid #e6e6e6;
+                            border-radius: 4px;
+                            cursor: pointer;
+                        }
+                        .number {
+                            margin: 0 6px;
+                            padding: 0 24px;
+                            border: 1px solid #e6e6e6;
+                            border-radius: 4px;
+                        }
+                    }
+                    .courseCurrencyAmount {
+                        color: #333;
+                    }
+                    .price {
+                        float: right;
+                        color: #e5492e;
+                    }
+                }
+            }
+        }
+    }
+    .submit {
+        border-top: 1px solid #e6e6e6;
+        text-align: center;
+        padding: 10px 0;
+        background: #fff;
+        :global {
+            .ant-btn-primary {
+                background-color: #4d7fff;
+                width: 70%;
+                height: 40px;
+                border-radius: 20px;
+            }
+            .ant-btn-primary-disabled,
+            .ant-btn-primary.disabled,
+            .ant-btn-primary[disabled],
+            .ant-btn-primary-disabled:hover,
+            .ant-btn-primary.disabled:hover,
+            .ant-btn-primary[disabled]:hover,
+            .ant-btn-primary-disabled:focus,
+            .ant-btn-primary.disabled:focus,
+            .ant-btn-primary[disabled]:focus,
+            .ant-btn-primary-disabled:active,
+            .ant-btn-primary.disabled:active,
+            .ant-btn-primary[disabled]:active,
+            .ant-btn-primary-disabled.active,
+            .ant-btn-primary.disabled.active,
+            .ant-btn-primary[disabled].active {
+                background-color: #f5f5f5;
+            }
+        }
+    }
+    .noData {
+        text-align: center;
+        padding-top: 50px;
+        .text {
+            color: #999;
+            padding-top: 12px;
+        }
+    }
+}
+.detailInstructionModal {
+    :global {
+        .ant-modal-content {
+            border-radius: 12px;
+            height: 84vh;
+        }
+        .ant-modal-close-x {
+            font-size: 24px;
+        }
+    }
+    .title {
+        text-align: center;
+        color: #000;
+        font-size: 24px;
+    }
+    .detailInstruction {
+        .label {
+            color: #000;
+        }
+        .item {
+            display: inline-block;
+            width: 50%;
+            margin-bottom: 24px;
+        }
+        .itemPrice,
+        .itemTeacher {
+            display: block;
+            margin-bottom: 24px;
+        }
+        .itemBrief {
+            display: block;
+            border-top: 1px solid #efefef;
+            padding-top: 24px;
+            .label {
+                display: block;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+.confirm {
+    text-align: center;
+    :global {
+        .ant-modal-body {
+            padding: 40px 24px;
+        }
+    }
+    .title {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 0;
+    }
+    .btns {
+        margin-top: 20px;
+        .default,
+        .primary {
+            width: 88px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        .default {
+            border: 1px solid #4d7fff;
+            color: #4d7fff;
+            margin-right: 2px;
+        }
+        .primary {
+            background: #4d7fff;
+            color: #fff;
+            margin-left: 2px;
+        }
+    }
+}
+.confirmText {
+    text-align: center;
+    .title {
+        display: block;
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+    .text {
+        display: block;
+    }
+    :global {
+        .ant-modal-confirm-btns {
+            .ant-btn {
+                border-radius: 16px;
+            }
+            .ant-btn-primary {
+                background: #4d7fff;
+            }
+        }
+        .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+            margin-left: 0;
+        }
+    }
+}

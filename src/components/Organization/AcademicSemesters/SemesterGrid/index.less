@@ -1,0 +1,444 @@
+.content {
+    position: relative;
+    margin: 24px 24px 0;
+    border: 1px solid rgba(239, 239, 239, 1);
+    .grid {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        position: relative;
+        // border-bottom: 1px solid rgba(239,239,239,1);
+        min-height: 120px;
+        width: 100%;
+        .schoolYear {
+            flex: 1;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            text-align: center;
+            min-width: 45%;
+            border-bottom: 1px solid rgba(239, 239, 239, 1);
+            .title {
+                font-size: 20px;
+                line-height: 28px;
+                font-family: PingFangSC-Semibold;
+                position: absolute;
+                // left: 31px;
+                left: 10px;
+                top: 28px;
+            }
+            .timeRange {
+                color: #999;
+                font-family: PingFangSC-Regular;
+                position: absolute;
+                // left: 31px;
+                left: 10px;
+                top: 70px;
+            }
+            .info {
+                cursor: pointer;
+                position: relative;
+                // left: 7%;
+                // top: 40px;
+                i {
+                    font-size: 28px;
+                    color: orange;
+                }
+            }
+            .startYear {
+                // position: absolute;
+                // left: 29%;
+                // top: 40px;
+                color: #3b6ff5;
+                background: #fff;
+                text-align: center;
+                border: 1px solid #3b6ff5;
+                border-radius: 8px;
+                padding: 0 14px;
+                font-size: 14px;
+                cursor: pointer;
+                display: inline-block;
+                height: 36px;
+                line-height: 34px;
+                box-sizing: border-box;
+                margin-left: 5px;
+            }
+            .currentYear {
+                color: orange;
+                margin-left: 5px;
+                // position: absolute;
+                // left: 29%;
+                // top: 49px;
+            }
+            .deleteYearOrSemester{
+                // position: absolute;
+                // left: 24%;
+                // top: 40px;
+                &>span{
+                    color: #3b6ff5;
+                    font-size: 14px;
+                    margin-left: 5px;
+                    border-radius: 8px;
+                    height: 36px;
+                    line-height: 34px;
+                    border: 1px solid #3b6ff5;
+                    display: inline-block;
+                    padding: 0 14px;
+                    cursor: pointer;
+                }
+            }
+            .edit {
+                // position: absolute;
+                // left: 37%;
+                // top: 40px;
+                color: #3b6ff5;
+                background: #fff;
+                text-align: center;
+                border: 1px solid #3b6ff5;
+                border-radius: 8px;
+                padding: 0 14px;
+                font-size: 14px;
+                cursor: pointer;
+                display: inline-block;
+                box-sizing: border-box;
+                height: 36px;
+                line-height: 34px;
+                margin-left: 5px;
+            }
+        }
+        .semester {
+            flex: 10;
+            -webkit-flex: 10;
+            -moz-flex: 10;
+            border-left: 1px solid rgba(239, 239, 239, 1);
+            .rowStyle {
+                :global {
+                    .ant-col .ant-col-10, .ant-col-20 {
+                        width: 100%;
+                    }
+                }
+                border-bottom: 1px solid rgba(239, 239, 239, 1);
+                display: flex;
+                display: -webkit-flex;
+                .semesterName {
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: PingFangSC-Regular;
+                    position: absolute;
+                    top: 50%;
+                    // left: 8%;
+                    left: 4%;
+                    transform: translateY(-50%);
+                }
+                .semesterTime {
+                    color: #999;
+                    font-size: 14px;
+                    font-family: PingFangSC-Regular;
+                    line-height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    // left: 30%;
+                    left:25%;
+                    transform: translateY(-50%);
+                }
+                .currentSemester {
+                    color: orange;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-left: 5px;
+                }
+               
+                .startSemester {
+                    color: #3b6ff5;
+                    background: #fff;
+                    text-align: center;
+                    border: 1px solid #3b6ff5;
+                    border-radius: 8px;
+                    padding: 0 14px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    display: inline-block;
+                    height: 36px;
+                    line-height: 34px;
+                    margin-left: 5px;
+                }
+                .creatSemester {
+                    color: #3b6ff5;
+                    background: #fff;
+                    text-align: center;
+                    border: 1px solid #3b6ff5;
+                    border-radius: 8px;
+                    padding: 0 13px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    height: 36px;
+                    line-height: 34px;
+                    margin-left: 5px;
+                }
+                .deleteYearOrSemester{
+                    &>span{
+                        color: #3b6ff5;
+                        font-size: 14px;
+                        margin-left: 5px;
+                        border-radius: 8px;
+                        height: 36px;
+                        line-height: 34px;
+                        border: 1px solid #3b6ff5;
+                        display: inline-block;
+                        padding: 0 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modalContent {
+    .title {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 700;
+        font-family: PingFangSC-Medium;
+        color: #000 85%;
+        margin-right: 26px;
+    }
+    .semesterCName {
+        margin-top: 20px;
+        margin-bottom: 22px;
+        :global {
+            .ant-input {
+                width: 268px;
+                height: 36px;
+                border-radius: 8px;
+            }
+        }
+    }
+    .timeRange {
+        margin-bottom: 22px;
+        .to {
+            margin: 0 5px;
+        }
+        .pick {
+            margin-left: 5px;
+            display: inline-block;
+            :global {
+                .ant-calendar-picker-input {
+                    width: 140px;
+                    height: 36px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    .btns {
+        text-align: center;
+        margin-top: 38px;
+        .cancelBtn {
+            color: rgba(1, 17, 61, 0.65);
+            background: rgba(1, 17, 61, 0.07);
+            text-align: center;
+            margin-right: 10px;
+            border-radius: 8px;
+            padding: 8px 29px;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .okBtn {
+            background: #3b6ff5;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 8px 29px;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.popoverContent {
+    .term {
+        margin-bottom: 20px;
+    }
+    .first {
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .second {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .set {
+        margin-left: 5px;
+        color: #3b6ff5;
+        text-align: right;
+        cursor: pointer;
+    }
+    .set1 {
+        cursor: pointer;
+        margin-left: 19px;
+        color: #3b6ff5;
+        text-align: right;
+    }
+}
+
+.modalContent {
+    .title {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 700;
+        font-family: PingFangSC-Medium;
+        color: #000 85%;
+        margin-right: 26px;
+    }
+    .academicName {
+        margin-bottom: 22px;
+        :global {
+            .ant-input {
+                width: 268px;
+                height: 36px;
+                border-radius: 8px;
+            }
+        }
+    }
+    .timeRange {
+        margin-bottom: 22px;
+        .to {
+            margin: 0 5px;
+        }
+        .pick {
+            margin-left: 5px;
+            display: inline-block;
+            :global {
+                .ant-calendar-picker-input {
+                    width: 140px;
+                    height: 36px;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+.academicInfo {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: PingFangSC-Medium;
+}
+.line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #eee;
+}
+.semesterStage {
+    // border-top: 1px solid #999;
+    padding-top: 25px;
+    margin-left: 10%;
+    :global {
+        .ant-input {
+            margin-right: 10px;
+            width: 182px;
+            height: 36px;
+            border-radius: 8px;
+        }
+    }
+    .semesterTime {
+        display: inline-block;
+        span {
+            margin: 0 5px;
+        }
+        :global {
+            .ant-calendar-picker-input {
+                width: 140px;
+                height: 36px;
+                border-radius: 8px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+.btns {
+    text-align: center;
+    margin-top: 106px;
+    .cancelBtn {
+        color: rgba(1, 17, 61, 0.65);
+        background: rgba(1, 17, 61, 0.07);
+        text-align: center;
+        margin-right: 10px;
+        border-radius: 8px;
+        padding: 8px 29px;
+        font-size: 14px;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .okBtn {
+        background: #3b6ff5;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        padding: 8px 29px;
+        font-size: 14px;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+.cantCreat {
+    display: inline-block;
+    margin-top: 30px;
+    .condition {
+        font-size: 14px;
+        line-height: 20px;
+        display: inline-block;
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+    .condition1 {
+        font-size: 14px;
+        line-height: 20px;
+        display: inline-block;
+        margin-right: 54px;
+        margin-top: 10px;
+    }
+    .toSet {
+        color: #1890ff;
+        cursor: pointer;
+    }
+}
+:global {
+    .ant-modal-mask {
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+    .ant-modal-confirm-btns {
+        .ant-btn {
+            border-radius: 8px;
+        }
+    }
+}
+
+.iframeModal{
+    top: 40px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    .rightArea{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        box-sizing: border-box;
+        padding-right: 6px;
+    }
+    
+}

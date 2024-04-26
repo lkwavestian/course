@@ -1,0 +1,43 @@
+.tags {
+    background-color: rgb(237, 239, 240);
+    margin: 5px auto;
+    // border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    .iconEdit {
+        visibility: hidden;
+        // display: none;
+    }
+}
+.tags:hover .iconEdit {
+    visibility: visible;
+}
+.teachClassName {
+    .editIcon {
+        visibility: hidden;
+    }
+}
+.teachClassName:hover .editIcon {
+    visibility: visible;
+}
+.setPos {
+    width: 450px !important;
+    :global {
+        /* .ant-modal{
+            width: 250px !important;
+        } */
+        .ant-modal-body {
+            text-align: center;
+        }
+    }
+}
+
+.relatedPartyMaint {
+    :global {
+        .ant-table-tbody > tr > td {
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+    }
+}

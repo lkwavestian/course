@@ -1,0 +1,117 @@
+.versionInfo {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    overflow: hidden;
+    .title,
+    .name,
+    .item {
+        display: block;
+    }
+    .title {
+        color: #000;
+        margin-bottom: 8px;
+    }
+    .name,
+    .item {
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .name {
+        display: flex;
+        align-items: flex-start;
+        .edit {
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            .text {
+                line-height: 20px;
+                padding-left: 5px;
+                width: 120px;
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .remarkText {
+                line-height: 20px;
+                padding-left: 4px;
+                display: -webkit-box;
+                white-space: pre-wrap;
+                overflow: hidden;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                /* autoprefixer: off */
+                text-overflow: ellipsis;
+            }
+            .editName {
+                white-space: nowrap;
+                color: rgba(59, 111, 245, 0.2);
+                transition: all 0.1s;
+                cursor: pointer;
+            }
+            .editName:hover {
+                color: rgba(59, 111, 245, 1);
+            }
+            .editConfirm {
+                color: rgba(59, 111, 245, 1);
+            }
+            :global {
+                .ant-input {
+                    font-size: 12px;
+                    height: auto;
+                    border: none;
+                    border-bottom: 1px solid #b1b1b1;
+                    border-radius: 0;
+                    box-shadow: none;
+                    padding-bottom: 0;
+                }
+            }
+            .nameInput {
+                font-size: 12px;
+                height: auto;
+                border: none;
+                border-bottom: 1px solid #b1b1b1;
+                border-radius: 0;
+                box-shadow: none;
+                padding-bottom: 0;
+                padding-left: 5px;
+            }
+            .remarkTextArea {
+                max-width: 256px;
+                font-size: 12px;
+                height: auto;
+                border: 1px solid #b1b1b1;
+                border-radius: 0;
+                box-shadow: none;
+                padding-bottom: 0;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+    .item {
+        .view {
+            white-space: nowrap;
+            margin-left: 5px;
+        }
+    }
+    .operation {
+        display: flex;
+        justify-content: end;
+        .cancel {
+            margin-right: 10px;
+        }
+        .modify {
+            a {
+                color: #8ec9ff;
+            }
+            a:hover {
+                color: #1890ff;
+            }
+        }
+    }
+}

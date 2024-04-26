@@ -1,0 +1,215 @@
+body {
+    background: #fff !important;
+    font-family: PingFangSC-Regular;
+}
+.button {
+    background: #4d7fff;
+}
+.account {
+    margin: 15px 0px 24px;
+    box-shadow: 0px 2px 8px 0px rgba(59, 111, 245, 0.12);
+    padding: 0 25px;
+    :global {
+        .ant-tabs-bar {
+            border: none;
+            text-align: left;
+            margin: 0px 0px 6px 0px;
+            .ant-tabs-ink-bar {
+                display: none !important;
+            }
+            .ant-tabs-nav {
+                .ant-tabs-tab {
+                    padding-left: 0;
+                }
+                .ant-tabs-tab-active {
+                    color: #4d7fff;
+                    font-size: 16px;
+                }
+            }
+        }
+        .ant-table-thead > tr > th,
+        .ant-table-tbody > tr > td {
+            padding: 9.5px 14px;
+        }
+        .ant-table {
+            font-size: 12px;
+        }
+    }
+    .schoolAccount {
+        .header {
+            margin-bottom: 12px;
+            .text {
+                color: #999;
+            }
+            .btn {
+                float: right;
+                background: #4d7fff;
+                border-radius: 8px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+.addaCcount {
+    .addBusi {
+        white-space: nowrap;
+        font-size: 14px;
+        margin-left: 15px;
+        line-height: 30px;
+    }
+    .busi {
+        font-size: 16px;
+        :global(.ant-form-item-children) {
+            display: flex;
+            min-width: 400px;
+        }
+        color: #1890ff;
+    }
+    :global(.ant-col-sm-6) {
+        width: 29%;
+        min-width: 130px;
+    }
+}
+
+.newTitle {
+    text-align: center;
+    font-size: 24px;
+}
+
+.btnBox {
+    text-align: center;
+}
+
+.popover {
+    overflow: hidden;
+    .textTitle {
+        font-size: 24px;
+        color: #333;
+        display: block;
+        text-align: center;
+    }
+    .textDescribe {
+        font-size: 16px;
+        width: 346px;
+        display: block;
+        margin: 10px 0 15px;
+    }
+}
+
+:global {
+    .ant-input-lg {
+        font-size: 14px;
+    }
+    .ant-popover-buttons {
+        .ant-btn {
+            width: 72px;
+            height: 32px;
+            border-radius: 16px;
+            border: 1px solid rgba(77, 127, 255, 1);
+            color: #4d7fff;
+        }
+        .ant-btn-primary {
+            background: #4d7fff;
+            color: #fff;
+        }
+    }
+}
+.addaCcount {
+    color: rgba(0, 0, 0, 0.85);
+    :global(.ant-modal-body) {
+        display: grid;
+        justify-content: center;
+    }
+    .merchantName {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        .notes {
+            color: #f5222d;
+        }
+        .merchantNameIpt {
+            width: 400px;
+            border-radius: 4px;
+        }
+        .titleBox {
+            min-width: 90px;
+            text-align: right;
+            margin-right: 5px;
+        }
+    }
+}
+
+.account,
+.addaCcount,
+.schoolAccount,
+.popContent,
+.studentAccout,
+.accountChanges {
+    :global {
+        .ant-btn {
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            min-height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px !important;
+        }
+    }
+}
+
+.addaCcount {
+    :global {
+        .ant-modal-footer > div {
+            text-align: center;
+        }
+    }
+}
+.schoolAccountP{
+    display: flex;
+    align-items: center;
+    &>span:nth-child(1){
+        display: inline-block;
+        width: 7px;
+        height: 15px;
+        background-color:limegreen;
+        margin-right: 7px;
+    }
+}
+
+.exportModal{
+    :global{
+        .ant-btn{
+            border-radius: 8px; 
+        }
+        .ant-modal-footer > div > .ant-btn{
+            color: rgba(1, 17, 61, 0.65);
+            background: rgba(1, 17, 61, 0.07);
+            border: 0;
+            border-radius: 8px;
+            height: 36px;
+            line-height: 36px;
+            &.ant-btn-primary{
+                background: #3b6ff5 !important;
+                color: #fff;
+            }
+        } 
+    }
+}

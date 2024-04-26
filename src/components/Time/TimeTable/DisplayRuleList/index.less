@@ -1,0 +1,131 @@
+.displayRuleList {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.settingPopconfirm {
+    :global {
+        .ant-popover-buttons {
+            display: none;
+        }
+        .anticon-exclamation-circle {
+            display: none;
+        }
+        .ant-popover-message-title {
+            padding-left: 0;
+        }
+        .ant-select-selection {
+            border-radius: 8px;
+        }
+        .ant-checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ant-checkbox-wrapper {
+            margin-left: 0;
+        }
+    }
+    .settingPopconfirmContentWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .settingPopconfirmContent {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .displayRulesText {
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0px;
+            color: rgba(0, 0, 0, 0.85);
+        }
+        .remarkText {
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+    }
+    .time {
+        font-size: 12px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(0, 0, 0, 0.65);
+        .selectArr {
+            :global {
+                .ant-select-selection--single {
+                    border-radius: 8px;
+                }
+            }
+        }
+        .showType {
+            margin-left: 10px;
+            width: 184px;
+            .classVisible {
+                margin-left: 0 !important;
+                margin-top: 5px;
+            }
+        }
+    }
+    .timeSelectWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+        .timeSelect {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+    }
+}
+
+.lockList {
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+    .lock,
+    .unLock {
+        cursor: pointer;
+        display: flex;
+        gap: 3px;
+    }
+}
+
+.lockModalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .gradeRange {
+        .icon {
+            color: red;
+            margin-right: 5px;
+        }
+    }
+    .instructions {
+        margin-left: 9px;
+    }
+    .instructionsText {
+        color: rgba(0, 0, 0, 0.65);
+    }
+    :global {
+        .ant-col-19 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.mainPage {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+}
+.mainPage .leftBar {
+    flex: 2;
+    -webkit-flex: 2;
+    -moz-flex: 2;
+    background: #fafbff;
+    height: 100vh;
+    padding: 20px;
+}
+.mainPage .rightContainer {
+    flex: 9;
+    -webkit-flex: 9;
+    -moz-flex: 9;
+}

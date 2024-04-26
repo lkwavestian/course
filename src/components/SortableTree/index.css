@@ -1,0 +1,63 @@
+.treeWrapper {
+  height: calc(96%);
+}
+.treeWrapper .schoolSelect {
+  width: 235px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+.treeWrapper .schoolSelect :global .ant-select-selection--single {
+  border-radius: 8px;
+  height: 36px;
+}
+.treeWrapper .schoolSelect :global .ant-select-selection__rendered {
+  height: 34px;
+  line-height: 34px;
+}
+.treeWrapper .schoolYearSelect {
+  width: 118px;
+  height: 35px;
+  margin-right: 2px;
+}
+.treeWrapper .schoolYearSelect :global .ant-select-selection--single {
+  border-radius: 8px;
+  height: 36px;
+}
+.treeWrapper .schoolYearSelect :global .ant-select-selection__rendered {
+  height: 34px;
+  line-height: 34px;
+}
+.treeWrapper .switchOnlyOrg {
+  margin: 15px 0 10px 15px;
+}
+.treeWrapper .switchOnlyOrg span {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666;
+  vertical-align: middle;
+}
+.treeWrapper .sortableTree {
+  width: 100%;
+}
+.treeWrapper .searchInput {
+  border-radius: 20px;
+  position: relative;
+  margin-top: 10px;
+  width: 120px;
+}
+.treeWrapper .searchInput > input {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.treeWrapper .searchInputLong {
+  margin-top: 10px;
+  width: 235px;
+}
+.treeWrapper .searchInputLong > input {
+  border-radius: 8px !important;
+  height: 36px;
+}
+:global .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background: #fff !important;
+  color: #3b6ff5 !important;
+}

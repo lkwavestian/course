@@ -1,0 +1,87 @@
+.courseDetailContent .headInfo .title {
+    font-size: 12px;
+    display: flex;
+    line-height: 3;
+    border-radius: 8px;
+    flex: 1;
+    justify-content: space-between;
+}
+.courseDetailContent .headInfo .title .courseName {
+    margin-left: 15px;
+}
+.courseDetailContent .headInfo .title .weekNum {
+    margin-left: 15px;
+}
+.courseDetailContent .headInfo .title .singleTime {
+    margin-left: 15px;
+}
+.courseDetailContent .headInfo .title .middle {
+    display: inline-block;
+    max-width: 300px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+.courseDetailContent .headInfo .title .middle .mainTeacher {
+    margin-left: 15px;
+}
+.courseDetailContent .headInfo .title .middle .mainTeacher .content {
+    line-height: 0.9;
+}
+.courseDetailContent .headInfo .title .middle .mainTeacher .name {
+    margin-left: 10px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    padding: 2px;
+}
+.courseDetailContent .headInfo .title .middle .cooperateTeacher {
+    margin-left: 15px;
+}
+.courseDetailContent .headInfo .title .middle .cooperateTeacher .content {
+    line-height: 0.9;
+}
+.courseDetailContent .headInfo .title .middle .cooperateTeacher .name {
+    margin-left: 10px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    padding: 2px;
+}
+.courseDetailContent .headInfo .title .middle .cooperateTeacher .assistantTeachers {
+    margin-left: 10px;
+}
+.courseDetailContent .headInfo .title .address {
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 2px;
+}
+.courseDetailContent .headInfo .title .mainTeacher {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.courseDetailContent .headInfo .title .mainTeacher .name {
+    padding: 2px;
+}
+.courseDetailContent .headInfo .title .detailAction {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.courseDetailContent .headInfo .title .detailAction .top .unLockButtonStyle {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.courseDetailContent .headInfo .title .detailAction .top .lockButtonStyle {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.courseDetailContent .headInfo .title .detailAction .top .icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.courseDetailContent .headInfo .title .detailAction .arrange {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.courseDetailContent .headInfo .title .detailAction .delete {
+    margin-left: 10px;
+    cursor: pointer;
+}

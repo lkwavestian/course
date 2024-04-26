@@ -1,0 +1,694 @@
+.coursePage {
+    background: #fff;
+    display: -webkit-flex;
+    display: flex;
+    display: -moz-flex;
+    height: 136px;
+    .courseMenu {
+        flex: 1.5;
+        -webkit-flex: 1.5;
+        -moz-flex: 1.5;
+        padding: 10px;
+        // border-right: 1px solid #e8e8e8;
+        max-width: 300px;
+        .selectItem {
+            display: flex;
+            justify-content: space-between;
+        }
+        .menuList {
+            margin-top: 14px;
+            height: 120px;
+            overflow-y: scroll;
+            .menuCard {
+                width: 100%;
+                height: 40px;
+                background: rgba(55, 152, 255, 0.1);
+                color: rgb(55, 152, 255);
+                font-size: 14px;
+                line-height: 40px;
+                position: relative;
+                & > span:nth-child(1) {
+                    margin-left: 12px;
+                    display: inline-block;
+                    overflow: hidden;
+                    .arrangeCourseName {
+                        display: inline-block;
+                        width: 110px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-style: normal;
+                        float: left;
+                    }
+                    .editBtn {
+                        font-size: 14px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+                & > span:nth-child(2) {
+                    float: right;
+                    margin-right: 9px;
+                    font-size: 14px;
+                }
+                .courseLine {
+                    background: rgb(55, 152, 255);
+                    width: 4px;
+                    top: 50%;
+                    height: 40px;
+                    margin-top: -20px;
+                    left: 0;
+                    position: absolute;
+                }
+            }
+        }
+        :global {
+            .ant-select {
+                .ant-select-selection--single {
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    :global {
+        .ant-spin-nested-loading {
+            flex: 4;
+            .ant-spin-container {
+                height: 100%;
+            }
+        }
+    }
+    .subjectList {
+        flex: 4;
+        -webkit-flex: 4;
+        -moz-flex: 4;
+        padding: 6px 30px 0px;
+        .subjectSum {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 12px;
+            max-height: 40px;
+            overflow: scroll;
+            & > span {
+                display: inline-block;
+                margin-right: 2%;
+            }
+        }
+        .newConstruction {
+            span {
+                float: right;
+                color: rgb(55, 152, 255);
+                cursor: pointer;
+            }
+        }
+        .rowStyle {
+            height: 124px;
+            overflow-y: scroll;
+        }
+        .courseCard {
+            height: 57px;
+            border-radius: 10px;
+            background: rgba(55, 152, 255, 0.1);
+            // border-width: 1px;
+            // border-style: solid;
+            // border-color: rgb(55, 152, 255);
+            padding: 5px 10px !important;
+            color: #666;
+            margin: 3px 10px;
+            width: 134px;
+            cursor: pointer;
+            & > p {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 4px;
+                align-items: center;
+                .classTitle {
+                    color: #666;
+                    font-size: 14px;
+                    display: inline-block;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-decoration: none;
+                }
+                .spendTime {
+                    font-size: 12px;
+                    float: right;
+                    white-space: nowrap;
+                    & > em {
+                        font-style: normal;
+                    }
+                    & > i {
+                        cursor: pointer;
+                    }
+                    .arrowRight {
+                        cursor: pointer;
+                    }
+                }
+                .mainTeacher {
+                    font-size: 12px;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    em {
+                        width: 85px;
+                        font-style: normal;
+                        display: inline-block;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        vertical-align: bottom;
+                    }
+                    // em:hover{
+                    //     text-overflow:inherit;
+                    //     overflow:visible;
+                    //     }
+                    & > i {
+                        margin-left: 10px;
+                    }
+                    .teacher {
+                        width: 40px;
+                        text-overflow: unset;
+                        overflow: hidden;
+                    }
+                }
+                .courseOperBtn {
+                    font-size: 14px;
+                    float: right;
+                    & > i {
+                        cursor: pointer;
+                        &:nth-child(1) {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .checkCircle {
+                background: #3b6ff5;
+                color: white;
+                position: absolute;
+                right: 0;
+                top: 0;
+                margin-right: 1px;
+                margin-top: 1px;
+                font-size: 18px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .arrangeBtn {
+        height: 100%;
+        flex: 5.5;
+        margin: 12px 12px 0;
+        background: #f7f7f7;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        min-height: 176px;
+    }
+    .bufferPart {
+        flex: 2;
+        padding: 10px 8px 0;
+        width: 26%;
+        .infoAndAction {
+            font-size: 12px;
+            margin-bottom: 12px;
+            .action {
+                float: right;
+            }
+        }
+        .cardPart {
+            font-size: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-between;
+            height: 124px;
+            overflow: scroll;
+            .card {
+                background: rgba(46, 163, 245, 0.1);
+                border-radius: 10px;
+                padding: 5px 10px;
+                width: 134px;
+                margin: 3px 0;
+                height: 57px;
+                margin-right: 5px;
+                cursor: pointer;
+                overflow: hidden;
+                .topInfo,
+                .bottomInfo {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .topInfo {
+                    margin-bottom: 7px;
+                    .course {
+                        font-size: 14px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-decoration: none;
+                    }
+                    .actionSigle {
+                        cursor: pointer;
+                    }
+                    .actionAndTime {
+                        white-space: nowrap;
+                    }
+                }
+                .bottomInfo {
+                    .group {
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-decoration: none;
+                    }
+                    .name {
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+:global {
+    .ant-drawer-title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .courseMenu {
+        width: 200px !important;
+    }
+}
+.courseDetail {
+    margin-left: 40px;
+    height: 100%;
+    flex: 1;
+}
+.waitHave {
+    line-height: 41px;
+    // margin-right: 50px;
+}
+.onKeyToArrange {
+    cursor: pointer;
+    margin-left: 10px;
+}
+.waitCourseText {
+    display: inline-block;
+    color: #3b6ff5;
+    cursor: pointer;
+}
+.haveCourseText {
+    display: inline-block;
+    color: #666;
+    cursor: pointer;
+}
+.exit {
+    /*  display: inline-block;
+    width: 60px;
+    height: 31px;
+    background-color: #1476ff;
+    border-radius: 8px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-left: 50px;
+    cursor: pointer;
+    padding-top: 2px;
+    margin-top: 3px;
+ */
+    font-size: 14px;
+    background-color: #1476ff;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 7px;
+    width: auto;
+    // height: 22px;
+}
+.collapsedText {
+    float: right;
+    font-size: 16px;
+    color: #3b6ff5;
+    cursor: pointer;
+    line-height: 40px;
+    margin-left: 50px;
+}
+
+:global {
+    .ant-drawer-body {
+        padding: 0;
+    }
+    .ant-modal-wrap {
+        z-index: 1032;
+    }
+    .ant-drawer-header {
+        padding: 8px 24px 6px 24px;
+    }
+    .ant-modal-content {
+        height: 100%;
+    }
+    .ant-message {
+        z-index: 1040;
+    }
+}
+
+//选择主教老师
+.selectTeacher {
+    > p {
+        font-size: 14px;
+        color: #000;
+        margin: 15px 0 10px;
+    }
+}
+
+//设置开始时间
+.setCourseTime {
+    .popTitle {
+        font-size: 16px;
+        color: #000;
+        margin: 15px 0 10px;
+        text-align: center;
+    }
+    & > div {
+        margin: 15px 0 10px;
+    }
+    .ruleButton {
+        display: inline-block;
+        position: absolute;
+        margin-top: 10px;
+        .ruleContent {
+            font-style: normal;
+            color: #3b6ff5;
+            font-size: 14px;
+        }
+        .changeSuccess {
+            color: #67b251;
+            font-style: normal;
+        }
+        .changeConflict {
+            color: #e5492e;
+            font-style: normal;
+            cursor: pointer;
+        }
+        .waitingTips {
+            color: #999;
+            font-size: 12px;
+            font-style: normal;
+        }
+    }
+}
+.cursorStyle {
+    cursor: pointer;
+}
+.operBtn {
+    text-align: right;
+    margin-top: 20px;
+}
+.cancelBtn {
+    font-size: 14px;
+    color: #3b6ff5;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.confirmBtn {
+    font-size: 14px;
+    background: #3b6ff5;
+    color: #fff;
+    padding: 2px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+//编辑周课时计划
+.sumMin {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-bottom: 30px;
+    span {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+.cardList {
+    height: 82vh;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+.saveAndDelete {
+    overflow: hidden;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    .iconList {
+        display: flex;
+        gap: 20px;
+    }
+    .deleteBtn {
+        float: left;
+        display: inline-block;
+        color: #666;
+        font-size: 14px;
+        cursor: pointer;
+        & > i {
+            color: #3b6ff5;
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 16px;
+        }
+    }
+    .saveBtn {
+        cursor: pointer;
+        background: #3b6ff5;
+        display: inline-block;
+        padding: 7px 22px;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+//暂无课程待排
+.noCourseArrange {
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    line-height: 50px;
+}
+
+.conflictModals {
+    .conflictTitle {
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .conflictContent {
+        color: #999;
+        font-size: 14px;
+        margin-bottom: 10px;
+        max-height: 100px;
+        overflow-y: scroll;
+    }
+}
+.conflictButton {
+    text-align: center;
+    margin-top: 20px;
+    .cancelBtn {
+        color: #3b6ff5;
+        background: #fff;
+        text-align: center;
+        margin-right: 10px;
+        border: 1px solid rgba(59, 111, 245, 1);
+        border-radius: 20px;
+        padding: 8px 23px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .submitBtn {
+        background: #3b6ff5;
+        color: #fff;
+        text-align: center;
+        border: 1px solid rgba(59, 111, 245, 1);
+        border-radius: 20px;
+        padding: 8px 23px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .grayButton {
+        background: #eee;
+        color: #999;
+        text-align: center;
+        border-radius: 20px;
+        padding: 8px 23px;
+        display: inline-block;
+    }
+}
+
+//规则校验失败页面
+.errorPage {
+    .errorTitle {
+        font-size: 14px;
+        color: #3e3a39;
+        span {
+            &:nth-child(1) {
+                color: #999;
+            }
+        }
+    }
+    .lookDetails {
+        color: #3b6ff5;
+        text-align: right;
+        cursor: pointer;
+    }
+    .errorInfoDetail {
+        color: #000;
+        height: 100px;
+        overflow-y: scroll;
+        padding: 10px;
+        .downloadUrl {
+            color: #3b6ff5;
+            text-decoration: underline;
+            cursor: pointer;
+            display: block;
+            margin: 10px auto;
+        }
+    }
+    .errorLessons {
+        span {
+            color: #999;
+            display: block;
+            margin: 15px 0;
+        }
+        .lessonList {
+            max-height: 150px;
+            overflow-y: scroll;
+            margin-left: 20px;
+            color: #3e3a39;
+        }
+    }
+    .operButtonStyle {
+        text-align: center;
+        margin: 20px auto;
+        span {
+            background: #3b6ff5;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}
+
+.batchOperate {
+    width: auto;
+    display: flex;
+    font-size: 16px;
+    font-weight: normal;
+    justify-content: space-between;
+    .batchOperateSelect {
+        align-items: center;
+        display: flex;
+        .batchOperateSelectCourse {
+            margin-left: 30px;
+            float: right;
+            color: #3b6ff5;
+            cursor: pointer;
+            line-height: 40px;
+        }
+        :global {
+            .ant-checkbox-wrapper {
+                font-size: 16px;
+            }
+        }
+    }
+    .batchOperateCancel {
+        align-items: center;
+        display: flex;
+        margin-right: 40px;
+        color: #3b6ff5;
+        .batchOperateDelete {
+            font-size: 14px;
+            background-color: #1476ff;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            margin-left: 20px;
+            cursor: pointer;
+            padding: 7px;
+            width: auto;
+        }
+    }
+}
+
+.editCourse {
+    :global {
+        .ant-modal {
+            top: 10px;
+        }
+        .ant-modal-body {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.confirmModal {
+    .confirmContent {
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+        line-height: 32px;
+        color: rgba(1, 17, 61, 0.85);
+    }
+}
+
+.commonModal {
+    :global {
+        .ant-modal-header {
+            padding-bottom: 10px;
+            .ant-modal-title {
+                font-family: PingFangSC-Medium;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: -0.84px;
+                color: #333333;
+            }
+        }
+        .ant-modal-footer {
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            line-height: 22px;
+            padding-bottom: 16px;
+            .ant-modal-footer button + button {
+                margin-left: 10px;
+            }
+            .ant-btn {
+                padding: 6px 20px;
+                border-radius: 7px;
+                background: rgba(1, 17, 61, 0.07);
+                color: rgba(1, 17, 61, 0.65);
+                &:hover,
+                &:focus {
+                    border-color: rgba(1, 17, 61, 0.07);
+                }
+            }
+            .ant-btn-primary {
+                background: #0445fc;
+                color: #ffffff;
+            }
+        }
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: #3b6ff5;
+            border-color: #3b6ff5;
+        }
+        .ant-checkbox-checked::after {
+            background-color: #3b6ff5;
+        }
+    }
+}

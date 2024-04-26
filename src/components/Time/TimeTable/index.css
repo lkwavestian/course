@@ -1,0 +1,1083 @@
+.timeTablePage {
+  width: 100%;
+  height: 90vh;
+  background: #fff;
+  padding: 1% 0;
+}
+.timeTablePage .main {
+  height: 100%;
+  background: #f5f6fa;
+  border-radius: 10px;
+}
+.timeTablePage .main .haveNoPowerPage {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+.timeTablePage .main .haveNoPowerPage img {
+  width: 140px;
+}
+.timeTablePage .main .haveNoPowerPage span {
+  display: block;
+  color: #666;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.timeTablePage .main .searchHeader {
+  margin: 0 auto;
+  padding: 0 3% 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.timeTablePage .main .searchHeader .leftSearch {
+  display: flex;
+  align-items: center;
+}
+.timeTablePage .main .searchHeader .leftSearch .stageAndGrade {
+  position: relative;
+}
+.timeTablePage .main .searchHeader .leftSearch .stageAndGrade .moreDisabled {
+  color: rgba(0, 0, 0, 0.25);
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+.timeTablePage .main .searchHeader .leftSearch .stageAndGrade .tagPlaceholder {
+  display: block;
+  width: 120px;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  line-height: 32px;
+  background: #fff;
+  padding-left: 12px;
+  pointer-events: none;
+}
+.timeTablePage .main .searchHeader .leftSearch .stageAndGrade .tagPlaceholder .close {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.timeTablePage .main .searchHeader .leftSearch .clear {
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  padding-left: 16px;
+  cursor: pointer;
+}
+.timeTablePage .main .searchHeader .leftSearch .update {
+  color: #1476ff;
+  font-size: 16px;
+  padding-left: 16px;
+  cursor: pointer;
+}
+.timeTablePage .main .searchHeader .leftSearch .moreDisabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+.timeTablePage .main .searchHeader .activeMoreCondition {
+  display: inline-block;
+  width: 34px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px 9px;
+  text-align: center;
+  border: 1px solid #3b6ff5;
+  background: #3b6ff5;
+  color: #fff;
+}
+.timeTablePage .main .searchHeader .showMoreCondition {
+  display: inline-block;
+  width: 34px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 4px 9px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  position: relative;
+}
+.timeTablePage .main .searchHeader .showMoreCondition .mark {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1476ff;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+.timeTablePage .main .searchHeader .searchDate {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+}
+.timeTablePage .main .searchHeader .searchDate .searchDateMain {
+  font-size: 16px;
+  color: #333;
+  display: inline-block;
+  margin-right: 20px;
+}
+.timeTablePage .main .searchHeader .searchDate .searchDateMain .arrow {
+  font-size: 18px;
+  cursor: pointer;
+}
+.timeTablePage .main .searchHeader .searchDate .searchDateMain span {
+  display: inline-block;
+  margin: 0 10px;
+}
+.timeTablePage .main .searchHeader .searchDate .publishVersion {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+.timeTablePage .main .searchHeader .searchDate .publishVersion :global .ant-select-selection--single {
+  border-radius: 8px;
+}
+.timeTablePage .main .searchHeader .searchDate .publishVersion :global .ant-select-selection--single .ant-select-selection__rendered {
+  margin-left: 26px;
+  margin-right: 32px;
+}
+.timeTablePage .main .searchHeader .searchDate .publishVersion .versionIcon {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: 9;
+  cursor: pointer;
+}
+.timeTablePage .main .searchHeader .searchDate .publishVersion .mark {
+  display: inline-block;
+  margin: 0 14px;
+}
+.timeTablePage .main .searchHeader .searchDate .publishVersion .mark .icon {
+  padding-right: 4px;
+}
+.timeTablePage .main .searchHeader .searchDate .publishVersion .publishStatus {
+  color: #3b6ff5;
+}
+.timeTablePage .main .searchHeader .searchDate .publishVersion .setNewVersion {
+  color: #3b6ff5;
+  cursor: pointer;
+}
+.timeTablePage .main .searchHeader .actionButton .btn {
+  background: #4d7fff;
+  color: #fff;
+  padding: 0 12px;
+  line-height: 32px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.timeTablePage .main .searchHeader .actionButton .disabled {
+  cursor: default;
+  pointer-events: none;
+  background: #d9d9d9;
+  color: #999;
+}
+.timeTablePage .main .searchHeader .actionButton .publishSchedule {
+  display: inline-block;
+  position: relative;
+}
+.timeTablePage .main .searchHeader :global .ant-select .ant-select-selection--multiple {
+  border-radius: 8px;
+}
+.timeTablePage .main .moreCondition {
+  padding: 1% 0;
+  background: #ffffff;
+  box-shadow: 0px 6px 25px 0px rgba(59, 111, 245, 0.12);
+  width: 600px;
+  margin-left: 2%;
+}
+.timeTablePage .main .moreCondition .conditionList > div {
+  border: 0 none !important;
+}
+.timeTablePage .main .moreCondition .searchTeacher > div {
+  border: 0 none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0 !important;
+}
+.timeTablePage .main .moreCondition .searchInputStyle > input {
+  border: 0 none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0 !important;
+}
+.timeTablePage .main .headContent {
+  background: #fff;
+  padding-bottom: 12px;
+}
+.timeTablePage .main .mainContent {
+  margin-left: 14px;
+  display: flex;
+}
+.timeTablePage .main .mainContent .scheduleContain {
+  clear: both;
+  width: 95vw;
+  padding: 10px;
+  background: #fff;
+  border-radius: 20px;
+  margin-top: 12px;
+}
+.timeTablePage .main .mainContent .scheduleContain::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.timeTablePage .main .mainContent .scheduleContain .scheduleBkg {
+  padding: 0;
+  overflow-x: scroll;
+}
+.timeTablePage .main .mainContent .scheduleContain .scheduleBkg .placeholder {
+  height: 34vh;
+}
+.timeTablePage .main .mainContent .rightMenu {
+  background: #fff;
+  margin-left: 12px;
+  flex: 1;
+}
+.timeTablePage .main .mainContent .rightMenu .operBtnList {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.timeTablePage .main .mainContent .rightMenu .operBtnList .text {
+  display: block;
+  font-size: 12px;
+}
+.timeTablePage .main .mainContent .rightMenu .operBtnList .whiteButton {
+  display: inline-block;
+  text-align: center;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  padding: 12px 0;
+  border-bottom: 1px solid #fbfbfb;
+  position: relative;
+}
+.timeTablePage .main .mainContent .rightMenu .operBtnList .iconStyle {
+  display: inline-block;
+  font-size: 16px;
+}
+.timeTablePage .main .mainContent .rightMenu .operBtnList .fullScreen {
+  display: inline-block;
+  text-align: center;
+  background: #e9eef1;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 auto;
+  position: absolute;
+  top: -44px;
+  left: 50%;
+  transform: translate(-16px, 0);
+  cursor: pointer;
+}
+.timeTablePage .main .mainContent .rightMenu .operBtnList .exitFullScreen {
+  display: inline-block;
+  text-align: center;
+  background: #e9eef1;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.timeTablePage .main .mainContent .rightMenu .operButton a {
+  background: #3a6ff5;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.timeTablePage .main .fullScreenStyle {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.timeTablePage .main .fullScreenStyle .scheduleContain {
+  margin-top: 0;
+}
+.timeTablePage .main .fullScreenStyle .rightMenu {
+  padding-top: 12px;
+}
+.batchSet {
+  /* & > p{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    } */
+}
+.batchSet :global .ant-btn {
+  border-radius: 5px;
+}
+.batchSet :global .ant-modal-footer {
+  text-align: center;
+}
+.batchSet :global .ant-modal-footer > div .ant-btn {
+  border-radius: 5px;
+}
+.batchSet :global .ant-modal-footer > div .ant-btn:nth-child(2) > span {
+  position: relative;
+}
+.exportModal :global .ant-btn {
+  border-radius: 8px;
+}
+.exportModal :global .ant-modal-footer > div > .ant-btn {
+  color: rgba(1, 17, 61, 0.65);
+  background: rgba(1, 17, 61, 0.07);
+  border: 0;
+  border-radius: 8px;
+  height: 36px;
+  line-height: 36px;
+}
+.exportModal :global .ant-modal-footer > div > .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff;
+}
+.checkModal :global .ant-btn-primary {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.checkModal :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.checkModal :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.checkModal :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.checkModal :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.selectStyle {
+  margin-right: 8px;
+}
+.selectStyle > div {
+  border-radius: 20px !important;
+}
+.tipsText {
+  color: #3b6ff5;
+  font-size: 14px;
+}
+.waitingCard {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 50px;
+  bottom: 0;
+  border-radius: 20px 20px 0 0;
+  background: #ffffff;
+  padding: 8px 30px 8px 30px;
+  box-shadow: 0px 6px 30px 0px rgba(59, 111, 245, 0.12);
+}
+.waitingCard .waitHave {
+  line-height: 3;
+  margin-right: 70px;
+}
+.waitingCard .courseDetail {
+  height: 100%;
+  flex: 1;
+}
+.waitingCard .exit {
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  background-color: #1476ff;
+  border-radius: 8px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-left: 50px;
+  cursor: pointer;
+  padding-top: 4px;
+  margin-top: 3px;
+}
+.waitingCard .exitLessonViewExchangeCourse {
+  font-size: 14px;
+  background-color: #1476ff;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+  margin-left: 20px;
+  cursor: pointer;
+  padding: 7px;
+  width: auto;
+}
+.waitingCard .openCard {
+  line-height: 2;
+  margin-left: 50px;
+  float: right;
+  font-size: 16px;
+  color: #3b6ff5;
+  cursor: pointer;
+}
+.waitingCard > span {
+  display: inline-block;
+  color: #3b6ff5;
+  font-size: 16px;
+}
+.waitingCard > span.noActive {
+  color: #666;
+  margin-left: 20px;
+}
+.waitingCard > span:nth-child(3) {
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+.tooltipBox {
+  z-index: 88;
+}
+.tooltipBox div {
+  background-color: inherit;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.tooltipBox > div > div:first-child {
+  display: none;
+}
+.showToolTipbottom {
+  position: fixed;
+  right: 40px;
+  bottom: 70px;
+  z-index: 88;
+}
+.showToolTipbottom .addBtn {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+.showToolTipbottom .addBtn i {
+  position: relative;
+  left: -3px;
+}
+.popoverBox button {
+  display: block;
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+}
+.popoverBox i {
+  position: relative;
+  left: -3px;
+}
+.popoverBox .text_title {
+  color: #3a6ff5;
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  right: 45px;
+  border: 1x solid #eee;
+  background: #f3f4f4;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.dateStyle > div > input {
+  border: none;
+  visibility: hidden;
+}
+:global .ant-calendar-input {
+  visibility: hidden !important;
+}
+:global .versionMenu {
+  width: 450px !important;
+}
+/*操作更多按钮*/
+.moreOperButton p {
+  height: 40px;
+  margin-bottom: 0;
+  width: 100px;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 40px;
+}
+.moreOperButton p:hover {
+  color: #3b6ff5;
+}
+/*批量操作按钮*/
+.batchOperButton p {
+  height: 40px;
+  margin-bottom: 0;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 40px;
+}
+.batchOperButton p:hover {
+  color: #3b6ff5;
+}
+/*新增*/
+.newContent .newItem {
+  display: block;
+  cursor: pointer;
+  line-height: 28px;
+}
+/*统计锁定的课程数量*/
+.lockNumbers {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 65px;
+  bottom: 0;
+  background: #ffffff;
+  padding: 20px 30px;
+  box-shadow: 0px 6px 30px 0px rgba(59, 111, 245, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lockNumbers .leftButton {
+  float: left;
+}
+.lockNumbers .leftButton a {
+  font-size: 16px;
+  color: #3b6ff5;
+  display: inline-block;
+  margin-right: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.lockNumbers .rightButton {
+  display: flex;
+  align-items: center;
+}
+.lockNumbers .rightButton a {
+  font-size: 16px;
+  color: #3b6ff5;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.lockNumbers .rightButton .cancelBtn {
+  background: #ffffff;
+  border: 1px solid #3b6ff5;
+  padding: 0px 24px;
+  border-radius: 20px;
+  color: #3b6ff5;
+  font-size: 14px;
+  margin: 0 20px;
+  cursor: pointer;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+}
+.lockNumbers .rightButton .confirmBtn {
+  background: #3b6ff5;
+  padding: 0px 24px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+}
+/*统计批量删除的数量*/
+.deleteResult {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 65px;
+  bottom: 0;
+  background: #ffffff;
+  padding: 20px 30px;
+  box-shadow: 0px 6px 30px 0px rgba(59, 111, 245, 0.12);
+}
+.deleteResult .leftContent {
+  float: left;
+  display: inline-block;
+}
+.deleteResult .leftContent span {
+  font-size: 16px;
+  color: #666;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.deleteResult .leftContent .yellowButton {
+  color: #e9b635;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.deleteResult .rightContent {
+  float: right;
+}
+.deleteResult .rightContent a {
+  font-size: 16px;
+  color: #3b6ff5;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.deleteResult .rightContent .cancelBtn {
+  background: #ffffff;
+  border: 1px solid #3b6ff5;
+  padding: 8px 24px;
+  border-radius: 20px;
+  color: #3b6ff5;
+  font-size: 14px;
+  margin: 0 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+.deleteResult .rightContent .confirmBtn {
+  background: #3b6ff5;
+  padding: 8px 24px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+.deleteResult .rightContent .notConfirmBtn {
+  background: #ddd;
+  padding: 8px 24px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+.exchangeResult {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  right: 0;
+  min-height: 65px;
+  bottom: 0;
+  background: #ffffff;
+  padding: 20px 30px;
+  box-shadow: 0px 6px 30px 0px rgba(59, 111, 245, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exchangeResult .leftContent {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.exchangeResult .leftContent a {
+  color: #333;
+  font-size: 14px;
+}
+.exchangeResult .leftContent .courseDetail {
+  display: inline-block;
+}
+.exchangeResult .leftContent .courseDetail em {
+  display: block;
+  font-style: normal;
+}
+.exchangeResult .leftContent .changeBtn {
+  margin: 0 10px;
+  width: 20px;
+  color: #999;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+}
+.exchangeResult .checkRules {
+  display: inline-block;
+  margin-left: 20px;
+  flex: 1;
+}
+.exchangeResult .checkRules .ruleContent {
+  font-style: normal;
+  color: #3b6ff5;
+  font-size: 16px;
+}
+.exchangeResult .checkRules .changeSuccess {
+  color: #67b251;
+  font-style: normal;
+}
+.exchangeResult .checkRules .changeConflict {
+  color: #e5492e;
+  font-style: normal;
+  cursor: pointer;
+}
+.exchangeResult .checkRules .waitingTips {
+  color: #999;
+  font-size: 12px;
+  font-style: normal;
+}
+.exchangeResult .rightButton {
+  float: right;
+}
+.exchangeResult .rightButton .cancelBtn {
+  background: #ffffff;
+  border: 1px solid #3b6ff5;
+  padding: 8px 24px;
+  border-radius: 20px;
+  color: #3b6ff5;
+  font-size: 14px;
+  margin: 0 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.exchangeResult .rightButton .confirmBtn {
+  background: #3b6ff5;
+  padding: 9px 22px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.exchangeResult .rightButton .grayBtn {
+  background: #eee;
+  color: #999;
+  padding: 9px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.exchangeResult .rightButton .onlyCancelBtn {
+  position: absolute;
+  right: 10%;
+  top: 15px;
+  background: #ffffff;
+  border: 1px solid #3b6ff5;
+  padding: 8px 24px;
+  border-radius: 20px;
+  color: #3b6ff5;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.confirmCase .confirmTitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.confirmCase .userDetail {
+  height: 235px;
+  overflow-y: scroll;
+}
+.confirmCase .userDetail p {
+  border: 1px solid #efefef;
+  padding: 10px 15px;
+  width: 352px;
+  margin-bottom: 20px;
+}
+.confirmCase .operButtonList {
+  text-align: center;
+  margin-top: 10px;
+}
+.confirmCase .operButtonList .modalBtn {
+  border: 1px solid #3b6ff5;
+  border-radius: 20px;
+  padding: 8px 23px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+.confirmCase .operButtonList .cancelBtn {
+  color: #3b6ff5;
+  background: #fff;
+  text-align: center;
+  margin-right: 10px;
+}
+.confirmCase .operButtonList .submitBtn {
+  background: #3b6ff5;
+  color: #fff;
+  text-align: center;
+}
+.confirmCase .operButtonList .grayBtn {
+  background: #eee;
+  color: #999;
+  text-align: center;
+  border: 1px solid #eee;
+  margin-right: 10px;
+}
+.errorPage .errorTitle {
+  font-size: 14px;
+  color: #3e3a39;
+}
+.errorPage .errorTitle span:nth-child(1) {
+  color: #999;
+}
+.errorPage .lookDetails {
+  color: #3b6ff5;
+  text-align: right;
+  cursor: pointer;
+}
+.errorPage .errorInfoDetail {
+  color: #000;
+  height: 100px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+.errorPage .errorInfoDetail .downloadUrl {
+  color: #3b6ff5;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+}
+.errorPage .errorLessons span {
+  color: #999;
+  display: block;
+  margin: 15px 0;
+}
+.errorPage .errorLessons .lessonList {
+  max-height: 150px;
+  overflow-y: scroll;
+  margin-left: 20px;
+  color: #3e3a39;
+}
+.errorPage .operButtonStyle {
+  text-align: center;
+  margin: 20px auto;
+}
+.errorPage .operButtonStyle span {
+  background: #3b6ff5;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.noPublished,
+.publishedContent {
+  color: #999 !important;
+  display: flex;
+  justify-content: space-between;
+}
+.noPublished .name,
+.publishedContent .name {
+  width: 84%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.noPublished .unPublished,
+.publishedContent .unPublished {
+  font-size: 12px;
+  flex: 1;
+}
+.publishedContent {
+  color: #666 !important;
+}
+.deleteConfirmContent {
+  width: 200px;
+  padding: 10px;
+}
+.deleteConfirmContent .buttonList {
+  text-align: right;
+  margin-top: 20px;
+}
+.deleteConfirmContent .cancelBtn {
+  color: #666;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.deleteConfirmContent .confirmBtn {
+  color: #fff;
+  background: #3b6ff5;
+  padding: 4px 12px;
+  border: 1px solid #3b6ff5;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.checkPopover {
+  display: block;
+}
+.checkPopover :global .ant-popover-content .ant-popover-arrow {
+  top: 36%;
+}
+.crateTip .hasKnow {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  background: #3b6ff5;
+  padding: 4px 12px;
+  border: 1px solid #3b6ff5;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+:global .ant-modal.tipStyle {
+  position: relative;
+  top: 300px;
+}
+:global .sourceEle {
+  border-width: 2px !important;
+  border-style: dashed !important;
+  border-color: #1476ff !important;
+}
+:global .targetEle {
+  background-color: #1476e1 !important;
+  color: white !important;
+}
+:global .ant-tabs-extra-content {
+  z-index: 1032;
+  left: 12px;
+}
+.changeModal {
+  width: 480px;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  z-index: 1031;
+  background: #fff;
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  cursor: default;
+}
+.changeModal .close {
+  cursor: pointer;
+}
+.changeModal :global .ant-tabs-extra-content {
+  float: left !important;
+  position: absolute !important;
+}
+.changeModal :global .ant-tabs-nav-scroll {
+  display: flex;
+  justify-content: center;
+}
+.rightArrow {
+  position: absolute;
+  right: 50px;
+  bottom: 290px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 8px solid white !important;
+  border-bottom: 8px solid transparent;
+}
+.tab {
+  border: #1476ff solid 1px;
+}
+.CheckboxGroup {
+  border-bottom: 1px solid #e9e9e9;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-bottom: none;
+}
+.CheckboxGroup :global .ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+.modalStyle {
+  width: 420px !important;
+}
+.modalStyle .changeVisible .selectStyle {
+  width: 120px;
+}
+.modalStyle .changeVisible .selectStyle :global .ant-select-selection {
+  border: none;
+}
+.modalStyle .changeVisible .classStyle {
+  width: 200px;
+}
+.modalStyle .changeVisible .classStyle :global .ant-select-selection {
+  width: 200px;
+}
+.modalStyle .changeVisible .classStyle :global .ant-select-selection--multiple {
+  border-radius: 7px;
+}
+.modalStyle .changeVisible .courseStyle :global .ant-select-selection {
+  width: 130px;
+}
+.modalStyle .changeVisible .courseStyle :global .ant-select-selection--single {
+  border-radius: 7px;
+}
+.modalStyle .changeVisible .courseStyle .doubleArrow {
+  display: flex;
+  width: 34px;
+  justify-content: space-between;
+  align-items: center;
+}
+.modalStyle .changeVisible .courseStyle .doubleArrow .leftTriangle {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 7px solid #50dc65;
+  border-bottom: 5px solid transparent;
+}
+.modalStyle .changeVisible .courseStyle .doubleArrow .connectLines {
+  width: 20px;
+  height: 3px;
+  background-color: #50dc65;
+}
+.modalStyle .changeVisible .courseStyle .doubleArrow .rightTriangle {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 7px solid #50dc65;
+  border-bottom: 5px solid transparent;
+}
+.modalStyle :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.modalStyle :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.modalStyle :global .ant-input {
+  height: 36px !important;
+  border-radius: 8px !important;
+}
+.modalStyle :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.modalStyle :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px;
+}
+.modalStyle :global .ant-select-lg .ant-select-selection--multiple {
+  min-height: 36px;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.form {
+  display: inline-block;
+  margin-left: 39%;
+}

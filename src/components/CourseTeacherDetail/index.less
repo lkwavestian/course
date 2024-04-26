@@ -1,0 +1,411 @@
+.loadInitData {
+    width: 91.46%;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+.CourseDetail {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #ffffff;
+    .nav {
+        // width: 97.46%;
+        margin: 0 auto;
+        height: 54px;
+        line-height: 54px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        .navTop {
+            .icon {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border-top: 4px solid #969fa9;
+                border-left: 4px solid #969fa9;
+                border-radius: 4px;
+                transform: rotate(-45deg);
+                transform-origin: center center;
+            }
+            .title {
+                font-size: 18px;
+                font-weight: 600;
+                color: #464c56;
+                margin: 0 6px;
+            }
+            .type {
+                .bz {
+                    width: 48px;
+                    height: 36px;
+                    padding: 5px 16px;
+                    border-radius: 21px;
+                    font-size: 8px;
+                }
+                .type0,
+                .type2,
+                .type3 {
+                    color: #969fa9;
+                    background-color: #f0f0f0;
+                }
+                .type1 {
+                    background-color: rgba(55, 120, 255, 0.15);
+                    color: #3778ff;
+                }
+                .time {
+                    position: relative;
+                    top: -4px;
+                    left: 0;
+                }
+            }
+        }
+        .area {
+            .btn {
+                width: 112px;
+                border-radius: 20px;
+                color: #3778ff;
+                border: 1px solid #3778ff;
+                margin: 0 5px;
+            }
+            .btnDis {
+                border-radius: 20px;
+                margin: 0 5px;
+            }
+            .pop {
+                margin-left: 16px;
+                position: relative;
+                top: -3px;
+                left: 0;
+                i {
+                    display: inline-block;
+                    width: 6px;
+                    height: 6px;
+                    background-color: #969fa9;
+                    border-radius: 50%;
+                    margin-right: 4px;
+                    cursor: pointer;
+                }
+            }
+            .disabled {
+                cursor: not-allowed;
+                i {
+                    cursor: auto;
+                }
+            }
+        }
+    }
+    .navMain {
+        width: 97.46%;
+        margin: 0 auto;
+    }
+
+    .tabContent {
+        .tab {
+            width: 100%;
+            // border-bottom: 1px solid #f0f0f0;
+            height: 54px;
+            line-height: 54px;
+            box-sizing: border-box;
+            position: relative;
+    z-index: 3;
+            .title {
+                display: inline-block;
+                // width: 185px;
+                text-align: center;
+                font-size: 16px;
+                color: #969fa9;
+                cursor: pointer;
+                transition: all 0.5s;
+            }
+            .active {
+                .el {
+                    box-sizing: border-box;
+                    display: inline-block;
+                    height: 54px;
+                    padding: 0 12px;
+                    color: #3778ff;
+                    transition: all 0.5s;
+                    border-bottom: 3px solid #3778ff;
+                }
+            }
+        }
+    }
+}
+
+.popover {
+    width: 100px;
+    .item {
+        height: 36px;
+        line-height: 36px;
+        overflow: hidden;
+        font-size: 14px;
+        color: #464c56;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+            font-size: 14px;
+            color: #3778ff;
+            transition: all 0.5s;
+        }
+    }
+}
+.effectiveConfirm {
+    .effective {
+        text-align: center;
+        .title,
+        .text {
+            display: block;
+        }
+        :global{
+            .ant-btn{   //取消按钮样式
+              height: 36px !important;
+              line-height: 36px !important;
+              border-radius: 8px !important;
+              color: rgba(1, 17, 61, 0.65) !important;
+              background: rgba(1, 17, 61, 0.07) !important;
+              text-align: center;
+              border: 0 !important;
+              &.ant-btn-primary{  //确认按钮样式
+                background:  #3B6FF5 !important;
+                color: #fff !important;
+                
+              }
+            }
+            .ant-input{
+              height: 36px !important;
+              border-radius: 8px !important;
+            }
+          
+            .ant-select-selection__rendered{
+              line-height: 36px !important; 
+            }
+          
+            .ant-select-selection--single{
+              border-radius: 8px !important;
+              height: 36px;
+            }
+          
+            .ant-select-lg .ant-select-selection--multiple{
+              min-height: 36px;
+              border-radius: 8px;
+              padding-bottom: 0;
+            }
+        }
+    }
+    :global {
+        .ant-modal-confirm-btns {
+            float: unset;
+            text-align: center;
+            .ant-btn {
+                width: 88px;
+                height: 40px;
+                border-radius: 20px;
+                border: 1px solid #4d7fff;
+                color: #4d7fff;
+            }
+            .ant-btn-primary {
+                background: #4d7fff;
+                color: #fff;
+            }
+        }
+    }
+}
+.horizon{
+    border-top: 1px solid #ccc;
+    position: relative;
+    bottom: 3px;
+    z-index: 2;
+    width: 96%;
+    margin: auto;
+}
+// .item {
+//     height: 70px;
+//     border-bottom: 1px solid #f0f0f0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 12px;
+//     position: relative;
+//     &:last-child {
+//         border-bottom: 1px solid transparent;
+//     }
+//     .time {
+//         color: #969fa9;
+//         .going {
+//             position: absolute;
+//             top: 30px;
+//             left: 0;
+//             width: 0;
+//             height: 0;
+//             border-top: 6px solid transparent;
+//             border-left: 10px solid #3778ff;
+//             border-bottom: 6px solid transparent;
+//         }
+//     }
+//     .activeTime {
+//         color: #3778ff;
+//         i {
+//             font-size: 12px;
+//             position: absolute;
+//             right: 4px;
+//             top: 21px;
+//             cursor: pointer;
+//         }
+//     }
+// }
+.title {
+    color: #969fa9;
+    cursor: pointer;
+}
+.icon {
+    color: #3778ff;
+    cursor: pointer;
+    i {
+        margin-right: 6px;
+    }
+}
+.active {
+    font-size: 12px;
+    color: #3778ff;
+    cursor: pointer;
+}
+.openCourse {
+    padding: 12px 16px;
+    .item {
+        font-size: 12px;
+        color: #969fa9;
+    }
+    .active {
+        font-size: 12px;
+        color: #3778ff;
+        cursor: pointer;
+    }
+    .btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+    button {
+        text-align: right;
+        border-radius: 8px;
+        margin-top: 12px;
+    }
+}
+.b {
+    margin-right: 12px;
+}
+.sure {
+    background: #3b6ff5 !important;
+    color: #fff !important;
+}
+.cannel {
+    color: rgba(1, 17, 61, 0.65) !important ;
+    background: rgba(1, 17, 61, 0.07) !important;
+    border: 0 !important;
+}
+.opreate, .effect, .openSelect{
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}
+.effect {
+    .title {
+        margin: 5px;
+        font-weight: bolder;
+        color: black;
+        width: 150px;
+    }
+}
+
+.effectiveContent {
+    display: flex;
+    justify-content: space-around;
+    .title {
+        margin-top: 5px;
+        font-weight: bolder;
+        color: black;
+    }
+}
+.opreate{
+    position: absolute;
+    right: -80%;
+}
+.removeContainer {
+    .title {
+        display: block;
+        width: 100%;
+        color: #464c56;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+    }
+    button {
+        border-radius: 8px;
+    }
+    :global {
+        .ant-btn {
+            //取消按钮样式
+            height: 36px !important;
+            line-height: 36px !important;
+            border-radius: 8px !important;
+            color: rgba(1, 17, 61, 0.65) !important;
+            background: rgba(1, 17, 61, 0.07) !important;
+            text-align: center;
+            border: 0 !important;
+            &.ant-btn-primary {
+                //确认按钮样式
+                background: #3b6ff5 !important;
+                color: #fff !important;
+            }
+        }
+        .ant-input {
+            height: 36px !important;
+            border-radius: 8px !important;
+        }
+
+        .ant-select-selection__rendered {
+            line-height: 36px !important;
+        }
+
+        .ant-select-selection--single {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+
+        .ant-select-lg .ant-select-selection--multiple {
+            min-height: 36px;
+            border-radius: 8px;
+            padding-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.first {
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+.first .classType {
+    margin-right: 20px;
+}
+.first .XZclass {
+    margin-bottom: 20px;
+}
+.second {
+    margin-top: 25px;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-bottom: 25px;
+}
+.second div:nth-of-type(1) {
+    margin-bottom: 25px;
+}
+.second .nowSemester {
+    position: relative;
+    left: 300px;
+    top: -15px;
+    color: #999;
+}
+.second .semester {
+    position: relative;
+    left: 40px;
+    top: -15px;
+    color: #999;
+}
+.second .checkAllText {
+    margin-left: 18px;
+}
+.checkGroup :global .ant-checkbox-group-item {
+    display: block;
+    margin-bottom: 27px;
+}
+.checkGroup :global .ant-checkbox {
+    margin-right: 18px;
+}
+.checkAll :gloabl .ant-checkbox {
+    margin-right: 18px;
+}
+.btn {
+    text-align: center;
+}
+.btn .cancel {
+    border-radius: 20px;
+    padding: 9px 29px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #3b6ff5;
+    color: #3b6ff5;
+    text-align: center;
+    margin-right: 10px;
+}
+.btn .comfrim {
+    border-radius: 20px;
+    padding: 9px 29px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #3b6ff5;
+    color: #fff;
+    text-align: center;
+}

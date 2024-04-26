@@ -1,0 +1,230 @@
+.courseplan {
+    margin: 20px auto;
+    width: 98%;
+    min-height: 90vh;
+    border-radius: 10px;
+    background: #fff;
+    padding: 2% 0 4%;
+}
+.courseplan .main {
+    background: #fff;
+    border-radius: 10px;
+}
+.courseplan .main .searchHeader {
+    margin: 0 auto;
+    padding: 0 2%;
+    display: inline-block;
+}
+.courseplan .main .searchHeader .searchStyle > input {
+    border-radius: 20px !important;
+}
+.courseplan .main .historyBtn {
+    float: right;
+    margin-right: 2%;
+}
+.courseplan .main .historyBtn span {
+    background: #3a6ff5;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.courseplan .main .operButton {
+    float: right;
+    margin-right: 2%;
+}
+.courseplan .main .operButton a {
+    background: #3a6ff5;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.courseplan .main .courseCard {
+    clear: both;
+    margin-top: 21px;
+    padding: 0 1%;
+}
+.courseplan .main .courseCard .noSourceBox .noPlan {
+    position: relative;
+    top: 100px;
+    left: 299px;
+    width: 766px;
+    height: 378px;
+    background: #f9f9f9;
+}
+.courseplan .main .courseCard .noSourceBox .noPlan .text {
+    font-size: 28px;
+    position: absolute;
+    top: 106px;
+    left: 56px;
+}
+.courseplan .main .courseCard .noSourceBox .noPlan .btn {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    width: 160px;
+    height: 56px;
+    background: #2ca968;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    position: absolute;
+    top: 187px;
+    left: 50px;
+    padding-top: 13px;
+    cursor: pointer;
+}
+.courseplan .main .courseCard .noSourceBox .noPlan .picture {
+    position: absolute;
+    right: 35px;
+    top: 100px;
+}
+:global .ant-select-selection--multiple {
+    border-radius: 20px;
+    max-height: 108px;
+    overflow: auto;
+}
+.selectStyle {
+    margin-right: 12px;
+    min-width: 120px;
+    vertical-align: top;
+}
+.selectStyle > div {
+    border-radius: 20px !important;
+}
+.treeStyle {
+    width: 120px;
+    margin-right: 8px;
+}
+.treeStyle > span {
+    border-radius: 20px !important;
+}
+.paginationStyle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 98%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1% 0;
+    z-index: 99;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 12px rgba(59, 111, 245, 0.1);
+}
+.paginationStyle:after {
+    content: '';
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+.paginationStyle .pageContainer {
+    float: right;
+    margin-right: 20px;
+}
+.importHistory {
+    width: 91.46%;
+    margin: 0 auto;
+}
+.importHistory .selectTips {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.web .ant-modal-content {
+    box-shadow: none !important;
+}
+.contitle {
+    margin-right: 16px;
+}
+.Search input {
+    border-radius: 24px;
+}
+.checkBoxs {
+    width: 100%;
+    margin-top: 21px;
+}
+.checkBoxs .functions {
+    position: absolute;
+    right: 12%;
+    display: inline-block;
+    width: 10%;
+}
+.checkBoxs .functions .new {
+    margin-right: 25%;
+}
+.checkBoxs .functions span {
+    color: #4d7fff;
+    cursor: pointer;
+}
+.checkBoxs .boxItem {
+    margin-top: 12px;
+    max-height: 45vh;
+    min-height: 45vh;
+    overflow: scroll;
+}
+.checkBoxs .boxItem label {
+    width: 24%;
+    margin-bottom: 12px;
+    vertical-align: text-top;
+}
+.checkBoxs .boxItem :global .ant-checkbox-group {
+    width: 100%;
+}
+.conentSub {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 72px;
+    height: 30px;
+    background: #4d7fff;
+    border-radius: 27px;
+    line-height: 30px;
+    color: #fff;
+}
+.conentClo {
+    position: absolute;
+    top: 0;
+    margin-left: 12px;
+    font-size: 34px;
+    cursor: pointer;
+}
+.loding {
+    margin: 208px auto;
+    font-size: 18px;
+    width: 112px;
+    text-align: center;
+    color: #239fff;
+}
+.omittedStyle {
+    font-style: normal;
+    color: #3b6ff5;
+    font-weight: bold;
+}
+.modelTitle {
+    display: flex;
+    justify-content: space-between;
+}
+.modelTitle .icon {
+    cursor: pointer;
+}
+.modelTitle button {
+    border-radius: 20px;
+}
+.newAdd {
+    margin-bottom: 16px;
+}
+.newAdd .contitle {
+    line-height: 30px;
+}
+.searchIcon {
+    font-size: 21px;
+    cursor: pointer;
+    vertical-align: top;
+    line-height: 40px;
+    color: #969fa9;
+    display: inline-block;
+}

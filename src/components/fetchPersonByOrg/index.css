@@ -1,0 +1,117 @@
+.fetchPersonByOrgStyle .selectPerson {
+    padding: 5px 10px;
+    border-radius: 20px;
+    line-height: 20px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.fetchPersonByOrgStyle .selectPerson .selectPersonNum {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+}
+.fetchPersonByOrgStyle .selectPerson .selectPersonNum em {
+    display: inline-block;
+    margin: 0 3px;
+    color: #3b6ff5;
+    font-style: normal;
+    font-weight: bold;
+}
+.fetchPersonByOrgStyle .selectPerson span {
+    display: inline-block;
+    background: #eee;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.fetchPersonByOrgStyle .selectPerson span i {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+.fetchPersonByOrgStyle .selectPerson p {
+    color: #999;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+.fetchPersonByOrgStyle .allStudentNum {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+.fetchPersonByOrgStyle .allStudentNum span {
+    display: block;
+    flex: 1;
+}
+.fetchPersonByOrgStyle .allStudentNum span em {
+    display: inline-block;
+    margin: 0 3px;
+    color: #3b6ff5;
+    font-style: normal;
+    font-weight: bold;
+}
+.fetchPersonByOrgStyle .allStudentNum span.clearBtn {
+    color: #3b6ff5;
+    font-size: 14px;
+    text-align: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fetchPersonByOrgStyle .searchCondition {
+    background: #ffffff;
+    box-shadow: 0px 6px 25px 0px rgba(59, 111, 245, 0.12);
+    height: 320px;
+    overflow-y: scroll;
+    display: flex;
+    display: -webkit-flex;
+    margin-top: 20px;
+}
+.fetchPersonByOrgStyle .searchCondition .leftContainer {
+    flex: 1;
+    -webkit-flex: 1;
+    border-right: 1px solid #ddd;
+    margin-right: 10px;
+    height: 320px;
+    overflow: scroll;
+}
+.fetchPersonByOrgStyle .searchCondition .rightContainer {
+    flex: 1;
+    -webkit-flex: 1;
+    padding: 10px 20px 20px 10px;
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+.inputStyle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 96%;
+    height: 32px;
+}
+.inputStyle > input {
+    border-radius: 20px;
+}
+.checkboxGroup {
+    position: relative;
+    margin-top: 32px;
+    height: 277px;
+    overflow-y: scroll;
+}
+.littleTips {
+    display: block;
+    color: #333;
+    text-align: center;
+}
+.littleTips i {
+    color: #3b6ff5;
+    font-size: 18px;
+    vertical-align: top;
+}
+:global .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background: #fff !important;
+    color: #3b6ff5 !important;
+}

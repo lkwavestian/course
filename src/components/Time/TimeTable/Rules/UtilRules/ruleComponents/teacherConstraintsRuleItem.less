@@ -1,0 +1,105 @@
+.teacherConstraintsRuleItemWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    border: 1px solid rgba(1, 17, 61, 0.1);
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 12px;
+}
+
+.teacherConstraintsRuleItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftPart,
+.rightPart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.saveBtn {
+    padding: 0 11px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    line-height: 22px;
+    color: #ffffff;
+    border-radius: 5px;
+    background: #3b6ff5;
+    cursor: pointer;
+}
+
+.cancel {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    line-height: 17px;
+    color: #3b6ff5;
+}
+
+.title {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    :global {
+        .ant-tooltip-inner {
+            white-space: pre-wrap;
+        }
+    }
+}
+
+.btnList {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    white-space: nowrap;
+    float: right;
+    color: #3b6ff5;
+    font-size: 16px;
+    cursor: pointer;
+    .disable {
+        color: #999;
+        pointer-events: none;
+    }
+}
+
+.weightPercentage {
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+    .commonButton {
+        display: block;
+        color: #fff;
+        border-radius: 20px;
+        padding: 6px;
+        text-align: center;
+        cursor: pointer;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+    }
+    .necessaryBtn {
+        background: #67b251;
+    }
+    .unNecessaryBtn {
+        background: rgba(103, 178, 81, 0.4);
+    }
+    .weightPercentageList {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        width: 110px;
+        padding: 10px;
+        left: -22px;
+        top: 0;
+        z-index: 99;
+        background: #ffffff;
+        box-shadow: 0px 6px 25px 0px rgba(59, 111, 245, 0.12);
+    }
+}

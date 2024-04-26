@@ -1,0 +1,596 @@
+.coursePage {
+  background: #fff;
+  display: -webkit-flex;
+  display: flex;
+  display: -moz-flex;
+}
+
+.coursePage .courseMenu {
+  flex: 1.5;
+  -webkit-flex: 1.5;
+  -moz-flex: 1.5;
+  padding: 10px;
+  max-width: 300px;
+}
+
+.coursePage .courseMenu .selectItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coursePage .courseMenu .menuList {
+  margin-top: 14px;
+  height: 120px;
+  overflow-y: scroll;
+}
+
+.coursePage .courseMenu .menuList .menuCard {
+  width: 100%;
+  height: 40px;
+  background: rgba(55, 152, 255, 0.1);
+  color: #3798ff;
+  font-size: 14px;
+  line-height: 40px;
+  position: relative;
+}
+
+.coursePage .courseMenu .menuList .menuCard>span:nth-child(1) {
+  margin-left: 12px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.coursePage .courseMenu .menuList .menuCard>span:nth-child(1) .arrangeCourseName {
+  display: inline-block;
+  width: 110px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-style: normal;
+  float: left;
+}
+
+.coursePage .courseMenu .menuList .menuCard>span:nth-child(1) .editBtn {
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.coursePage .courseMenu .menuList .menuCard>span:nth-child(2) {
+  float: right;
+  margin-right: 9px;
+  font-size: 14px;
+}
+
+.coursePage .courseMenu .menuList .menuCard .courseLine {
+  background: #3798ff;
+  width: 4px;
+  top: 50%;
+  height: 40px;
+  margin-top: -20px;
+  left: 0;
+  position: absolute;
+}
+
+.coursePage .courseMenu :global .ant-select .ant-select-selection--single {
+  border-radius: 8px;
+}
+
+.coursePage :global .ant-spin-nested-loading {
+  flex: 4;
+}
+
+.coursePage :global .ant-spin-nested-loading .ant-spin-container {
+  height: 100%;
+}
+
+.coursePage .subjectList {
+  flex: 4;
+  -webkit-flex: 4;
+  -moz-flex: 4;
+  padding: 16px 30px 0px;
+}
+
+.coursePage .subjectList .subjectSum {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 12px;
+  max-height: 40px;
+  overflow: scroll;
+}
+
+.coursePage .subjectList .subjectSum>span {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.coursePage .subjectList .newConstruction span {
+  float: right;
+  color: #3798ff;
+  cursor: pointer;
+}
+
+.coursePage .subjectList .rowStyle {
+  height: 124px;
+  overflow-y: scroll;
+}
+
+.coursePage .subjectList .courseCard {
+  height: 57px;
+  border-radius: 10px;
+  background: rgba(55, 152, 255, 0.1);
+  padding: 5px 10px !important;
+  color: #666;
+  margin: 3px 10px;
+  width: 134px;
+  cursor: pointer;
+}
+
+.coursePage .subjectList .courseCard>p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  align-items: center;
+}
+
+.coursePage .subjectList .courseCard>p .classTitle {
+  color: #666;
+  font-size: 14px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.coursePage .subjectList .courseCard>p .spendTime {
+  font-size: 12px;
+  float: right;
+  white-space: nowrap;
+}
+
+.coursePage .subjectList .courseCard>p .spendTime>em {
+  font-style: normal;
+}
+
+.coursePage .subjectList .courseCard>p .spendTime>i {
+  cursor: pointer;
+}
+
+.coursePage .subjectList .courseCard>p .spendTime .arrowRight {
+  cursor: pointer;
+}
+
+.coursePage .subjectList .courseCard>p .mainTeacher {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.coursePage .subjectList .courseCard>p .mainTeacher em {
+  width: 85px;
+  font-style: normal;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.coursePage .subjectList .courseCard>p .mainTeacher>i {
+  margin-left: 10px;
+}
+
+.coursePage .subjectList .courseCard>p .mainTeacher .teacher {
+  width: 40px;
+  text-overflow: unset;
+  overflow: hidden;
+}
+
+.coursePage .subjectList .courseCard>p .courseOperBtn {
+  font-size: 14px;
+  float: right;
+}
+
+.coursePage .subjectList .courseCard>p .courseOperBtn>i {
+  cursor: pointer;
+}
+
+.coursePage .subjectList .courseCard>p .courseOperBtn>i:nth-child(1) {
+  margin-right: 10px;
+}
+
+.coursePage .arrangeBtn {
+  height: 100%;
+  flex: 5.5;
+  margin: 12px 12px 0;
+  background: #f7f7f7;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-height: 176px;
+}
+
+.coursePage .bufferPart {
+  flex: 2;
+  padding: 16px 8px 0;
+  width: 26%;
+}
+
+.coursePage .bufferPart .infoAndAction {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.coursePage .bufferPart .infoAndAction .action {
+  float: right;
+}
+
+.coursePage .bufferPart .cardPart {
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 124px;
+  overflow: scroll;
+}
+
+.coursePage .bufferPart .cardPart .card {
+  background: rgba(46, 163, 245, 0.1);
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 134px;
+  margin: 3px 0;
+  height: 57px;
+  margin-right: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.coursePage .bufferPart .cardPart .card .topInfo,
+.coursePage .bufferPart .cardPart .card .bottomInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coursePage .bufferPart .cardPart .card .topInfo {
+  margin-bottom: 7px;
+}
+
+.coursePage .bufferPart .cardPart .card .topInfo .course {
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.coursePage .bufferPart .cardPart .card .topInfo .actionSigle {
+  cursor: pointer;
+}
+
+.coursePage .bufferPart .cardPart .card .topInfo .actionAndTime {
+  white-space: nowrap;
+}
+
+.coursePage .bufferPart .cardPart .card .bottomInfo .group {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.coursePage .bufferPart .cardPart .card .bottomInfo .name {
+  white-space: nowrap;
+}
+
+:global .ant-drawer-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+:global .courseMenu {
+  width: 200px !important;
+}
+
+.courseDetail {
+  margin-left: 40px;
+  height: 100%;
+  flex: 1;
+}
+
+.waitHave {
+  line-height: 2;
+  margin-right: 70px;
+}
+
+.waitCourseText {
+  display: inline-block;
+  color: #3b6ff5;
+  cursor: pointer;
+}
+
+.haveCourseText {
+  display: inline-block;
+  color: #666;
+  cursor: pointer;
+}
+
+.exit {
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  background-color: #1476ff;
+  border-radius: 8px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-left: 50px;
+  cursor: pointer;
+  padding-top: 2px;
+  margin-top: 3px;
+}
+
+.collapsedText {
+  float: right;
+  font-size: 14px;
+  color: #3b6ff5;
+  cursor: pointer;
+  line-height: 2;
+  margin-left: 50px;
+}
+
+:global .ant-drawer-body {
+  padding: 0;
+}
+
+:global .ant-modal-wrap {
+  z-index: 1032;
+}
+
+:global .ant-drawer-header {
+  padding: 8px 24px 6px 24px;
+}
+
+:global .ant-modal-content {
+  height: 100%;
+}
+
+.selectTeacher>p {
+  font-size: 14px;
+  color: #000;
+  margin: 15px 0 10px;
+}
+
+.setCourseTime .popTitle {
+  font-size: 16px;
+  color: #000;
+  margin: 15px 0 10px;
+  text-align: center;
+}
+
+.setCourseTime>div {
+  margin: 15px 0 10px;
+}
+
+.setCourseTime .ruleButton {
+  display: inline-block;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.setCourseTime .ruleButton .ruleContent {
+  font-style: normal;
+  color: #3b6ff5;
+  font-size: 14px;
+}
+
+.setCourseTime .ruleButton .changeSuccess {
+  color: #67b251;
+  font-style: normal;
+}
+
+.setCourseTime .ruleButton .changeConflict {
+  color: #e5492e;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.setCourseTime .ruleButton .waitingTips {
+  color: #999;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.cursorStyle {
+  cursor: pointer;
+}
+
+.operBtn {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.cancelBtn {
+  font-size: 14px;
+  color: #3b6ff5;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.confirmBtn {
+  font-size: 14px;
+  background: #3b6ff5;
+  color: #fff;
+  padding: 2px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sumMin {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sumMin span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.cardList {
+  height: 77%;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+
+.saveAndDelete {
+  overflow: hidden;
+  margin: 15px auto;
+}
+
+.saveAndDelete .deleteBtn {
+  float: left;
+  display: inline-block;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.saveAndDelete .deleteBtn>i {
+  color: #3b6ff5;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.saveAndDelete .saveBtn {
+  float: right;
+  cursor: pointer;
+  background: #3b6ff5;
+  display: inline-block;
+  padding: 7px 22px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.noCourseArrange {
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+  line-height: 50px;
+}
+
+.conflictModals .conflictTitle {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.conflictModals .conflictContent {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 10px;
+  max-height: 100px;
+  overflow-y: scroll;
+}
+
+.conflictButton {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.conflictButton .cancelBtn {
+  color: #3b6ff5;
+  background: #fff;
+  text-align: center;
+  margin-right: 10px;
+  border: 1px solid #3b6ff5;
+  border-radius: 20px;
+  padding: 8px 23px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.conflictButton .submitBtn {
+  background: #3b6ff5;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #3b6ff5;
+  border-radius: 20px;
+  padding: 8px 23px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.conflictButton .grayButton {
+  background: #eee;
+  color: #999;
+  text-align: center;
+  border-radius: 20px;
+  padding: 8px 23px;
+  display: inline-block;
+}
+
+.errorPage .errorTitle {
+  font-size: 14px;
+  color: #3e3a39;
+}
+
+.errorPage .errorTitle span:nth-child(1) {
+  color: #999;
+}
+
+.errorPage .lookDetails {
+  color: #3b6ff5;
+  text-align: right;
+  cursor: pointer;
+}
+
+.errorPage .errorInfoDetail {
+  color: #000;
+  height: 100px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.errorPage .errorInfoDetail .downloadUrl {
+  color: #3b6ff5;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+}
+
+.errorPage .errorLessons span {
+  color: #999;
+  display: block;
+  margin: 15px 0;
+}
+
+.errorPage .errorLessons .lessonList {
+  max-height: 150px;
+  overflow-y: scroll;
+  margin-left: 20px;
+  color: #3e3a39;
+}
+
+.errorPage .operButtonStyle {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.errorPage .operButtonStyle span {
+  background: #3b6ff5;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}

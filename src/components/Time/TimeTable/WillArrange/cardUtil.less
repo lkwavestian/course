@@ -1,0 +1,163 @@
+.globalCardUtil {
+    border: 1px solid rgba(239, 239, 239, 1);
+    margin-bottom: 30px;
+    min-width: 600px;
+    .setPlanTable {
+        .rowStyle {
+            border-bottom: 1px solid rgba(239, 239, 239, 1);
+            display: flex;
+            display: -webkit-flex;
+            &:nth-last-child(1) {
+                border-bottom: 0 none;
+            }
+            & > div {
+                display: -webkit-box;
+                -webkit-box-pack: center;
+                -webkit-box-align: center;
+                -webkit-box-orient: vertical;
+                text-align: center;
+                padding: 15px 0;
+                border-right: 1px solid rgba(239, 239, 239, 1);
+                &:nth-last-child(1) {
+                    border-right: 0 none;
+                }
+            }
+            .addRow {
+                color: #666;
+                font-size: 20px;
+                display: inline-block;
+                margin: 0 15px;
+                cursor: pointer;
+            }
+            .numberText {
+                color: #999;
+                font-size: 14px;
+                margin-left: 5px;
+            }
+            .arrangeHas {
+                color: #999;
+                font-size: 14px;
+                margin: 0 8px;
+                .num {
+                    color: rgb(55, 152, 255);
+                    margin: 0 1px;
+                }
+            }
+            .everytime {
+                color: #999;
+                margin: 0 8px;
+            }
+            .arrangeNum {
+                display: block;
+                margin-top: 5px;
+            }
+            .deleteRow {
+                color: #666;
+                font-size: 20px;
+                display: inline-block;
+                cursor: pointer;
+                margin: 0 12px;
+            }
+            .singleLine {
+                display: -webkit-box;
+                display: inlinocke-bl;
+                -webkit-box-pack: center;
+                -webkit-box-align: center;
+                -webkit-box-orient: vertical;
+                // height: 22px;
+                line-height: 22px;
+                // line-height: 48px;
+                .eachWeek {
+                    height: 22px;
+                    div {
+                        height: 22px;
+                        div {
+                            height: 22px;
+                            line-height: 22px;
+                            div {
+                                height: 22px;
+                            }
+                        }
+                        /* span{
+                          height: 22px;
+                          position: relative;
+                          top: 0;
+                      } */
+                        span > i {
+                            position: relative;
+                            top: 1px;
+                        }
+                    }
+                }
+                .dividerLine {
+                    display: inline-block;
+                    margin: 0 2px;
+                }
+                :global {
+                    .ant-input-number {
+                        height: 22px;
+                        line-height: 22px;
+                        margin-top: 0 !important;
+                        margin-right: 2px;
+                        .ant-input-number-input-wrap {
+                            height: 22px;
+                            input {
+                                height: 22px;
+                            }
+                        }
+                    }
+                    .ant-input {
+                        height: 22px;
+                        line-height: 22px;
+                        position: relative;
+                        top: -4px;
+                    }
+                }
+            }
+        }
+    }
+}
+.treeSelectStyle {
+    max-height: 90px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    & > span > ul > li {
+        max-width: 88px !important;
+    }
+}
+.treeSelectStyle > span {
+    border: none !important;
+    outline: none !important;
+}
+:global {
+    .ant-select-focused .ant-select-selection,
+    .ant-select-selection:focus,
+    .ant-select-selection:active {
+        -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0);
+        box-shadow: 0 0 0 2px rgba(24, 144, 255, 0);
+    }
+}
+
+.wrapper {
+    .courseName {
+        width: 180px;
+        display: table-cell;
+        font-size: 18px;
+        align-items: center;
+        text-align: center;
+        border-right: 1px solid #efefef;
+        vertical-align: middle;
+        .groupName {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        // background-color: #bfa;
+    }
+    .setPlanTable {
+        display: table-cell;
+        width: 1200px;
+    }
+}

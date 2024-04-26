@@ -1,0 +1,261 @@
+.structurePage {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: center;
+    background: #fff;
+    width: 100%;
+}
+.structurePage .leftBar {
+    flex: 2;
+    -webkit-flex: 2;
+    -moz-flex: 2;
+    background: #fafbff;
+    min-height: 100vh;
+    padding: 20px;
+    min-width: 300px;
+    overflow-y: scroll;
+}
+.structurePage .rightContainer {
+    flex: 9;
+    -webkit-flex: 9;
+    -moz-flex: 9;
+}
+.structurePage .rightContainer .infoCard {
+    background: #fff;
+    padding: 37px 22px 22px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+}
+.structurePage .rightContainer .infoCard .infoDetail {
+    flex: 2;
+    -webkit-flex: 2;
+    -moz-flex: 2;
+}
+.structurePage .rightContainer .infoCard .infoDetail p {
+    margin-bottom: 20px;
+}
+.structurePage .rightContainer .infoCard .infoDetail .infoTitle p .orgName {
+    font-size: 24px;
+    color: #000;
+    margin: 0;
+}
+.structurePage .rightContainer .infoCard .infoDetail .infoTitle p span {
+    color: #666;
+    font-size: 14px;
+    margin: 0 10px;
+}
+.structurePage .rightContainer .infoCard .infoDetail .infoTitle p .editOrgBtn {
+    color: #3b6ff5;
+    font-size: 14px;
+    cursor: pointer;
+}
+.structurePage .rightContainer .infoCard .infoDetail .infoOther p span {
+    color: #000;
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.structurePage .rightContainer .infoCard .infoDetail .infoOther p span em {
+    font-style: normal;
+    color: #333;
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+.structurePage .rightContainer .infoCard .infoDetail .infoOther p .setOrgBtn {
+    color: #3b6ff5;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.structurePage .rightContainer .infoCard .infoDetail .infoOther .isLeader {
+    color: #f7bd12;
+    font-size: 18px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    font-weight: normal;
+}
+.structurePage .rightContainer .infoCard .infoOperation {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    text-align: right;
+}
+.structurePage .rightContainer .infoCard .infoOperation .createOrgBtn {
+    display: inline-block;
+    padding: 8px 13px;
+    background: #3b6ff5;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.structurePage .rightContainer .infoCard .infoOperation .createOrgBtn i {
+    font-size: 16px;
+    margin-right: 3px;
+}
+.structurePage .rightContainer .infoCard .infoOperation .getDd {
+    border: 1px solid #3b6ff5;
+    color: #3b6ff5;
+    font-size: 14px;
+    padding: 10px 17px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.structurePage .rightContainer .infoTable {
+    padding: 37px 22px 22px;
+}
+.structurePage .rightContainer .infoTable .searchCondition {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition {
+    flex: 3;
+    -webkit-flex: 3;
+    -moz-flex: 3;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition p {
+    margin-bottom: 20px;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition .personNum {
+    font-size: 24px;
+    color: #000;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition .personNum em {
+    font-size: 14px;
+    color: #666;
+    font-style: normal;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition .searchStyle > input {
+    border-radius: 20px;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition .batchCondition {
+    margin-bottom: 20px;
+}
+.structurePage
+    .rightContainer
+    .infoTable
+    .searchCondition
+    .leftCondition
+    .batchCondition
+    .batchButton {
+    display: inline-block;
+    padding: 5px 13px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #3b6ff5;
+    border-radius: 20px;
+    color: #3b6ff5;
+}
+.structurePage
+    .rightContainer
+    .infoTable
+    .searchCondition
+    .leftCondition
+    .batchCondition
+    .batchButton
+    i {
+    font-size: 15px;
+    margin-right: 7px;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition .batchStyle > div {
+    border-radius: 20px;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition .addPerson {
+    display: inline-block;
+    padding: 5px 12px;
+    background: #3b6ff5;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition .addPerson i {
+    font-size: 16px;
+    margin-right: 3px;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition .reloadBtn {
+    display: inline-block;
+    padding: 5px 12px;
+    background: #fff;
+    border-radius: 20px;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.structurePage .rightContainer .infoTable .searchCondition .leftCondition .reloadBtn i {
+    font-size: 16px;
+    margin-right: 3px;
+}
+.structurePage .rightContainer .infoTable .searchCondition .rightCondition {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    text-align: right;
+}
+.structurePage .rightContainer .infoTable .searchCondition .rightCondition .checkboxContent {
+    color: #666;
+    font-size: 14px;
+}
+.paginationStyle {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2% 0;
+}
+.paginationStyle:after {
+    content: '';
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+.paginationStyle .pageContainer {
+    float: right;
+    margin-right: 20px;
+}
+.batchDeleteBtn {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: #666;
+    margin-top: 5px;
+}
+.forbiddenBtn {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: #999;
+    margin-top: 5px;
+}
+.selectList {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+}
+.selectList p > span {
+    color: #333;
+    font-size: 14px;
+}
+.selectList .keywordSearch {
+    margin-right: 20px;
+}
+.selectStyle > div {
+    border-radius: 20px !important;
+}

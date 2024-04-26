@@ -1,0 +1,72 @@
+.treeWrapper {
+    height: calc(96%);
+    .schoolSelect {
+        width: 235px;
+        height: 35px;
+        margin-bottom: 10px;
+        :global {
+            .ant-select-selection--single {
+                border-radius: 8px;
+                height: 36px;
+            }
+            .ant-select-selection__rendered {
+                height: 34px;
+                line-height: 34px;
+            }
+        }
+    }
+    .schoolYearSelect {
+        width: 118px;
+        height: 35px;
+        margin-right: 2px;
+        :global {
+            .ant-select-selection--single {
+                border-radius: 8px;
+                height: 36px;
+            }
+            .ant-select-selection__rendered {
+                height: 34px;
+                line-height: 34px;
+            }
+        }
+    }
+    .switchOnlyOrg {
+        margin: 15px 0 10px 15px;
+        span {
+            margin-left: 10px;
+            font-size: 14px;
+            color: #666;
+            vertical-align: middle;
+        }
+    }
+    .sortableTree {
+        width: 100%;
+    }
+    .searchInput {
+        border-radius: 20px;
+        position: relative;
+        margin-top: 10px;
+        // margin-left: 10px;
+        width: 120px;
+        & > input {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+    }
+    .searchInputLong {
+        margin-top: 10px;
+        // width: 100%;
+        width: 235px;
+        & > input {
+            border-radius: 8px !important;
+            height: 36px;
+        }
+    }
+}
+
+:global {
+    .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+        background: #fff !important;
+        color: #3b6ff5 !important;
+    }
+}

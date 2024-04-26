@@ -1,0 +1,135 @@
+.commonListStyle {
+    .commonRuleList {
+        border: 1px solid #eee;
+        padding: 10px;
+        width: 436px;
+        margin: 10px;
+        .ruleTips {
+            color: #e9b635;
+            margin-bottom: 5px;
+            .iconStyle {
+                margin-right: 5px;
+            }
+        }
+    }
+    .selectBorder {
+        border: 1px solid #3b6ff5;
+    }
+    .list {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        .switchButton {
+            flex: 1;
+            -webkit-flex: 1;
+        }
+        .rulesContent {
+            flex: 4;
+            -webkit-flex: 4;
+            .rulesText {
+                overflow: hidden;
+                display: -webkit-box;
+                text-overflow: ellipsis;
+                /* autoprefixer: ignore next */
+                -webkit-box-orient: vertical;
+                /* autoprefixer: on*/
+                -webkit-line-clamp: 2;
+                a {
+                    color: rgba(0, 0, 0, 0.65);
+                    text-decoration: none;
+                }
+            }
+            .remark {
+                color: #999;
+                font-size: 12px;
+                /* overflow:hidden;
+                text-overflow:ellipsis;
+                display:-webkit-box;
+                -webkit-box-orient:vertical;
+                -webkit-line-clamp:2;  */
+                a {
+                    color: #999;
+                    text-decoration: none;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                }
+                span {
+                    display: inline-block;
+                    float: right;
+                    color: #3b6ff5;
+                    font-size: 15px;
+                    cursor: pointer;
+                    margin-left: 8px;
+                }
+            }
+
+            .warning {
+                width: 150%;
+                color: #e9b635;
+                margin-left: -60px;
+            }
+
+            :global {
+                .ant-tooltip-inner {
+                    white-space: pre-wrap;
+                }
+            }
+        }
+        .conditionList {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            position: relative;
+            .commonButton {
+                display: block;
+                color: #fff;
+                border-radius: 20px;
+                padding: 5px;
+                text-align: center;
+                cursor: pointer;
+            }
+            .necessaryBtn {
+                background: #67b251;
+            }
+            .unNecessaryBtn {
+                background: rgba(103, 178, 81, 0.4);
+            }
+            .showResult {
+                // width: 110px;
+                padding: 10px;
+            }
+            .showConditionList {
+                position: absolute;
+                width: 110px;
+                padding: 10px;
+                height: 100px;
+                left: 0;
+                top: 0;
+                z-index: 99;
+                background: #ffffff;
+                box-shadow: 0px 6px 25px 0px rgba(59, 111, 245, 0.12);
+                > span {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.remarkBtn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    white-space: nowrap;
+    float: right;
+    color: #3b6ff5;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    .disable {
+        color: #999;
+        pointer-events: none;
+    }
+}

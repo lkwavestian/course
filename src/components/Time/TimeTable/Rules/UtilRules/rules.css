@@ -1,0 +1,196 @@
+.addedRulesList {
+    height: 92vh;
+    overflow-y: scroll;
+    padding-bottom: 7vh;
+}
+.ruleContainer {
+    height: 92vh;
+    overflow-y: scroll;
+    padding-bottom: 7vh;
+}
+.ruleContainer .ruleTips {
+    width: 436px;
+    color: #999;
+    font-size: 12px;
+    text-indent: 12px;
+    margin-bottom: 10px;
+}
+.ruleContainer .ruleTips p {
+    margin-bottom: 0;
+}
+.ruleContainer .addPlus {
+    height: 40px;
+    border: 1px solid #eee;
+    font-size: 24px;
+    text-align: center;
+    width: 436px;
+}
+.ruleContainer .searchCondition {
+    margin: 20px 10px 4px;
+    background: #fff;
+    display: flex;
+    display: -webkit-flex;
+    width: 436px;
+    justify-content: space-around;
+    align-items: center;
+}
+.ruleContainer .searchCondition .addRulesTitle {
+    flex: 1;
+    -webkit-flex: 1;
+    margin: 0;
+}
+.ruleContainer .searchCondition .searchTeacher {
+    flex: 1;
+    -webkit-flex: 1;
+    max-width: 165px;
+}
+.ruleContainer .formContent {
+    border: 1px solid #eee;
+    width: 436px;
+    padding: 20px 10px;
+}
+.ruleContainer .formContent .byLessons {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    width: 406px;
+}
+.commonFormStyle .weekRowStyle {
+    width: 406px;
+    border: 1px solid #eee;
+    border-bottom: none;
+}
+.commonFormStyle .weekRowStyle .noSource {
+    visibility: hidden;
+}
+.commonFormStyle .weekRowStyle > div {
+    border-right: 1px solid #eee;
+    text-align: center;
+    padding: 5px;
+}
+.commonFormStyle .weekRowStyle > div:nth-last-child(1) {
+    border-right: none;
+}
+.commonFormStyle .lessonRowStyle {
+    width: 406px;
+    border: 1px solid #eee;
+    border-bottom: none;
+}
+.commonFormStyle .lessonRowStyle:nth-last-child(1) {
+    border-bottom: 1px solid #eee;
+}
+.commonFormStyle .lessonRowStyle > div {
+    border-right: 1px solid #eee;
+    text-align: center;
+    padding: 5px;
+}
+.commonFormStyle .lessonRowStyle > div:nth-last-child(1) {
+    border-right: none;
+}
+.commonFormStyle .blueCol {
+    background: #3b6ff5;
+    color: #3b6ff5;
+    cursor: pointer;
+}
+.commonFormStyle .blueCol:after {
+    content: 'x';
+    font-size: 18px;
+    position: absolute;
+    left: 44%;
+    top: 0;
+    color: #fff;
+}
+.commonFormStyle .whiteCol {
+    background: #fff;
+    color: #fff;
+    cursor: pointer;
+}
+.commonFormStyle .canNotClick {
+    background: #ccc;
+    color: #ccc;
+}
+.remarkArea {
+    margin: 20px 0;
+    width: 406px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+.remarkArea .remarkInput {
+    flex: 4;
+    -webkit-flex: 4;
+}
+.remarkArea .conditionList {
+    flex: 2;
+    -webkit-flex: 2;
+    margin-left: 10px;
+    position: relative;
+}
+.remarkArea .conditionList .commonButton {
+    display: block;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.remarkArea .conditionList .necessaryBtn {
+    background: #67b251;
+}
+.remarkArea .conditionList .unNecessaryBtn {
+    background: rgba(103, 178, 81, 0.4);
+}
+.remarkArea .conditionList .showResult {
+    width: 110px;
+    padding: 0 10px;
+}
+.remarkArea .conditionList .showConditionList {
+    position: absolute;
+    width: 110px;
+    padding: 10px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background: #ffffff;
+    box-shadow: 0px 6px 25px 0px rgba(59, 111, 245, 0.12);
+}
+.remarkArea .conditionList .showConditionList > span {
+    margin-bottom: 10px;
+}
+.operButton {
+    margin-top: 20px;
+}
+.operButton > span {
+    display: inline-block;
+}
+.operButton .saveBtn {
+    background: #3b6ff5;
+    padding: 4px 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.operButton .cancelBtn {
+    color: #666;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.intervalTime {
+    margin: 20px 0;
+    width: 406px;
+}
+.intervalRuleList {
+    height: 40vh;
+    overflow-y: scroll;
+}
+.staggerRuleList {
+    height: 45vh;
+    overflow-y: scroll;
+}
+.togetherRuleList {
+    height: 57vh;
+    overflow-y: scroll;
+}

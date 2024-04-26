@@ -1,0 +1,202 @@
+body {
+  background: #fff !important;
+  font-family: PingFangSC-Regular;
+}
+.button {
+  background: #4d7fff;
+}
+.account {
+  margin: 15px 0px 24px;
+  box-shadow: 0px 2px 8px 0px rgba(59, 111, 245, 0.12);
+  padding: 0 25px;
+}
+.account :global .ant-tabs-bar {
+  border: none;
+  text-align: left;
+  margin: 0px 0px 6px 0px;
+}
+.account :global .ant-tabs-bar .ant-tabs-ink-bar {
+  display: none !important;
+}
+.account :global .ant-tabs-bar .ant-tabs-nav .ant-tabs-tab {
+  padding-left: 0;
+}
+.account :global .ant-tabs-bar .ant-tabs-nav .ant-tabs-tab-active {
+  color: #4d7fff;
+  font-size: 16px;
+}
+.account :global .ant-table-thead > tr > th,
+.account :global .ant-table-tbody > tr > td {
+  padding: 9.5px 14px;
+}
+.account :global .ant-table {
+  font-size: 12px;
+}
+.account .schoolAccount .header {
+  margin-bottom: 12px;
+}
+.account .schoolAccount .header .text {
+  color: #999;
+}
+.account .schoolAccount .header .btn {
+  float: right;
+  background: #4d7fff;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.addaCcount .addBusi {
+  white-space: nowrap;
+  font-size: 14px;
+  margin-left: 15px;
+  line-height: 30px;
+}
+.addaCcount .busi {
+  font-size: 16px;
+  color: #1890ff;
+}
+.addaCcount .busi :global(.ant-form-item-children) {
+  display: flex;
+  min-width: 400px;
+}
+.addaCcount :global(.ant-col-sm-6) {
+  width: 29%;
+  min-width: 130px;
+}
+.newTitle {
+  text-align: center;
+  font-size: 24px;
+}
+.btnBox {
+  text-align: center;
+}
+.popover {
+  overflow: hidden;
+}
+.popover .textTitle {
+  font-size: 24px;
+  color: #333;
+  display: block;
+  text-align: center;
+}
+.popover .textDescribe {
+  font-size: 16px;
+  width: 346px;
+  display: block;
+  margin: 10px 0 15px;
+}
+:global .ant-input-lg {
+  font-size: 14px;
+}
+:global .ant-popover-buttons .ant-btn {
+  width: 72px;
+  height: 32px;
+  border-radius: 16px;
+  border: 1px solid #4d7fff;
+  color: #4d7fff;
+}
+:global .ant-popover-buttons .ant-btn-primary {
+  background: #4d7fff;
+  color: #fff;
+}
+.addaCcount {
+  color: rgba(0, 0, 0, 0.85);
+}
+.addaCcount :global(.ant-modal-body) {
+  display: grid;
+  justify-content: center;
+}
+.addaCcount .merchantName {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.addaCcount .merchantName .notes {
+  color: #f5222d;
+}
+.addaCcount .merchantName .merchantNameIpt {
+  width: 400px;
+  border-radius: 4px;
+}
+.addaCcount .merchantName .titleBox {
+  min-width: 90px;
+  text-align: right;
+  margin-right: 5px;
+}
+.account :global .ant-btn,
+.addaCcount :global .ant-btn,
+.schoolAccount :global .ant-btn,
+.popContent :global .ant-btn,
+.studentAccout :global .ant-btn,
+.accountChanges :global .ant-btn {
+  height: 36px !important;
+  line-height: 36px !important;
+  border-radius: 8px !important;
+  color: rgba(1, 17, 61, 0.65) !important;
+  background: rgba(1, 17, 61, 0.07) !important;
+  text-align: center;
+  border: 0 !important;
+}
+.account :global .ant-btn.ant-btn-primary,
+.addaCcount :global .ant-btn.ant-btn-primary,
+.schoolAccount :global .ant-btn.ant-btn-primary,
+.popContent :global .ant-btn.ant-btn-primary,
+.studentAccout :global .ant-btn.ant-btn-primary,
+.accountChanges :global .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff !important;
+}
+.account :global .ant-input,
+.addaCcount :global .ant-input,
+.schoolAccount :global .ant-input,
+.popContent :global .ant-input,
+.studentAccout :global .ant-input,
+.accountChanges :global .ant-input {
+  min-height: 36px !important;
+  border-radius: 8px !important;
+}
+.account :global .ant-select-selection__rendered,
+.addaCcount :global .ant-select-selection__rendered,
+.schoolAccount :global .ant-select-selection__rendered,
+.popContent :global .ant-select-selection__rendered,
+.studentAccout :global .ant-select-selection__rendered,
+.accountChanges :global .ant-select-selection__rendered {
+  line-height: 36px !important;
+}
+.account :global .ant-select-selection--single,
+.addaCcount :global .ant-select-selection--single,
+.schoolAccount :global .ant-select-selection--single,
+.popContent :global .ant-select-selection--single,
+.studentAccout :global .ant-select-selection--single,
+.accountChanges :global .ant-select-selection--single {
+  border-radius: 8px !important;
+  height: 36px !important;
+}
+.addaCcount :global .ant-modal-footer > div {
+  text-align: center;
+}
+.schoolAccountP {
+  display: flex;
+  align-items: center;
+}
+.schoolAccountP > span:nth-child(1) {
+  display: inline-block;
+  width: 7px;
+  height: 15px;
+  background-color: limegreen;
+  margin-right: 7px;
+}
+.exportModal :global .ant-btn {
+  border-radius: 8px;
+}
+.exportModal :global .ant-modal-footer > div > .ant-btn {
+  color: rgba(1, 17, 61, 0.65);
+  background: rgba(1, 17, 61, 0.07);
+  border: 0;
+  border-radius: 8px;
+  height: 36px;
+  line-height: 36px;
+}
+.exportModal :global .ant-modal-footer > div > .ant-btn.ant-btn-primary {
+  background: #3b6ff5 !important;
+  color: #fff;
+}

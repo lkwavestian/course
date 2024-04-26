@@ -1,0 +1,168 @@
+.detailList {
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+.detailBox {
+    border-radius: 8px;
+    background: #fff;
+    padding: 18px;
+    margin-bottom: 10px;
+   
+    .couseLessonBox {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 26px;
+        flex-wrap: wrap;
+        .checkContent {
+            background: rgba(1, 17, 61, 0.04);
+            padding: 5px 20px;
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.85);  
+            font-size: 12px;
+            border-radius: 4px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .isCheck {
+            background: rgba(162,31,39,0.05);
+            border: 1px solid rgba(162,31,39,1);
+            font-family: PingFangSC-Regular;
+            color: rgba(162,31,39,0.85);
+            font-size: 12px;
+        }
+    }
+    .courseTitle {
+        font-family: PingFangSC-Medium;
+        color: #01113d;
+        font-size: 22px;
+    }
+
+    .price {
+        font-family: PingFangSC-Semibold;
+        color: #A21F27;
+        font-size: 24px;
+        margin-top: 16px;
+    }
+
+    .progress {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 18px;
+
+        .step {
+            font-size: 12px;
+            position: relative;
+
+            .checkLabel {
+                background: #0054AF;
+                color: #fff !important;
+            }
+
+            .checkText {
+                color: #0054AF !important;
+                font-family: PingFangSC-Semibold !important;
+            }
+
+            .label {
+                width: 24px;
+                height: 24px;
+                border-radius: 12px;
+                text-align: center;
+                font-family: PingFangSC-Semibold;
+                color: rgb(62, 114, 187);
+                border: 1px solid #efefef;
+                line-height: 24px;
+            }
+
+            .text {
+                font-family: PingFangSC-Semibold;
+                color: rgb(62, 114, 187);
+                position: absolute;
+            }
+        }
+
+        .bar {
+            width: 50px;
+            height: 6px;
+            background: rgb(223, 234, 245);
+        }
+    }
+
+    .classTitle {
+        font-family: PingFangSC-Semibold;
+        color: #01113D;
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    .classTeacher {
+        background: rgba(190, 155, 96, 0.26);
+        padding: 6px 16px;
+        border-radius: 18px;
+        width: fit-content;
+        margin-bottom: 18px;
+
+        .classTeacherLeft {
+            font-family: PingFangSC-Regular;
+            color: #D78F17;
+        }
+
+        .classTeacherRight {
+            font-family: PingFangSC-Semibold;
+            color: #D78F17;
+        }
+    }
+
+    .classDes {
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #01113D;
+
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 6px;
+    }
+
+    .classItem {
+        display: flex;
+        flex-direction: row;
+        font-family: PingFangSC-Medium;
+        color: #01113D;
+        font-size: 14px;
+        align-items: flex-start;
+        margin-bottom: 12px;
+        .classLabel {
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.65);
+            font-size: 14px;
+            min-width: 80px;
+        }
+
+        .classContent {
+            flex: 1,
+        }
+    }
+}
+
+.checkContent{
+    color: #01113d;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.mobileDetail {
+    height: 100vh;
+    background: #f6f7f8;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}

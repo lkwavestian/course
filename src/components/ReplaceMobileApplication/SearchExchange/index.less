@@ -1,0 +1,210 @@
+.rightContentWrapper {
+    background: #ffffff;
+    box-shadow: 0px 1px 4px -4px rgba(1, 17, 61, 0.12);
+    flex: 1;
+    border-radius: 15px;
+    height: 100%;
+    overflow: scroll;
+}
+
+.searchExchange {
+    position: relative;
+    height: 720px;
+    width: 600px;
+    background-color: #bfa;
+    display: flex;
+    flex-direction: column;
+    font-family: PingFangSC-Medium;
+    color: #01113d;
+    font-size: 18px;
+    line-height: 25px;
+    .weekWrapper {
+        background: #ffffff;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+        display: flex;
+        padding: 14px 100px;
+        gap: 62px;
+        height: 72px;
+    }
+    .lessonListWrapper {
+        background: #f9f9f9;
+        flex-grow: 1;
+        display: flex;
+        padding-top: 15px;
+        // padding-left: 17px;
+        .timeLine {
+            display: flex;
+            flex-direction: column;
+            gap: 43px;
+            position: sticky;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            z-index: 10;
+            width: 55px;
+            align-items: center;
+            .timeLineItem {
+                font-family: PingFangSC-Regular;
+                color: rgba(1, 17, 61, 0.45);
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+    }
+    .hintMsg {
+        font-family: PingFangSC-Regular;
+        color: rgba(1, 17, 61, 0.85);
+        font-size: 14px;
+        line-height: 22px;
+        margin-right: 20px;
+        position: absolute;
+        bottom: 25px;
+        left: 70px;
+        right: auto;
+        :global {
+            .ant-alert-close-icon {
+                right: 0;
+            }
+        }
+    }
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    .date {
+        font-family: PingFangSC-Regular;
+        color: rgba(1, 17, 61, 0.45);
+        line-height: 17px;
+        font-size: 12px;
+    }
+    .weekDay {
+        font-family: PingFangSC-Semibold;
+        color: rgba(1, 17, 61, 0.85);
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.lessonList {
+    margin-left: 22px;
+    display: flex;
+    gap: 3px;
+    .dayLessonList {
+        width: 94px;
+        position: relative;
+        .lessonItem {
+            background: #f0f0f0;
+            font-family: PingFangSC-Regular;
+            color: rgba(1, 17, 61, 0.65);
+            font-size: 14px;
+            line-height: 17px;
+            width: 86px;
+            position: absolute;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .clickLessonItem {
+            border: 2px solid #f6bd16;
+        }
+    }
+}
+
+.confirmExchange {
+    :global {
+        .am-modal-transparent {
+            width: 330px;
+        }
+        .am-modal-content {
+            border-radius: 13px;
+            background-color: #ffffff;
+            padding-top: 0;
+        }
+        .am-modal-transparent .am-modal-content .am-modal-body {
+            padding: 0;
+        }
+    }
+    .confirmHeader {
+        height: 48px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-family: PingFangSC-Medium;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #30bf78;
+    }
+    .confirmMainContent {
+        background-color: #fff;
+        padding: 16px 16px 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .btn {
+            width: 100%;
+            height: 40px;
+            border-radius: 6px;
+            background-color: #0445fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: PingFangSC-Medium;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+}
+
+.msg {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(1, 17, 61, 0.85);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .msgItem {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        .time {
+            display: flex;
+            gap: 5px;
+            .lesson {
+                color: rgba(1, 17, 61, 0.45);
+            }
+        }
+        .userList {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 10px;
+            .userItem {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .iconList {
+                    display: flex;
+                    gap: 20px;
+                    font-size: 18px;
+                    color: rgba(1, 17, 61, 0.45);
+                }
+            }
+        }
+        .userIcon {
+            align-self: flex-start;
+            margin-top: 3px;
+        }
+    }
+}

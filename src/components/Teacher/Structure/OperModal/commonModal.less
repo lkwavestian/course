@@ -1,0 +1,197 @@
+.modalBtn {
+    border-radius: 8px;
+    padding: 9.5px 23px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+.cancelBtn {
+    color: rgba(1, 17, 61, 0.65);
+    background: rgba(1, 17, 61, 0.07);
+    text-align: center;
+    margin-right: 10px;
+}
+.submitBtn {
+    background: #3b6ff5;
+    color: #fff;
+}
+.inputStyle {
+    border-radius: 8px !important;
+    height: 36px;
+}
+
+.operationList {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    a {
+        flex: 1;
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        text-align: right;
+    }
+    .deleteBtn {
+        color: #3b6ff5;
+        font-size: 16px;
+        padding-left: 15px;
+        text-align: left;
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+//新建组织&&编辑组织
+.selectOrgStyle > span {
+    border: none !important;
+    box-shadow: 0 0 0 2px transparent !important;
+    -webkit-box-shadow: 0 0 0 2px transparent !important;
+}
+.selectOrgStyle > span > span > span {
+    display: none !important;
+}
+
+//设置组织角色
+.orgCardList {
+    max-height: 300px;
+    overflow-y: scroll;
+    & > div {
+        padding: 25px 30px 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+}
+.deleteCard {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font-size: 15px;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+    z-index: 299;
+}
+.deleteCardDisabled {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font-size: 15px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+    z-index: 299;
+}
+.saveCard {
+    position: absolute;
+    top: 9px;
+    right: 47px;
+    font-size: 15px;
+    color: #3b6ff5;
+    border: 1px solid #3b6ff5;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+    z-index: 299;
+}
+.saveCardDisabled {
+    position: absolute;
+    top: 9px;
+    right: 47px;
+    font-size: 15px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+.addCardBtn {
+    width: 100%;
+    margin: 20px auto;
+    cursor: pointer;
+    .setButtonStyle {
+        width: 100%;
+        font-size: 15px;
+        color: #3b6ff5;
+        font-weight: bold;
+        display: inline-block;
+        border: 1px dashed #ddd;
+        text-align: center;
+        padding: 6px 0;
+    }
+}
+.selectOrgStyle > div {
+    border-radius: 8px;
+    height: 36px;
+    :global{
+        .ant-select-selection__rendered{
+            line-height: 34px;
+        }
+    }
+}
+.selectPersonStyle > div {
+    border-radius: 8px !important;
+    height: 36px;
+    :global{
+        .ant-select-selection__rendered{
+            line-height: 34px;
+        }
+    }
+
+}
+.selectAddStaff > span {
+    border-radius: 8px !important;
+    min-height: 36px;
+    :global{
+        .ant-select-selection__rendered{
+            line-height: 36px;
+        }
+    }
+}
+.setOrgRoleSelectPerson > span {
+    border-radius: 8px !important;
+    min-height: 36px;
+}
+
+.addStaffModal{
+    :global{
+        .ant-form-item{
+            display: flex;
+        }
+        .ant-form-item-control-wrapper{
+            flex: 1;
+        }
+    }
+}
+
+.iframeModal{
+    top: 40px !important;
+}
+
+.setOrgRoleStyle{
+    :global{
+        .ant-modal-header{
+            padding: 16px 24px 10px;
+        }
+        .ant-modal-body{
+            padding: 0 24px;
+        } 
+        .ant-form-item{
+            margin-bottom: 10px;
+        }
+    }
+    .orgCardList>div{
+        padding: 15px 10px 5px;
+    }
+    .addCardBtn{
+        margin-top: 0;
+   }
+}

@@ -1,0 +1,130 @@
+.paymentDetail {
+    // position: relative;
+    // min-height: 100vh;
+    .export {
+        width: 80px;
+        height: 36px;
+        border-radius: 8px;
+        background: #3b6ff5;
+        margin-bottom: 12px;
+        line-height: 36px;
+    }
+    :global(.ant-calendar-picker) {
+        width: 140px !important;
+    }
+    :global(.ant-select-enabled) {
+        width: 138px !important;
+    }
+    .formParent {
+        display: flex;
+        align-items: center;
+    }
+    .balanceStatistical {
+        // padding: 24px 0;
+        // border: 1px solid #efefef;
+        // border-radius: 8px;
+        .cardItem {
+            display: inline-block;
+            text-align: left;
+            width: 33%;
+
+            .card {
+                display: inline-block;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                span {
+                    display: block;
+                }
+
+                .label {
+                    font-size: 12px;
+                    color: #999;
+                }
+
+                .number {
+                    font-size: 24px;
+                    color: #333;
+                }
+            }
+        }
+
+        .border {
+            border-right: 1px solid #efefef;
+            border-left: 1px solid #efefef;
+        }
+    }
+
+    .form {
+        margin: 6px 0 6px;
+
+        :global {
+            .ant-form-item {
+                margin-bottom: 10px;
+            }
+
+            .ant-input-group-addon:first-child {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+
+            .ant-form-item {
+                display: inline-block !important;
+                margin-right: 6px !important;
+                margin-bottom: 6px !important;
+            }
+            .ant-select-lg .ant-select-selection--single {
+                height: 36px;
+                border-radius: 8px;
+            }
+            .ant-select-lg .ant-select-selection__rendered {
+                line-height: 36px;
+            }
+            .ant-select-lg .ant-select-selection--multiple {
+                min-height: 36px;
+                border-radius: 8px;
+                padding-bottom: 0;
+            }
+            .ant-input-lg {
+                height: 36px;
+            }
+            .ant-form-item-control {
+                line-height: 0px;
+            }
+        }
+    }
+
+    .tableAndPage {
+        overflow: hidden;
+        :global {
+            .ant-table-thead > tr > th,
+            .ant-table-tbody > tr > td {
+                padding: 9.5px 14px;
+            }
+            .ant-table-row-level-0 {
+                height: auto !important;
+            }
+            .ant-table {
+                font-size: 12px;
+            }
+            .ant-table-wrapper {
+                width: 100%;
+                overflow-x: scroll;
+            }
+        }
+    }
+    .record {
+        margin-bottom: 24px;
+
+        .item {
+            font-size: 12px;
+            color: #999;
+            padding-right: 40px;
+
+            .number {
+                font-size: 24px;
+                color: #333;
+            }
+        }
+    }
+}
